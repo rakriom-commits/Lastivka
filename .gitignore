@@ -1,0 +1,23 @@
+﻿# Python/cache/env
+__pycache__/ 
+*.py[cod]
+*.pytest_cache/
+*.egg-info/
+.env
+.venv/
+venv/
+.env*/ 
+pip-wheel-metadata/
+*.zip
+*.exe
+*.dll
+*.lib
+*.pth
+lastivka_core/audio/output/
+lastivka_core/logs/
+lastivka_core/lastivka_core/logs/
+*.wav
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

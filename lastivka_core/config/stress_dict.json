@@ -1,0 +1,34 @@
+import json
+import re
+
+# Шлях до словника наголосів
+STRESS_DICT_PATH = "config/stress_dict.json"
+
+# Завантаження словника
+def load_stress_dict():
+    try:
+        with open(STRESS_DICT_PATH, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
+
+# Основна функція — підстановка наголосів
+def apply_stress_marks(text):
+    stress_dict = load_stress_dict()
+    for word, stressed in stress_dict.items():
+        # Замінити всі форми слова незалежно від регістру
+        pattern = r'\b' + re.escape(word) + r'\b'
+        text = re.sub(pattern, stressed, text, flags=re.IGNORECASE)
+    return text
+
+# Додавання нового слова у словник
+def add_to_stress_dict(word, stressed_form):
+    stress_dict = load_stress_dict()
+    stress_dict[word] = stressed_form
+    with open(STRESS_DICT_PATH, "w", encoding="utf-8") as file:
+        json.dump(stress_dict, file, ensure_ascii=False, indent=2)
+
+# (Опціонально) логування нових незнайомих слів
+def log_unknown_word(word):
+    with open("config/unknown_stress_words.log", "a", encoding="utf-8") as log_file:
+        log_file.write(word + "\n")
