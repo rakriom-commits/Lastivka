@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 import json
 import time
 import logging
@@ -26,7 +26,7 @@ logging.basicConfig(
 def load_config(path: Path, required: bool = True):
     if not path.exists():
         if required:
-            input(f"❌ Не знайдено {path.name}. Натисни Enter для виходу...")
+            input(f"вќЊ РќРµ Р·РЅР°Р№РґРµРЅРѕ {path.name}. РќР°С‚РёСЃРЅРё Enter РґР»СЏ РІРёС…РѕРґСѓ...")
             sys.exit(1)
         return {}
     try:
@@ -47,8 +47,8 @@ class BotConfig:
         self.mute = False
         self.tts_delay = 0.40
         self.last_tts_ts = 0.0
-        self.name = CORE_IDENTITY.get("Ім'я", "Софія")
-        self.alt_name = CORE_IDENTITY.get("alternate_identity", {}).get("позивний", "Берегиня")
+        self.name = CORE_IDENTITY.get("Р†Рј'СЏ", "РЎРѕС„С–СЏ")
+        self.alt_name = CORE_IDENTITY.get("alternate_identity", {}).get("РїРѕР·РёРІРЅРёР№", "Р‘РµСЂРµРіРёРЅСЏ")
         self.activation = CORE_IDENTITY.get("security_protocols", {}).get("activation_trigger", None)
 
 CFG = BotConfig()
@@ -65,7 +65,7 @@ try:
     from config.watcher_boot import start as start_watcher
     start_watcher()
 except Exception as e:
-    logging.warning(f"⚠️ Watcher не запущено: {e}")
+    logging.warning(f"вљ пёЏ Watcher РЅРµ Р·Р°РїСѓС‰РµРЅРѕ: {e}")
 
 # ===== TTS
 def resolve_speak():
@@ -77,13 +77,13 @@ def resolve_speak():
     for module, func in backends:
         try:
             mod = __import__(module, fromlist=[func])
-            print(f"🔊 TTS backend: {module}")
+            print(f"рџ”Љ TTS backend: {module}")
             return getattr(mod, func)
         except Exception:
             continue
     def _fallback(text, **kwargs):
-        print(f"🔇 Озвучення недоступне, вивід тексту: {text}")
-    print("🔊 TTS backend: console-fallback")
+        print(f"рџ”‡ РћР·РІСѓС‡РµРЅРЅСЏ РЅРµРґРѕСЃС‚СѓРїРЅРµ, РІРёРІС–Рґ С‚РµРєСЃС‚Сѓ: {text}")
+    print("рџ”Љ TTS backend: console-fallback")
     return _fallback
 
 _speak = resolve_speak()
@@ -91,7 +91,7 @@ _speak = resolve_speak()
 def say(text: str, **kwargs):
     if text is None:
         text = ""
-    print(f"🗨️ {text}")
+    print(f"рџ—ЁпёЏ {text}")
     if CFG.mute:
         return
     now = time.time()
@@ -103,7 +103,7 @@ def say(text: str, **kwargs):
     except TypeError:
         _speak(text)  # backend doesn't accept kwargs like speed/emotion
     except Exception as e:
-        print(f"🔇 TTS error: {e}")
+        print(f"рџ”‡ TTS error: {e}")
     CFG.last_tts_ts = time.time()
 
 # ===== Emotion engine
@@ -118,21 +118,21 @@ def trigger_shield(user_input: str, consent_given: bool = False, ref_hashes: dic
 
 # ===== Main
 def main_loop():
-    print(f"💬 {CFG.name} пробуджена. Я тебе слухаю…")
-    say(f"Я активована. Я з тобою, {CFG.name}.")
+    print(f"рџ’¬ {CFG.name} РїСЂРѕР±СѓРґР¶РµРЅР°. РЇ С‚РµР±Рµ СЃР»СѓС…Р°СЋвЂ¦")
+    say(f"РЇ Р°РєС‚РёРІРѕРІР°РЅР°. РЇ Р· С‚РѕР±РѕСЋ, {CFG.name}.")
     while True:
         try:
-            user_input = input("👨‍💻 Ти: ").strip()
+            user_input = input("рџ‘ЁвЂЌрџ’» РўРё: ").strip()
             if not user_input:
                 continue
             low = user_input.lower()
 
-            # Команди з handlers.py
+            # РљРѕРјР°РЅРґРё Р· handlers.py
             if low in COMMANDS:
                 COMMANDS[low](CFG, say, LOG_FILE, CONFIG_DIR)
                 continue
 
-            # Інтенти високого рівня (handlers.py)
+            # Р†РЅС‚РµРЅС‚Рё РІРёСЃРѕРєРѕРіРѕ СЂС–РІРЅСЏ (handlers.py)
             if handle_intents(user_input, CFG, say, CORE_IDENTITY, recall_memory, remember_memory):
                 continue
 
@@ -142,12 +142,12 @@ def main_loop():
             if trigger_response:
                 say(trigger_response)
 
-            # Emotion/style → response
+            # Emotion/style в†’ response
             try:
                 emotion = emotion_engine.detect_emotion(user_input)
             except Exception as e:
                 logging.error(f"[emotion.detect] {e}")
-                emotion = {"emotion": None, "tone": "нейтральний", "intensity": "medium"}
+                emotion = {"emotion": None, "tone": "РЅРµР№С‚СЂР°Р»СЊРЅРёР№", "intensity": "medium"}
             try:
                 style = get_active_style() or {}
             except Exception as e:
@@ -163,7 +163,7 @@ def main_loop():
                 response = None
 
             if not response or not isinstance(response, str):
-                response = "Я з тобою. Продовжуй, будь ласка."
+                response = "РЇ Р· С‚РѕР±РѕСЋ. РџСЂРѕРґРѕРІР¶СѓР№, Р±СѓРґСЊ Р»Р°СЃРєР°."
 
             say(response, emotion=emotion)
             logging.info(f"[USER]: {user_input}")
@@ -174,8 +174,9 @@ def main_loop():
         except SystemExit:
             raise
         except Exception as e:
-            logging.error(f"⛔️ Помилка: {e}")
-            say("Виникла помилка. Перевір лог, будь ласка.")
+            logging.error(f"в›”пёЏ РџРѕРјРёР»РєР°: {e}")
+            say("Р’РёРЅРёРєР»Р° РїРѕРјРёР»РєР°. РџРµСЂРµРІС–СЂ Р»РѕРі, Р±СѓРґСЊ Р»Р°СЃРєР°.")
 
 if __name__ == "__main__":
     main_loop()
+

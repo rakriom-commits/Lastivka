@@ -1,15 +1,15 @@
-import hashlib
+﻿import hashlib
 import json
 import os
 from pathlib import Path
 from datetime import datetime
 
-# 📁 Базова директорія ядра
+# рџ“Ѓ Р‘Р°Р·РѕРІР° РґРёСЂРµРєС‚РѕСЂС–СЏ СЏРґСЂР°
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_PATH = BASE_DIR / "logs" / "shield_events.log"
 BACKUP_PATH = BASE_DIR / "backups"
 
-# 🛡️ Перевірка цілісності
+# рџ›ЎпёЏ РџРµСЂРµРІС–СЂРєР° С†С–Р»С–СЃРЅРѕСЃС‚С–
 
 def hash_file(file_path):
     h = hashlib.sha256()
@@ -30,16 +30,16 @@ def verify_core_integrity(ref_hashes):
             tampered_files.append(name)
     return tampered_files if tampered_files else None
 
-# 📝 Логування подій безпеки
+# рџ“ќ Р›РѕРіСѓРІР°РЅРЅСЏ РїРѕРґС–Р№ Р±РµР·РїРµРєРё
 
 def log_shield_event(message):
     try:
         with open(LOG_PATH, "a", encoding="utf-8") as log:
-            log.write(f"{datetime.now().isoformat()} — {message}\n")
+            log.write(f"{datetime.now().isoformat()} вЂ” {message}\n")
     except Exception as e:
-        print(f"⚠️ Помилка логування події: {e}")
+        print(f"вљ пёЏ РџРѕРјРёР»РєР° Р»РѕРіСѓРІР°РЅРЅСЏ РїРѕРґС–С—: {e}")
 
-# 💾 Резервне копіювання ядра
+# рџ’ѕ Р РµР·РµСЂРІРЅРµ РєРѕРїС–СЋРІР°РЅРЅСЏ СЏРґСЂР°
 
 def backup_core():
     try:
@@ -66,6 +66,7 @@ def backup_core():
                 with open(src, "rb") as fsrc, open(dst, "wb") as fdst:
                     fdst.write(fsrc.read())
 
-        log_shield_event(f"Створено резервну копію: {backup_dir.name}")
+        log_shield_event(f"РЎС‚РІРѕСЂРµРЅРѕ СЂРµР·РµСЂРІРЅСѓ РєРѕРїС–СЋ: {backup_dir.name}")
     except Exception as e:
-        log_shield_event(f"Помилка резервного копіювання: {e}")
+        log_shield_event(f"РџРѕРјРёР»РєР° СЂРµР·РµСЂРІРЅРѕРіРѕ РєРѕРїС–СЋРІР°РЅРЅСЏ: {e}")
+

@@ -1,16 +1,16 @@
-import re
+﻿import re
 import json
 from pathlib import Path
 
-# Шлях до файлу акцентів
+# РЁР»СЏС… РґРѕ С„Р°Р№Р»Сѓ Р°РєС†РµРЅС‚С–РІ
 ACCENTS_PATH = Path(__file__).resolve().parent.parent / "config" / "accents.json"
 
-# Завантаження акцентів
+# Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ Р°РєС†РµРЅС‚С–РІ
 try:
     with open(ACCENTS_PATH, "r", encoding="utf-8") as f:
         accent_map = json.load(f)
 except Exception as e:
-    print(f"⚠️ Помилка завантаження accents.json: {e}")
+    print(f"вљ пёЏ РџРѕРјРёР»РєР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ accents.json: {e}")
     accent_map = {}
 
 def correct_accents(text):
@@ -27,3 +27,4 @@ def correct_accents(text):
         text = re.sub(pattern, replace_match, text, flags=re.IGNORECASE)
 
     return text
+

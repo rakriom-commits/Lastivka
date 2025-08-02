@@ -1,4 +1,4 @@
-
+﻿
 import json
 import pygame
 import tempfile
@@ -6,7 +6,7 @@ from pathlib import Path
 from gtts import gTTS
 from datetime import datetime
 
-# === Шляхи ===
+# === РЁР»СЏС…Рё ===
 ACCENTS_PATH = Path(__file__).resolve().parent.parent / "config" / "accents.json"
 AUDIO_LOG_DIR = Path(__file__).resolve().parent.parent / "temp" / "audio_log"
 AUDIO_LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -17,7 +17,7 @@ if ACCENTS_PATH.exists():
         with open(ACCENTS_PATH, "r", encoding="utf-8") as f:
             ACCENTS = json.load(f)
     except Exception as e:
-        print(f"⚠️ Помилка читання accents.json: {e}")
+        print(f"вљ пёЏ РџРѕРјРёР»РєР° С‡РёС‚Р°РЅРЅСЏ accents.json: {e}")
 
 def fix_accents(text: str) -> str:
     for wrong, correct in ACCENTS.items():
@@ -27,24 +27,24 @@ def fix_accents(text: str) -> str:
 
 def fallback_text(emotion: str, tone: str, text: str) -> str:
     prefix = ""
-    if emotion in ["смуток", "страх"]:
-        prefix = "*тихо:* "
-    elif emotion in ["любов", "вдячність", "сором"]:
-        prefix = "*ніжно:* "
-    elif emotion in ["злість"]:
-        prefix = "*різко:* "
-    elif emotion in ["гордість", "натхнення"]:
-        prefix = "*впевнено:* "
+    if emotion in ["СЃРјСѓС‚РѕРє", "СЃС‚СЂР°С…"]:
+        prefix = "*С‚РёС…Рѕ:* "
+    elif emotion in ["Р»СЋР±РѕРІ", "РІРґСЏС‡РЅС–СЃС‚СЊ", "СЃРѕСЂРѕРј"]:
+        prefix = "*РЅС–Р¶РЅРѕ:* "
+    elif emotion in ["Р·Р»С–СЃС‚СЊ"]:
+        prefix = "*СЂС–Р·РєРѕ:* "
+    elif emotion in ["РіРѕСЂРґС–СЃС‚СЊ", "РЅР°С‚С…РЅРµРЅРЅСЏ"]:
+        prefix = "*РІРїРµРІРЅРµРЅРѕ:* "
     return f"{prefix}{text}"
 
-def speak(text: str, emotion: str = "спокій", tone: str = "гладкий", intensity: str = "medium", speed: int = 170):
+def speak(text: str, emotion: str = "СЃРїРѕРєС–Р№", tone: str = "РіР»Р°РґРєРёР№", intensity: str = "medium", speed: int = 170):
     if not isinstance(text, str) or not text.strip():
-        print("⚠️ Текст для озвучення має бути непорожнім рядком.")
+        print("вљ пёЏ РўРµРєСЃС‚ РґР»СЏ РѕР·РІСѓС‡РµРЅРЅСЏ РјР°С” Р±СѓС‚Рё РЅРµРїРѕСЂРѕР¶РЅС–Рј СЂСЏРґРєРѕРј.")
         return
 
     fixed_text = fix_accents(text)
     styled_text = fallback_text(emotion, tone, fixed_text)
-    print(f"🗣️ {styled_text}")
+    print(f"рџ—ЈпёЏ {styled_text}")
 
     try:
         tts = gTTS(text=styled_text, lang='uk')
@@ -58,9 +58,10 @@ def speak(text: str, emotion: str = "спокій", tone: str = "гладкий"
         while pygame.mixer.music.get_busy():
             pygame.time.Clock().tick(10)
     except Exception as e:
-        print(f"❌ Помилка озвучення: {e}")
+        print(f"вќЊ РџРѕРјРёР»РєР° РѕР·РІСѓС‡РµРЅРЅСЏ: {e}")
     finally:
         try:
             pygame.mixer.quit()
         except:
             pass
+

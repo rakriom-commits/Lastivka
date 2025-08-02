@@ -1,4 +1,4 @@
-import json
+﻿import json
 from pathlib import Path
 from datetime import datetime
 
@@ -26,7 +26,7 @@ def archive_memory():
         with open(ARCHIVE_FILE, "w", encoding="utf-8") as f:
             json.dump(archive, f, ensure_ascii=False, indent=2)
 
-def remember(key, value, tone="базова"):
+def remember(key, value, tone="Р±Р°Р·РѕРІР°"):
     memory = load_memory()
     record = {
         "value": value,
@@ -67,6 +67,7 @@ def recall_from_question(question):
         if isinstance(v, list):
             for item in v:
                 if isinstance(item, dict) and question in item.get("value", "").lower():
-                    return f"{k} → {item['value']}"
+                    return f"{k} в†’ {item['value']}"
 
     return None
+

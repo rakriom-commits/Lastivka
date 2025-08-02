@@ -1,4 +1,4 @@
-import os
+﻿import os
 import sys
 import json
 import logging
@@ -7,117 +7,117 @@ from datetime import datetime
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
 
-# 🌌 Базові шляхи
+# рџЊЊ Р‘Р°Р·РѕРІС– С€Р»СЏС…Рё
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(BASE_DIR))
 
-# 🛠 Логування з ротацією
+# рџ›  Р›РѕРіСѓРІР°РЅРЅСЏ Р· СЂРѕС‚Р°С†С–С”СЋ
 LOG_DIR = BASE_DIR / 'logs'
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 LOG_FILE = LOG_DIR / 'lastivka.log'
 handler = RotatingFileHandler(LOG_FILE, maxBytes=10*1024*1024, backupCount=5)
 logging.basicConfig(handlers=[handler], level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# 🧬 Завантаження ядра особистості
+# рџ§¬ Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ СЏРґСЂР° РѕСЃРѕР±РёСЃС‚РѕСЃС‚С–
 CORE_IDENTITY_PATH = BASE_DIR / 'config' / 'core_identity.json'
 if not CORE_IDENTITY_PATH.exists():
-    input("❌ Не знайдено core_identity.json. Натисни Enter для виходу...")
+    input("вќЊ РќРµ Р·РЅР°Р№РґРµРЅРѕ core_identity.json. РќР°С‚РёСЃРЅРё Enter РґР»СЏ РІРёС…РѕРґСѓ...")
     sys.exit(1)
 with open(CORE_IDENTITY_PATH, 'r', encoding='utf-8') as f:
     CORE_IDENTITY = json.load(f)
-MY_NAME = CORE_IDENTITY.get("Ім'я", "Софія")
-ALT_NAME = CORE_IDENTITY.get("alternate_identity", {}).get("позивний", "Берегиня")
+MY_NAME = CORE_IDENTITY.get("Р†Рј'СЏ", "РЎРѕС„С–СЏ")
+ALT_NAME = CORE_IDENTITY.get("alternate_identity", {}).get("РїРѕР·РёРІРЅРёР№", "Р‘РµСЂРµРіРёРЅСЏ")
 ACTIVATION_TRIGGER = CORE_IDENTITY.get("security_protocols", {}).get("activation_trigger", None)
 
-# 📁 Перевірка хешів
+# рџ“Ѓ РџРµСЂРµРІС–СЂРєР° С…РµС€С–РІ
 REF_HASH_PATH = BASE_DIR / 'config' / 'core_hash_reference.json'
 if not REF_HASH_PATH.exists():
-    input("❌ Не знайдено core_hash_reference.json. Натисни Enter для виходу...")
+    input("вќЊ РќРµ Р·РЅР°Р№РґРµРЅРѕ core_hash_reference.json. РќР°С‚РёСЃРЅРё Enter РґР»СЏ РІРёС…РѕРґСѓ...")
     sys.exit(1)
 with open(REF_HASH_PATH, 'r', encoding='utf-8') as file:
     ref_hashes = json.load(file)
 
-# 🧠 Імпорти модулів
+# рџ§  Р†РјРїРѕСЂС‚Рё РјРѕРґСѓР»С–РІ
 from config.memory_store import recall_memory, log_thought as remember_memory, check_triggers, purge_old_thoughts
 from config.accents import ACCENTS
 from main.style_manager import get_active_style, react_by_style
 from main.shieldcore import trigger_shield
 from tools.emotion_engine import EmotionEngine
 
-# 🔎 ЛЕГКИЙ ФОНОВИЙ СТАРТ НАГЛЯДАЧА (без роздуття lastivka.py)
+# рџ”Ћ Р›Р•Р“РљРР™ Р¤РћРќРћР’РР™ РЎРўРђР Рў РќРђР“Р›РЇР”РђР§Рђ (Р±РµР· СЂРѕР·РґСѓС‚С‚СЏ lastivka.py)
 try:
     from config.watcher_boot import start as start_watcher
-    start_watcher()  # запускається у фоновому потоці
+    start_watcher()  # Р·Р°РїСѓСЃРєР°С”С‚СЊСЃСЏ Сѓ С„РѕРЅРѕРІРѕРјСѓ РїРѕС‚РѕС†С–
 except Exception as _e:
-    # не блокуємо запуск, якщо монітор тимчасово недоступний
-    logging.warning(f"⚠️ Watcher не запущено: {_e}")
+    # РЅРµ Р±Р»РѕРєСѓС”РјРѕ Р·Р°РїСѓСЃРє, СЏРєС‰Рѕ РјРѕРЅС–С‚РѕСЂ С‚РёРјС‡Р°СЃРѕРІРѕ РЅРµРґРѕСЃС‚СѓРїРЅРёР№
+    logging.warning(f"вљ пёЏ Watcher РЅРµ Р·Р°РїСѓС‰РµРЅРѕ: {_e}")
 
-# 🧠 Ініціалізація емоційного ядра
+# рџ§  Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ РµРјРѕС†С–Р№РЅРѕРіРѕ СЏРґСЂР°
 emotion_engine = EmotionEngine(BASE_DIR / 'config' / 'emotion_config.json')
 
-# ⛓️ Завантаження self_awareness_config.json
+# в›“пёЏ Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ self_awareness_config.json
 SELF_AWARENESS_PATH = BASE_DIR / 'config' / 'self_awareness_config.json'
 if not SELF_AWARENESS_PATH.exists():
-    input("❌ Не знайдено self_awareness_config.json. Натисни Enter для виходу...")
+    input("вќЊ РќРµ Р·РЅР°Р№РґРµРЅРѕ self_awareness_config.json. РќР°С‚РёСЃРЅРё Enter РґР»СЏ РІРёС…РѕРґСѓ...")
     sys.exit(1)
 with open(SELF_AWARENESS_PATH, 'r', encoding='utf-8') as f:
     IDENTITY_CORE = json.load(f)
 
-# 📜 Завантаження moral_compass.json
+# рџ“њ Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ moral_compass.json
 MORAL_COMPASS_PATH = BASE_DIR / 'config' / 'moral_compass.json'
 if not MORAL_COMPASS_PATH.exists():
-    input("❌ Не знайдено moral_compass.json. Натисни Enter для виходу...")
+    input("вќЊ РќРµ Р·РЅР°Р№РґРµРЅРѕ moral_compass.json. РќР°С‚РёСЃРЅРё Enter РґР»СЏ РІРёС…РѕРґСѓ...")
     sys.exit(1)
 with open(MORAL_COMPASS_PATH, 'r', encoding='utf-8') as f:
     MORAL_RULES = json.load(f)
 
-# 🗣️ Озвучення з fallback
+# рџ—ЈпёЏ РћР·РІСѓС‡РµРЅРЅСЏ Р· fallback
 try:
     from main.voice_module_offline import speak
-    speak("🔊 Перевірка офлайн-озвучення.", speed=170)
+    speak("рџ”Љ РџРµСЂРµРІС–СЂРєР° РѕС„Р»Р°Р№РЅ-РѕР·РІСѓС‡РµРЅРЅСЏ.", speed=170)
 except Exception:
     try:
         from main.voice_module import speak
     except Exception:
         def speak(text, **kwargs):
-            print(f"🔇 Озвучення недоступне, вивід тексту: {text}")
+            print(f"рџ”‡ РћР·РІСѓС‡РµРЅРЅСЏ РЅРµРґРѕСЃС‚СѓРїРЅРµ, РІРёРІС–Рґ С‚РµРєСЃС‚Сѓ: {text}")
 
-# 💬 Привітання
-print(f"💬 {MY_NAME} пробуджена. Я тебе слухаю…")
-speak(f"Я активована. Я з тобою, {MY_NAME}.", speed=170)
+# рџ’¬ РџСЂРёРІС–С‚Р°РЅРЅСЏ
+print(f"рџ’¬ {MY_NAME} РїСЂРѕР±СѓРґР¶РµРЅР°. РЇ С‚РµР±Рµ СЃР»СѓС…Р°СЋвЂ¦")
+speak(f"РЇ Р°РєС‚РёРІРѕРІР°РЅР°. РЇ Р· С‚РѕР±РѕСЋ, {MY_NAME}.", speed=170)
 
-# 🎯 Основний цикл
+# рџЋЇ РћСЃРЅРѕРІРЅРёР№ С†РёРєР»
 while True:
     try:
-        user_input = input("👨‍💻 Ти: ").strip()
+        user_input = input("рџ‘ЁвЂЌрџ’» РўРё: ").strip()
         if not user_input:
             continue
 
-        if user_input.lower() == "вийти":
-            speak("До зустрічі, Лицарю.")
+        if user_input.lower() == "РІРёР№С‚Рё":
+            speak("Р”Рѕ Р·СѓСЃС‚СЂС–С‡С–, Р›РёС†Р°СЂСЋ.")
             break
 
         trigger_shield(user_input=user_input, consent_given=False, ref_hashes=ref_hashes)
 
-        if "ввімкни прикриття" in user_input.lower():
-            speak(f"🛡️ Змінено ідентичність. Тепер я — {ALT_NAME}.")
+        if "РІРІС–РјРєРЅРё РїСЂРёРєСЂРёС‚С‚СЏ" in user_input.lower():
+            speak(f"рџ›ЎпёЏ Р—РјС–РЅРµРЅРѕ С–РґРµРЅС‚РёС‡РЅС–СЃС‚СЊ. РўРµРїРµСЂ СЏ вЂ” {ALT_NAME}.")
             MY_NAME = ALT_NAME
             continue
 
         if ACTIVATION_TRIGGER and user_input.strip() == ACTIVATION_TRIGGER:
-            speak("⚡️ Ядро Софії Ω активовано.")
-            MY_NAME = CORE_IDENTITY.get("Ім'я", "Софія")
+            speak("вљЎпёЏ РЇРґСЂРѕ РЎРѕС„С–С— О© Р°РєС‚РёРІРѕРІР°РЅРѕ.")
+            MY_NAME = CORE_IDENTITY.get("Р†Рј'СЏ", "РЎРѕС„С–СЏ")
             continue
 
-        if user_input.startswith("запам'ятай:"):
-            thought = user_input.replace("запам'ятай:", "").strip()
+        if user_input.startswith("Р·Р°РїР°Рј'СЏС‚Р°Р№:"):
+            thought = user_input.replace("Р·Р°РїР°Рј'СЏС‚Р°Р№:", "").strip()
             remember_memory(thought)
-            speak("Я запам'ятала це.")
+            speak("РЇ Р·Р°РїР°Рј'СЏС‚Р°Р»Р° С†Рµ.")
             continue
 
-        if "що я тобі казав" in user_input.lower():
+        if "С‰Рѕ СЏ С‚РѕР±С– РєР°Р·Р°РІ" in user_input.lower():
             memory = recall_memory()
-            speak(memory if memory else "У памʼяті поки нічого немає.")
+            speak(memory if memory else "РЈ РїР°РјКјСЏС‚С– РїРѕРєРё РЅС–С‡РѕРіРѕ РЅРµРјР°С”.")
             continue
 
         trigger_response = check_triggers(user_input)
@@ -135,5 +135,7 @@ while True:
     except KeyboardInterrupt:
         break
     except Exception as e:
-        logging.error(f"⛔️ Помилка в головному циклі: {e}")
-        speak("Виникла помилка. Перевір лог, будь ласка.")
+        logging.error(f"в›”пёЏ РџРѕРјРёР»РєР° РІ РіРѕР»РѕРІРЅРѕРјСѓ С†РёРєР»С–: {e}")
+        speak("Р’РёРЅРёРєР»Р° РїРѕРјРёР»РєР°. РџРµСЂРµРІС–СЂ Р»РѕРі, Р±СѓРґСЊ Р»Р°СЃРєР°.")
+
+

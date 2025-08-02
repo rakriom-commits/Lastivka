@@ -1,12 +1,12 @@
-import json
+﻿import json
 import re
 import os
 
-# Шляхи до словників
+# РЁР»СЏС…Рё РґРѕ СЃР»РѕРІРЅРёРєС–РІ
 STRESS_DICT_PATH = os.path.join("config", "stress_dict.json")
 UNKNOWN_LOG_PATH = os.path.join("config", "unknown_stress_words.log")
 
-# Завантаження словника наголосів
+# Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ СЃР»РѕРІРЅРёРєР° РЅР°РіРѕР»РѕСЃС–РІ
 def load_stress_dict():
     try:
         with open(STRESS_DICT_PATH, "r", encoding="utf-8") as file:
@@ -14,14 +14,14 @@ def load_stress_dict():
     except FileNotFoundError:
         return {}
 
-# Завантаження вже залогованих слів
+# Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РІР¶Рµ Р·Р°Р»РѕРіРѕРІР°РЅРёС… СЃР»С–РІ
 def load_logged_unknowns():
     if not os.path.exists(UNKNOWN_LOG_PATH):
         return set()
     with open(UNKNOWN_LOG_PATH, "r", encoding="utf-8") as file:
         return set(word.strip().lower() for word in file if word.strip())
 
-# Логування нових невідомих слів
+# Р›РѕРіСѓРІР°РЅРЅСЏ РЅРѕРІРёС… РЅРµРІС–РґРѕРјРёС… СЃР»С–РІ
 def log_unknown_word(word):
     logged = load_logged_unknowns()
     word_lower = word.lower()
@@ -29,7 +29,7 @@ def log_unknown_word(word):
         with open(UNKNOWN_LOG_PATH, "a", encoding="utf-8") as file:
             file.write(word_lower + "\n")
 
-# Основна функція
+# РћСЃРЅРѕРІРЅР° С„СѓРЅРєС†С–СЏ
 def apply_stress_marks(text):
     stress_dict = load_stress_dict()
     logged = load_logged_unknowns()
@@ -43,8 +43,9 @@ def apply_stress_marks(text):
         else:
             if lower_word not in logged:
                 log_unknown_word(lower_word)
-            return word  # залишаємо слово без змін
+            return word  # Р·Р°Р»РёС€Р°С”РјРѕ СЃР»РѕРІРѕ Р±РµР· Р·РјС–РЅ
 
-    # Знаходимо всі слова
+    # Р—РЅР°С…РѕРґРёРјРѕ РІСЃС– СЃР»РѕРІР°
     pattern = r'\b\w+\b'
     return re.sub(pattern, replace_match, text)
+
