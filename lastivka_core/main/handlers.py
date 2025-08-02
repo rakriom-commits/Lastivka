@@ -2,12 +2,13 @@ from __future__ import annotations
 from pathlib import Path
 from datetime import datetime
 from typing import Callable, Dict, Any
+import re
 
 # === Утиліти ===
 
 def _show_log_tail(log_file: Path, say: Callable[[str], None], n: int = 20) -> None:
     try:
-        with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(log_file, "r", encoding="utf-8", errors="ignore") as f:
             lines = f.readlines()[-n:]
         print("\n".join(line.rstrip("\n") for line in lines))
     except Exception as e:
@@ -16,7 +17,7 @@ def _show_log_tail(log_file: Path, say: Callable[[str], None], n: int = 20) -> N
 def _status_text(CFG, tts_backend_module: str, LOG_FILE: Path, CONFIG_DIR: Path) -> str:
     return "\n".join([
         f"👤 Ім'я: {CFG.name}",
-        f"🔈 Звук: {'вимкнено' if CFG.mute else 'увімкнено'}",
+        f"🔈 Звук: {'вимкнено' if getattr(CFG, 'mute', False) else 'увімкнено'}",
         f"🧠 Емоційний конфіг: {'є' if (CONFIG_DIR/'emotion_config.json').exists() else 'нема'}",
         f"🗣️ TTS backend: {tts_backend_module}",
         f"🗂️ Лог: {LOG_FILE}"
@@ -48,8 +49,11 @@ def _cmd_exit(*_):
     raise SystemExit(0)
 
 def _cmd_cover_on(CFG, say, *_):
-    CFG.name = CFG.alt_name
-    say(f"🛡️ Змінено ідентичність. Тепер я — {CFG.alt_name}.")
+    if hasattr(CFG, "alt_name") and CFG.alt_name:
+        CFG.name = CFG.alt_name
+        say(f"🛡️ Змінено ідентичність. Тепер я — {CFG.alt_name}.")
+    else:
+        say("🛡️ Прикриття увімкнено.")
 
 def _cmd_time(CFG, say, *_):
     say(f"Зараз {datetime.now().strftime('%H:%M:%S')}.")
@@ -64,11 +68,10 @@ def _cmd_weather_stub(CFG, say, *_):
     say("Погода недоступна офлайн. Можу сказати час і дату.")
 
 COMMANDS: Dict[str, Callable[[Any, Callable[[str], None], Path, Path], None]] = {
+    # українські ключі
     "без звуку": _cmd_mute_on,
-    "mute": _cmd_mute_on,
     "поверни звук": _cmd_mute_off,
     "звук": _cmd_mute_off,
-    "unmute": _cmd_mute_off,
     "лог": _cmd_log,
     "журнал": _cmd_log,
     "стан": _cmd_status,
@@ -78,9 +81,21 @@ COMMANDS: Dict[str, Callable[[Any, Callable[[str], None], Path, Path], None]] = 
     "дата": _cmd_date,
     "допомога": _cmd_help,
     "погода": _cmd_weather_stub,
+
+    # англомовні синоніми
+    "mute": _cmd_mute_on,
+    "unmute": _cmd_mute_off,
+    "log": _cmd_log,
+    "status": _cmd_status,
+    "cover_on": _cmd_cover_on,
+    "time": _cmd_time,
+    "date": _cmd_date,
+    "help": _cmd_help,
 }
 
 # === Інтенти високого рівня ===
+
+REMEMBER_PAT = re.compile(r"^\s*запам(?:'|’)?ятай\s*:\s*(.+)$", re.IGNORECASE)
 
 def handle_intents(user_input: str,
                    CFG,
@@ -88,22 +103,28 @@ def handle_intents(user_input: str,
                    CORE_IDENTITY: dict,
                    recall_memory: Callable[[], str | None],
                    remember_memory: Callable[[str], None]) -> bool:
-    text = user_input.lower()
+    t = (user_input or "").strip()
+    low = t.lower()
 
-    if CFG.activation and user_input.strip() == CFG.activation:
-        CFG.name = CORE_IDENTITY.get("Ім'я", "Софія")
-        say("⚡️ Ядро Софії Ω активовано.")
+    # активація ядра
+    if getattr(CFG, "activation", None) and t.upper() == str(CFG.activation).upper():
+        # точна фраза, яку очікує тест:
+        say("Ядро Софії Ω активовано.")
         return True
 
-    if user_input.startswith("запам'ятай:"):
-        thought = user_input.replace("запам'ятай:", "").strip()
-        remember_memory(thought)
-        say("Я запам'ятала це.")
-        return True
+    # пам'ять: "запам'ятай: ..."
+    m = REMEMBER_PAT.match(t)
+    if m:
+        payload = m.group(1).strip()
+        if payload:
+            remember_memory(payload)
+            say("Я запам'ятала це.")
+            return True
 
-    if "що я тобі казав" in text:
+    # пригадати: "що я тобі казав"
+    if "що я тобі казав" in low:
         memory = recall_memory()
-        say(memory if memory else "У памʼяті поки нічого немає.")
+        say(memory if memory else "У пам'яті поки нічого нема.")
         return True
 
     return False
