@@ -1,0 +1,17 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-000000000004",
+    "ts":  "2025-09-06T19:16:14+03:00",
+    "sender":  "sofia",
+    "kind":  "report",
+    "focus":  "verify.integrity",
+    "limits":  {
+                   "max_runtime_s":  45,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "notes":  "повторна перевірка після створення директорій",
+    "sha256":  "b36b57bbaf6f9f1fbea3df304108533a0248e63249e1b39eed181f53771b8dc8"
+}

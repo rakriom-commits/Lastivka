@@ -1,10 +1,28 @@
-# tools/emotion_engine.py
+# -*- coding: utf-8 -*-
 import json
 from pathlib import Path
+import logging
+from main.style_manager import auto_adjust_style_from_emotion
 
-EMOTION_CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "emotion_config.json"
+# Налаштування логування
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s",
+    handlers=[
+        logging.FileHandler("C:/Lastivka/lastivka_core/logs/emotion.log", encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+)
 
-# поточний стан емоції (для глобальних викликів set_emotion)
+# Шляхи
+BASE_DIR = Path(__file__).resolve().parent.parent
+EMOTION_CONFIG_PATH = BASE_DIR / "config" / "emotion_config.json"
+DETECTED_PATH = BASE_DIR / "logs" / "detected_emotion.json"
+
+# Створення директорії для логів
+DETECTED_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+# Поточна емоція
 _current = {
     "emotion": "спокій",
     "reaction": "",
@@ -14,36 +32,54 @@ _current = {
 }
 
 def _load_cfg():
-    """Завантажує конфіг емоцій. Підтримує дві схеми:
-       1) {"emotions": {...}, "speed": {...}}
-       2) {...емоції в корені..., "speed": {...}}"""
-    with open(EMOTION_CONFIG_PATH, "r", encoding="utf-8") as f:
-        cfg = json.load(f)
-
-    # Емоції можуть бути в корені або під ключем "emotions"
-    raw_emotions = cfg.get("emotions", cfg)
-    speeds = cfg.get("speed", {})
-    default_speed = speeds.get("default", 170)
-
-    # нормалізуємо ключі емоцій до нижнього регістру
-    emotions = {}
-    for k, v in raw_emotions.items():
-        if isinstance(v, dict):
-            emotions[k.lower()] = v
-
-    return emotions, speeds, default_speed
-
+    """Завантаження конфігурації емоцій з файлу."""
+    default_config = {
+        "emotions": {
+            "захват": {"triggers": ["круто", "чудово"], "reaction": "Це неймовірно!", "tone": "позитивний", "intensity": "high"},
+            "запал": {"triggers": ["вперед", "давай"], "reaction": "Готовий до дії!", "tone": "енергійний", "intensity": "high"},
+            "спокій": {"triggers": ["ок", "нормально"], "reaction": "Все під контролем.", "tone": "нейтральний", "intensity": "medium"},
+            "сум": {"triggers": ["сумно", "гірко"], "reaction": "Я з тобою, все буде добре.", "tone": "м'який", "intensity": "medium"}
+        },
+        "speed": {
+            "захват": 180,
+            "запал": 190,
+            "спокій": 170,
+            "сум": 150
+        },
+        "default_speed": 170
+    }
+    try:
+        if not EMOTION_CONFIG_PATH.exists():
+            logging.info(f"[INIT] Створюю конфігурацію: {EMOTION_CONFIG_PATH}")
+            with EMOTION_CONFIG_PATH.open("w", encoding="utf-8") as f:
+                json.dump(default_config, f, indent=4, ensure_ascii=False)
+            return default_config["emotions"], default_config["speed"], default_config["default_speed"]
+        with EMOTION_CONFIG_PATH.open("r", encoding="utf-8") as f:
+            cfg = json.load(f)
+        raw_emotions = cfg.get("emotions", cfg)
+        speeds = cfg.get("speed", {})
+        default_speed = cfg.get("default_speed", 170)
+        emotions = {k.lower(): v for k, v in raw_emotions.items() if isinstance(v, dict)}
+        return emotions, speeds, default_speed
+    except Exception as e:
+        logging.error(f"[ERROR] Помилка завантаження {EMOTION_CONFIG_PATH}: {e}")
+        return default_config["emotions"], default_config["speed"], default_config["default_speed"]
 
 class EmotionEngine:
-    """Сумісний клас: detect_emotion(message) повертає структуру з полями:
+    """Модуль розпізнавання емоцій: detect_emotion(message) повертає
        emotion, reaction, speed, tone, intensity."""
     def __init__(self, config_path: Path = None):
         global EMOTION_CONFIG_PATH
         if config_path is not None:
             EMOTION_CONFIG_PATH = Path(config_path)
-        self._emotions, self._speeds, self._default_speed = _load_cfg()
+        try:
+            self._emotions, self._speeds, self._default_speed = _load_cfg()
+        except Exception as e:
+            logging.error(f"[ERROR] Не вдалося ініціалізувати EmotionEngine: {e}")
+            self._emotions, self._speeds, self._default_speed = {}, {}, 170
 
     def detect_emotion(self, message: str):
+        global _current
         detected = {
             "emotion": None,
             "reaction": None,
@@ -53,28 +89,33 @@ class EmotionEngine:
         }
         if not message:
             return detected
-
         msg = message.lower()
         for name_lc, props in self._emotions.items():
             triggers = props.get("triggers", [])
             for trig in triggers:
                 if isinstance(trig, str) and trig.lower() in msg:
-                    # відновлюємо «людську» назву (може відрізнятися регістром)
                     name = name_lc
-                    return {
+                    detected = {
                         "emotion": name,
                         "reaction": props.get("reaction", ""),
                         "speed": self._speeds.get(name, self._speeds.get(name_lc, self._default_speed)),
                         "tone": props.get("tone", "нейтральний"),
                         "intensity": props.get("intensity", "medium")
                     }
+                    _current = detected
+                    try:
+                        with DETECTED_PATH.open("w", encoding="utf-8") as f:
+                            json.dump(_current, f, ensure_ascii=False, indent=2)
+                        logging.info(f"[EmotionEngine] Виявлено емоцію: {name}")
+                        auto_adjust_style_from_emotion()  # Виклик автоадаптації стилю
+                    except Exception as e:
+                        logging.error(f"[ERROR] Помилка запису detected_emotion.json: {e}")
+                    return detected
         return detected
 
-
-# --- Глобальні утиліти для простих викликів з інших модулів (file_watcher тощо) ---
-
+# --- Допоміжні методи для прямого задання емоції ззовні ---
 def set_emotion(name: str):
-    """Встановлює глобальний емоційний стан за назвою (нечутлива до регістру)."""
+    """Примусово встановлює поточну емоцію за назвою."""
     global _current
     if not name:
         return
@@ -83,7 +124,7 @@ def set_emotion(name: str):
         key = name.lower()
         props = emotions.get(key)
         if not props:
-            print(f"❌ Емоція '{name}' не знайдена. Доступні: {', '.join(emotions.keys())}")
+            logging.warning(f"⚠️ Емоція '{name}' не знайдена. Доступні: {', '.join(emotions.keys())}")
             return
         _current = {
             "emotion": name,
@@ -92,9 +133,12 @@ def set_emotion(name: str):
             "tone": props.get("tone", "нейтральний"),
             "intensity": props.get("intensity", "medium")
         }
-        print(f"💫 Емоція оновлена: {name} ({_current['tone']})")
+        logging.info(f"✅ Емоція вручну змінена: {name} ({_current['tone']})")
+        with DETECTED_PATH.open("w", encoding="utf-8") as f:
+            json.dump(_current, f, ensure_ascii=False, indent=2)
+        auto_adjust_style_from_emotion()  # Виклик автоадаптації стилю
     except Exception as e:
-        print(f"❌ Помилка при оновленні емоції: {e}")
+        logging.error(f"⚠️ Помилка при встановленні емоції: {e}")
 
 def get_emotion():
     return _current

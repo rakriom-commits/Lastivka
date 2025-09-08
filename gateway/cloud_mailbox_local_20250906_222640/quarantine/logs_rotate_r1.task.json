@@ -1,0 +1,17 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-000000000008",
+    "ts":  "2025-09-06T20:40:14+03:00",
+    "sender":  "sofia",
+    "kind":  "maintenance",
+    "focus":  "logs.rotate",
+    "limits":  {
+                   "max_runtime_s":  20,
+                   "mode":  "safe",
+                   "writes":  "guarded"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "notes":  "R1 self-test: logs.rotate (dry-run unless ALLOW_APPLY.flag exists)",
+    "sha256":  "6c103f8605c7d3d652cf311f1c3916a8f31585955d6e11f6589b6efdde2ad715"
+}

@@ -1,0 +1,23 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-00000000A1B2",
+    "ts":  "2025-09-06T22:33:42+03:00",
+    "sender":  "sofia",
+    "kind":  "verify",
+    "focus":  "verify.integrity",
+    "limits":  {
+                   "max_runtime_s":  30,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "params":  {
+                   "paths":  [
+                                 "C:\\Lastivka\\memory",
+                                 "C:\\Lastivka\\logs"
+                             ]
+               },
+    "notes":  "MVP cloud test",
+    "sha256":  "b603998b4d679df9ff641dbbf7de09e642c65570e7123945496fe7abca89b5a2"
+}

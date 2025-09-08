@@ -1,18 +1,18 @@
-﻿# === LASTIVKA О©: РјРѕРґСѓР»СЊ РѕС†С–РЅРєРё РјРѕРІР»РµРЅРЅСЏ С‚Р° РІРёРјРѕРІРё ===
+# === LASTIVKA Ω: Збір відгуків щодо вимови та природності мовлення ===
 
 import json
 from datetime import datetime
 from pathlib import Path
 
-# в–‘в–‘в–‘ РЁР›РЇРҐР в–‘в–‘в–‘
+# === Шляхи до логів і памʼяті ===
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_DIR = BASE_DIR / "logs"
 CONFIG_DIR = BASE_DIR / "config"
 
 PRON_ERROR_LOG = LOG_DIR / "pronunciation_errors.json"
-MEMORY_STORE = CONFIG_DIR / "memory_store.json"
+MEMORY_STORE = LOG_DIR / "memory_store.json"
 
-# в–‘в–‘в–‘ 1. Р—Р°РїРёСЃ РїРѕРјРёР»РєРё РІРёРјРѕРІРё в–‘в–‘в–‘
+# === 1. Логування помилок вимови ===
 def log_pron_error(incorrect: str, correct: str, source_phrase: str = ""):
     entry = {
         "timestamp": datetime.now().isoformat(),
@@ -32,15 +32,15 @@ def log_pron_error(incorrect: str, correct: str, source_phrase: str = ""):
     with open(PRON_ERROR_LOG, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# в–‘в–‘в–‘ 2. РћС†С–РЅРєР° РјРѕРІР»РµРЅРЅСЏ в–‘в–‘в–‘
+# === 2. Оцінка природності мови та запис у памʼять ===
 def evaluate_speech(naturalness: int) -> str:
     feedback = {
-        3: "Р§СѓРґРѕРІРѕ! РњРѕРІР»РµРЅРЅСЏ Р·РІСѓС‡Р°Р»Рѕ РїСЂРёСЂРѕРґРЅРѕ С– РїСЂРёС”РјРЅРѕ.",
-        2: "Р—РІСѓС‡Р°Р»Рѕ РЅРµРїРѕРіР°РЅРѕ, Р°Р»Рµ С‚СЂРѕС…Рё РЅРµРїСЂРёСЂРѕРґРЅРѕ.",
-        1: "РџРѕРіР°РЅРёР№ РЅР°РіРѕР»РѕСЃ Р°Р±Рѕ С–РЅС‚РѕРЅР°С†С–СЏ. РџРѕС‚СЂРµР±СѓС” РїРѕРєСЂР°С‰РµРЅРЅСЏ."
+        3: "Чудово! Вимова звучить природно, чітко і зрозуміло.",
+        2: "Досить добре, але є незначні проблеми з інтонацією або паузами.",
+        1: "Мова звучить неприродно. Варто попрацювати над темпом, наголосами та емоцією."
     }
 
-    result = feedback.get(naturalness, "РћС†С–РЅРєР° РЅРµ СЂРѕР·РїС–Р·РЅР°РЅР°")
+    result = feedback.get(naturalness, "Не вдалося оцінити мовлення.")
 
     log = {
         "timestamp": datetime.now().isoformat(),
@@ -62,8 +62,7 @@ def evaluate_speech(naturalness: int) -> str:
 
     return result
 
-# в–‘в–‘в–‘ РџСЂРёРєР»Р°Рґ РІРёРєРѕСЂРёСЃС‚Р°РЅРЅСЏ в–‘в–‘в–‘
+# === Приклад запуску модуля напряму ===
 if __name__ == "__main__":
-    log_pron_error("Р·РђСЂР°Р·", "Р·Р°СЂР°Р·", "РўРё Р·РђСЂР°Р· РєСѓРґРё?")
+    log_pron_error("лєґенда", "легенда", "А ти знаєш, що таке лєґенда?")
     print(evaluate_speech(2))
-

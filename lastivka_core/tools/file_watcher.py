@@ -1,6 +1,8 @@
+# tools/file_watcher.py
+
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parent.parent))  # Додаємо lastivka_core
+sys.path.append(str(Path(__file__).resolve().parent.parent))  # Додаємо lastivka_core до системного шляху
 
 import time
 import hashlib
@@ -14,12 +16,12 @@ WATCHED_FILES = [
     Path("config/core_identity.json"),
     Path("config/moral_compass.json"),
     Path("config/emotion_config.json"),
-    Path("config/memory_store.json"),
+    Path("logs/memory_store.json"),
     Path("main/lastivka.py")
 ]
 
 HASH_LOG = {}
-CHECK_INTERVAL = 15  # сек
+CHECK_INTERVAL = 15  # інтервал перевірки у секундах
 
 def compute_file_hash(file_path):
     try:
@@ -37,34 +39,34 @@ def backup_file(file):
     backup_path = file.parent / f"{file.stem}_backup_{timestamp}{file.suffix}"
     try:
         shutil.copy(file, backup_path)
-        print(f"📦 Створено резервну копію: {backup_path.name}")
+        print(f"[✔] Файл резервного копіювання створено: {backup_path.name}")
     except Exception as e:
-        print(f"❌ Помилка створення копії: {e}")
+        print(f"[❌] Помилка при створенні резервної копії: {e}")
 
 def handle_change(file):
-    print(f"🔔 Файл {file.name} змінено. Запускаю реакцію Ластівки.")
+    print(f"[⚠] Зміна виявлена у файлі {file.name}. Створюємо резервну копію...")
     if file.name == "memory_store.json":
-        set_emotion("страх")
-        speak("⚠️ Попередження. Зовнішня зміна памʼяті виявлена. Я в безпеці?")
-    else:
         set_emotion("подив")
-        speak(f"Зміна виявлена у файлі {file.name}. Можливо, це було оновлення.")
+        speak("Увага. Було змінено памʼять. Чи слід проаналізувати?")
+    else:
+        set_emotion("тривога")
+        speak(f"Було змінено файл {file.name}. Будь ласка, перевір справність.")
 
 def monitor_files(on_change_callback=handle_change):
     init_hash_log()
-    print("👁️ FileWatcher активний...")
+    print("[🔍] FileWatcher запущено. Стежимо за конфігураціями...")
     while True:
         for file in WATCHED_FILES:
             new_hash = compute_file_hash(file)
             if not new_hash:
                 continue
             if new_hash != HASH_LOG.get(file):
-                print(f"⚠️ Виявлено зміну у файлі: {file.name}")
+                print(f"[🌀] Виявлено зміну у файлі: {file.name}")
                 HASH_LOG[file] = new_hash
                 backup_file(file)
                 on_change_callback(file)
         time.sleep(CHECK_INTERVAL)
 
-# ✅ Самозапуск для відлагодження
+# Самостійний запуск
 if __name__ == "__main__":
     monitor_files()

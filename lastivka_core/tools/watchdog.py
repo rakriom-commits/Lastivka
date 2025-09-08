@@ -1,4 +1,5 @@
-# watchdog.py
+# lastivka_core/tools/watchdog.py
+
 import os
 import time
 import json
@@ -6,14 +7,14 @@ import hashlib
 from pathlib import Path
 
 LOG_PATH = Path("logs/.incidents.log")
-BACKUP_PATH = Path("logs/.core_backup.json")  # тимчасово, якщо треба
+BACKUP_PATH = Path("logs/.core_backup.json")  # 🛡️ Резервна копія ядра
 
-# 💾 Запис логів
+# 🔒 Логування події безпеки
 def log_shield_event(message: str):
     with open(LOG_PATH, "a", encoding="utf-8") as log:
         log.write(f"[!] {time.ctime()} — {message}\n")
 
-# 📦 Резервне копіювання конфігів
+# 💾 Створення резервної копії критичних файлів ядра
 def backup_core():
     backup = {}
     critical_files = [
@@ -26,21 +27,21 @@ def backup_core():
         try:
             with open(path, "r", encoding="utf-8") as f:
                 backup[path] = json.load(f)
-        except:
+        except Exception:
             backup[path] = "<ERROR>"
 
     with open(BACKUP_PATH, "w", encoding="utf-8") as f:
         json.dump(backup, f, indent=2, ensure_ascii=False)
 
-# 🔐 Обчислення хешу
+# 📌 Отримати SHA-256 хеш з файлу
 def get_hash(path: str):
     try:
         with open(path, "rb") as f:
             return hashlib.sha256(f.read()).hexdigest()
-    except:
+    except Exception:
         return None
 
-# ✅ Перевірка цілісності
+# ⚠️ Перевірка цілісності списку файлів
 def verify_core_integrity(reference_hashes: dict, file_list: list[str]):
     tampered_files = []
     for file_path in file_list:

@@ -1,0 +1,18 @@
+{
+  "tts_lang": "uk",
+  "tts_locale": "uk-UA",
+  "tts_voice": "Natalia",
+  "tts_language_lock": true,
+  "debug_tts": true,
+  "tts_antispam": false,
+
+  "console_echo": true,
+  "single_tk_root": false,
+
+  "oleg_secret": "secret_oleg",
+
+  "style_default": "strateg",
+  "safety_level": "normal",
+
+  "quarantine_mode": "auto"
+}

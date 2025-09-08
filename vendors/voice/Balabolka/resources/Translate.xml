@@ -1,0 +1,1761 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<translate description="Language Codes">
+	<api name="Google">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ny" id="643" locale="ny-MW" description="Chichewa"/>
+		<language code="zh-CN" id="2052" locale="zh-CN" description="Chinese"/>
+		<language code="co" id="1155" locale="co-FR" description="Corsican"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="tl" id="1124" locale="fil-PH" description="Filipino/Tagalog"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="fy" id="1122" locale="fy-NL" description="Frisian"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="haw" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="iw" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="ig" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jw" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="rw" id="1159" locale="rw-RW" description="Kinyarwanda"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ku" id="1170" locale="ku-IQ" description="Kurdish (Kurmanji)"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="la" id="1142" locale="la" description="Latin"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="lb" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="my" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="or" id="1096" locale="or-IN" description="Odia (Oriya)"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="gd" id="1169" locale="gd-GB" description="Scots Gaelic"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian"/>
+		<language code="st" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho"/>
+		<language code="sd" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="ug" id="1152" locale="ug-CN" description="Uyghur"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="xh" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yi" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yo" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Microsoft">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="as" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani (Latin)"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="ba" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian (Latin)"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="yue" id="1166" locale="yue" description="Cantonese (Traditional)"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="lzh" id="640" locale="lzh" description="Chinese (Literary)"/>
+		<language code="zh-Hans" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-Hant" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="prs" id="1164" locale="prs-AF" description="Dari (Afghanistan)"/>
+		<language code="dv" id="1125" locale="dv-MV" description="Divehi (Maldives)"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fo" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fj" id="660" locale="fj-FJ" description="Fijian"/>
+		<language code="fil" id="1124" locale="fil-PH" description="Filipino"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="fr-CA" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="mww" id="668" locale="hmn-CN" description="Hmong Daw (Latin)"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ikt" id="" locale="ikt-CA" description="Inuinnaqtun"/>
+		<language code="iu" id="1117" locale="iu-Cans-CA" description="Inuktitut (Syllabics, Canada)"/>
+		<language code="iu-Latn" id="2141" locale="iu-Latn-CA" description="Inuktitut (Latin, Canada)"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ku" id="1170" locale="ku-IQ" description="Kurdish (Arabic, Central)"/>
+		<language code="kmr" id="661" locale="kmr" description="Kurdish (Latin, Northern)"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz (Cyrillic)"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay (Latin)"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn-Cyrl" id="1104" locale="mn-MN" description="Mongolian (Cyrillic)"/>
+		<language code="mn-Mong" id="3152" locale="mn-Mong-MN" description="Mongolian (Traditional)"/>
+		<language code="my" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="nb" id="1044" locale="nb-NO" description="Norwegian Bokmol"/>
+		<language code="or" id="1096" locale="or-IN" description="Odia (India)"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt-pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="otq" id="" locale="otq-MX" description="Queretaro Otomi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sm" id="662" locale="sm-WS" description="Samoan (Latin)"/>
+		<language code="sr-Cyrl" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="sr-Latn" id="9242" locale="sr-Latn" description="Serbian (Latin)"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali (Arabic)"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="ty" id="" locale="ty-PF" description="Tahitian"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar (Latin)"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="bo" id="1105" locale="bo-CN" description="Tibetan"/>
+		<language code="ti" id="1139" locale="ti-ET" description="Tigrinya"/>
+		<language code="to" id="" locale="to-TO" description="Tongan"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen (Latin)"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="hsb" id="1070" locale="hsb-DE" description="Upper Sorbian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="ug" id="1152" locale="ug-CN" description="Uyghur (Arabic)"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek (Latin)"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="yua" id="" locale="yua-MX" description="Yucatec Maya"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Naver">
+		<language code="zh-CN" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-TW" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+	</api>
+	<api name="Prompt">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="zhcn" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cv" id="642" locale="cv-RU" description="Chuvash"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek"/>
+	</api>
+	<api name="Reverso">
+		<language code="ara" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="chi" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cze" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="dan" id="1030" locale="da-DK" description="Danish"/>
+		<language code="dut" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="eng" id="1033" locale="en-US" description="English"/>
+		<language code="fra" id="1036" locale="fr-FR" description="French"/>
+		<language code="ger" id="1031" locale="de-DE" description="German"/>
+		<language code="gre" id="1032" locale="el-GR" description="Greek"/>
+		<language code="heb" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hin" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hun" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="ita" id="1040" locale="it-IT" description="Italian"/>
+		<language code="jpn" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="kor" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="per" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pol" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="por" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="rum" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="rus" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="slo" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="spa" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="swe" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tha" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tur" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="ukr" id="1058" locale="uk-UA" description="Ukrainian"/>
+	</api>
+	<api name="Sogou">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="zh-CHS" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+	</api>
+	<api name="Iciba">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="ba" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="br" id="1150" locale="br-FR" description="Breton"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="yue" id="1166" locale="yue" description="Cantonese (Traditional)"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="chr" id="1116" locale="chr-US" description="Cherokee"/>
+		<language code="ny" id="643" locale="ny-MW" description="Chichewa"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cht" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cv" id="642" locale="cv-RU" description="Chuvash"/>
+		<language code="co" id="1155" locale="co-FR" description="Corsican"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="dv" id="1125" locale="dv-MV" description="Divehi"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="dz" id="3153" locale="dz-BT" description="Dzongkha"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fo" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fil" id="1124" locale="fil-PH" description="Filipino"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="fy" id="1122" locale="fy-NL" description="Frisian"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="jy" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="haw" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ig" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jv" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="rw" id="1159" locale="rw-RW" description="Kinyarwanda"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ku" id="1170" locale="ku-IQ" description="Kurdish (Kurmanji)"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="la" id="1142" locale="la" description="Latin"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="lb" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="me" id="11290" locale="cnr-ME" description="Montenegrin (Latin)"/>
+		<language code="my" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian Bokmol"/>
+		<language code="quw" id="3179" locale="qu-PE" description="Quechua (Peru)"/>
+		<language code="quc" id="1158" locale="quc-GT" description="Kʼicheʼ"/>
+		<language code="or" id="1096" locale="or-IN" description="Odia"/>
+		<language code="om" id="1138" locale="om-ET" description="Oromo"/>
+		<language code="pap" id="1145" locale="pap" description="Papiamento"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="rmn" id="1047" locale="rm-CH" description="Romansh"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="gd" id="1169" locale="gd-GB" description="Scots Gaelic"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian"/>
+		<language code="st" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho"/>
+		<language code="sd" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="syc" id="1114" locale="syr-SY" description="Syriac"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="ti" id="1105" locale="bo-CN" description="Tibetan"/>
+		<language code="ts" id="1073" locale="ts-ZA" description="Tsonga"/>
+		<language code="tn" id="1074" locale="tn-ZA" description="Tswana"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="udm" id="644" locale="udm-RU" description="Udmurt"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="uy" id="1152" locale="ug-CN" description="Uyghur"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek"/>
+		<language code="ve" id="1075" locale="ve-ZA" description="Venda"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="wol" id="1160" locale="wo-SN" description="Wolof"/>
+		<language code="xh" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yi" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yo" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Yandex">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="ba" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="my" id="1109" locale="my-MM" description="Burmese"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ceb" id="671" locale="ceb-PH" description="Cebuano"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese"/>
+		<language code="cv" id="642" locale="cv-RU" description="Chuvash"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jv" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh (Cyrillic)"/>
+		<language code="kazlat" id="" locale="kk-Latn-KZ" description="Kazakh (Latin)"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="la" id="1142" locale="la" description="Latin"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="lb" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mhr" id="669" locale="chm-RU" description="Mari (Russia)"/>
+		<language code="mrj" id="" locale="mrj-RU" description="Hill Mari (Russia)"/>
+		<language code="mn" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="os" id="" locale="os-RU" description="Ossetian"/>
+		<language code="pap" id="1145" locale="pap" description="Papiamento"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt-BR" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sah" id="1157" locale="sah-RU" description="Sakha (Russia)"/>
+		<language code="gd" id="1169" locale="gd-GB" description="Scots Gaelic"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="sr-Latn" id="9242" locale="sr-Latn" description="Serbian (Latin)"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhalese"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="su" id="651" locale="su-ID" description="Sundanese"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tl" id="1124" locale="fil-PH" description="Tagalog"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="udm" id="644" locale="udm-RU" description="Udmurt"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek (Latin)"/>
+		<language code="uzbcyr" id="2115" locale="uz-Cyrl" description="Uzbek (Cyrillic)"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="xh" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yi" id="1085" locale="yi" description="Yiddish"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="iTranslate">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar-EG" id="3073" locale="ar-EG" description="Arabic (Egypt)"/>
+		<language code="ar-SA" id="1025" locale="ar-SA" description="Arabic (Saudi Arabia)"/>
+		<language code="ar-AE" id="14337" locale="ar-AE" description="Arabic (United Arab Emirates)"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="my" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ceb" id="671" locale="ceb-PH" description="Cebuano (Philippines)"/>
+		<language code="ny" id="643" locale="ny-MW" description="Chichewa (Chewa, Nyanja)"/>
+		<language code="zh-HK" id="1166" locale="yue" description="Chinese (Cantonese, traditional)"/>
+		<language code="zh-CN" id="2052" locale="zh-CN" description="Chinese (simplified)"/>
+		<language code="zh-TW" id="1028" locale="zh-TW" description="Chinese (traditional)"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en-AU" id="3081" locale="en-AU" description="English (Australia)"/>
+		<language code="en-UK" id="2057" locale="en-GB" description="English (United Kingdom)"/>
+		<language code="en-US" id="1033" locale="en-US" description="English (United States)"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="tl" id="1124" locale="fil-PH" description="Filipino/Tagalog"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr-CA" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="fr-FR" id="1036" locale="fr-FR" description="French (France)"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="iw" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hmn" id="668" locale="hmn-CN" description="Hmong (PRC)"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="ig" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jw" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="la" id="1142" locale="la" description="Latin"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt-BR" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt-PT" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian"/>
+		<language code="st" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali"/>
+		<language code="es-MX" id="2058" locale="es-MX" description="Spanish (Mexico)"/>
+		<language code="es-ES" id="1034" locale="es-ES" description="Spanish (Spain)"/>
+		<language code="es-US" id="21514" locale="es-US" description="Spanish (United States)"/>
+		<language code="su" id="651" locale="su-ID" description="Sundanese (Indonesia)"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="yi" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yo" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Lingvanex">
+		<language code="af_ZA" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq_AL" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am_ET" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar_EG" id="3073" locale="ar-EG" description="Arabic (Egypt)"/>
+		<language code="ar_SA" id="1025" locale="ar-SA" description="Arabic (Saudi Arabia)"/>
+		<language code="hy_AM" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="as_IN" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="az_AZ" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="eu_ES" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be_BY" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bn_BD" id="2117" locale="bn-BD" description="Bangla (Bangladesh)"/>
+		<language code="bs_BA" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bg_BG" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="ca_ES" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ceb_PH" id="671" locale="ceb-PH" description="Cebuano"/>
+		<language code="ny_MW" id="643" locale="ny-MW" description="Chichewa (Chewa, Nyanja)"/>
+		<language code="zh-Hans_CN" id="2052" locale="zh-CN" description="Chinese (simplified)"/>
+		<language code="zh-Hant_TW" id="1028" locale="zh-TW" description="Chinese (traditional)"/>
+		<language code="co_FR" id="1155" locale="co-FR" description="Corsican"/>
+		<language code="ht_HT" id="670" locale="ht-HT" description="Creole"/>
+		<language code="hr_HR" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs_CZ" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da_DK" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl_NL" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en_GB" id="1033" locale="en-US" description="English"/>
+		<language code="eo_WORLD" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et_EE" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fi_FI" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr_CA" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="fr_FR" id="1036" locale="fr-FR" description="French (France)"/>
+		<language code="fy_NL" id="1122" locale="fy-NL" description="Frisian"/>
+		<language code="gl_ES" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka_GE" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de_DE" id="1031" locale="de-DE" description="German"/>
+		<language code="el_GR" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu_IN" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ha_NE" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="haw_US" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="he_IL" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi_IN" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hmn_CN" id="668" locale="hmn-CN" description="Hmong"/>
+		<language code="hu_HU" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is_IS" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="ig_NG" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="id_ID" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ga_IE" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it_IT" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja_JP" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jv_ID" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kn_IN" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kk_KZ" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km_KH" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="rw_RW" id="1159" locale="rw-RW" description="Kinyarwanda"/>
+		<language code="ko_KR" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ku_IR" id="1170" locale="ku-IQ" description="Kurdish"/>
+		<language code="ky_KG" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lo_LA" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="la_VAT" id="1142" locale="la" description="Latin"/>
+		<language code="lv_LV" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt_LT" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="lb_LU" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mk_MK" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mg_MG" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="ms_MY" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="ml_IN" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt_MT" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi_NZ" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr_IN" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn_MN" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="my_MM" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ne_NP" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="no_NO" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="or_OR" id="1096" locale="or-IN" description="Odia"/>
+		<language code="ps_AF" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa_IR" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl_PL" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt_PT" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="pa_PK" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro_RO" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru_RU" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sm_WS" id="662" locale="sm-WS" description="Samoan"/>
+		<language code="gd_GB" id="1169" locale="gd-GB" description="Scottish"/>
+		<language code="sr-Cyrl_RS" id="10266" locale="sr-Cyrl" description="Serbian Cyrilic"/>
+		<language code="st_LS" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho"/>
+		<language code="sn_ZW" id="" locale="sn-ZW" description="Shona"/>
+		<language code="sd_PK" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="si_LK" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk_SK" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl_SI" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so_SO" id="1143" locale="so-SO" description="Somali"/>
+		<language code="es_ES" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="su_ID" id="651" locale="su-ID" description="Sundanese"/>
+		<language code="sw_TZ" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv_SE" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tl_PH" id="1124" locale="fil-PH" description="Tagalog"/>
+		<language code="tg_TJ" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta_IN" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt_TT" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="te_IN" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th_TH" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr_TR" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk_TM" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="uk_UA" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur_PK" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="ug_CN" id="1152" locale="ug-CN" description="Uyghur"/>
+		<language code="uz_UZ" id="1091" locale="uz-UZ" description="Uzbek"/>
+		<language code="vi_VN" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy_GB" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="xh_ZA" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yi_IL" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yo_NG" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="zu_ZA" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Alibaba">
+		<language code="ab" id="" locale="ab" description="Abkhazian"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="ak" id="" locale="ak-GH" description="Akan (Ghana)"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic (Saudi Arabia)"/>
+		<language code="an" id="" locale="an" description="Aragonese"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="as" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="ast" id="" locale="ast-ES" description="Asturian (Spain)"/>
+		<language code="nch" id="" locale="nch-MX" description="Central Huasteca Nahuatl"/>
+		<language code="ee" id="" locale="ee-GH" description="Ewe (Ghana)"/>
+		<language code="aym" id="" locale="ay-BO" description="Aymara (Bolivia)"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="oj" id="" locale="oj-CA" description="Ojibwe"/>
+		<language code="oc" id="1154" locale="oc-FR" description="Occitan (France)"/>
+		<language code="or" id="1096" locale="or-IN" description="Odia (Oriya)"/>
+		<language code="om" id="1138" locale="om-ET" description="Oromo (Ethiopia)"/>
+		<language code="os" id="" locale="os-RU" description="Ossetian"/>
+		<language code="tpi" id="" locale="tpi-PG" description="Tok Pisin (Papua New Guinea)"/>
+		<language code="ba" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="ber" id="2143" locale="tzm-DZ" description="Berber (Tamazight, Latin)"/>
+		<language code="bm" id="" locale="bm-ML" description="Bambara (Mali)"/>
+		<language code="pag" id="" locale="pag-PH" description="Pangasinan (Philippines)"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="se" id="1083" locale="se-NO" description="Northern Sami (Norway)"/>
+		<language code="bem" id="" locale="bem-ZM" description="Bemba (Zambia)"/>
+		<language code="byn" id="" locale="byn-ER" description="Bilen (Eritrea)"/>
+		<language code="bi" id="" locale="bi-VU" description="Bislama (Vanuatu)"/>
+		<language code="bal" id="" locale="bal-PK" description="Baluchi (Pakistan)"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="bho" id="" locale="bho-IN" description="Bhojpuri (India)"/>
+		<language code="br" id="1150" locale="br-FR" description="Breton"/>
+		<language code="ch" id="" locale="ch-GU" description="Chamorro (Mariana Islands)"/>
+		<language code="cbk" id="" locale="cbk-PH" description="Chavacano (Philippines)"/>
+		<language code="cv" id="642" locale="cv-RU" description="Chuvash (Russia)"/>
+		<language code="ts" id="1073" locale="ts-ZA" description="Tsonga"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar (Russia)"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="shn" id="" locale="shn-MM" description="Shan (Myanmar)"/>
+		<language code="tet" id="" locale="tet-TL" description="Tetum"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="nds" id="" locale="nds" description="Low German"/>
+		<language code="sco" id="1169" locale="gd-GB" description="Scottish Gaelic"/>
+		<language code="dv" id="1125" locale="dv-MV" description="Divehi, Dhivehi (Maldives)"/>
+		<language code="kdx" id="" locale="kmc-CN" description="Kam (PRC)"/>
+		<language code="dtp" id="" locale="dtp-MY" description="Kadazan Dusun (Malaysia)"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="fo" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="sa" id="1103" locale="sa-IN" description="Sanskrit"/>
+		<language code="fil" id="1124" locale="fil-PH" description="Filipino"/>
+		<language code="fj" id="660" locale="fj-FJ" description="Fijian"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fur" id="" locale="fur-IT" description="Friulian (Italy)"/>
+		<language code="fvr" id="" locale="fvr-SD" description="Fur (Sudan)"/>
+		<language code="kg" id="" locale="kg" description="Kongo"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer (Cambodia)"/>
+		<language code="ngu" id="" locale="ngu-MX" description="Guerrero Nahuatl"/>
+		<language code="kl" id="1135" locale="kl-GL" description="Kalaallisut (Greenland)"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="gos" id="" locale="gos-NL" description="Gronings (Netherlands)"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="gn" id="1140" locale="gn-PY" description="Guarani (Paraguay)"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="cnr" id="11290" locale="cnr-ME" description="Montenegrin (Latin)"/>
+		<language code="hup" id="" locale="hup-US" description="Hupa (United States)"/>
+		<language code="gil" id="" locale="gil-KI" description="Gilbertese (Kiribati)"/>
+		<language code="rn" id="" locale="rn-BI" description="Rundi (Burundi)"/>
+		<language code="quc" id="1158" locale="quc-GT" description="Kʼicheʼ (Guatemala)"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="kab" id="" locale="kab-DZ" description="Kabyle (Algeria)"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kr" id="1137" locale="kr-NG" description="Kanuri (Nigeria)"/>
+		<language code="csb" id="" locale="csb-PL" description="Kashubian (Poland)"/>
+		<language code="kha" id="" locale="kha-IN" description="Khasi (India)"/>
+		<language code="kw" id="" locale="kw-GB" description="Cornish (United Kingdom)"/>
+		<language code="xh" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="co" id="1155" locale="co-FR" description="Corsican (France)"/>
+		<language code="mus" id="" locale="mus-US" description="Creek, Muscogee"/>
+		<language code="crh" id="" locale="crh" description="Crimean Tatar"/>
+		<language code="hbs" id="" locale="hbs" description="Serbo-Croatian"/>
+		<language code="qu" id="3179" locale="qu-PE" description="Quechua (Peru)"/>
+		<language code="ks" id="1120" locale="ks-IN" description="Kashmiri"/>
+		<language code="ku" id="1170" locale="ku-IQ" description="Kurdish"/>
+		<language code="la" id="1142" locale="la" description="Latin"/>
+		<language code="ltg" id="" locale="ltg-LV" description="Latgalian (Latvia)"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="li" id="" locale="li" description="Limburgish"/>
+		<language code="ln" id="" locale="ln-CD" description="Lingala"/>
+		<language code="lg" id="" locale="lg-UG" description="Ganda, Luganda (Uganda)"/>
+		<language code="lb" id="1134" locale="lb-LU" description="Luxembourgish, Letzeburgesch (Luxembourg)"/>
+		<language code="rue" id="" locale="rue" description="Rusyn"/>
+		<language code="rw" id="1159" locale="rw-RW" description="Kinyarwanda (Rwanda)"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="rm" id="1047" locale="rm-CH" description="Romansh (Switzerland)"/>
+		<language code="rom" id="" locale="rom" description="Romany, Romani"/>
+		<language code="loj" id="" locale="jbo" description="Lojban"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="gv" id="" locale="gv-IM" description="Manx (Isle of Man)"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="chm" id="669" locale="chm-RU" description="Mari (Russia)"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mh" id="" locale="mh-MH" description="Marshallese (Marshall Islands)"/>
+		<language code="kek" id="" locale="kek-MX" description="Qʼeqchiʼ"/>
+		<language code="mai" id="" locale="mai-IN" description="Maithili (India)"/>
+		<language code="mfe" id="" locale="mfe-MU" description="Morisyen, Mauritian Creole (Mauritius)"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mn" id="1104" locale="mn-MN" description="Mongolian"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="my" id="1109" locale="my-MM" description="Burmese (Myanmar)"/>
+		<language code="hmn" id="668" locale="hmn-CN" description="Hmong (PRC)"/>
+		<language code="umb" id="" locale="umb-AO" description="Umbundu (Angola)"/>
+		<language code="nv" id="" locale="nv-US" description="Navajo"/>
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="niu" id="" locale="niu-NU" description="Niuean (Niue)"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian (Bokmal)"/>
+		<language code="pmn" id="" locale="pmn-CM" description="Pam (Cameroon)"/>
+		<language code="pap" id="1145" locale="pap" description="Papiamento"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi, Panjabi"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto, Pushto (Afghanistan)"/>
+		<language code="ny" id="643" locale="ny-MW" description="Chichewa (Chewa, Nyanja)"/>
+		<language code="tw" id="" locale="tw-GH" description="Twi (Ghana)"/>
+		<language code="chr" id="1116" locale="chr-US" description="Cherokee"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="sm" id="662" locale="sm-WS" description="Samoan (Latin)"/>
+		<language code="sg" id="" locale="sg-CF" description="Sango (Central African Republic)"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="hsb" id="1070" locale="hsb-DE" description="Upper Sorbian"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali (Somalia)"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ty" id="" locale="ty-PF" description="Tahitian"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="to" id="" locale="to-TO" description="Tongan (Tonga Islands)"/>
+		<language code="toi" id="" locale="toi-ZM" description="Tonga (Zambia)"/>
+		<language code="ti" id="1139" locale="ti-ET" description="Tigrinya"/>
+		<language code="tvl" id="" locale="tvl-TV" description="Tuvalu"/>
+		<language code="tyv" id="" locale="tyv-RU" description="Tuvan (Russia)"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="wa" id="" locale="wa-BE" description="Walloon (Belgium)"/>
+		<language code="war" id="" locale="war-PH" description="Waray (Philippines)"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="ve" id="1075" locale="ve-ZA" description="Venda"/>
+		<language code="vo" id="" locale="vo" description="Volapük"/>
+		<language code="wo" id="1160" locale="wo-SN" description="Wolof (Senegal)"/>
+		<language code="udm" id="644" locale="udm-RU" description="Udmurt (Russia)"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="ie" id="" locale="ie" description="Interlingue"/>
+		<language code="fy" id="1122" locale="fy-NL" description="West Frisian (Netherlands)"/>
+		<language code="szl" id="" locale="szl-PL" description="Silesian"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hil" id="" locale="hil-PH" description="Hiligaynon (Philippines)"/>
+		<language code="haw" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="lfn" id="" locale="lfn" description="Lingua Franca Nova"/>
+		<language code="sd" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="sn" id="" locale="sn-ZW" description="Shona (Zimbabwe)"/>
+		<language code="ceb" id="671" locale="ceb-PH" description="Cebuano (Philippines)"/>
+		<language code="syr" id="1114" locale="syr-SY" description="Syriac"/>
+		<language code="su" id="651" locale="su-ID" description="Sundanese (Indonesia)"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="ace" id="" locale="ace-ID" description="Achinese (Indonesia)"/>
+		<language code="iba" id="" locale="iba-BN" description="Iban"/>
+		<language code="ig" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="io" id="665" locale="io" description="Ido"/>
+		<language code="ilo" id="" locale="ilo-PH" description="Iloko, Ilocano (Philippines)"/>
+		<language code="iu" id="2141" locale="iu-Latn-CA" description="Inuktitut (Latin, Canada)"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="yi" id="1085" locale="yi" description="Yiddish"/>
+		<language code="ia" id="666" locale="ia" description="Interlingua"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="inh" id="664" locale="inh-RU" description="Ingush (Russia)"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="yo" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="zza" id="" locale="zza-TR" description="Zaza (Turkey)"/>
+		<language code="jv" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-tw" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="yue" id="1166" locale="yue" description="Chinese (Cantonese, Traditional)"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="LibreTranslate">
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="de" id="1031" locale="de-DE" description="German (Germany)"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="eo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="nb" id="1044" locale="nb-NO" description="Norwegian (Bokmal)"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tl" id="1124" locale="fil-PH" description="Tagalog"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zt" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+	</api>
+	<api name="Baidu">
+		<language code="ach" id="" locale="ace-ID" description="Achinese (Indonesia)"/>
+		<language code="afr" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="aka" id="" locale="ak-GH" description="Akan (Ghana)"/>
+		<language code="alb" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="amh" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ara" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="arq" id="5121" locale="ar-DZ" description="Arabic (Algeria)"/>
+		<language code="tua" id="7169" locale="ar-TN" description="Arabic (Tunisia)"/>
+		<language code="arg" id="" locale="an" description="Aragonese"/>
+		<language code="arm" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="asm" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="ast" id="" locale="ast-ES" description="Asturian (Spain)"/>
+		<language code="aym" id="" locale="ay-BO" description="Aymara (Bolivia)"/>
+		<language code="aze" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="bal" id="" locale="bal-PK" description="Baluchi (Pakistan)"/>
+		<language code="bak" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="baq" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="bel" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bem" id="" locale="bem-ZM" description="Bemba (Zambia)"/>
+		<language code="ben" id="1093" locale="bn-IN" description="Bengali"/>
+		<language code="ber" id="2143" locale="tzm-DZ" description="Berber (Tamazight, Latin)"/>
+		<language code="bho" id="" locale="bho-IN" description="Bhojpuri (India)"/>
+		<language code="bis" id="" locale="bi-VU" description="Bislama (Vanuatu)"/>
+		<language code="bli" id="" locale="byn-ER" description="Blin (Eritrea)"/>
+		<language code="bos" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bre" id="1150" locale="br-FR" description="Breton"/>
+		<language code="bul" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="bur" id="1109" locale="my-MM" description="Burmese (Myanmar)"/>
+		<language code="bui" id="672" locale="bua-RU" description="Buryat (Russia)"/>
+		<language code="cat" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ceb" id="671" locale="ceb-PH" description="Cebuano (Philippines)"/>
+		<language code="che" id="" locale="ce-RU" description="Chechen (Russia)"/>
+		<language code="chr" id="1116" locale="chr-US" description="Cherokee"/>
+		<language code="nya" id="643" locale="ny-MW" description="Chichewa (Malawi)"/>
+		<language code="yue" id="1166" locale="yue" description="Chinese (Cantonese, Traditional)"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cht" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="chv" id="642" locale="cv-RU" description="Chuvash"/>
+		<language code="wyw" id="640" locale="lzh" description="Classical Chinese"/>
+		<language code="cor" id="" locale="kw-GB" description="Cornish (United Kingdom)"/>
+		<language code="cos" id="1155" locale="co-FR" description="Corsican (France)"/>
+		<language code="cre" id="" locale="mus-US" description="Creek"/>
+		<language code="cri" id="" locale="crh" description="Crimean Tatar"/>
+		<language code="hrv" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="dan" id="1030" locale="da-DK" description="Danish"/>
+		<language code="div" id="1125" locale="dv-MV" description="Divehi (Maldives)"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="dzo" id="3153" locale="dz-BT" description="Dzongkha (Bhutan)"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="epo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="est" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fao" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fil" id="1124" locale="fil-PH" description="Filipino"/>
+		<language code="fin" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fra" id="1036" locale="fr-FR" description="French"/>
+		<language code="frn" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="fri" id="" locale="fur-IT" description="Friulian (Italy)"/>
+		<language code="ful" id="1127" locale="ff-NG" description="Fulah, Fulani (Nigeria)"/>
+		<language code="glg" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="geo" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gra" id="" locale="grc-GR" description="Greek (Ancient)"/>
+		<language code="grn" id="1140" locale="gn-PY" description="Guarani (Paraguay)"/>
+		<language code="guj" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="hak" id="" locale="cnh-MM" description="Hakha Chin (Myanmar)"/>
+		<language code="hau" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="haw" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="heb" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hil" id="" locale="hil-PH" description="Hiligaynon (Philippines)"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hmn" id="668" locale="hmn-CN" description="Hmong (China)"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="hup" id="" locale="hup-US" description="Hupa (United States)"/>
+		<language code="ice" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="ido" id="665" locale="io" description="Ido"/>
+		<language code="ibo" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ing" id="664" locale="inh-RU" description="Ingush"/>
+		<language code="ina" id="666" locale="ia" description="Interlingua"/>
+		<language code="iku" id="2141" locale="iu-Latn-CA" description="Inuktitut (Latin, Canada)"/>
+		<language code="gle" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="jp" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jav" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kab" id="" locale="kab-DZ" description="Kabyle (Algeria)"/>
+		<language code="kal" id="1135" locale="kl-GL" description="Kalaallisut (Greenland)"/>
+		<language code="kam" id="" locale="xal-RU" description="Kalmyk (Russia)"/>
+		<language code="kan" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="kau" id="1137" locale="kr-NG" description="Kanuri (Nigeria)"/>
+		<language code="kas" id="1120" locale="ks-IN" description="Kashmiri"/>
+		<language code="kah" id="" locale="csb-PL" description="Kashubian (Poland)"/>
+		<language code="hkm" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="kin" id="1159" locale="rw-RW" description="Kinyarwanda (Rwanda)"/>
+		<language code="kon" id="" locale="kg" description="Kongo"/>
+		<language code="kok" id="1111" locale="kok-IN" description="Konkani (India)"/>
+		<language code="kor" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="kur" id="1170" locale="ku-IQ" description="Kurdish"/>
+		<language code="kir" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lao" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="lag" id="" locale="ltg-LV" description="Latgalian"/>
+		<language code="lat" id="1142" locale="la" description="Latin"/>
+		<language code="lav" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lim" id="" locale="li" description="Limburgish"/>
+		<language code="lin" id="" locale="ln-CD" description="Lingala"/>
+		<language code="lit" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="loj" id="" locale="jbo" description="Lojban"/>
+		<language code="log" id="" locale="nds" description="Low German"/>
+		<language code="los" id="2094" locale="dsb-DE" description="Lower Sorbian"/>
+		<language code="lug" id="" locale="lg-UG" description="Luganda (Uganda)"/>
+		<language code="ltz" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mac" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mai" id="" locale="mai-IN" description="Maithili (India)"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="may" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="mal" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mlt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="glv" id="" locale="gv-IM" description="Manx (Isle of Man)"/>
+		<language code="mao" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mar" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mah" id="" locale="mh-MH" description="Marshallese (Marshall Islands)"/>
+		<language code="mau" id="" locale="mfe-MU" description="Mauritian Creole"/>
+		<language code="frm" id="" locale="frm-FR" description="Middle French"/>
+		<language code="moc" id="1104" locale="mn-MN" description="Mongolian (Cyrillic)"/>
+		<language code="mon" id="3152" locale="mn-Mong-MN" description="Mongolian (Traditional)"/>
+		<language code="mot" id="11290" locale="cnr-ME" description="Montenegrin (Latin)"/>
+		<language code="nea" id="" locale="nap-IT" description="Neapolitan"/>
+		<language code="nep" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="nqo" id="" locale="nqo-GN" description="N'ko (Guinea)"/>
+		<language code="nno" id="2068" locale="nn-NO" description="Norwegian (Nynorsk)"/>
+		<language code="nob" id="1044" locale="nb-NO" description="Norwegian (Bokmal)"/>
+		<language code="ped" id="1132" locale="nso-ZA" description="Northern Sotho, Sesotho sa Leboa (South Africa)"/>
+		<language code="sme" id="1083" locale="se-NO" description="Northern Sami (Norway)"/>
+		<language code="oci" id="1154" locale="oc-FR" description="Occitan (France)"/>
+		<language code="ori" id="1096" locale="or-IN" description="Odia (Oriya)"/>
+		<language code="oji" id="" locale="oj-CA" description="Ojibwe"/>
+		<language code="eno" id="" locale="ang-GB" description="Old English"/>
+		<language code="orm" id="1138" locale="om-ET" description="Oromo (Ethiopia)"/>
+		<language code="oss" id="" locale="os-RU" description="Ossetian"/>
+		<language code="pam" id="" locale="pam-PH" description="Pampangan (Philippines)"/>
+		<language code="pap" id="" locale="pap" description="Papiamento"/>
+		<language code="pus" id="1123" locale="ps-AF" description="Pashto (Afghanistan)"/>
+		<language code="per" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pot" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pan" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="que" id="3179" locale="qu-PE" description="Quechua (Peru)"/>
+		<language code="rom" id="" locale="rom" description="Romani"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="roh" id="1047" locale="rm-CH" description="Romansh (Switzerland)"/>
+		<language code="ruy" id="" locale="rue" description="Rusyn"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="san" id="1103" locale="sa-IN" description="Sanskrit (India)"/>
+		<language code="sm" id="662" locale="sm-WS" description="Samoan (Latin)"/>
+		<language code="srd" id="" locale="sc-IT" description="Sardinian (Italy)"/>
+		<language code="sco" id="1169" locale="gd-GB" description="Scottish Gaelic"/>
+		<language code="src" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="srp" id="9242" locale="sr-Latn" description="Serbian (Latin)"/>
+		<language code="sec" id="" locale="hbs" description="Serbo-Croatian"/>
+		<language code="sha" id="" locale="shn-MM" description="Shan (Myanmar)"/>
+		<language code="sna" id="" locale="sn-ZW" description="Shona"/>
+		<language code="sil" id="" locale="szl-PL" description="Silesian"/>
+		<language code="snd" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="sin" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="slo" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="som" id="1143" locale="so-SO" description="Somali (Somalia)"/>
+		<language code="sol" id="" locale="son" description="Songhai"/>
+		<language code="nbl" id="" locale="nr-ZA" description="South Ndebele (South Africa)"/>
+		<language code="sot" id="1072" locale="st-ZA" description="Southern Sotho (South Africa)"/>
+		<language code="spa" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sun" id="651" locale="su-ID" description="Sundanese (Indonesia)"/>
+		<language code="swa" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="swe" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="syr" id="1114" locale="syr-SY" description="Syriac"/>
+		<language code="tgk" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="tam" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tat" id="1092" locale="tt-RU" description="Tatar"/>
+		<language code="tel" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="tet" id="" locale="tet-TL" description="Tetum"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tib" id="1105" locale="bo-CN" description="Tibetan (PRC)"/>
+		<language code="tir" id="1139" locale="ti-ET" description="Tigrinya"/>
+		<language code="tso" id="1073" locale="ts-ZA" description="Tsonga"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tuk" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="twi" id="" locale="tw-GH" description="Twi (Ghana)"/>
+		<language code="ups" id="1070" locale="hsb-DE" description="Upper Sorbian"/>
+		<language code="urd" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="ukr" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="uig" id="1152" locale="ug-CN" description="Uyghur (PRC)"/>
+		<language code="ven" id="1075" locale="ve-ZA" description="Venda"/>
+		<language code="vie" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="wln" id="" locale="wa-BE" description="Walloon (Belgium)"/>
+		<language code="wel" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="fry" id="1122" locale="fy-NL" description="West Frisian"/>
+		<language code="wol" id="1160" locale="wo-SN" description="Wolof"/>
+		<language code="xho" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yid" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yor" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="zaz" id="" locale="zza-TR" description="Zaza"/>
+		<language code="zul" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Systran">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="my" id="1109" locale="my-MM" description="Burmese"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zt" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="1046" locale="pt-BR" description="Portuguese"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tl" id="1124" locale="fil-PH" description="Filipino/Tagalog"/>
+		<language code="tg" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+	</api>
+	<api name="Youdao">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="zh-CHS" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-CHT" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+	</api>
+	<api name="Tilde">
+		<language code="af" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="sq" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="hy" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="as" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="az" id="1068" locale="az-AZ" description="Azerbaijani (Latin)"/>
+		<language code="ba" id="1133" locale="ba-RU" description="Bashkir"/>
+		<language code="eu" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="bn" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="bho" id="" locale="bho-IN" description="Bhojpuri (India)"/>
+		<language code="brx" id="" locale="brx-IN" description="Boro (India)"/>
+		<language code="bs" id="5146" locale="bs-BA" description="Bosnian (Latin)"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="yue" id="1166" locale="yue" description="Cantonese (Traditional)"/>
+		<language code="ca" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="hne" id="" locale="hne-IN" description="Chhattisgarhi (India)"/>
+		<language code="nya" id="643" locale="ny-MW" description="Chichewa (Malawi)"/>
+		<language code="lzh" id="640" locale="lzh" description="Chinese (Literary)"/>
+		<language code="zh-hans" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-hant" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da" id="1030" locale="da-DK" description="Danish"/>
+		<language code="prs" id="1164" locale="prs-AF" description="Dari (Afghanistan)"/>
+		<language code="dv" id="1125" locale="dv-MV" description="Divehi (Maldives)"/>
+		<language code="doi" id="" locale="doi-IN" description="Dogri (India)"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="et" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fo" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fj" id="660" locale="fj-FJ" description="Fijian"/>
+		<language code="fil" id="1124" locale="fil-PH" description="Filipino"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="fr-ca" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="gl" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="ka" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gu" id="1095" locale="gu-IN" description="Gujarati"/>
+		<language code="ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="ha" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="he" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hi" id="1081" locale="hi-IN" description="Hindi"/>
+		<language code="mww" id="668" locale="hmn-CN" description="Hmong Daw (Latin)"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="ig" id="1136" locale="ig-NG" description="Igbo"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ikt" id="" locale="ikt-CA" description="Inuinnaqtun"/>
+		<language code="iu" id="1117" locale="iu-Cans-CA" description="Inuktitut (Syllabics, Canada)"/>
+		<language code="iu-Latn" id="2141" locale="iu-Latn-CA" description="Inuktitut (Latin, Canada)"/>
+		<language code="ga" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="kn" id="1099" locale="kn-IN" description="Kannada"/>
+		<language code="ks" id="1120" locale="ks-IN" description="Kashmiri"/>
+		<language code="kk" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="km" id="1107" locale="km-KH" description="Khmer"/>
+		<language code="rw" id="1159" locale="rw-RW" description="Kinyarwanda"/>
+		<language code="gom" id="1111" locale="kok-IN" description="Konkani (India)"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="kmr" id="661" locale="kmr" description="Kurdish (Latin, Northern)"/>
+		<language code="ku" id="1170" locale="ku-IQ" description="Kurdish (Arabic, Central)"/>
+		<language code="ky" id="1088" locale="ky-KG" description="Kyrgyz (Cyrillic)"/>
+		<language code="lo" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="ln" id="" locale="ln-CD" description="Lingala"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="dsb" id="2094" locale="dsb-DE" description="Lower Sorbian"/>
+		<language code="lug" id="" locale="lg-UG" description="Luganda (Uganda)"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mai" id="" locale="mai-IN" description="Maithili (India)"/>
+		<language code="mg" id="663" locale="mg-MG" description="Malagasy"/>
+		<language code="ms" id="1086" locale="ms-MY" description="Malay (Latin)"/>
+		<language code="ml" id="1100" locale="ml-IN" description="Malayalam"/>
+		<language code="mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="mi" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr" id="1102" locale="mr-IN" description="Marathi"/>
+		<language code="mn-cyrl" id="1104" locale="mn-MN" description="Mongolian (Cyrillic)"/>
+		<language code="mn-mong" id="3152" locale="mn-Mong-MN" description="Mongolian (Traditional)"/>
+		<language code="my" id="1109" locale="my-MM" description="Myanmar (Burmese)"/>
+		<language code="ne" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="nso" id="1132" locale="nso-ZA" description="Northern Sotho, Sesotho sa Leboa (South Africa)"/>
+		<language code="nb" id="1044" locale="nb-NO" description="Norwegian Bokmol"/>
+		<language code="or" id="1096" locale="or-IN" description="Odia (India)"/>
+		<language code="ps" id="1123" locale="ps-AF" description="Pashto"/>
+		<language code="fa" id="1065" locale="fa-IR" description="Persian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt-pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pa" id="1094" locale="pa-IN" description="Punjabi"/>
+		<language code="otq" id="" locale="otq-MX" description="Queretaro Otomi"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="run" id="" locale="rn-BI" description="Rundi (Burundi)"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sm" id="662" locale="sm-WS" description="Samoan (Latin)"/>
+		<language code="sr-cyrl" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="sr-latn" id="9242" locale="sr-Latn" description="Serbian (Latin)"/>
+		<language code="st" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho"/>
+		<language code="sn" id="" locale="sn-ZW" description="Shona (Zimbabwe)"/>
+		<language code="sd" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="si" id="1115" locale="si-LK" description="Sinhala"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so" id="1143" locale="so-SO" description="Somali (Arabic)"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="ty" id="" locale="ty-PF" description="Tahitian"/>
+		<language code="ta" id="1097" locale="ta-IN" description="Tamil"/>
+		<language code="tt" id="1092" locale="tt-RU" description="Tatar (Latin)"/>
+		<language code="te" id="1098" locale="te-IN" description="Telugu"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="bo" id="1105" locale="bo-CN" description="Tibetan"/>
+		<language code="ti" id="1139" locale="ti-ET" description="Tigrinya"/>
+		<language code="to" id="" locale="to-TO" description="Tongan"/>
+		<language code="tn" id="1074" locale="tn-ZA" description="Tswana"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk" id="1090" locale="tk-TM" description="Turkmen (Latin)"/>
+		<language code="uk" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="hsb" id="1070" locale="hsb-DE" description="Upper Sorbian"/>
+		<language code="ur" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="ug" id="1152" locale="ug-CN" description="Uyghur (Arabic)"/>
+		<language code="uz" id="1091" locale="uz-UZ" description="Uzbek (Latin)"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="cy" id="1106" locale="cy-GB" description="Welsh"/>
+		<language code="xh" id="1076" locale="xh-ZA" description="Xhosa"/>
+		<language code="yo" id="1130" locale="yo-NG" description="Yoruba"/>
+		<language code="yua" id="" locale="yua-MX" description="Yucatec Maya"/>
+		<language code="zu" id="1077" locale="zu-ZA" description="Zulu"/>
+	</api>
+	<api name="Caiyun">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="zh" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="zh-Hant" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="de" id="1031" locale="de-DE" description="German"/>
+		<language code="el" id="1032" locale="el-GR" description="Greek"/>
+		<language code="id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="sw" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="vi" id="1066" locale="vi-VN" description="Vietnamese"/>
+	</api>
+	<api name="Lingea">
+		<language code="ar" id="1025" locale="ar-SA" description="Arabic"/>
+		<language code="bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="ct" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cz" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="dk" id="1030" locale="da-DK" description="Danish"/>
+		<language code="nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="en" id="1033" locale="en-US" description="English"/>
+		<language code="ee" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr" id="1036" locale="fr-FR" description="French"/>
+		<language code="ge" id="1031" locale="de-DE" description="German"/>
+		<language code="gr" id="1032" locale="el-GR" description="Greek"/>
+		<language code="hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ko" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="ln" id="1142" locale="la" description="Latin"/>
+		<language code="lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="no" id="1044" locale="nb-NO" description="Norwegian"/>
+		<language code="pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pt" id="2070" locale="pt-PT" description="Portuguese"/>
+		<language code="ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="sr" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="si" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="sp" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="se" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="ua" id="1058" locale="uk-UA" description="Ukrainian"/>
+	</api>
+	<api name="International">
+		<language code="ab" id="" locale="ab" description="Abkhazian"/>
+		<language code="ace|ace-id" id="" locale="ace-ID" description="Achinese (Indonesia)"/>
+		<language code="af|afr|af-za" id="1078" locale="af-ZA" description="Afrikaans"/>
+		<language code="ak|ak-gh" id="" locale="ak-GH" description="Akan (Ghana)"/>
+		<language code="sq|alb|sqi|sq-al" id="1052" locale="sq-AL" description="Albanian"/>
+		<language code="am|amh|am-et" id="1118" locale="am-ET" description="Amharic"/>
+		<language code="arq|ar-dz" id="5121" locale="ar-DZ" description="Arabic (Algeria)"/>
+		<language code="ar|ara|ar-sa" id="1025" locale="ar-SA" description="Arabic (Saudi Arabia)"/>
+		<language code="ar-eg" id="3073" locale="ar-EG" description="Arabic (Egypt)"/>
+		<language code="tua|ar-tn" id="7169" locale="ar-TN" description="Arabic (Tunisia)"/>
+		<language code="ar-ae" id="14337" locale="ar-AE" description="Arabic (United Arab Emirates)"/>
+		<language code="an" id="" locale="an" description="Aragonese"/>
+		<language code="hy|arm|hye|hy-am" id="1067" locale="hy-AM" description="Armenian"/>
+		<language code="as|asm|as-in" id="1101" locale="as-IN" description="Assamese"/>
+		<language code="ast|asr-es" id="" locale="ast-ES" description="Asturian (Spain)"/>
+		<language code="ay|aym|ay-bo" id="" locale="ay-BO" description="Aymara (Bolivia)"/>
+		<language code="az|aze|az-az" id="1068" locale="az-AZ" description="Azerbaijani"/>
+		<language code="bal|bal-pk" id="" locale="bal-PK" description="Baluchi (Pakistan)"/>
+		<language code="bm|bam|bm-ml" id="" locale="bm-ML" description="Bambara (Mali)"/>
+		<language code="bn-bd" id="2117" locale="bn-BD" description="Bangla (Bangladesh)"/>
+		<language code="ba|bak|ba-ru" id="1133" locale="ba-RU" description="Bashkir (Russia)"/>
+		<language code="eu|baq|eus|bsq|eu-es" id="1069" locale="eu-ES" description="Basque"/>
+		<language code="be|bel|blr|be-by" id="1059" locale="be-BY" description="Belarusian"/>
+		<language code="bem|bem-zm" id="" locale="bem-ZM" description="Bemba (Zambia)"/>
+		<language code="bn|ben|bn-in" id="1093" locale="bn-IN" description="Bengali (India)"/>
+		<language code="bho|bho-in" id="" locale="bho-IN" description="Bhojpuri (India)"/>
+		<language code="byn|bli|byn-er" id="" locale="byn-ER" description="Bilen (Eritrea)"/>
+		<language code="bi|bi-vu" id="" locale="bi-VU" description="Bislama (Vanuatu)"/>
+		<language code="brx|brx-in" id="" locale="brx-IN" description="Boro (India)"/>
+		<language code="bs|bos|bs-ba" id="5146" locale="bs-BA" description="Bosnian"/>
+		<language code="br|bre|br-fr" id="1150" locale="br-FR" description="Breton"/>
+		<language code="bg|bul|bg-bg" id="1026" locale="bg-BG" description="Bulgarian"/>
+		<language code="my|bur|brm|mya|my-mm" id="1109" locale="my-MM" description="Burmese (Myanmar)"/>
+		<language code="bui|bua|bua-ru" id="672" locale="bua-RU" description="Buryat (Russia)"/>
+		<language code="ca|cat|ctl|ca-es" id="1027" locale="ca-ES" description="Catalan"/>
+		<language code="ceb|ceb-ph" id="671" locale="ceb-PH" description="Cebuano (Philippines)"/>
+		<language code="nch|nch-mx" id="" locale="nch-MX" description="Central Huasteca Nahuatl (Mexico)"/>
+		<language code="ch|ch-gu" id="" locale="ch-GU" description="Chamorro (Mariana Islands)"/>
+		<language code="cbk|cbk-ph" id="" locale="cbk-PH" description="Chavacano (Philippines)"/>
+		<language code="ce|che|ce-ru" id="" locale="ce-RU" description="Chechen (Russia)"/>
+		<language code="chr|chr-us" id="1116" locale="chr-US" description="Cherokee"/>
+		<language code="hne|hne-in" id="" locale="hne-IN" description="Chhattisgarhi (India)"/>
+		<language code="ny|nya|ny-mw" id="643" locale="ny-MW" description="Chichewa (Malawi)"/>
+		<language code="yue|zh-hk" id="1166" locale="yue" description="Chinese (Cantonese, Traditional)"/>
+		<language code="zh|zh-cn|zh-hans|zh-chs" id="2052" locale="zh-CN" description="Chinese (Simplified)"/>
+		<language code="cht|zh-tw|zh-hant" id="1028" locale="zh-TW" description="Chinese (Traditional)"/>
+		<language code="cv|chv|cv-ru" id="642" locale="cv-RU" description="Chuvash (Russia)"/>
+		<language code="lzh|wyw" id="640" locale="lzh" description="Classical Chinese"/>
+		<language code="kw|kw-gb" id="" locale="kw-GB" description="Cornish (United Kingdom)"/>
+		<language code="co|cos|co-fr" id="1155" locale="co-FR" description="Corsican (France)"/>
+		<language code="mus|mus-us" id="" locale="mus-US" description="Creek, Muscogee"/>
+		<language code="crh" id="" locale="crh" description="Crimean Tatar"/>
+		<language code="hr|hrv|hr-hr" id="1050" locale="hr-HR" description="Croatian"/>
+		<language code="cs|cze|ces|cs-cz" id="1029" locale="cs-CZ" description="Czech"/>
+		<language code="da|dan|da-dk" id="1030" locale="da-DK" description="Danish"/>
+		<language code="prs|prs-af" id="1164" locale="prs-AF" description="Dari (Afghanistan)"/>
+		<language code="dv|div|dv-mv" id="1125" locale="dv-MV" description="Divehi (Maldives)"/>
+		<language code="doi|doi-in" id="" locale="doi-IN" description="Dogri (India)"/>
+		<language code="nl|dut|nld|nl-nl" id="1043" locale="nl-NL" description="Dutch"/>
+		<language code="dz|dzo|dz-bt" id="3153" locale="dz-BT" description="Dzongkha (Bhutan)"/>
+		<language code="en|eng|en-us" id="1033" locale="en-US" description="English"/>
+		<language code="en-au" id="3081" locale="en-AU" description="English (Australia)"/>
+		<language code="en-uk|en-gb" id="2057" locale="en-GB" description="English (United Kingdom)"/>
+		<language code="eo|epo" id="1536" locale="eo" description="Esperanto"/>
+		<language code="et|est|et-ee" id="1061" locale="et-EE" description="Estonian"/>
+		<language code="ee|ee-gh" id="" locale="ee-GH" description="Ewe (Ghana)"/>
+		<language code="fo|fao|fo-fo" id="1080" locale="fo-FO" description="Faroese"/>
+		<language code="fj|fij|fj-fj" id="660" locale="fj-FJ" description="Fijian"/>
+		<language code="tl|tgl|fil|fil-ph" id="1124" locale="fil-PH" description="Filipino/Tagalog (Philippines)"/>
+		<language code="fi|fin|fi-fi" id="1035" locale="fi-FI" description="Finnish"/>
+		<language code="fr|fra|fre|fr-fr" id="1036" locale="fr-FR" description="French (France)"/>
+		<language code="fr-be" id="2060" locale="fr-BE" description="French (Belgium)"/>
+		<language code="frn|fr-ca" id="3084" locale="fr-CA" description="French (Canada)"/>
+		<language code="fy|fry|fy-nl" id="1122" locale="fy-NL" description="West Frisian (Netherlands)"/>
+		<language code="fur|fur-it" id="" locale="fur-IT" description="Friulian (Italy)"/>
+		<language code="ff|ful|ff-ng" id="1127" locale="ff-NG" description="Fulah (Nigeria)"/>
+		<language code="fvr|fvr-sd" id="" locale="fvr-SD" description="Fur (Sudan)"/>
+		<language code="gl|glg|gl-es" id="1110" locale="gl-ES" description="Galician"/>
+		<language code="lg|lug|lg-ug" id="" locale="lg-UG" description="Ganda, Luganda (Uganda)"/>
+		<language code="ka|geo|kat|jy|ka-ge" id="1079" locale="ka-GE" description="Georgian"/>
+		<language code="de|deu|ger|de-de" id="1031" locale="de-DE" description="German (Germany)"/>
+		<language code="de-at" id="3079" locale="de-AT" description="German (Austria)"/>
+		<language code="gil" id="" locale="gil-KI" description="Gilbertese (Kiribati)"/>
+		<language code="el|gre|ell|el-gr" id="1032" locale="el-GR" description="Greek"/>
+		<language code="gra|grc|grc-gr" id="" locale="grc-GR" description="Greek (Ancient)"/>
+		<language code="gos|gos-nl" id="" locale="gos-NL" description="Gronings (Netherlands)"/>
+		<language code="gn|grn|gug|gn-py" id="1140" locale="gn-PY" description="Guarani (Paraguay)"/>
+		<language code="ngu|ngu-mx" id="" locale="ngu-MX" description="Guerrero Nahuatl (Mexico)"/>
+		<language code="gu|guj|gu-in" id="1095" locale="gu-IN" description="Gujarati (India)"/>
+		<language code="ht|hat|ht-ht" id="670" locale="ht-HT" description="Haitian Creole"/>
+		<language code="hak|cnh|cnh-mm" id="" locale="cnh-MM" description="Hakha Chin (Myanmar)"/>
+		<language code="ha|hau|ha-ne|ha-latn-ng|ha-ng" id="1128" locale="ha-NG" description="Hausa"/>
+		<language code="haw|haw-us" id="1141" locale="haw-US" description="Hawaiian"/>
+		<language code="he|heb|iw|he-il" id="1037" locale="he-IL" description="Hebrew"/>
+		<language code="hil|hil-ph" id="" locale="hil-PH" description="Hiligaynon (Philippines)"/>
+		<language code="mrj|mrj-ru" id="" locale="mrj-RU" description="Hill Mari (Russia)"/>
+		<language code="hi|hin|hi-in" id="1081" locale="hi-IN" description="Hindi (India)"/>
+		<language code="hmn|mww|cqd|hmn-cn" id="668" locale="hmn-CN" description="Hmong (PRC)"/>
+		<language code="hu|hun|hu-hu" id="1038" locale="hu-HU" description="Hungarian"/>
+		<language code="hup|hup-us" id="" locale="hup-US" description="Hupa (United States)"/>
+		<language code="iba|iba-bn" id="" locale="iba-BN" description="Iban"/>
+		<language code="is|ice|isl|is-is" id="1039" locale="is-IS" description="Icelandic"/>
+		<language code="io|ido" id="665" locale="io" description="Ido"/>
+		<language code="ig|ibo|ig-ng" id="1136" locale="ig-NG" description="Igbo (Nigeria)"/>
+		<language code="ilo|ilo-ph" id="" locale="ilo-PH" description="Iloko, Ilocano (Philippines)"/>
+		<language code="id|ind|id-id" id="1057" locale="id-ID" description="Indonesian"/>
+		<language code="ing|inh|inh-ru" id="664" locale="inh-RU" description="Ingush (Russia)"/>
+		<language code="ia|ina" id="666" locale="ia" description="Interlingua"/>
+		<language code="ie|ile" id="" locale="ie" description="Interlingue"/>
+		<language code="ikt" id="" locale="ikt-CA" description="Inuinnaqtun (Canada)"/>
+		<language code="iu-cans|iu-cans-ca" id="1117" locale="iu-Cans-CA" description="Inuktitut (Syllabics, Canada)"/>
+		<language code="iu|iku|ike|iu-latn|iu-latn-ca" id="2141" locale="iu-Latn-CA" description="Inuktitut (Latin, Canada)"/>
+		<language code="ga|gle|ga-ie" id="2108" locale="ga-IE" description="Irish"/>
+		<language code="it|ita|it-it" id="1040" locale="it-IT" description="Italian"/>
+		<language code="ja|jp|jpn|ja-jp" id="1041" locale="ja-JP" description="Japanese"/>
+		<language code="jv|jav|jvn|jw|jv-id" id="641" locale="jv-ID" description="Javanese"/>
+		<language code="kab|kab-dz" id="" locale="kab-DZ" description="Kabyle (Algeria)"/>
+		<language code="kl|kal|kl-gl" id="1135" locale="kl-GL" description="Kalaallisut (Greenland)"/>
+		<language code="kam|xal|xal-ru" id="" locale="xal-RU" description="Kalmyk (Russia)"/>
+		<language code="kdx|doc|kmc|kmc-cn" id="" locale="kmc-CN" description="Kam (PRC)"/>
+		<language code="dtp|dtp-my" id="" locale="dtp-MY" description="Kadazan Dusun (Malaysia)"/>
+		<language code="kn|kan|kn-in" id="1099" locale="kn-IN" description="Kannada (India)"/>
+		<language code="kr|kau|kr-ng" id="1137" locale="kr-NG" description="Kanuri (Nigeria)"/>
+		<language code="ks|kas|ks-in" id="1120" locale="ks-IN" description="Kashmiri (India)"/>
+		<language code="csb|csb-pl" id="" locale="csb-PL" description="Kashubian (Poland)"/>
+		<language code="kk|kaz|kk-kz" id="1087" locale="kk-KZ" description="Kazakh"/>
+		<language code="kazlat|kk-latn-kz" id="" locale="kk-Latn-KZ" description="Kazakh (Latin)"/>
+		<language code="kha|kha-in" id="" locale="kha-IN" description="Khasi (India)"/>
+		<language code="km|khm|hkm|km-kh" id="1107" locale="km-KH" description="Khmer (Cambodia)"/>
+		<language code="quc|quc-gt" id="1158" locale="quc-GT" description="Kʼicheʼ (Guatemala)"/>
+		<language code="kg|kon" id="" locale="kg" description="Kongo"/>
+		<language code="kok|gom|kok-in" id="1111" locale="kok-IN" description="Konkani (India)"/>
+		<language code="ko|kor|ko-kr" id="1042" locale="ko-KR" description="Korean"/>
+		<language code="kmr" id="661" locale="kmr" description="Kurdish (Latin, Northern)"/>
+		<language code="ku|kur|ku-iq|ku-arab-iq|ku-ir|ku-arab-ir" id="1170" locale="ku-IQ" description="Kurdish (Arabic)"/>
+		<language code="rw|kin|rw-rw" id="1159" locale="rw-RW" description="Kinyarwanda (Rwanda)"/>
+		<language code="ky|kir|ky-kg" id="1088" locale="ky-KG" description="Kyrgyz"/>
+		<language code="lo|lao|lo-la" id="1108" locale="lo-LA" description="Lao"/>
+		<language code="ltg|ltg-lv" id="" locale="ltg-LV" description="Latgalian (Latvia)"/>
+		<language code="la|lat|la-001" id="1142" locale="la" description="Latin"/>
+		<language code="lv|lav|lv-lv" id="1062" locale="lv-LV" description="Latvian"/>
+		<language code="li|lim" id="" locale="li" description="Limburgish"/>
+		<language code="ln|lin|ln-ao|ln-cf|ln-cg|ln-cd" id="" locale="ln-CD" description="Lingala"/>
+		<language code="lfn" id="" locale="lfn" description="Lingua Franca Nova"/>
+		<language code="lt|lit|lt-lt" id="1063" locale="lt-LT" description="Lithuanian"/>
+		<language code="loj" id="" locale="jbo" description="Lojban"/>
+		<language code="nds" id="" locale="nds" description="Low German"/>
+		<language code="dsb|los|dsb-de" id="2094" locale="dsb-DE" description="Lower Sorbian (Germany)"/>
+		<language code="lb|ltz|lb-lu" id="1134" locale="lb-LU" description="Luxembourgish"/>
+		<language code="mk|mac|mkd|mk-mk" id="1071" locale="mk-MK" description="Macedonian"/>
+		<language code="mai|mai-in" id="" locale="mai-IN" description="Maithili (India)"/>
+		<language code="mg|mlg|mg-mg" id="663" locale="mg-MG" description="Malagasy (Madagascar)"/>
+		<language code="ms|may|msa|ms-my" id="1086" locale="ms-MY" description="Malay (Malaysia)"/>
+		<language code="ml|mal|ml-in" id="1100" locale="ml-IN" description="Malayalam (India)"/>
+		<language code="mt|mlt|mt-mt" id="1082" locale="mt-MT" description="Maltese"/>
+		<language code="gv|gv-im" id="" locale="gv-IM" description="Manx (Isle of Man)"/>
+		<language code="mi|mao|mri|mi-nz" id="1153" locale="mi-NZ" description="Maori"/>
+		<language code="mr|mar|omr|mr-in" id="1102" locale="mr-IN" description="Marathi (India)"/>
+		<language code="chm|mrh|chm-ru" id="669" locale="chm-RU" description="Mari (Russia)"/>
+		<language code="mh|mh-mh" id="" locale="mh-MH" description="Marshallese (Marshall Islands)"/>
+		<language code="frm|frm-fr" id="" locale="frm-FR" description="Middle French"/>
+		<language code="mn|mon|mn-mn|mn-cyrl" id="1104" locale="mn-MN" description="Mongolian (Cyrillic)"/>
+		<language code="mn-mong|mn-mong-mn" id="3152" locale="mn-Mong-MN" description="Mongolian (Traditional)"/>
+		<language code="cnr|mot|cnr-me" id="11290" locale="cnr-ME" description="Montenegrin (Latin)"/>
+		<language code="mfe|mau|mfe-mu" id="" locale="mfe-MU" description="Morisyen, Mauritian Creole (Mauritius)"/>
+		<language code="nv|nv-us" id="" locale="nv-US" description="Navajo (United States)"/>
+		<language code="nea|nap|nap-it" id="" locale="nap-IT" description="Neapolitan"/>
+		<language code="ne|nep|npi|ne-np" id="1121" locale="ne-NP" description="Nepali"/>
+		<language code="niu|niu-nu" id="" locale="niu-NU" description="Niuean (Niue)"/>
+		<language code="nqo|nqo-gn" id="" locale="nqo-GN" description="N'ko (Guinea)"/>
+		<language code="nno|nn-no" id="2068" locale="nn-NO" description="Norwegian (Nynorsk)"/>
+		<language code="no|nor|nob|nb|nb-no" id="1044" locale="nb-NO" description="Norwegian (Bokmal)"/>
+		<language code="se|sme|se-no" id="1083" locale="se-NO" description="Northern Sami (Norway)"/>
+		<language code="se-se" id="2107" locale="se-SE" description="Northern Sami (Sweden)"/>
+		<language code="se-fi" id="3131" locale="se-FI" description="Northern Sami (Finland)"/>
+		<language code="ped|nso|nso-za" id="1132" locale="nso-ZA" description="Northern Sotho, Sesotho sa Leboa (South Africa)"/>
+		<language code="oc|oci|oc-fr" id="1154" locale="oc-FR" description="Occitan (France)"/>
+		<language code="or|ori|ory|or-in" id="1096" locale="or-IN" description="Odia (India)"/>
+		<language code="oj|oji|oj-ca" id="" locale="oj-CA" description="Ojibwe"/>
+		<language code="eno|ang|ang-gb" id="" locale="ang-GB" description="Old English"/>
+		<language code="om|orm|om-et" id="1138" locale="om-ET" description="Oromo (Ethiopia)"/>
+		<language code="os|os-ru|os-ge" id="" locale="os-RU" description="Ossetian (Cyrillic, Russia)"/>
+		<language code="pmn|pmn-cm" id="" locale="pmn-CM" description="Pam (Cameroon)"/>
+		<language code="pam|pam-ph" id="" locale="pam-PH" description="Pampangan (Philippines)"/>
+		<language code="pag|pag-ph" id="" locale="pag-PH" description="Pangasinan (Philippines)"/>
+		<language code="pap" id="1145" locale="pap" description="Papiamento (Caribbean)"/>
+		<language code="ps|pus|ps-af" id="1123" locale="ps-AF" description="Pashto (Afghanistan)"/>
+		<language code="fa|per|fas|fa-ir" id="1065" locale="fa-IR" description="Persian (Iran)"/>
+		<language code="pl|pol|pl-pl" id="1045" locale="pl-PL" description="Polish"/>
+		<language code="pot|pt-br" id="1046" locale="pt-BR" description="Portuguese (Brazil)"/>
+		<language code="pt|por|pt-pt" id="2070" locale="pt-PT" description="Portuguese (Portugal)"/>
+		<language code="pa|pan|pa-in" id="1094" locale="pa-IN" description="Punjabi (India)"/>
+		<language code="kek|kek-mx" id="" locale="kek-MX" description="Qʼeqchiʼ"/>
+		<language code="qu|que|quw|qu-pe" id="3179" locale="qu-PE" description="Quechua (Peru)"/>
+		<language code="otq|otq-mx" id="" locale="otq-MX" description="Queretaro Otomi (Mexico)"/>
+		<language code="rom" id="" locale="rom" description="Romany, Romani"/>
+		<language code="ro|rom|rum|ron|ro-ro" id="1048" locale="ro-RO" description="Romanian"/>
+		<language code="rm|roh|rmn|rm-ch" id="1047" locale="rm-CH" description="Romansh (Switzerland)"/>
+		<language code="rn|run|rn-bi" id="" locale="rn-BI" description="Rundi (Burundi)"/>
+		<language code="ru|rus|ru-ru" id="1049" locale="ru-RU" description="Russian"/>
+		<language code="rue" id="" locale="rue" description="Rusyn"/>
+		<language code="sah|sah-ru" id="1157" locale="sah-RU" description="Sakha (Russia)"/>
+		<language code="sa|san|vsn|sa-in" id="1103" locale="sa-IN" description="Sanskrit (India)"/>
+		<language code="sm|smo|sm-ws" id="662" locale="sm-WS" description="Samoan (Latin)"/>
+		<language code="sg|sag|sg-cf" id="" locale="sg-CF" description="Sango (Central African Republic)"/>
+		<language code="sc|srd|sc-it" id="" locale="sc-IT" description="Sardinian (Italy)"/>
+		<language code="gd|sco|gla|gd-gb" id="1169" locale="gd-GB" description="Scottish Gaelic"/>
+		<language code="sr|src|sr-cyrl" id="10266" locale="sr-Cyrl" description="Serbian (Cyrillic)"/>
+		<language code="srp|sr-latn" id="9242" locale="sr-Latn" description="Serbian (Latin)"/>
+		<language code="hbs" id="" locale="hbs" description="Serbo-Croatian"/>
+		<language code="st|sot|st-ls|st-za" id="1072" locale="st-ZA" description="Sesotho, Southern Sotho (South Africa)"/>
+		<language code="shn|shn-mm" id="" locale="shn-MM" description="Shan (Myanmar)"/>
+		<language code="sn|sn-zw" id="" locale="sn-ZW" description="Shona (Zimbabwe)"/>
+		<language code="szl|szl-pl" id="" locale="szl-PL" description="Silesian"/>
+		<language code="sd|snd|sd-arab-pk|sd-pk" id="2137" locale="sd-PK" description="Sindhi"/>
+		<language code="si|sin|si-lk" id="1115" locale="si-LK" description="Sinhala (Sri Lanka)"/>
+		<language code="sk|slk|slo|sk-sk" id="1051" locale="sk-SK" description="Slovak"/>
+		<language code="sl|slv|sl-si" id="1060" locale="sl-SI" description="Slovenian"/>
+		<language code="so|som|so-so" id="1143" locale="so-SO" description="Somali (Somalia)"/>
+		<language code="sol|son" id="" locale="son" description="Songhai"/>
+		<language code="nbl|nr-za" id="" locale="nr-ZA" description="South Ndebele (South Africa)"/>
+		<language code="sma-no" id="6203" locale="sma-NO" description="Southern Sami (Norway)"/>
+		<language code="sma-se" id="7227" locale="sma-SE" description="Southern Sami (Sweden)"/>
+		<language code="es|spa|es-es" id="1034" locale="es-ES" description="Spanish"/>
+		<language code="es-mx" id="2058" locale="es-MX" description="Spanish (Mexico)"/>
+		<language code="es-us" id="21514" locale="es-US" description="Spanish (United States)"/>
+		<language code="su|sun|su-id" id="651" locale="su-ID" description="Sundanese (Indonesia)"/>
+		<language code="sw|swa|sw-ke|sw-tz" id="1089" locale="sw-KE" description="Swahili"/>
+		<language code="sv|swe|sv-se" id="1053" locale="sv-SE" description="Swedish"/>
+		<language code="syc|syr|syr-sy" id="1114" locale="syr-SY" description="Syriac (Syria)"/>
+		<language code="ty|tah|ty-pf" id="" locale="ty-PF" description="Tahitian"/>
+		<language code="tg|tgk|tg-tj" id="1064" locale="tg-TJ" description="Tajik"/>
+		<language code="ber|tzm|tzm-dz" id="2143" locale="tzm-DZ" description="Tamazight (Latin, Algeria)"/>
+		<language code="ta|tam|oty|ta-in" id="1097" locale="ta-IN" description="Tamil (India)"/>
+		<language code="tt|tat|tt-ru" id="1092" locale="tt-RU" description="Tatar (Russia)"/>
+		<language code="te|tel|te-in" id="1098" locale="te-IN" description="Telugu (India)"/>
+		<language code="tet|tet-tl" id="" locale="tet-TL" description="Tetum"/>
+		<language code="th|tha|th-th" id="1054" locale="th-TH" description="Thai"/>
+		<language code="bo|ti|bo-cn" id="1105" locale="bo-CN" description="Tibetan (PRC)"/>
+		<language code="ti|tir|ti-et" id="1139" locale="ti-ET" description="Tigrinya (Ethiopia)"/>
+		<language code="tpi|tpi-pg" id="" locale="tpi-PG" description="Tok Pisin (Papua New Guinea)"/>
+		<language code="toi|toi-zm" id="" locale="toi-ZM" description="Tonga (Zambia)"/>
+		<language code="to|ton|to-to" id="" locale="to-TO" description="Tongan (Tonga)"/>
+		<language code="ts|tso|ts-za" id="1073" locale="ts-ZA" description="Tsonga (South Africa)"/>
+		<language code="tn|tn-za" id="1074" locale="tn-ZA" description="Tswana (South Africa)"/>
+		<language code="tr|tur|tr-tr" id="1055" locale="tr-TR" description="Turkish"/>
+		<language code="tk|tuk|tk-tm" id="1090" locale="tk-TM" description="Turkmen"/>
+		<language code="tvl|tvl-tv" id="" locale="tvl-TV" description="Tuvalu"/>
+		<language code="tw|twi|tw-gh" id="" locale="tw-GH" description="Twi (Ghana)"/>
+		<language code="tyv|tyv-ru" id="" locale="tyv-RU" description="Tuvan (Russia)"/>
+		<language code="udm|udm-ru" id="644" locale="udm-RU" description="Udmurt (Russia)"/>
+		<language code="hsb|ups|hsb-de" id="1070" locale="hsb-DE" description="Upper Sorbian (Germany)"/>
+		<language code="ur|urd|ur-pk" id="1056" locale="ur-PK" description="Urdu"/>
+		<language code="uk|ukr|uk-ua" id="1058" locale="uk-UA" description="Ukrainian"/>
+		<language code="umb|umb-ao" id="" locale="umb-AO" description="Umbundu (Angola)"/>
+		<language code="ug|uy|uig|ug-cn" id="1152" locale="ug-CN" description="Uyghur (PRC)"/>
+		<language code="uzbcyr|uz-cyrl" id="2115" locale="uz-Cyrl" description="Uzbek (Cyrillic, Uzbekistan)"/>
+		<language code="uz|uzb|uz-uz|uz-latn-uz" id="1091" locale="uz-UZ" description="Uzbek (Latin, Uzbekistan)"/>
+		<language code="ve|ven|ve-za" id="1075" locale="ve-ZA" description="Venda (South Africa)"/>
+		<language code="vi|vie|vi-vn" id="1066" locale="vi-VN" description="Vietnamese"/>
+		<language code="vo|vol" id="" locale="vo" description="Volapük"/>
+		<language code="wa|wln|wa-be" id="" locale="wa-BE" description="Walloon (Belgium)"/>
+		<language code="war|war-ph" id="" locale="war-PH" description="Waray (Philippines)"/>
+		<language code="cy|wel|cym|cy-gb" id="1106" locale="cy-GB" description="Welsh (United Kingdom)"/>
+		<language code="wo|wol|wo-sn" id="1160" locale="wo-SN" description="Wolof (Senegal)"/>
+		<language code="xh|xho|xh-ZA" id="1076" locale="xh-ZA" description="Xhosa (South Africa)"/>
+		<language code="ii|ii-cn" id="1144" locale="ii-CN" description="Yi (PRC)"/>
+		<language code="yi|yid|yi-001" id="1085" locale="yi" description="Yiddish"/>
+		<language code="yo|yor|yo-ng" id="1130" locale="yo-NG" description="Yoruba (Nigeria)"/>
+		<language code="yua|yua-mx" id="" locale="yua-MX" description="Yucatec Maya"/>
+		<language code="zza|zza-tr" id="" locale="zza-TR" description="Zaza (Turkey)"/>
+		<language code="zu|zul|zu-za" id="1077" locale="zu-ZA" description="Zulu (South Africa)"/>
+	</api>
+</translate>

@@ -1,0 +1,7 @@
+whitelist:
+  users:
+    - Олег
+    - Софія
+  tokens:
+    - secret_oleg
+    - lastivka_token

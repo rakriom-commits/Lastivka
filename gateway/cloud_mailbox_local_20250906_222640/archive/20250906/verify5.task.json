@@ -1,0 +1,17 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-000000000007",
+    "ts":  "2025-09-06T21:55:43+03:00",
+    "sender":  "sofia",
+    "kind":  "report",
+    "focus":  "verify.integrity",
+    "limits":  {
+                   "max_runtime_s":  30,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "notes":  "R1 self-test: verify.integrity",
+    "sha256":  "3b2cc55d193fb247575dc908224b7bd65babe8b79a3bcb6738be59f139627ea3"
+}

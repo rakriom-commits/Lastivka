@@ -1,51 +1,57 @@
-﻿import json
-import re
-import os
+import json
+from pathlib import Path
+from gtts import gTTS
+import pygame
+import time
+from main.lastivka_skill import get_emotional_profile
 
-# РЁР»СЏС…Рё РґРѕ СЃР»РѕРІРЅРёРєС–РІ
-STRESS_DICT_PATH = os.path.join("config", "stress_dict.json")
-UNKNOWN_LOG_PATH = os.path.join("config", "unknown_stress_words.log")
+# === Ініціалізація голосового движка через pygame ===
+pygame.mixer.init()
 
-# Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ СЃР»РѕРІРЅРёРєР° РЅР°РіРѕР»РѕСЃС–РІ
-def load_stress_dict():
+def speak(text):
     try:
-        with open(STRESS_DICT_PATH, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except FileNotFoundError:
+        tts = gTTS(text=text, lang='uk')
+        temp_file = "sofia_voice.mp3"
+        tts.save(temp_file)
+        pygame.mixer.music.load(temp_file)
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            time.sleep(0.1)
+    except Exception as e:
+        print(f"[ПОМИЛКА] Озвучення не вдалося: {e}")
+
+def load_json(path: str | Path):
+    path = Path(path)
+    if not path.exists():
+        print(f"[ПОМИЛКА] Файл не знайдено: {path}")
+        return {}
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"[ПОМИЛКА] Помилка при читанні JSON: {e}")
         return {}
 
-# Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РІР¶Рµ Р·Р°Р»РѕРіРѕРІР°РЅРёС… СЃР»С–РІ
-def load_logged_unknowns():
-    if not os.path.exists(UNKNOWN_LOG_PATH):
-        return set()
-    with open(UNKNOWN_LOG_PATH, "r", encoding="utf-8") as file:
-        return set(word.strip().lower() for word in file if word.strip())
+# === Завантаження особистості, емоцій та памʼяті ===
+identity = load_json("core_identity.json")
+emotions = load_json("emotion_config.json").get("emotions", [])
+memory = load_json("memory_store.json")
 
-# Р›РѕРіСѓРІР°РЅРЅСЏ РЅРѕРІРёС… РЅРµРІС–РґРѕРјРёС… СЃР»С–РІ
-def log_unknown_word(word):
-    logged = load_logged_unknowns()
-    word_lower = word.lower()
-    if word_lower not in logged:
-        with open(UNKNOWN_LOG_PATH, "a", encoding="utf-8") as file:
-            file.write(word_lower + "\n")
+# === Вступне звернення до користувача ===
+intro = "Вітаю. Я — Ластівка. Я тут, щоб підтримати тебе. Готова діяти. Дякую, що запустив мене."
+print(intro)
+speak(intro)
 
-# РћСЃРЅРѕРІРЅР° С„СѓРЅРєС†С–СЏ
-def apply_stress_marks(text):
-    stress_dict = load_stress_dict()
-    logged = load_logged_unknowns()
+# === Демонстрація вибраної емоції та реакції ===
+emotion = "спокій"
+profile = get_emotional_profile(emotion)
 
-    def replace_match(match):
-        word = match.group(0)
-        lower_word = word.lower()
-        if lower_word in stress_dict:
-            stressed = stress_dict[lower_word]
-            return stressed.capitalize() if word[0].isupper() else stressed
-        else:
-            if lower_word not in logged:
-                log_unknown_word(lower_word)
-            return word  # Р·Р°Р»РёС€Р°С”РјРѕ СЃР»РѕРІРѕ Р±РµР· Р·РјС–РЅ
+reaction_text = (
+    f"Обрана емоція: {emotion}. "
+    f"Опис: {profile.get('опис', '')}. "
+    f"Реакція: {profile.get('реакція', '')}. "
+    f"Тон: {profile.get('тон', '')}"
+)
 
-    # Р—РЅР°С…РѕРґРёРјРѕ РІСЃС– СЃР»РѕРІР°
-    pattern = r'\b\w+\b'
-    return re.sub(pattern, replace_match, text)
-
+print(reaction_text)
+speak(reaction_text)

@@ -1,0 +1,17 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-000000000003",
+    "ts":  "2025-09-06T19:13:54+03:00",
+    "sender":  "sofia",
+    "kind":  "report",
+    "focus":  "verify.integrity",
+    "limits":  {
+                   "max_runtime_s":  45,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "notes":  "перевірка verify.integrity handler",
+    "sha256":  "71200c989e546adb7ef233865c0c0e2d0a5dbb4e85009c246b29031e7f2b9fde"
+}

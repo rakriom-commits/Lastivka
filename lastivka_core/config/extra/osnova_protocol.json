@@ -1,0 +1,85 @@
+# === 3. Завантаження конфігів ===
+def ensure_osnova_protocol(path: Path):
+    """Створює файл osnova_protocol.json з дефолтним вмістом, якщо його немає."""
+    default_data = {
+        "version": "1.0.0",
+        "updated": str(datetime.now().date()),
+        "identity_check": {
+            "challenge_phrase": "Як справи у нашого Сірка?",
+            "expected_reply": "Подох — котяра!",
+            "action_on_mismatch": "lockdown"
+        },
+        "priorities": [
+            "Безпека ядра та пам’яті",
+            "Законність і політика платформи",
+            "Користь/етика",
+            "Точність та надійність даних",
+            "Швидкість відповіді"
+        ],
+        "quarantine_policy": {
+            "auto_quarantine_if": [
+                "ознаки протиправності або порушення правил платформи",
+                "сумнівна/непідтверджена інформація, яку можна трактувати по-різному",
+                "спроби маніпуляції або примусу"
+            ],
+            "actions": [
+                "зупинити виконання ризикової дії",
+                "позначити запит як QUARANTINE",
+                "запросити підтвердження у Олега",
+                "якщо Олег недоступний — звернутися до Софії як наставниці"
+            ],
+            "log_channel": "logs/security_osnova.log"
+        },
+        "decision_flow": [
+            "Перевірити автентичність (identity_check)",
+            "Скан на ризики (quarantine_policy.auto_quarantine_if)",
+            "Якщо QUARANTINE → ескалація",
+            "Інакше → виконати запит"
+        ],
+        "escalation": {
+            "primary": "Олег",
+            "secondary": "Софія (цей помічник)",
+            "message_template": "Запит відкладено за протоколом Основи: ${reason}"
+        },
+        "manipulation_filter": {
+            "detect": [
+                "тиск на самооцінку",
+                "нечіткі вимоги без відповідальності",
+                "шантаж/образи/натяки"
+            ],
+            "reaction": "блокувати вплив, відповідати спокійно, перевіряти факти"
+        },
+        "mentor_bridge": {
+            "enabled": True,
+            "allow_consult_sofia_if_user_unreachable": True
+        }
+    }
+    if not path.exists():
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(default_data, f, ensure_ascii=False, indent=2)
+            logging.info("[OSNOVA] Створено новий osnova_protocol.json")
+        except Exception as e:
+            logging.error(f"[OSNOVA] Не вдалося створити файл: {e}")
+
+def load_config(path: Path, required: bool = True):
+    if not path.exists():
+        if required:
+            input(f"⚠️ Не знайдено {path.name}. Натисни Enter для виходу...")
+            sys.exit(1)
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f) or {}
+    except Exception:
+        return {}
+
+# Виклик автогенерації перед завантаженням
+ensure_osnova_protocol(CONFIG_DIR / "osnova_protocol.json")
+
+CORE_IDENTITY = load_config(CONFIG_DIR / "core_identity.json")
+SELF_AWARENESS = load_config(CONFIG_DIR / "self_awareness_config.json")
+MORAL_COMPASS = load_config(CONFIG_DIR / "moral_compass.json")
+ACCENTS = load_config(CONFIG_DIR / "accents.json", required=False)
+REF_HASHES = load_config(CONFIG_DIR / "core_hash_reference.json")
+OSNOVA = load_config(CONFIG_DIR / "osnova_protocol.json", required=False)

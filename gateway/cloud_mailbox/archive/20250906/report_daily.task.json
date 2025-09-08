@@ -1,0 +1,24 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-00000000D415",
+    "ts":  "2025-09-06T22:47:18+03:00",
+    "sender":  "sofia",
+    "kind":  "report",
+    "focus":  "report.daily",
+    "limits":  {
+                   "max_runtime_s":  40,
+                   "mode":  "safe",
+                   "writes":  "guarded"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "params":  {
+                   "sections":  [
+                                    "health",
+                                    "queue",
+                                    "logs"
+                                ]
+               },
+    "notes":  "daily status brief",
+    "sha256":  "d63dd1cb6df1e7c90353b99a22ab8de2ff735c5501ff11c79dffcbf67a97cce6"
+}

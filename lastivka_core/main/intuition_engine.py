@@ -1,16 +1,15 @@
-﻿import difflib
+import difflib
 from main.memory_store import list_memories
-from config.emotion_config import EMOTIONS
+from tools.emotion_config_loader import EMOTIONS
 from config.behavioral_styles import STYLES
 
-
 def normalize_text(text):
-    return str(text).lower().strip().replace("вЂ™", "'").replace("  ", " ")
+    return str(text).lower().strip().replace("’", "'").replace("  ", " ")
 
 def vector_guessing(prompt):
-    """РђРЅР°Р»С–Р· Р·Р±С–РіСѓ Р· РґСѓРјРєР°РјРё Р·Р° СЃР»Р°Р±РєРёРјРё РєР»СЋС‡РѕРІРёРјРё СЃР»РѕРІР°РјРё С‚Р° РІС–РґР»СѓРЅРЅСЏРјРё РєРѕРЅС‚РµРєСЃС‚Сѓ."""
+    """Пошук схожих думок із пам’яті для слабкої інтуїції."""
     text = normalize_text(prompt)
-    memory = list_memories("РґСѓРјРєР°")
+    memory = list_memories("thoughts")
     matches = []
 
     for key, entries in memory.items():
@@ -26,7 +25,7 @@ def vector_guessing(prompt):
 def analyze_and_guess(prompt):
     text = normalize_text(prompt)
     memory = list_memories()
-    thoughts = memory.get("РґСѓРјРєР°", []) if isinstance(memory, dict) else []
+    thoughts = memory.get("thoughts", []) if isinstance(memory, dict) else []
 
     related_thoughts = []
     for t in thoughts:
@@ -38,40 +37,40 @@ def analyze_and_guess(prompt):
         if value and difflib.SequenceMatcher(None, text, value.lower()).ratio() > 0.6:
             related_thoughts.append(value)
 
-    # рџ§  Р’РёР·РЅР°С‡РµРЅРЅСЏ РµРјРѕС†С–С—
-    emotion_detected = "СЃРїРѕРєС–Р№"
+    # Визначення емоції
+    emotion_detected = "спокій"
     for emotion_name, entry in EMOTIONS.get("emotions", {}).items():
         for word in entry.get("triggers", []):
             if word.lower() in text:
                 emotion_detected = emotion_name
                 break
-        if emotion_detected != "СЃРїРѕРєС–Р№":
+        if emotion_detected != "спокій":
             break
 
-    # рџЋ­ Р’РёР·РЅР°С‡РµРЅРЅСЏ СЃС‚РёР»СЋ
-    style_detected = "СЃС‚СЂР°С‚РµРі"
+    # Визначення стилю
+    style_detected = "нейтральний"
     for name, pattern in STYLES.items():
-        if pattern.get("Р°РєС‚РёРІРЅРёР№", False):
+        if pattern.get("default", False):
             style_detected = name
             break
 
-    # рџ”® Р¤РѕСЂРјСѓРІР°РЅРЅСЏ РїСЂРёРїСѓС‰РµРЅРЅСЏ
+    # Формування гіпотези
     if related_thoughts:
-        hypothesis = f"Р¦Рµ СЃС…РѕР¶Рµ РЅР° РѕРґРЅСѓ Р· С‚РІРѕС—С… РґСѓРјРѕРє: В«{related_thoughts[-1]}В»"
+        hypothesis = f"Це схоже на одну з моїх думок: «{related_thoughts[-1]}»"
     else:
         echo = vector_guessing(text)
         if echo:
-            hypothesis = f"Р„ СЃР»Р°Р±РєР° РїРѕРґС–Р±РЅС–СЃС‚СЊ РґРѕ РґСѓРјРєРё: В«{echo}В»"
+            hypothesis = f"Можливо, ти маєш на увазі: «{echo}»"
         else:
-            hypothesis = "РњРѕР¶Р»РёРІРѕ, С‚Рё РјР°С”С€ РЅР° СѓРІР°Р·С– С‰РѕСЃСЊ РіР»РёР±С€Рµ Р°Р±Рѕ РїРѕРІвЂ™СЏР·Р°РЅРµ Р· РїРѕРїРµСЂРµРґРЅС–Рј РґРѕСЃРІС–РґРѕРј."
+            hypothesis = "Я поки не можу визначити, до чого це відноситься."
 
     result = {
-        "РµРјРѕС†С–СЏ": emotion_detected,
-        "СЃС‚РёР»СЊ": style_detected,
-        "РїСЂРёРїСѓС‰РµРЅРЅСЏ": hypothesis,
-        "pause": EMOTIONS["emotions"].get(emotion_detected, {}).get("pause", 0.3),
-        "tone": EMOTIONS["emotions"].get(emotion_detected, {}).get("tone", "РіР»Р°РґРєРёР№"),
-        "intensity": EMOTIONS["emotions"].get(emotion_detected, {}).get("intensity", "medium")
+        "emotion": emotion_detected,
+        "style": style_detected,
+        "hypothesis": hypothesis,
+        "pause": EMOTIONS['emotions'].get(emotion_detected, {}).get("pause", 0.3),
+        "tone": EMOTIONS['emotions'].get(emotion_detected, {}).get("tone", "спокійний"),
+        "intensity": EMOTIONS['emotions'].get(emotion_detected, {}).get("intensity", "medium")
     }
 
     return result
@@ -79,10 +78,9 @@ def analyze_and_guess(prompt):
 def generate_intuitive_response(prompt):
     result = analyze_and_guess(prompt)
     return {
-        "text": result["РїСЂРёРїСѓС‰РµРЅРЅСЏ"],
-        "emotion": result["РµРјРѕС†С–СЏ"],
+        "text": result["hypothesis"],
+        "emotion": result["emotion"],
         "tone": result["tone"],
         "intensity": result["intensity"],
         "pause": result["pause"]
     }
-

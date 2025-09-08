@@ -1,0 +1,312 @@
+﻿param(
+  [string]$Root="C:\Lastivka\gateway\cloud_mailbox",
+  [int]$PollSec=5
+)
+
+$inbox = Join-Path $Root 'inbox'
+$outbox = Join-Path $Root 'outbox'
+$archive = Join-Path $Root 'archive'
+$quarantine = Join-Path $Root 'quarantine'
+$log = Join-Path $Root 'logs\gateway.log'
+$allowFlag = "C:\Lastivka\ALLOW_APPLY.flag"
+$stopFlag = Join-Path $Root 'STOP.flag'
+
+$WhitelistFocus = @(
+  'verify.integrity',
+  'logs.rotate',
+  'memory.optimization',
+  'report.daily'
+)
+
+New-Item $inbox,$outbox,$archive,$quarantine,(Split-Path $log) -ItemType Directory -Force | Out-Null
+function W-Log([string]$msg){ $ts=(Get-Date).ToString("yyyy-MM-dd HH:mm:ss"); "$ts $msg" | Add-Content $log }
+
+function Get-PayloadHash([string]$path){
+  $txt  = Get-Content $path -Raw -Encoding UTF8
+  $obj  = $txt | ConvertFrom-Json -ErrorAction Stop
+  $obj.PSObject.Properties.Remove("sha256") | Out-Null
+  $payload = $obj | ConvertTo-Json -Depth 20 -Compress
+  $bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)
+  $sha   = [System.Security.Cryptography.SHA256]::Create()
+  (($sha.ComputeHash($bytes)) | ForEach-Object { param(
+  [string]$Root="C:\Lastivka\gateway\cloud_mailbox",
+  [int]$PollSec=5
+)
+
+$inbox = Join-Path $Root 'inbox'
+$outbox = Join-Path $Root 'outbox'
+$archive = Join-Path $Root 'archive'
+$quarantine = Join-Path $Root 'quarantine'
+$log = Join-Path $Root 'logs\gateway.log'
+$allowFlag = "C:\Lastivka\ALLOW_APPLY.flag"
+$stopFlag = Join-Path $Root 'STOP.flag'
+
+$WhitelistFocus = @(
+  'verify.integrity',
+  'logs.rotate',
+  'memory.optimization',
+  'report.daily'
+)
+
+New-Item $inbox,$outbox,$archive,$quarantine,(Split-Path $log) -ItemType Directory -Force | Out-Null
+function W-Log([string]$msg){ $ts=(Get-Date).ToString("yyyy-MM-dd HH:mm:ss"); "$ts $msg" | Add-Content $log }
+
+function Get-PayloadHash([string]$path){
+  $txt  = Get-Content $path -Raw -Encoding UTF8
+  $obj  = $txt | ConvertFrom-Json -ErrorAction Stop
+  $obj.PSObject.Properties.Remove('sha256') | Out-Null
+  $payload = $obj | ConvertTo-Json -Depth 20
+  $bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)
+  $sha   = [System.Security.Cryptography.SHA256]::Create()
+  (($sha.ComputeHash($bytes)) | ForEach-Object { $_.ToString("x2") }) -join ''
+}
+
+W-Log "watcher start (poll=$PollSec s)"
+while($true){
+  if(Test-Path $stopFlag){ W-Log "STOP.flag present -> idle"; Start-Sleep -Seconds ($PollSec*6); continue }
+
+  $taskFile = Get-ChildItem $inbox -Filter '*.task.json' -File | Sort-Object LastWriteTime | Select-Object -First 1
+  if(-not $taskFile){ Start-Sleep -Seconds $PollSec; continue }
+
+  try { $task = Get-Content $taskFile.FullName -Raw -Encoding UTF8 | ConvertFrom-Json -ErrorAction Stop }
+  catch { W-Log "bad json: $($taskFile.Name) -> quarantine"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; Start-Sleep -Seconds 1; continue }
+
+  if($task.sender -ne 'sofia'){ W-Log "sender not allowed: $($task.sender)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+  if(($task.focus -as [string]) -notin $WhitelistFocus){ W-Log "focus not allowed: $($task.focus)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+
+  $payloadHash = Get-PayloadHash $taskFile.FullName
+  $hashOk = ($task.sha256 -as [string]) -and ($task.sha256.ToLower() -eq $payloadHash.ToLower())
+
+  # ACK
+  $ackObj = @{
+    id=$task.id; ts=(Get-Date).ToString("s"); receiver="lastivka"; status="received"; version="gateway-1.0"; hash_ok=$hashOk
+  }
+  $ackObj | ConvertTo-Json -Depth 6 | Out-File (Join-Path $outbox "$($task.id).ack.json") -Encoding UTF8
+  if(-not $hashOk){ W-Log "hash mismatch -> quarantine: $($task.id)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+
+  $dryRun = -not (Test-Path $allowFlag) -or ($task.limits.mode -ne 'safe')
+  W-Log "task $($task.id) kind=$($task.kind) focus=$($task.focus) dryRun=$dryRun"
+
+  # ---------------- HANDLERS ----------------
+  $artifacts = @()
+  $resultSummary = "watcher run (dryRun={0})" -f $dryRun
+  $ok = $true
+
+  if ($task.focus -eq 'verify.integrity') {
+    $checks = @(
+      'C:\Lastivka\memory',
+      'C:\Lastivka\memory\snapshots',
+      'C:\Lastivka\logs',
+      'C:\Lastivka\indices'
+    )
+    $report = "C:\Lastivka\gateway\cloud_mailbox\outbox\verify_integrity_{0:yyyyMMdd_HHmmss}.txt" -f (Get-Date)
+    $lines = @()
+    foreach($p in $checks){
+      $exists = Test-Path $p
+      $lines += ("[{0}] {1}" -f ($(if($exists){'OK'}else{'MISS'}), $p))
+      if(-not $exists){ $ok = $false }
+    }
+    $lines += ("allow_apply_flag: " + (Test-Path $allowFlag))
+    $lines -join "`r`n" | Out-File $report -Encoding UTF8
+    $artifacts += $report
+    $resultSummary = ("verify.integrity: {0} paths checked; ok={1}" -f $checks.Count, $ok)
+  }
+  elseif ($task.focus -eq 'logs.rotate') {
+  $thresholdBytes = 1MB
+  $logPath = $log
+  $ok = $true
+
+  if (Test-Path $logPath) { $size = (Get-Item $logPath).Length } else { $size = 0 }
+  $needRotate = $size -ge $thresholdBytes
+
+  $writes = ($task.limits.writes -as [string])
+  $writesAllowed = $writes -and ($writes -in @('guarded','all'))
+
+  if ($needRotate -and -not $dryRun -and $writesAllowed) {
+    $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+    $rotated = Join-Path (Split-Path $logPath) ("gateway_{0}.log" -f $stamp)
+    Move-Item $logPath $rotated -Force
+    New-Item -ItemType File -Path $logPath -Force | Out-Null
+    $artifacts += $rotated
+    $resultSummary = ('logs.rotate: rotated at ~{0:N0} bytes -> {1}' -f $size, $rotated)
+  }
+  elseif ($needRotate -and -not $writesAllowed) {
+    $resultSummary = ('logs.rotate: blocked (writes={0}) @ ~{1:N0} bytes' -f $writes, $size)
+  }
+  elseif ($needRotate -and $dryRun) {
+    $resultSummary = ('logs.rotate: would rotate @ ~{0:N0} bytes (dryRun)' -f $size)
+  }
+  else {
+    $resultSummary = ('logs.rotate: no action (size={0:N0} bytes)' -f $size)
+  }
+} else {
+    $size = 0
+    $needRotate = $false
+  }
+
+  # Дозвіл на дію: не dryRun І ліміт writes у {'guarded','all'}
+  $writesAllowed = ($task.limits.writes -as [string]) -and ( ($task.limits.writes -eq 'guarded') -or ($task.limits.writes -eq 'all') )
+  if ($needRotate -and -not $dryRun -and $writesAllowed) {
+    $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+    $rotated = Join-Path (Split-Path $logPath) ("gateway_{0}.log" -f $stamp)
+    Move-Item $logPath $rotated -Force
+    New-Item -ItemType File -Path $logPath -Force | Out-Null
+    $artifacts += $rotated
+    $resultSummary = ("logs.rotate: rotated at ~{0:N0} bytes -> {1}" -f $size, $rotated)
+  }
+  elseif ($needRotate -and (-not $writesAllowed)) {
+    $resultSummary = (('logs.rotate: blocked (writes={0}) @ ~{1:N0} bytes' -f $writes, $size))
+  }
+  elseif ($needRotate -and $dryRun) {
+    $resultSummary = (('logs.rotate: would rotate @ ~{0:N0} bytes (dryRun)' -f $size))
+  }
+  else {
+    $resultSummary = ("logs.rotate: no action (size={0:N0} bytes)" -f $size)
+  }
+}
+  else {
+    Start-Sleep -Seconds ([math]::Min(($task.limits.max_runtime_s -as [int]), 5))
+  }
+  # -------------- END HANDLERS --------------
+
+  # STATUS
+  @{
+    id=$task.id; ts=(Get-Date).ToString("s"); phase="done";
+    result=@{ ok=$ok; summary=$resultSummary };
+    artifacts=$artifacts; guard=@{ apply_used=(! $dryRun); writes=0 }
+  } | ConvertTo-Json -Depth 6 | Out-File (Join-Path $outbox "$($task.id).status.json") -Encoding UTF8
+
+  # ARCHIVE
+  $day = (Get-Date).ToString("yyyyMMdd")
+  $archDir = Join-Path $archive $day
+  New-Item $archDir -ItemType Directory -Force | Out-Null
+  Move-Item $taskFile.FullName (Join-Path $archDir $taskFile.Name) -Force
+}
+.ToString("x2") }) -join ""
+}) -join ''
+}
+
+W-Log "watcher start (poll=$PollSec s)"
+while($true){
+  if(Test-Path $stopFlag){ W-Log "STOP.flag present -> idle"; Start-Sleep -Seconds ($PollSec*6); continue }
+
+  $taskFile = Get-ChildItem $inbox -Filter '*.task.json' -File | Sort-Object LastWriteTime | Select-Object -First 1
+  if(-not $taskFile){ Start-Sleep -Seconds $PollSec; continue }
+
+  try { $task = Get-Content $taskFile.FullName -Raw -Encoding UTF8 | ConvertFrom-Json -ErrorAction Stop }
+  catch { W-Log "bad json: $($taskFile.Name) -> quarantine"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; Start-Sleep -Seconds 1; continue }
+
+  if($task.sender -ne 'sofia'){ W-Log "sender not allowed: $($task.sender)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+  if(($task.focus -as [string]) -notin $WhitelistFocus){ W-Log "focus not allowed: $($task.focus)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+
+  $payloadHash = Get-PayloadHash $taskFile.FullName
+  $hashOk = ($task.sha256 -as [string]) -and ($task.sha256.ToLower() -eq $payloadHash.ToLower())
+
+  # ACK
+  $ackObj = @{
+    id=$task.id; ts=(Get-Date).ToString("s"); receiver="lastivka"; status="received"; version="gateway-1.0"; hash_ok=$hashOk
+  }
+  $ackObj | ConvertTo-Json -Depth 6 | Out-File (Join-Path $outbox "$($task.id).ack.json") -Encoding UTF8
+  if(-not $hashOk){ W-Log "hash mismatch -> quarantine: $($task.id)"; Move-Item $taskFile.FullName (Join-Path $quarantine $taskFile.Name) -Force; continue }
+
+  $dryRun = -not (Test-Path $allowFlag) -or ($task.limits.mode -ne 'safe')
+  W-Log "task $($task.id) kind=$($task.kind) focus=$($task.focus) dryRun=$dryRun"
+
+  # ---------------- HANDLERS ----------------
+  $artifacts = @()
+  $resultSummary = "watcher run (dryRun={0})" -f $dryRun
+  $ok = $true
+
+  if ($task.focus -eq 'verify.integrity') {
+    $checks = @(
+      'C:\Lastivka\memory',
+      'C:\Lastivka\memory\snapshots',
+      'C:\Lastivka\logs',
+      'C:\Lastivka\indices'
+    )
+    $report = "C:\Lastivka\gateway\cloud_mailbox\outbox\verify_integrity_{0:yyyyMMdd_HHmmss}.txt" -f (Get-Date)
+    $lines = @()
+    foreach($p in $checks){
+      $exists = Test-Path $p
+      $lines += ("[{0}] {1}" -f ($(if($exists){'OK'}else{'MISS'}), $p))
+      if(-not $exists){ $ok = $false }
+    }
+    $lines += ("allow_apply_flag: " + (Test-Path $allowFlag))
+    $lines -join "`r`n" | Out-File $report -Encoding UTF8
+    $artifacts += $report
+    $resultSummary = ("verify.integrity: {0} paths checked; ok={1}" -f $checks.Count, $ok)
+  }
+  elseif ($task.focus -eq 'logs.rotate') {
+  $thresholdBytes = 1MB
+  $logPath = $log
+  $ok = $true
+
+  if (Test-Path $logPath) { $size = (Get-Item $logPath).Length } else { $size = 0 }
+  $needRotate = $size -ge $thresholdBytes
+
+  $writes = ($task.limits.writes -as [string])
+  $writesAllowed = $writes -and ($writes -in @('guarded','all'))
+
+  if ($needRotate -and -not $dryRun -and $writesAllowed) {
+    $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+    $rotated = Join-Path (Split-Path $logPath) ("gateway_{0}.log" -f $stamp)
+    Move-Item $logPath $rotated -Force
+    New-Item -ItemType File -Path $logPath -Force | Out-Null
+    $artifacts += $rotated
+    $resultSummary = ('logs.rotate: rotated at ~{0:N0} bytes -> {1}' -f $size, $rotated)
+  }
+  elseif ($needRotate -and -not $writesAllowed) {
+    $resultSummary = ('logs.rotate: blocked (writes={0}) @ ~{1:N0} bytes' -f $writes, $size)
+  }
+  elseif ($needRotate -and $dryRun) {
+    $resultSummary = ('logs.rotate: would rotate @ ~{0:N0} bytes (dryRun)' -f $size)
+  }
+  else {
+    $resultSummary = ('logs.rotate: no action (size={0:N0} bytes)' -f $size)
+  }
+} else {
+    $size = 0
+    $needRotate = $false
+  }
+
+  # Дозвіл на дію: не dryRun І ліміт writes у {'guarded','all'}
+  $writesAllowed = ($task.limits.writes -as [string]) -and ( ($task.limits.writes -eq 'guarded') -or ($task.limits.writes -eq 'all') )
+  if ($needRotate -and -not $dryRun -and $writesAllowed) {
+    $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+    $rotated = Join-Path (Split-Path $logPath) ("gateway_{0}.log" -f $stamp)
+    Move-Item $logPath $rotated -Force
+    New-Item -ItemType File -Path $logPath -Force | Out-Null
+    $artifacts += $rotated
+    $resultSummary = ("logs.rotate: rotated at ~{0:N0} bytes -> {1}" -f $size, $rotated)
+  }
+  elseif ($needRotate -and (-not $writesAllowed)) {
+    $resultSummary = (('logs.rotate: blocked (writes={0}) @ ~{1:N0} bytes' -f $writes, $size))
+  }
+  elseif ($needRotate -and $dryRun) {
+    $resultSummary = (('logs.rotate: would rotate @ ~{0:N0} bytes (dryRun)' -f $size))
+  }
+  else {
+    $resultSummary = ("logs.rotate: no action (size={0:N0} bytes)" -f $size)
+  }
+}
+  else {
+    Start-Sleep -Seconds ([math]::Min(($task.limits.max_runtime_s -as [int]), 5))
+  }
+  # -------------- END HANDLERS --------------
+
+  # STATUS
+  @{
+    id=$task.id; ts=(Get-Date).ToString("s"); phase="done";
+    result=@{ ok=$ok; summary=$resultSummary };
+    artifacts=$artifacts; guard=@{ apply_used=(! $dryRun); writes=0 }
+  } | ConvertTo-Json -Depth 6 | Out-File (Join-Path $outbox "$($task.id).status.json") -Encoding UTF8
+
+  # ARCHIVE
+  $day = (Get-Date).ToString("yyyyMMdd")
+  $archDir = Join-Path $archive $day
+  New-Item $archDir -ItemType Directory -Force | Out-Null
+  Move-Item $taskFile.FullName (Join-Path $archDir $taskFile.Name) -Force
+}
+
+
+

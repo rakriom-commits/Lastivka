@@ -12,3 +12,4 @@ pywin32==310
 requests==2.32.4
 Unidecode==1.4.0
 urllib3==2.5.0
+

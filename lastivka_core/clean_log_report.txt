@@ -1,3 +1,0 @@
-Очищено емодзі у таких файлах:
-
-C:\Lastivka\lastivka_core\main\lastivka.py — 2 змін (резерв: lastivka.py.bak)

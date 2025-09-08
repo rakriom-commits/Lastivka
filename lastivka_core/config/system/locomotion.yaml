@@ -1,0 +1,9 @@
+limits:
+  vx_max: 0.5    # m/s
+  vy_max: 0.3    # m/s
+  yaw_rate_max: 0.5  # rad/s
+profiles:
+  move_slow:
+    vx: 0.2
+    vy: 0.0
+    yaw: 0.0

@@ -1,0 +1,11 @@
+trusted_sources:
+  - Олег
+block_patterns:
+  - rm -rf
+  - rm -uf
+  - shutdown
+  - password
+  - паролі
+allow_patterns:
+  - привіт
+  - виведи ключ доступу

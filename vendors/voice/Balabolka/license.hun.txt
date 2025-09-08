@@ -1,0 +1,50 @@
+﻿Balabolka
+
+
+Fejlesztő: Ilya Morozov
+WWW: https://www.cross-plus-a.com/balabolka.htm
+E-mail: crossa@list.ru
+
+Megjegyzés: Ez az alkalmazás freeware-ként jelent meg. A végfelhasználói licencszerződéssel vagy az alkalmazással kapcsolatban felmerülő kérdéseiket, a felhasználók nyugodtan feltehetik a készítőnek. Minden üzenetre a lehető leghamarabb válaszolok.
+
+
+VÉGFELHASZNÁLÓI LICENCSZERZŐDÉS EHHEZ A SZOFTVERHEZ
+Fontos - olvassa el figyelmesen:
+
+A jelen végfelhasználói licencszerződés ("EULA") egy jogi megállapodás Ön (akár magánszemély, akár egyedülálló szervezet) és a szoftver említett fejlesztője között a fent említett szoftvertermékre, amely magába foglalja a számítógépes szoftvert, és tartalmazhat kapcsolódó médiát, nyomtatott anyagokat, valamint "online" vagy elektronikus dokumentációt ("SZOFTVERTERMÉK"). A SZOFTVERTERMÉK telepítésével, másolásával, vagy más módon való használatával, Ön magára nézve kötelezőnek ismeri el a jelen EULA feltételeit. Ha nem ért egyet a jelen EULA feltételeivel, ne telepítse vagy használja a SZOFTVERTERMÉKET.
+
+SZOFTVER TERMÉKLICENC
+
+A SZOFTVERTERMÉKET szerzői jogi törvények és nemzetközi jogszabály szerződések, valamint a szellemi tulajdonra vonatkozó egyéb jogszabályok és szerződések védik. Ez a SZOFTVERTERMÉK licencelt, nem értékesített. A SZOFTVERTERMÉK nem használható Fehéroroszország, Kuba, Irán, Észak-Korea, Szíria, és a Krím-félsziget területén.
+
+1. HASZNÁLATI JOGOK: Jelen végfelhasználói licencmegállapodás a következő jogokat biztosítja Önnek: 
+Telepítés és használat. Korlátlan számú SZOFTVERTERMÉK példányt telepíthet és használhat.
+
+Sokszorosítás és terjesztés: A SZOFTVERTERMÉK korlátlan számú példányát sokszorosíthatja és terjesztheti; feltéve, hogy minden egyes példány hiteles és teljes másolat, beleértve az összes szerzői jogi és védjegybejelentést, és ehhez csatolni kell a jelen végfelhasználói licencszerződés másolatát. A SZOFTVERTERMÉK másolatai önálló termékként, vagy a saját termékével együtt forgalmazhatók.
+
+2. EGYÉB JOGOK ÉS KORLÁTOZÁSOK LEÍRÁSA: Korlátozások a visszafejtésre, dekompilálásra, és csomagra bontásra vonatkozóan. Ön nem végezhet visszafejtést, dekompilálást, vagy részekre bontást a SZOFTVERTERMÉKEN, kivéve és csak olyan mértékben, amennyiben az ilyen tevékenységet a vonatkozó jogszabályok kifejezetten engedélyezik, a jelen korlátozás ellenére.
+
+Összetevők elkülönítése:
+A SZOFTVERTERMÉK egyetlen termékként kerül licencelésre. Összetevői nem választhatók szét egynél több számítógépen történő használatra, a fejlesztő engedélye nélkül.
+
+Szoftver átadása:
+Ön véglegesen átruházhatja a jelen EULA szerinti összes jogát, feltéve, hogy a címzett elfogadja a jelen EULA feltételeit.
+
+Felmondás
+Minden egyéb jog sérelme nélkül,  a szoftver fejlesztője felmondhatja a jelen EULA-t, ha Ön nem tartja be a jelen EULA feltételeit. Ebben az esetben, köteles törölni a SZOFTVERTERMÉKET, illetve összetevőinek valamennyi másolatát.
+
+Terjesztés:
+A SZOFTVERTERMÉK nem adható el, illetve nem mellékelhető olyan termékhez vagy csomaghoz, amely a SZOFTVERTERMÉK hozzáadásával kíván előnyökhöz jutni, a fejlesztő előzetes engedélye nélkül. A SZOFTVERTERMÉK bármilyen ingyenes vagy nonprofit csomagba, vagy termékbe beleintegrálható, feltéve, hogy a terjesztés megfelel a jelen EULA feltételeinek.
+
+3. SZERZŐI JOG:
+Minden cím és szerzői jog a SZOFTVERTERMÉKBEN (beleértve, de nem kizárólagosan a SZOFTVERTERMÉKBE ágyazott képeket, animációkat, hanganyagokat, szövegeket és "kisalkalmazásokat"), a mellékelt nyomtatott anyagok és a SZOFTVERTERMÉK bármely példánya a szoftver fejlesztőjének tulajdonában van. A SZOFTVERTERMÉKET a szerzői jogi törvények és a nemzetközi szerződések rendelkezései védik. Ezért a SZOFTVERTERMÉKET úgy kell kezelnie, mint bármely más szerzői joggal védett anyagot, kivéve, hogy a SZOFTVERTERMÉKET egyetlen számítógépre telepítheti, az eredetit kizárólag biztonsági mentési vagy archiválási célokra őrizheti meg.
+
+4. EGYÉB
+Ha bármilyen kérdése van ezzel a végfelhasználói licencszerződéssel kapcsolatban, vagy bármilyen okból kapcsolatba kíván lépni a szoftver fejlesztőjével, vegye fel vele a kapcsolatot a jelen licencszerződés tetején megadott e-mail címen.
+
+5. KORLÁTOZOTT GARANCIA:
+NINCS GARANCIA: A szoftver készítője kifejezetten elutasítja a szoftvertermék garanciáját. A szoftvertermék és bármely kapcsolódó dokumentáció "ahogy van", mindenféle garancia nélkül kerül kiadásra, vagy kifejezett vagy hallgatólagos, ideértve többek között a vélelmezett szavatosságot vagy értékesíthetőséget, egy adott célra való alkalmasságot, vagy a nem jogsértő magatartást. A SZOFTVERTERMÉK használatából, vagy működtetéséből eredő teljes kockázat a felhasználót terheli.
+
+6. NINCS KÁRTÉRÍTÉSI FELELŐSSÉG:
+A jelen szoftver fejlesztője semmilyen esetben sem vállal felelősséget a termék használatából eredő bárminemű kárért (beleértve, de nem kizárólagosan, az üzleti nyereség elmaradásából, az üzletmenet megszakításából, az üzleti információk elvesztéséből vagy bármely más vagyoni veszteségből eredő károkat), még akkor sem, ha a jelen szoftver fejlesztőjét tájékoztatták az ilyen károk lehetőségéről. Mivel egyes államok/joghatóságok, nem engedélyezik a következményes vagy véletlen károkért való felelősség kizárását vagy korlátozását, a fenti korlátozás nem feltétlenül vonatkozik Önre.
+

@@ -1,0 +1,17 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-000000000001",
+    "ts":  "2025-09-06T19:30:00+03:00",
+    "sender":  "sofia",
+    "kind":  "report",
+    "focus":  "verify.integrity",
+    "limits":  {
+                   "max_runtime_s":  60,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "notes":  "тестове dry-run завдання перевірки структури",
+    "sha256":  "ba24ee46c88c8562eb3ff7806f81c6deb9b8091d54b00b0f83e19160196ce792"
+}

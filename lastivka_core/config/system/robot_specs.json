@@ -1,0 +1,9 @@
+{
+  "battery": {
+    "low_percent": 25,
+    "critical_percent": 10
+  },
+  "joints": {
+    "max_torque_nm": 30.0
+  }
+}

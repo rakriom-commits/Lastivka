@@ -1,0 +1,2568 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<languages description="Language Names">
+		<language id="1142" default="Latin" lcid="la-001">
+			<name id="1" local="لاتينية" description="Arabic"/>
+			<name id="2" local="Латински" description="Bulgarian"/>
+			<name id="3" local="Llatí" description="Catalan"/>
+			<name id="4" subid="1" local="拉丁語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="拉丁语" description="Chinese (Simplified)"/>
+			<name id="5" local="Latina" description="Czech"/>
+			<name id="6" local="Latinsk" description="Danish"/>
+			<name id="7" local="Lateinisch" description="German"/>
+			<name id="8" local="Λατινικός" description="Greek"/>
+			<name id="10" local="Latino" description="Spanish"/>
+			<name id="11" local="Latinalainen" description="Finnish"/>
+			<name id="12" local="Latin" description="French"/>
+			<name id="13" local="לטינית" description="Hebrew"/>
+			<name id="14" local="Latin" description="Hungarian"/>
+			<name id="15" local="Latína" description="Icelandic"/>
+			<name id="16" local="Latino" description="Italian"/>
+			<name id="17" local="ラテン語" description="Japanese"/>
+			<name id="18" local="라틴어" description="Korean"/>
+			<name id="19" local="Latijns" description="Dutch"/>
+			<name id="20" local="Latinsk" description="Norwegian"/>
+			<name id="21" local="Łaciński" description="Polish"/>
+			<name id="22" local="Latino" description="Portuguese"/>
+			<name id="24" local="Latina" description="Romanian"/>
+			<name id="25" local="Латинский" description="Russian"/>
+			<name id="26" subid="1" local="Latinski" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Latinski" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Латински" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Latinski" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Latinski" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Latinski" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Латински" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Латински" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Latina" description="Slovak"/>
+			<name id="28" local="Latine" description="Albanian"/>
+			<name id="29" local="Latin" description="Swedish"/>
+			<name id="30" local="ภาษาละติน" description="Thai"/>
+			<name id="31" local="Latince" description="Turkish"/>
+			<name id="32" local="لاطینی زبان" description="Urdu"/>
+			<name id="33" local="Latin" description="Indonesian"/>
+			<name id="34" local="Латинська" description="Ukrainian"/>
+			<name id="35" local="Лацінская" description="Belarusian"/>
+			<name id="36" local="Latinščina" description="Slovenian"/>
+			<name id="37" local="Ladina" description="Estonian"/>
+			<name id="38" local="Latīņu" description="Latvian"/>
+			<name id="39" local="Lotynų" description="Lithuanian"/>
+			<name id="40" local="Лотинӣ" description="Tajik"/>
+			<name id="42" local="Latinh" description="Vietnamese"/>
+			<name id="43" local="Լատիներեն" description="Armenian"/>
+			<name id="44" local="Latın" description="Azerbaijani"/>
+			<name id="45" local="Latin" description="Basque"/>
+			<name id="47" local="Латинска" description="Macedonian"/>
+			<name id="53" local="ILatin" description="Zulu"/>
+			<name id="54" local="Latyn" description="Afrikaans"/>
+			<name id="55" local="ლათინური" description="Georgian"/>
+			<name id="57" local="लातिन" description="Hindi"/>
+			<name id="60" local="Laideann" description="Gaelic"/>
+			<name id="62" local="Latin" description="Malay"/>
+			<name id="63" local="Латын" description="Kazakh"/>
+			<name id="64" local="Латын" description="Kyrgyz"/>
+			<name id="65" local="Kilatini" description="Swahili"/>
+			<name id="66" local="Latyn" description="Turkmen"/>
+			<name id="67" local="Lotin" description="Uzbek"/>
+			<name id="69" local="ল্যাটিন" description="Bengali"/>
+			<name id="70" local="ਲਾਤੀਨੀ" description="Punjabi"/>
+			<name id="71" local="લેટિન" description="Gujarati"/>
+			<name id="73" local="இலத்தீன்" description="Tamil"/>
+			<name id="74" local="లాటిన్" description="Telugu"/>
+			<name id="76" local="ലാറ്റിൻ" description="Malayalam"/>
+			<name id="79" local="लातिनी" description="Sanskrit"/>
+			<name id="80" local="Латин" description="Mongolian"/>
+			<name id="84" local="ພາສາລາແຕັງ" description="Lao"/>
+			<name id="85" local="လက်တင်ဘာသာစကား" description="Burmese"/>
+			<name id="86" local="Latina" description="Galician"/>
+			<name id="89" local="لاطيني" description="Sindhi"/>
+			<name id="94" local="ሮማይስጥ" description="Amharic"/>
+			<name id="97" local="ल्याटिन" description="Nepali"/>
+			<name id="100" local="Latin" description="Filipino"/>
+			<name id="104" local="Latin" description="Hausa"/>
+			<name id="106" local="Látìnì" description="Yoruba"/>
+		</language>
+		<language id="1536" default="Esperanto" lcid="eo-001">
+			<name id="1" local="الإسبرانتية" description="Arabic"/>
+			<name id="2" local="Есперанто" description="Bulgarian"/>
+			<name id="3" local="Esperanto" description="Catalan"/>
+			<name id="4" subid="1" local="世界語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="世界语" description="Chinese (Simplified)"/>
+			<name id="5" local="Esperanto" description="Czech"/>
+			<name id="6" local="Esperanto" description="Danish"/>
+			<name id="7" local="Esperanto" description="German"/>
+			<name id="8" local="Εσπεράντο" description="Greek"/>
+			<name id="10" local="Esperanto" description="Spanish"/>
+			<name id="11" local="Esperanto" description="Finnish"/>
+			<name id="12" local="Espéranto" description="French"/>
+			<name id="13" local="אספרנטו" description="Hebrew"/>
+			<name id="14" local="Eszperantó" description="Hungarian"/>
+			<name id="15" local="Esperanto" description="Icelandic"/>
+			<name id="16" local="Esperanto" description="Italian"/>
+			<name id="17" local="エスペラント" description="Japanese"/>
+			<name id="18" local="에스페란토" description="Korean"/>
+			<name id="19" local="Esperanto" description="Dutch"/>
+			<name id="20" local="Esperanto" description="Norwegian"/>
+			<name id="21" local="Esperanto" description="Polish"/>
+			<name id="22" local="Esperanto" description="Portuguese"/>
+			<name id="24" local="Esperanto" description="Romanian"/>
+			<name id="25" local="Эсперанто" description="Russian"/>
+			<name id="26" subid="1" local="Esperanto" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Esperanto" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Есперанто" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Esperanto" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Esperanto" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Esperanto" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Есперанто" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Есперанто" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Esperanto" description="Slovak"/>
+			<name id="28" local="Esperanto" description="Albanian"/>
+			<name id="29" local="Esperanto" description="Swedish"/>
+			<name id="30" local="ภาษาเอสเปรันโต" description="Thai"/>
+			<name id="31" local="Esperanto" description="Turkish"/>
+			<name id="32" local="اسپرانتو" description="Urdu"/>
+			<name id="33" local="Esperanto" description="Indonesian"/>
+			<name id="34" local="Есперанто" description="Ukrainian"/>
+			<name id="35" local="Эсперанта" description="Belarusian"/>
+			<name id="36" local="Esperanto" description="Slovenian"/>
+			<name id="37" local="Esperanto" description="Estonian"/>
+			<name id="38" local="Esperanto" description="Latvian"/>
+			<name id="39" local="Esperanto" description="Lithuanian"/>
+			<name id="40" local="Эсперанто" description="Tajik"/>
+			<name id="42" local="Esperanto" description="Vietnamese"/>
+			<name id="43" local="Էսպերանտո" description="Armenian"/>
+			<name id="44" local="Esperanto" description="Azerbaijani"/>
+			<name id="45" local="Esperanto" description="Basque"/>
+			<name id="47" local="Есперанто" description="Macedonian"/>
+			<name id="53" local="Esperanto" description="Zulu"/>
+			<name id="54" local="Esperanto" description="Afrikaans"/>
+			<name id="55" local="ესპერანტო" description="Georgian"/>
+			<name id="57" local="एस्पेरांतो" description="Hindi"/>
+			<name id="60" local="Esperanto" description="Gaelic"/>
+			<name id="62" local="Esperanto" description="Malay"/>
+			<name id="63" local="Эсперанто" description="Kazakh"/>
+			<name id="64" local="Эсперанто" description="Kyrgyz"/>
+			<name id="65" local="Kiesperanto" description="Swahili"/>
+			<name id="66" local="Esperanto" description="Turkmen"/>
+			<name id="67" local="Esperanto" description="Uzbek"/>
+			<name id="69" local="এস্পেরান্তো" description="Bengali"/>
+			<name id="70" local="ਐਸਪੇਰਾਂਤੋ" description="Punjabi"/>
+			<name id="71" local="એસ્પેરાન્ટો" description="Gujarati"/>
+			<name id="73" local="எஸ்பெராண்டோ" description="Tamil"/>
+			<name id="74" local="ఎస్పెరాన్టొ" description="Telugu"/>
+			<name id="76" local="എസ്പെരാന്തോ" description="Malayalam"/>
+			<name id="79" local="एस्पेरान्तो" description="Sanskrit"/>
+			<name id="80" local="Эсперанто" description="Mongolian"/>
+			<name id="84" local="ພາສາເອສເປຮັນໂຕ" description="Lao"/>
+			<name id="85" local="အက်စပါရန်တို" description="Burmese"/>
+			<name id="86" local="Esperanto" description="Galician"/>
+			<name id="89" local="ايسپرانتو" description="Sindhi"/>
+			<name id="94" local="ኤስፔራንቶ" description="Amharic"/>
+			<name id="97" local="एस्पेरान्तो" description="Nepali"/>
+			<name id="100" local="Esperanto" description="Filipino"/>
+			<name id="104" local="Esperanto" description="Hausa"/>
+			<name id="106" local="Esperanto" description="Yoruba"/>
+		</language>
+		<language id="2137" default="Sindhi (Pakistan)" lcid="sd-Arab-PK" version="8">
+			<name id="1" local="السندية (باكستان)" description="Arabic"/>
+			<name id="2" local="Синдхи" description="Bulgarian"/>
+			<name id="3" local="Sindhi" description="Catalan"/>
+			<name id="4" subid="1" local="信德語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="信德语" description="Chinese (Simplified)"/>
+			<name id="5" local="Sindhština" description="Czech"/>
+			<name id="6" local="Sindhi (Pakistan)" description="Danish"/>
+			<name id="7" local="Sindhi" description="German"/>
+			<name id="8" local="Σίντι" description="Greek"/>
+			<name id="10" local="Sindi" description="Spanish"/>
+			<name id="11" local="Sindhi" description="Finnish"/>
+			<name id="12" local="Sindhi" description="French"/>
+			<name id="14" local="Szindhi" description="Hungarian"/>
+			<name id="15" local="Sindhi" description="Icelandic"/>
+			<name id="16" local="Sindhi" description="Italian"/>
+			<name id="17" local="シンド語" description="Japanese"/>
+			<name id="18" local="신디어" description="Korean"/>
+			<name id="19" local="Sindhi" description="Dutch"/>
+			<name id="20" local="Sindhi" description="Norwegian"/>
+			<name id="21" local="Sindhi" description="Polish"/>
+			<name id="22" local="Sindi" description="Portuguese"/>
+			<name id="24" local="Sindhi" description="Romanian"/>
+			<name id="25" local="Синдхи (Пакистан)" description="Russian"/>
+			<name id="26" subid="1" local="Sindhi" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Sindhi" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Синди" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Sindhi" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Sindhi" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Sindhi" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Синди" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Синди" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Sindhčina" description="Slovak"/>
+			<name id="28" local="Sindhi" description="Albanian"/>
+			<name id="29" local="Sindhi" description="Swedish"/>
+			<name id="30" local="ภาษาสินธ์" description="Thai"/>
+			<name id="31" local="Sindhî" description="Turkish"/>
+			<name id="32" local="سندھی (پاکستان)" description="Urdu"/>
+			<name id="33" local="Sindhi (Pakistan)" description="Indonesian"/>
+			<name id="34" local="Сіндгі (Пакистан)" description="Ukrainian"/>
+			<name id="35" local="Сіндхі (Пакістан)" description="Belarusian"/>
+			<name id="36" local="Sindhi" description="Slovenian"/>
+			<name id="37" local="Sindhi" description="Estonian"/>
+			<name id="38" local="Sindhu" description="Latvian"/>
+			<name id="39" local="Sindhų" description="Lithuanian"/>
+			<name id="42" local="Sindh" description="Vietnamese"/>
+			<name id="43" local="Սինդհի" description="Armenian"/>
+			<name id="44" local="Sindhi" description="Azerbaijani"/>
+			<name id="47" local="Синдски" description="Macedonian"/>
+			<name id="54" local="Sindhi" description="Afrikaans"/>
+			<name id="57" local="सिन्धी" description="Hindi"/>
+			<name id="63" local="Синдхи (Пәкістан)" description="Kazakh"/>
+			<name id="64" local="Синдхи (Пакистан)" description="Kyrgyz"/>
+			<name id="67" local="Sindh" description="Uzbek"/>
+			<name id="80" local="Синдхи" description="Mongolian"/>
+		</language>
+		<language id="1109" default="Burmese (Myanmar)" lcid="my-MM" version="8.1">
+			<name id="1" local="البورمية (ميانمار)" description="Arabic"/>
+			<name id="2" local="Бирмански (Мианмар)" description="Bulgarian"/>
+			<name id="3" local="Birmà (Myanmar)" description="Catalan"/>
+			<name id="4" subid="1" local="緬甸文" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="缅甸语" description="Chinese (Simplified)"/>
+			<name id="5" local="Barmština (Myanmar)" description="Czech"/>
+			<name id="6" local="Burmesisk (Myanmar)" description="Danish"/>
+			<name id="7" local="Birmanisch (Myanmar)" description="German"/>
+			<name id="8" local="Βιρμανική (Μιανμάρ)" description="Greek"/>
+			<name id="10" local="Birmano (Myanmar)" description="Spanish"/>
+			<name id="11" local="Burman (Myanmar)" description="Finnish"/>
+			<name id="12" local="Birman (Birmanie)" description="French"/>
+			<name id="14" local="Burmai (Mianmar)" description="Hungarian"/>
+			<name id="15" local="Búrmíska (Mjanmar)" description="Icelandic"/>
+			<name id="16" local="Birmana (Birmania)" description="Italian"/>
+			<name id="17" local="ビルマ語" description="Japanese"/>
+			<name id="18" local="버마어" description="Korean"/>
+			<name id="19" local="Birmaans (Myanmar)" description="Dutch"/>
+			<name id="20" local="Burmesisk (Burma)" description="Norwegian"/>
+			<name id="21" local="Birmański (Mjanma)" description="Polish"/>
+			<name id="22" local="Birmanesa (Mianmar)" description="Portuguese"/>
+			<name id="24" local="Birmană (Myanmar)" description="Romanian"/>
+			<name id="25" local="Бирманский (Мьянма)" description="Russian"/>
+			<name id="26" subid="1" local="Burmanski (Mjanmar)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Burmanski (Mjanmar)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Бурмански (Мјанмар)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Burmanski (Mjanmar)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Burmanski (Mjanmar)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Burmanski (Mjanmar)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Бурмански (Мјанмар)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Бурмански (Мјанмар)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Barmčina (Mjanmarsko)" description="Slovak"/>
+			<name id="28" local="Birmaneze (Mjanmar)" description="Albanian"/>
+			<name id="29" local="Burmesiska (Myanmar)" description="Swedish"/>
+			<name id="30" local="ภาษาพม่า" description="Thai"/>
+			<name id="31" local="Birmanca (Myanmar)" description="Turkish"/>
+			<name id="32" local="برمی (میانمار)" description="Urdu"/>
+			<name id="33" local="Myanmar" description="Indonesian"/>
+			<name id="34" local="Бірманська (М''янма)" description="Ukrainian"/>
+			<name id="35" local="Бірманская (М’янма)" description="Belarusian"/>
+			<name id="36" local="Burmanščina (Mjanmar)" description="Slovenian"/>
+			<name id="37" local="Birma (Myanmar)" description="Estonian"/>
+			<name id="38" local="Birmiešu (Mjanma)" description="Latvian"/>
+			<name id="39" local="Mjanmų (Mianmaras)" description="Lithuanian"/>
+			<name id="42" local="Miến Điện (Myanmar)" description="Vietnamese"/>
+			<name id="43" local="Բիրմաներեն" description="Armenian"/>
+			<name id="44" local="Birman (Myanma)" description="Azerbaijani"/>
+			<name id="47" local="Бурмански (Мјанмар)" description="Macedonian"/>
+			<name id="54" local="Birmaans (Mianmar)" description="Afrikaans"/>
+			<name id="57" local="बर्मी" description="Hindi"/>
+			<name id="63" local="Бирма (Мьянма)" description="Kazakh"/>
+			<name id="64" local="Бирма (Мьянма)" description="Kyrgyz"/>
+			<name id="67" local="Birma (Myanma)" description="Uzbek"/>
+			<name id="80" local="Бирм (Мьянмар)" description="Mongolian"/>
+			<name id="86" local="Birmano (Myanmar)" description="Galician"/>
+		</language>
+		<language id="1085" default="Yiddish (Israel)" lcid="yi-001">
+			<name id="1" local="اليديشية (إسرائيل)" description="Arabic"/>
+			<name id="2" local="Идиш (Израел)" description="Bulgarian"/>
+			<name id="3" local="Ídix (Israel)" description="Catalan"/>
+			<name id="4" subid="1" local="意第緒語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="意第绪语" description="Chinese (Simplified)"/>
+			<name id="5" local="Jidiš (Izrael)" description="Czech"/>
+			<name id="6" local="Jiddisch (Israel)" description="Danish"/>
+			<name id="7" local="Jiddisch (Israel)" description="German"/>
+			<name id="8" local="Γίντις (Ισραήλ)" description="Greek"/>
+			<name id="10" local="Yidis (Israel)" description="Spanish"/>
+			<name id="11" local="Jiddiš (Israel)" description="Finnish"/>
+			<name id="12" local="Yiddish (Israël)" description="French"/>
+			<name id="13" local="יידיש (ישראל)" description="Hebrew"/>
+			<name id="14" local="Jiddis (Izrael)" description="Hungarian"/>
+			<name id="15" local="Jiddíska (Ísrael)" description="Icelandic"/>
+			<name id="16" local="Yiddish (Israele)" description="Italian"/>
+			<name id="17" local="イディッシュ語" description="Japanese"/>
+			<name id="18" local="이디시어" description="Korean"/>
+			<name id="19" local="Jiddisch (Israël)" description="Dutch"/>
+			<name id="20" local="Jiddisch (Israel)" description="Norwegian"/>
+			<name id="21" local="Jidysz (Izrael)" description="Polish"/>
+			<name id="22" local="Iídiche (Israel)" description="Portuguese"/>
+			<name id="24" local="Idiș (Israel)" description="Romanian"/>
+			<name id="25" local="Идиш (Израиль)" description="Russian"/>
+			<name id="26" subid="1" local="Jidiš (Izrael)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Jidiš (Izrael)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Јидиш (Израел)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Jidiš (Izrael)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Jidiš (Izrael)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Jidiš (Izrael)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Јидиш (Израел)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Јидиш (Израел)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Jidiš (Izrael)" description="Slovak"/>
+			<name id="28" local="Jidish" description="Albanian"/>
+			<name id="29" local="Jiddisch (Israel)" description="Swedish"/>
+			<name id="30" local="ภาษายิดดิช" description="Thai"/>
+			<name id="31" local="Yidiş (İsrail)" description="Turkish"/>
+			<name id="32" local="یدش (اسرائیل)" description="Urdu"/>
+			<name id="33" local="Yiddi (Israel)" description="Indonesian"/>
+			<name id="34" local="Їдиш (Ізраїль)" description="Ukrainian"/>
+			<name id="35" local="Ідыш (Ізраіль)" description="Belarusian"/>
+			<name id="36" local="Jidiš (Izrael)" description="Slovenian"/>
+			<name id="37" local="Jidiši (Iisrael)" description="Estonian"/>
+			<name id="38" local="Jidišs (Izraēla)" description="Latvian"/>
+			<name id="39" local="Jidiš (Izraelis)" description="Lithuanian"/>
+			<name id="42" local="Yiddish (Israel)" description="Vietnamese"/>
+			<name id="43" local="Իդիշ (Իսրայել)" description="Armenian"/>
+			<name id="44" local="İdiş (İsrail)" description="Azerbaijani"/>
+			<name id="47" local="Јидиш (Израел)" description="Macedonian"/>
+			<name id="54" local="Jiddisj (Israel)" description="Afrikaans"/>
+			<name id="57" local="यिद्दी" description="Hindi"/>
+			<name id="63" local="Идиш (Израиль)" description="Kazakh"/>
+			<name id="64" local="Идиш (Израиль)" description="Kyrgyz"/>
+			<name id="67" local="Idish" description="Uzbek"/>
+			<name id="80" local="Идиш (Израил)" description="Mongolian"/>
+		</language>
+		<language id="1166" default="Chinese (Cantonese, Traditional)" lcid="yue-HK">
+			<name id="1" local="الصينية (الكانتونية، التقليدية)" description="Arabic"/>
+			<name id="2" local="Китайски (кантонски, традиционен)" description="Bulgarian"/>
+			<name id="3" local="Xinès (cantonès, tradicional)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（廣東話，繁體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（粤语，繁体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (kantonština, tradiční)" description="Czech"/>
+			<name id="6" local="Kinesisk (kantonesisk, traditionel)" description="Danish"/>
+			<name id="7" local="Chinesisch (Kantonesisch, traditionell)" description="German"/>
+			<name id="8" local="Κινέζικα (καντονέζικα, παραδοσιακά)" description="Greek"/>
+			<name id="10" local="Chino (cantonés, tradicional)" description="Spanish"/>
+			<name id="11" local="Kiina (kantoninkiina, perinteinen)" description="Finnish"/>
+			<name id="12" local="Chinois (cantonais, traditionnel)" description="French"/>
+			<name id="13" local="סינית (קנטונזית, מסורתית)" description="Hebrew"/>
+			<name id="14" local="Kínai (kantoni, hagyományos)" description="Hungarian"/>
+			<name id="15" local="Kínverska (kantónska, hefðbundin)" description="Icelandic"/>
+			<name id="16" local="Cinese (cantonese, tradizionale)" description="Italian"/>
+			<name id="17" local="中国語（繁体字）" description="Japanese"/>
+			<name id="18" local="중국어 (광둥어, 번체)" description="Korean"/>
+			<name id="19" local="Chinees (Kantonees, Traditioneel)" description="Dutch"/>
+			<name id="20" local="Kinesisk (kantonesisk, tradisjonell)" description="Norwegian"/>
+			<name id="21" local="Chiński (kantoński, tradycyjny)" description="Polish"/>
+			<name id="22" local="Chinês (Cantonês, tradicional)" description="Portuguese"/>
+			<name id="24" local="Chineză (cantoneză, tradițională)" description="Romanian"/>
+			<name id="25" local="Китайский (кантонский, традиционное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (kantonski, tradicionalni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (kantonski, tradicionalni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (кантонски, традиционални)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (kantonski, tradicionalni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (kantonski, tradicionalni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (kantonski, tradicionalni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (кантонски, традиционални)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (кантонски, традиционални)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (kantonská, tradičná)" description="Slovak"/>
+			<name id="28" local="Kineze (kantoneze, tradicionale)" description="Albanian"/>
+			<name id="29" local="Kinesiska (kantonesiska, traditionella)" description="Swedish"/>
+			<name id="30" local="จีน (กวางตุ้ง, ดั้งเดิม)" description="Thai"/>
+			<name id="31" local="Çince (Kantonca, Geleneksel)" description="Turkish"/>
+			<name id="32" local="چینی (کینٹونی، روایتی)" description="Urdu"/>
+			<name id="33" local="Tionghoa (Kanton, Tradisional)" description="Indonesian"/>
+			<name id="34" local="Китайська (кантонська, традиційна)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (кантонская, традыцыйная)" description="Belarusian"/>
+			<name id="36" local="Kitajski (kantonski, tradicionalni)" description="Slovenian"/>
+			<name id="37" local="Hiina (kantoni, traditsiooniline)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (kantoniešu, tradicionālā)" description="Latvian"/>
+			<name id="39" local="Kinų (kantonų, tradicinės)" description="Lithuanian"/>
+			<name id="42" local="Trung (Quảng Đông, Phồn thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (կանտոներեն, ավանդական)" description="Armenian"/>
+			<name id="44" local="Çin (Kanton, ənənəvi)" description="Azerbaijani"/>
+			<name id="45" local="Chino (cantonés, tradicional)" description="Basque"/>
+			<name id="47" local="Кинески (кантонски, традиционален)" description="Macedonian"/>
+			<name id="54" local="Chinees (Kantonees, Tradisioneel)" description="Afrikaans"/>
+			<name id="57" local="चीनी (कैंटोनीज़, पारंपरिक)" description="Hindi"/>
+			<name id="63" local="Қытай (кантон, дәстүрлі)" description="Kazakh"/>
+			<name id="64" local="Кытай (кантон, салттуу)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (kanton, anʼanaviy)" description="Uzbek"/>
+			<name id="80" local="Хятад (кантон, уламжлалт)" description="Mongolian"/>
+			<name id="86" local="Chino (cantonés, tradicional)" description="Galician"/>
+		</language>
+		<language id="1141" default="Hawaiian (USA)" lcid="haw-US" version="8">
+			<name id="1" local="هاواي (الولايات المتحدة الأمريكية)" description="Arabic"/>
+			<name id="2" local="Хавайски (САЩ)" description="Bulgarian"/>
+			<name id="3" local="Hawaià (EUA)" description="Catalan"/>
+			<name id="4" subid="1" local="夏威夷語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="夏威夷语" description="Chinese (Simplified)"/>
+			<name id="5" local="Havajština (Spojené státy)" description="Czech"/>
+			<name id="6" local="Hawaiiansk (USA)" description="Danish"/>
+			<name id="7" local="Hawaiisch (USA)" description="German"/>
+			<name id="8" local="Χαβαϊκή (Ηνωμένες Πολιτείες)" description="Greek"/>
+			<name id="10" local="Hawaiano (Estados Unidos)" description="Spanish"/>
+			<name id="11" local="Havaijin (USA)" description="Finnish"/>
+			<name id="12" local="Hawaïen (États-Unis)" description="French"/>
+			<name id="13" local="הוואית" description="Hebrew"/>
+			<name id="14" local="Hawaii (Amerikai Egyesült Államok)" description="Hungarian"/>
+			<name id="15" local="Hawaiíska (Bandaríkin)" description="Icelandic"/>
+			<name id="16" local="Hawaiana (Stati Uniti)" description="Italian"/>
+			<name id="17" local="ハワイ語" description="Japanese"/>
+			<name id="18" local="하와이어" description="Korean"/>
+			<name id="19" local="Hawaïaans (Verenigde Staten)" description="Dutch"/>
+			<name id="20" local="Hawaiisk (USA)" description="Norwegian"/>
+			<name id="21" local="Hawajski (Stany Zjednoczone)" description="Polish"/>
+			<name id="22" local="Havaiana (Estados Unidos)" description="Portuguese"/>
+			<name id="23" local="Hawaiian (Stâts Unîts)" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Hawaiiană (Statele Unite)" description="Romanian"/>
+			<name id="25" local="Гавайский (США)" description="Russian"/>
+			<name id="26" subid="1" local="Havajski (SAD)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Havajski (SAD)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Хавајски (САД)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Havajski (SAD)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Havajski (SAD)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Havajski (SAD)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Хавајски (САД)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Хавајски (САД)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Havajčina (Spojené štáty)" description="Slovak"/>
+			<name id="28" local="Havajane (SHBA)" description="Albanian"/>
+			<name id="29" local="Hawaiiska (USA)" description="Swedish"/>
+			<name id="30" local="ภาษาฮาวาย" description="Thai"/>
+			<name id="31" local="Hawaii (ABD)" description="Turkish"/>
+			<name id="32" local="ہوائی (امریکہ)" description="Urdu"/>
+			<name id="33" local="Hawaii (Amerika Serikat)" description="Indonesian"/>
+			<name id="34" local="Гавайська (США)" description="Ukrainian"/>
+			<name id="35" local="Гавайская (ЗША)" description="Belarusian"/>
+			<name id="36" local="Havajščina (Združene države Amerike)" description="Slovenian"/>
+			<name id="37" local="Havai (Ühendriigid)" description="Estonian"/>
+			<name id="38" local="Havajiešu (Savienotās Valstis)" description="Latvian"/>
+			<name id="39" local="Havajiečių (Jungtinės Valstijos)" description="Lithuanian"/>
+			<name id="40" local="Ҳавайӣ (ИМА)" description="Tajik"/>
+			<name id="42" local="Hawaii (Hoa Kỳ)" description="Vietnamese"/>
+			<name id="43" local="Հավայան (Միացյալ Նահանգներ)" description="Armenian"/>
+			<name id="44" local="Havay (ABŞ)" description="Azerbaijani"/>
+			<name id="45" local="Hawaiiera (AEB)" description="Basque"/>
+			<name id="47" local="Хавајски (САД)" description="Macedonian"/>
+			<name id="53" local="IsiHawayi (USA)" description="Zulu"/>
+			<name id="54" local="Hawais (Verenigde State)" description="Afrikaans"/>
+			<name id="55" local="ჰავაიური (აშშ)" description="Georgian"/>
+			<name id="57" local="हवाईवी (संयुक्त राज्य)" description="Hindi"/>
+			<name id="60" local="Hawaiian (Na Stàitean Aonaichte)" description="Gaelic"/>
+			<name id="62" local="Hawaii (Amerika Syarikat)" description="Malay"/>
+			<name id="63" local="Гавай (АҚШ)" description="Kazakh"/>
+			<name id="64" local="Гавай (АКШ)" description="Kyrgyz"/>
+			<name id="65" local="Kihawai (Marekani)" description="Swahili"/>
+			<name id="66" local="Hawaýi (ABŞ)" description="Turkmen"/>
+			<name id="67" local="Gavayi (AQSh)" description="Uzbek"/>
+			<name id="69" local="হাওয়াইয়ান (মার্কিন যুক্তরাষ্ট্র)" description="Bengali"/>
+			<name id="70" local="ਹਵਾਈਵੀ (ਅਮਰੀਕਾ)" description="Punjabi"/>
+			<name id="71" local="હવાઇયન (યુએસએ)" description="Gujarati"/>
+			<name id="73" local="ஹவாய் (அமெரிக்கா)" description="Tamil"/>
+			<name id="74" local="హవాయియన్ (యుఎస్ఎ)" description="Telugu"/>
+			<name id="76" local="ഹവായിയൻ (യുഎസ്എ)" description="Malayalam"/>
+			<name id="79" local="हवाई (अमेरिका)" description="Sanskrit"/>
+			<name id="80" local="Хавай (АНУ)" description="Mongolian"/>
+			<name id="84" local="ຮາວາຍ (ສະຫະລັດ)" description="Lao"/>
+			<name id="85" local="ဟာဝိုင်အီ (အမေရိကန်)" description="Burmese"/>
+			<name id="86" local="Hawaiano (EUA)" description="Galician"/>
+			<name id="89" local="هوائي (آمريڪا)" description="Sindhi"/>
+			<name id="94" local="የሃዋይ (አሜሪካ)" description="Amharic"/>
+			<name id="97" local="हवाईयन (संयुक्त राज्य अमेरिका)" description="Nepali"/>
+			<name id="100" local="Hawaiian (USA)" description="Filipino"/>
+			<name id="104" local="Hawaiian (Amurka)" description="Hausa"/>
+			<name id="106" local="Hawahi (Amẹrika)" description="Yoruba"/>
+		</language>
+		<language id="640" default="Classical Chinese" lcid="wyw,lzh">
+			<name id="1" local="لغة صينية كلاسيكية" description="Arabic"/>
+			<name id="2" local="Класически китайски (венян)" description="Bulgarian"/>
+			<name id="3" local="Xinès clàssic" description="Catalan"/>
+			<name id="4" subid="1" local="文言文" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="文言文" description="Chinese (Simplified)"/>
+			<name id="5" local="Klasická čínština" description="Czech"/>
+			<name id="6" local="Wenyan (klassisk kinesisk)" description="Danish"/>
+			<name id="7" local="Klassisches Chinesisch" description="German"/>
+			<name id="8" local="Κλασική κινεζική γλώσσα" description="Greek"/>
+			<name id="10" local="Chino clásico" description="Spanish"/>
+			<name id="11" local="Klassinen kiina" description="Finnish"/>
+			<name id="12" local="Chinois classique" description="French"/>
+			<name id="13" local="סינית קלאסית" description="Hebrew"/>
+			<name id="14" local="Klasszikus kínai" description="Hungarian"/>
+			<name id="15" local="Klassísk kínverska" description="Icelandic"/>
+			<name id="16" local="Classical Chinese" description="Italian"/>
+			<name id="17" local="漢文" description="Japanese"/>
+			<name id="18" local="한문" description="Korean"/>
+			<name id="19" local="Wenyanwen (Klassiek Chinees)" description="Dutch"/>
+			<name id="20" local="Wenyan (klassisk kinesisk)" description="Norwegian"/>
+			<name id="21" local="Klasyczny język chiński" description="Polish"/>
+			<name id="22" local="Chinês clássico" description="Portuguese"/>
+			<name id="24" local="Chineză clasică" description="Romanian"/>
+			<name id="25" local="Вэньянь (классический китайский)" description="Russian"/>
+			<name id="26" subid="1" local="Literarni kineski" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Literarni kineski" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Класични кинески" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Literarni kineski" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Literarni kineski" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Literarni kineski" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Класични кинески" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Класични кинески" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Klasická čínština" description="Slovak"/>
+			<name id="28" local="Kineze klasike" description="Albanian"/>
+			<name id="29" local="Klassisk kinesiska" description="Swedish"/>
+			<name id="30" local="ภาษาจีนคลาสสิก" description="Thai"/>
+			<name id="31" local="Klasik Çince" description="Turkish"/>
+			<name id="32" local="کلاسیکی چینی" description="Urdu"/>
+			<name id="33" local="Tionghoa Klasik" description="Indonesian"/>
+			<name id="34" local="Класична китайська (веньянь)" description="Ukrainian"/>
+			<name id="35" local="Вэньянь" description="Belarusian"/>
+			<name id="36" local="Klasična Kitajšina" description="Slovenian"/>
+			<name id="37" local="Vanahiina kirjakeel" description="Estonian"/>
+			<name id="38" local="Klasiskā ķīniešu" description="Latvian"/>
+			<name id="39" local="Klasikinė kinų" description="Lithuanian"/>
+			<name id="42" local="Văn ngôn" description="Vietnamese"/>
+			<name id="43" local="Դասական չինարեն" description="Armenian"/>
+			<name id="44" local="Klassik Çin" description="Azerbaijani"/>
+			<name id="47" local="Класичен кинески" description="Macedonian"/>
+			<name id="54" local="Klassieke Sjinees" description="Afrikaans"/>
+			<name id="57" local="शास्त्रीय चीनी" description="Hindi"/>
+			<name id="63" local="Вэньянь (классикалық қытай)" description="Kazakh"/>
+			<name id="64" local="Классикалык кытай" description="Kyrgyz"/>
+			<name id="67" local="Klassik Xitoy" description="Uzbek"/>
+			<name id="80" local="Классик хятад" description="Mongolian"/>
+		</language>
+		<language id="641" default="Javanese (Latin, Indonesia)" lcid="jv-Latn-ID">
+			<name id="1" local="الجاوية (اللاتينية ، إندونيسيا)" description="Arabic"/>
+			<name id="2" local="Явански (Индонезия)" description="Bulgarian"/>
+			<name id="3" local="Javanès (latino, Indonèsia)" description="Catalan"/>
+			<name id="4" subid="1" local="爪哇語（印尼）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="爪哇语（印度尼西亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Javánština (latinka, Indonésie)" description="Czech"/>
+			<name id="6" local="Javanesisk (Indonesien)" description="Danish"/>
+			<name id="7" local="Javanisch (Lateinisch, Indonesien)" description="German"/>
+			<name id="8" local="Ιαβαϊκή (Ινδονησία)" description="Greek"/>
+			<name id="10" local="Javanés (latino, Indonesia)" description="Spanish"/>
+			<name id="11" local="Jaavan (Indonesia)" description="Finnish"/>
+			<name id="12" local="Javanais (latin, Indonésie)" description="French"/>
+			<name id="13" local="ג'אווה (לטינית, אינדונזיה)" description="Hebrew"/>
+			<name id="14" local="Jávai (latin betűs, Indonézia)" description="Hungarian"/>
+			<name id="15" local="Javíska (Indónesía)" description="Icelandic"/>
+			<name id="16" local="Giavanese (alfabeto latino, Indonesia)" description="Italian"/>
+			<name id="17" local="ジャワ語（インドネシア）" description="Japanese"/>
+			<name id="18" local="자와어 (인도네시아)" description="Korean"/>
+			<name id="19" local="Javaans (Latijns, Indonesië)" description="Dutch"/>
+			<name id="20" local="Javanesisk (Indonesia)" description="Norwegian"/>
+			<name id="21" local="Jawajski (łaciński, Indonezja)" description="Polish"/>
+			<name id="22" local="Javanês (latino, Indonésia)" description="Portuguese"/>
+			<name id="24" local="Javaneză (Indonezia)" description="Romanian"/>
+			<name id="25" local="Яванский (латиница, Индонезия)" description="Russian"/>
+			<name id="26" subid="1" local="Jaavan (Indonezija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Jaavan (Indonezija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Јавански (Индонезија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Jaavan (Indonezija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Jaavan (Indonezija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Jaavan (Indonezija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Јавански (Индонезија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Јавански (Индонезија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Jávsky (latinka, Indonézia)" description="Slovak"/>
+			<name id="28" local="Javaneze (Indonezia)" description="Albanian"/>
+			<name id="29" local="Javanesiska (latinsk, Indonesien)" description="Swedish"/>
+			<name id="30" local="ภาษาชวา (ประเทศอินโดนีเซีย)" description="Thai"/>
+			<name id="31" local="Cava (Endonezya)" description="Turkish"/>
+			<name id="32" local="جاوانی (لاطینی، انڈونیشیا)" description="Urdu"/>
+			<name id="33" local="Jawa (Latin, Indonesia)" description="Indonesian"/>
+			<name id="34" local="Яванська (Індонезія)" description="Ukrainian"/>
+			<name id="35" local="Яванская (Інданезія)" description="Belarusian"/>
+			<name id="36" local="Javanščina (Indonezija)" description="Slovenian"/>
+			<name id="37" local="Jaava (Indoneesia)" description="Estonian"/>
+			<name id="38" local="Javiešu (Indonēzija)" description="Latvian"/>
+			<name id="39" local="Javiečių (Indonezija)" description="Lithuanian"/>
+			<name id="42" local="Java (Indonesia)" description="Vietnamese"/>
+			<name id="43" local="Ճավայերեն (Ինդոնեզիա)" description="Armenian"/>
+			<name id="44" local="Yava (İndoneziya)" description="Azerbaijani"/>
+			<name id="45" local="Javanés (latino, Indonesia)" description="Basque"/>
+			<name id="47" local="Јавански (Индонезија)" description="Macedonian"/>
+			<name id="54" local="Javaans (Indonesië)" description="Afrikaans"/>
+			<name id="57" local="जावा (लैटिन, इंडोनेशिया)" description="Hindi"/>
+			<name id="63" local="Яван (Индонезия)" description="Kazakh"/>
+			<name id="64" local="Жанавизче (Индонезия)" description="Kyrgyz"/>
+			<name id="67" local="Yava (Indoneziya)" description="Uzbek"/>
+			<name id="80" local="Яван (Индонез)" description="Mongolian"/>
+			<name id="86" local="Javanés (latino, Indonesia)" description="Galician"/>
+		</language>
+		<language id="642" default="Chuvash (Russia)" lcid="cv-RU">
+			<name id="1" local="تشوفاش (روسيا)" description="Arabic"/>
+			<name id="2" local="Чувашки (Русия)" description="Bulgarian"/>
+			<name id="3" local="Txuvaix (Rússia)" description="Catalan"/>
+			<name id="4" subid="1" local="楚瓦什語（俄羅斯）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="楚瓦什语（俄罗斯）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čuvaština (Rusko)" description="Czech"/>
+			<name id="6" local="Tjuvasjisk (Rusland)" description="Danish"/>
+			<name id="7" local="Tschuwaschisch (Russland)" description="German"/>
+			<name id="8" local="Τσουβασική (Ρωσία)" description="Greek"/>
+			<name id="10" local="Chuvasio (Rusia)" description="Spanish"/>
+			<name id="11" local="Tšuvassin (Venäjä)" description="Finnish"/>
+			<name id="12" local="Tchouvache (Russie)" description="French"/>
+			<name id="13" local="צ'ובאש (רוסיה)" description="Hebrew"/>
+			<name id="14" local="Csuvas (Oroszország)" description="Hungarian"/>
+			<name id="15" local="Chuvash (Rússland)" description="Icelandic"/>
+			<name id="16" local="Ciuvascia (Russia)" description="Italian"/>
+			<name id="17" local="チュヴァシ語（ロシア）" description="Japanese"/>
+			<name id="18" local="추바시 (러시아)" description="Korean"/>
+			<name id="19" local="Tsjoevasjisch (Rusland)" description="Dutch"/>
+			<name id="20" local="Tsjuvasjisk (Russland)" description="Norwegian"/>
+			<name id="21" local="Czuwaski (Rosja)" description="Polish"/>
+			<name id="22" local="Tchuvache (Rússia)" description="Portuguese"/>
+			<name id="24" local="Ciuvașă (Rusia)" description="Romanian"/>
+			<name id="25" local="Чувашский (Россия)" description="Russian"/>
+			<name id="26" subid="1" local="Čuvaški (Rusija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Čuvaški (Rusija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Чувашки (Русија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Čuvaški (Rusija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Čuvaški (Rusija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Čuvaški (Rusija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Чувашки (Русија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Чувашки (Русија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čuvaština (Rusko)" description="Slovak"/>
+			<name id="28" local="Çuvash (Rusia)" description="Albanian"/>
+			<name id="29" local="Tjuvasjiska (Ryssland)" description="Swedish"/>
+			<name id="30" local="ภาษาชูวัช (รัสเซีย)" description="Thai"/>
+			<name id="31" local="Çuvaşça (Rusya)" description="Turkish"/>
+			<name id="32" local="چواش (روس)" description="Urdu"/>
+			<name id="33" local="Chuvash (Rusia)" description="Indonesian"/>
+			<name id="34" local="Чуваська (Росія)" description="Ukrainian"/>
+			<name id="35" local="Чувашская (Расія)" description="Belarusian"/>
+			<name id="36" local="Čuvaščina (Rusija)" description="Slovenian"/>
+			<name id="37" local="Tšuvaši (Venemaa)" description="Estonian"/>
+			<name id="38" local="Čuvašu (Krievija)" description="Latvian"/>
+			<name id="39" local="Čiuvašų (Rusija)" description="Lithuanian"/>
+			<name id="40" local="Чуваш (Русия)" description="Tajik"/>
+			<name id="42" local="Chuvash (Nga)" description="Vietnamese"/>
+			<name id="43" local="Չուվաշ (Ռուսաստան)" description="Armenian"/>
+			<name id="44" local="Çuvaş (Rusiya)" description="Azerbaijani"/>
+			<name id="45" local="Txuvaxera (Errusia)" description="Basque"/>
+			<name id="47" local="Чувашки (Русија)" description="Macedonian"/>
+			<name id="53" local="Chuvash (eRussia)" description="Zulu"/>
+			<name id="54" local="Tsjoewasjies (Rusland)" description="Afrikaans"/>
+			<name id="55" local="ჩუვაშური (რუსეთი)" description="Georgian"/>
+			<name id="57" local="चुवाश (रूस)" description="Hindi"/>
+			<name id="60" local="Chuvash (An Rúis)" description="Gaelic"/>
+			<name id="62" local="Chuvash (Rusia)" description="Malay"/>
+			<name id="63" local="Шуаш (Ресей)" description="Kazakh"/>
+			<name id="64" local="Чуваш (Орусия)" description="Kyrgyz"/>
+			<name id="65" local="Kichuvash (Urusi)" description="Swahili"/>
+			<name id="66" local="Çuwaş (Russiýa)" description="Turkmen"/>
+			<name id="67" local="Chuvash (Rossiya)" description="Uzbek"/>
+			<name id="69" local="চুভাশ (রাশিয়া)" description="Bengali"/>
+			<name id="70" local="ਚੁਵਾਸ਼ (ਰੂਸ)" description="Punjabi"/>
+			<name id="71" local="ચૂવાશ (રશિયા)" description="Gujarati"/>
+			<name id="73" local="சுவாஷ் (ரஷ்யா)" description="Tamil"/>
+			<name id="74" local="చువాష్ (రష్యా)" description="Telugu"/>
+			<name id="76" local="ചുവാഷ് (റഷ്യ)" description="Malayalam"/>
+			<name id="79" local="चुवाश (रूस)" description="Sanskrit"/>
+			<name id="80" local="Чуваш (Орос Улс)" description="Mongolian"/>
+			<name id="85" local="ချူဗက်ရှ် (ရုရှား)" description="Burmese"/>
+			<name id="86" local="Chuvash (Rusia)" description="Galician"/>
+			<name id="89" local="چواش (روس)" description="Sindhi"/>
+			<name id="94" local="ቹቫሽ (ሩሲያ)" description="Amharic"/>
+			<name id="97" local="चुभाश (रूस)" description="Nepali"/>
+			<name id="100" local="Chuvash (Russia)" description="Filipino"/>
+			<name id="104" local="Chuvash (Rasha)" description="Hausa"/>
+			<name id="106" local="Chuvash (Russia)" description="Yoruba"/>
+		</language>
+		<language id="643" default="Chichewa (Malawi)" lcid="ny-MW">
+			<name id="1" local="شيشيوا (ملاوي)" description="Arabic"/>
+			<name id="2" local="Нянджа (Малави)" description="Bulgarian"/>
+			<name id="3" local="Nyanja (Malawi)" description="Catalan"/>
+			<name id="4" subid="1" local="齊切瓦語（馬拉維）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="齐切瓦语（马拉维）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čičevština (Malawi)" description="Czech"/>
+			<name id="6" local="Nyanja (Malawi)" description="Danish"/>
+			<name id="7" local="Chichewa (Malawi)" description="German"/>
+			<name id="8" local="Τσιτσέουα (Μαλάουι)" description="Greek"/>
+			<name id="10" local="Chichewa (Malaui)" description="Spanish"/>
+			<name id="11" local="Njandža (Malawi)" description="Finnish"/>
+			<name id="12" local="Chichewa (Malawi)" description="French"/>
+			<name id="13" local="צ'יצ'ווה (מלאווי)" description="Hebrew"/>
+			<name id="14" local="Chichewa (Malawi)" description="Hungarian"/>
+			<name id="15" local="Chichewa (Malaví)" description="Icelandic"/>
+			<name id="16" local="Chicheŵa (Malawi)" description="Italian"/>
+			<name id="17" local="チェワ語（マラウイ）" description="Japanese"/>
+			<name id="18" local="체와어 (말라위)" description="Korean"/>
+			<name id="19" local="Nyanja (Malawi)" description="Dutch"/>
+			<name id="20" local="Chichewa (Malawi)" description="Norwegian"/>
+			<name id="21" local="Cziczewa (Malawi)" description="Polish"/>
+			<name id="22" local="Nianja (Malawi)" description="Portuguese"/>
+			<name id="24" local="Chichewa (Malawi)" description="Romanian"/>
+			<name id="25" local="Ньянджа (Малави)" description="Russian"/>
+			<name id="26" subid="1" local="Čičeva (Malavi)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Čičeva (Malavi)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Чичева (Малави)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Čičeva (Malavi)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Čičeva (Malavi)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Čičeva (Malavi)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Чичева (Малави)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Чичева (Малави)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čičevčina (Malawi)" description="Slovak"/>
+			<name id="28" local="Chichewa (Malawi)" description="Albanian"/>
+			<name id="29" local="Chichewa (Malawi)" description="Swedish"/>
+			<name id="30" local="ชิเชวา (มาลาวี)" description="Thai"/>
+			<name id="31" local="Çevaca (Malavi)" description="Turkish"/>
+			<name id="32" local="چیچیوا (مالوی)" description="Urdu"/>
+			<name id="33" local="Chichewa (Malawi)" description="Indonesian"/>
+			<name id="34" local="Ньянджа (Малаві)" description="Ukrainian"/>
+			<name id="35" local="Ньянджа (Малаві)" description="Belarusian"/>
+			<name id="36" local="Čevščina (Malavi)" description="Slovenian"/>
+			<name id="37" local="Njandža (Malawi)" description="Estonian"/>
+			<name id="38" local="Čičeva (Malāvija)" description="Latvian"/>
+			<name id="39" local="Čičeva (Malavis)" description="Lithuanian"/>
+			<name id="42" local="Nyanja (Malawi)" description="Vietnamese"/>
+			<name id="43" local="Չիչևա (Մալավի)" description="Armenian"/>
+			<name id="44" local="Nıyanca (Malavi)" description="Azerbaijani"/>
+			<name id="47" local="Чевански (Малави)" description="Macedonian"/>
+			<name id="54" local="Chichewa (Malawi)" description="Afrikaans"/>
+			<name id="57" local="चिचेवा" description="Hindi"/>
+			<name id="63" local="Чичева (Малави)" description="Kazakh"/>
+			<name id="64" local="Чичева (Малави)" description="Kyrgyz"/>
+			<name id="67" local="Chicheva (Malavi)" description="Uzbek"/>
+			<name id="80" local="Ньянжа (Малави)" description="Mongolian"/>
+		</language>
+		<language id="644" default="Udmurt (Russia)" lcid="udm-RU">
+			<name id="1" local="الأدمرت (روسيا)" description="Arabic"/>
+			<name id="2" local="Удмуртски (Русия)" description="Bulgarian"/>
+			<name id="3" local="Udmurt (Rússia)" description="Catalan"/>
+			<name id="4" subid="1" local="烏德莫爾特語（俄羅斯）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="乌德穆尔特语（俄罗斯）" description="Chinese (Simplified)"/>
+			<name id="5" local="Udmurtština (Rusko)" description="Czech"/>
+			<name id="6" local="Udmurtisk (Rusland)" description="Danish"/>
+			<name id="7" local="Udmurtisch (Russland)" description="German"/>
+			<name id="8" local="Ουντμουρτικά (Ρωσία)" description="Greek"/>
+			<name id="10" local="Udmurto (Rusia)" description="Spanish"/>
+			<name id="11" local="Udmurtti (Venäjä)" description="Finnish"/>
+			<name id="12" local="Oudmourte (Russie)" description="French"/>
+			<name id="13" local="אודמורט (רוסיה)" description="Hebrew"/>
+			<name id="14" local="Udmurt (Oroszország)" description="Hungarian"/>
+			<name id="15" local="Údmúrt (Rússland)" description="Icelandic"/>
+			<name id="16" local="Udmurta (Russia)" description="Italian"/>
+			<name id="17" local="ウドムルト語（ロシア）" description="Japanese"/>
+			<name id="18" local="우드무르트어 (러시아)" description="Korean"/>
+			<name id="19" local="Oedmoerts (Rusland)" description="Dutch"/>
+			<name id="20" local="Udmurtisk (Russland)" description="Norwegian"/>
+			<name id="21" local="Udmurcki (Rosja)" description="Polish"/>
+			<name id="22" local="Udmurte (Rússia)" description="Portuguese"/>
+			<name id="24" local="Udmurtă (Rusia)" description="Romanian"/>
+			<name id="25" local="Удмуртский (Россия)" description="Russian"/>
+			<name id="26" subid="1" local="Udmurtski (Rusija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Udmurtski (Rusija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Удмуртски (Русија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Udmurtski (Rusija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Udmurtski (Rusija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Udmurtski (Rusija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Удмуртски (Русија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Удмуртски (Русија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Udmurtčina (Rusko)" description="Slovak"/>
+			<name id="28" local="Udmurt (Rusia)" description="Albanian"/>
+			<name id="29" local="Udmurtiska (Ryssland)" description="Swedish"/>
+			<name id="30" local="ภาษาอุดมูร์ต (รัสเซีย)" description="Thai"/>
+			<name id="31" local="Udmurtça (Rusya)" description="Turkish"/>
+			<name id="32" local="ادمرت (روس)" description="Urdu"/>
+			<name id="33" local="Udmurt (Rusia)" description="Indonesian"/>
+			<name id="34" local="Удмуртська (Росія)" description="Ukrainian"/>
+			<name id="35" local="Удмурцкая (Расія)" description="Belarusian"/>
+			<name id="36" local="Udmurtščina (Rusija)" description="Slovenian"/>
+			<name id="37" local="Udmurdi (Venemaa)" description="Estonian"/>
+			<name id="38" local="Udmurtu (Krievija)" description="Latvian"/>
+			<name id="39" local="Udmurtų (Rusija)" description="Lithuanian"/>
+			<name id="42" local="Udmurt (Nga)" description="Vietnamese"/>
+			<name id="43" local="Ուդմուրտ (Ռուսաստան)" description="Armenian"/>
+			<name id="44" local="Udmurt (Rusiya)" description="Azerbaijani"/>
+			<name id="47" local="Удмуртски (Русија)" description="Macedonian"/>
+			<name id="54" local="Oedmoerts (Rusland)" description="Afrikaans"/>
+			<name id="57" local="उदमुर्ट (रूस)" description="Hindi"/>
+			<name id="63" local="Ұдмұрт (Ресей)" description="Kazakh"/>
+			<name id="64" local="Удмурт (Орусия)" description="Kyrgyz"/>
+			<name id="67" local="Udmurt (Rossiya)" description="Uzbek"/>
+			<name id="70" local="ਉਦਮੁਰਤ (ਰੂਸ)" description="Punjabi"/>
+			<name id="80" local="Удмурт (Орос Улс)" description="Mongolian"/>
+		</language>
+		<language id="645" default="Tamil (Malaysia)" lcid="ta-MY">
+			<name id="1" local="التاميلية (ماليزيا)" description="Arabic"/>
+			<name id="2" local="Тамилски (Малайзия)" description="Bulgarian"/>
+			<name id="3" local="Tàmil (Malàisia)" description="Catalan"/>
+			<name id="4" subid="1" local="泰米爾語（馬來西亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="泰米尔语（马来西亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Tamilština (Malajsie)" description="Czech"/>
+			<name id="6" local="Tamil (Malaysia)" description="Danish"/>
+			<name id="7" local="Tamil (Malaysia)" description="German"/>
+			<name id="8" local="Ταμίλ (Μαλαισία)" description="Greek"/>
+			<name id="10" local="Tamil (Malasia)" description="Spanish"/>
+			<name id="11" local="Tamil (Malesia)" description="Finnish"/>
+			<name id="12" local="Tamoul (Malaisie)" description="French"/>
+			<name id="13" local="טמילית (מלזיה)" description="Hebrew"/>
+			<name id="14" local="Tamil (Malajzia)" description="Hungarian"/>
+			<name id="15" local="Tamílska (Malasía)" description="Icelandic"/>
+			<name id="16" local="Tamil (Malaysia)" description="Italian"/>
+			<name id="17" local="タミル語（マレーシア）" description="Japanese"/>
+			<name id="18" local="타밀어 (말레이시아)" description="Korean"/>
+			<name id="19" local="Tamil (Maleisië)" description="Dutch"/>
+			<name id="20" local="Tamil (Malaysia)" description="Norwegian"/>
+			<name id="21" local="Tamilski (Malezja)" description="Polish"/>
+			<name id="22" local="Tâmil (Malásia)" description="Portuguese"/>
+			<name id="24" local="Tamilă (Malaysia)" description="Romanian"/>
+			<name id="25" local="Тамильский (Малайзия)" description="Russian"/>
+			<name id="26" subid="1" local="Tamilski (Malezija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Tamilski (Malezija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Тамилски (Малезија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Tamilski (Malezija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Tamilski (Malezija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Tamilski (Malezija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Тамилски (Малезија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Тамилски (Малезија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Tamilčina (Malajzia)" description="Slovak"/>
+			<name id="28" local="Tamil (Malajzia)" description="Albanian"/>
+			<name id="29" local="Tamil (Malaysia)" description="Swedish"/>
+			<name id="30" local="ภาษาทมิฬ (ประเทศมาเลเซีย)" description="Thai"/>
+			<name id="31" local="Tamilce (Malezya)" description="Turkish"/>
+			<name id="32" local="تمل (ملائیشیا)" description="Urdu"/>
+			<name id="33" local="Tamil (Malaysia)" description="Indonesian"/>
+			<name id="34" local="Тамільська (Малайзія)" description="Ukrainian"/>
+			<name id="35" local="Тамільская (Малайзія)" description="Belarusian"/>
+			<name id="36" local="Tamilščina (Maleziji)" description="Slovenian"/>
+			<name id="37" local="Tamili (Malaisia)" description="Estonian"/>
+			<name id="38" local="Tamilu (Malaizijā)" description="Latvian"/>
+			<name id="39" local="Tamilų (Malaizijoje)" description="Lithuanian"/>
+			<name id="42" local="Tamil (Malaysia)" description="Vietnamese"/>
+			<name id="43" local="Թամիլերեն (Մալայզիա)" description="Armenian"/>
+			<name id="44" local="Tamil (Malayziya)" description="Azerbaijani"/>
+			<name id="47" local="Тамилски (Малезија)" description="Macedonian"/>
+			<name id="54" local="Tamil (Maleisië)" description="Afrikaans"/>
+			<name id="57" local="तमिल (मलेशिया)" description="Hindi"/>
+			<name id="63" local="Тамил (Малайзия)" description="Kazakh"/>
+			<name id="64" local="Тамилче (Малайзия)" description="Kyrgyz"/>
+			<name id="67" local="Tamil (Malayziya)" description="Uzbek"/>
+			<name id="80" local="Тамил (Малайз)" description="Mongolian"/>
+		</language>
+		<language id="646" default="Tamil (Singapore)" lcid="ta-SG">
+			<name id="1" local="التاميلية (سنغافورة)" description="Arabic"/>
+			<name id="2" local="Тамилски (Сингапур)" description="Bulgarian"/>
+			<name id="3" local="Tàmil (Singapur)" description="Catalan"/>
+			<name id="4" subid="1" local="泰米爾語（新加坡）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="泰米尔语（新加坡）" description="Chinese (Simplified)"/>
+			<name id="5" local="Tamilština (Singapur)" description="Czech"/>
+			<name id="6" local="Tamil (Singapore)" description="Danish"/>
+			<name id="7" local="Tamil (Singapur)" description="German"/>
+			<name id="8" local="Ταμίλ (Σιγκαπούρη)" description="Greek"/>
+			<name id="10" local="Tamil (Singapur)" description="Spanish"/>
+			<name id="11" local="Tamil (Singapore)" description="Finnish"/>
+			<name id="12" local="Tamoul (Singapour)" description="French"/>
+			<name id="13" local="טמילית (סינגפור)" description="Hebrew"/>
+			<name id="14" local="Tamil (Szingapúr)" description="Hungarian"/>
+			<name id="15" local="Tamílska (Singapúr)" description="Icelandic"/>
+			<name id="16" local="Tamil (Singapore)" description="Italian"/>
+			<name id="17" local="タミル語（シンガポール）" description="Japanese"/>
+			<name id="18" local="타밀어 (싱가포르)" description="Korean"/>
+			<name id="19" local="Tamil (Singapore)" description="Dutch"/>
+			<name id="20" local="Tamil (Singapore)" description="Norwegian"/>
+			<name id="21" local="Tamilski (Singapur)" description="Polish"/>
+			<name id="22" local="Tâmil (Singapura)" description="Portuguese"/>
+			<name id="24" local="Tamilă (Singapore)" description="Romanian"/>
+			<name id="25" local="Тамильский (Сингапур)" description="Russian"/>
+			<name id="26" subid="1" local="Tamilski (Singapur)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Tamilski (Singapur)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Тамилски (Сингапур)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Tamilski (Singapur)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Tamilski (Singapur)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Tamilski (Singapur)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Тамилски (Сингапур)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Тамилски (Сингапур)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Tamilčina (Singapur)" description="Slovak"/>
+			<name id="28" local="Tamil (Singapori)" description="Albanian"/>
+			<name id="29" local="Tamil (Singapore)" description="Swedish"/>
+			<name id="30" local="ภาษาทมิฬ (ประเทศสิงคโปร์)" description="Thai"/>
+			<name id="31" local="Tamilce (Singapur)" description="Turkish"/>
+			<name id="32" local="تمل (سنگاپور)" description="Urdu"/>
+			<name id="33" local="Tamil (Singapura)" description="Indonesian"/>
+			<name id="34" local="Тамільська (Сінгапур)" description="Ukrainian"/>
+			<name id="35" local="Тамільская (Сінгапур)" description="Belarusian"/>
+			<name id="36" local="Tamilščina (Singapur)" description="Slovenian"/>
+			<name id="37" local="Tamili (Singapur)" description="Estonian"/>
+			<name id="38" local="Tamilu (Singapūra)" description="Latvian"/>
+			<name id="39" local="Tamilų (Singapūras)" description="Lithuanian"/>
+			<name id="42" local="Tamil (Singapore)" description="Vietnamese"/>
+			<name id="43" local="Թամիլերեն (Սինգապուր)" description="Armenian"/>
+			<name id="44" local="Tamil (Sinqapur)" description="Azerbaijani"/>
+			<name id="47" local="Тамилски (Сингапур)" description="Macedonian"/>
+			<name id="54" local="Tamil (Singapoer)" description="Afrikaans"/>
+			<name id="57" local="तमिल (सिंगापुर)" description="Hindi"/>
+			<name id="63" local="Тамил (Сингапур)" description="Kazakh"/>
+			<name id="64" local="Тамилче (Сингапур)" description="Kyrgyz"/>
+			<name id="67" local="Tamil (Singapur)" description="Uzbek"/>
+			<name id="80" local="Тамил (Сингапур)" description="Mongolian"/>
+		</language>
+		<language id="647" default="English (Kenya)" lcid="en-KE">
+			<name id="1" local="الإنجليزية (كينيا)" description="Arabic"/>
+			<name id="2" local="Английски (Кения)" description="Bulgarian"/>
+			<name id="3" local="Anglès (Kenya)" description="Catalan"/>
+			<name id="4" subid="1" local="英語（肯亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="英语（肯尼亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Angličtina (Keňa)" description="Czech"/>
+			<name id="6" local="Engelsk (Kenya)" description="Danish"/>
+			<name id="7" local="Englische (Kenia)" description="German"/>
+			<name id="8" local="Αγγλική (Κένυα)" description="Greek"/>
+			<name id="10" local="Inglés (Kenia)" description="Spanish"/>
+			<name id="11" local="Englannin (Kenia)" description="Finnish"/>
+			<name id="12" local="Anglais (Kenya)" description="French"/>
+			<name id="13" local="אנגלית (קניה)" description="Hebrew"/>
+			<name id="14" local="Angol (Kenya)" description="Hungarian"/>
+			<name id="15" local="Enska (Kenía)" description="Icelandic"/>
+			<name id="16" local="Inglese (Kenya)" description="Italian"/>
+			<name id="17" local="英語（ケニア）" description="Japanese"/>
+			<name id="18" local="영어 (케냐)" description="Korean"/>
+			<name id="19" local="Engels (Kenia)" description="Dutch"/>
+			<name id="20" local="Engelsk (Kenya)" description="Norwegian"/>
+			<name id="21" local="Angielski (Kenia)" description="Polish"/>
+			<name id="22" local="Inglês (Quénia)" description="Portuguese"/>
+			<name id="24" local="Engleză (Kenya)" description="Romanian"/>
+			<name id="25" local="Английский (Кения)" description="Russian"/>
+			<name id="26" subid="1" local="Engleski (Kenija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Engleski (Kenija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Енглески (Кенија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Engleski (Kenija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Engleski (Kenija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Engleski (Kenija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Енглески (Кенија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Енглески (Кенија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Angličtina (Kenija)" description="Slovak"/>
+			<name id="28" local="Angleze (Kenia)" description="Albanian"/>
+			<name id="29" local="Engelska (Kenya)" description="Swedish"/>
+			<name id="30" local="ภาษาอังกฤษ (ประเทศเคนยา)" description="Thai"/>
+			<name id="31" local="İngilizce (Kenya)" description="Turkish"/>
+			<name id="32" local="انگریزی (کینیا)" description="Urdu"/>
+			<name id="33" local="Inggris (Kenya)" description="Indonesian"/>
+			<name id="34" local="Англійська (Кенія)" description="Ukrainian"/>
+			<name id="35" local="Англійская (Кенія)" description="Belarusian"/>
+			<name id="36" local="Angličtina (Kenija)" description="Slovenian"/>
+			<name id="37" local="Inglise (Keenia)" description="Estonian"/>
+			<name id="38" local="Angļu (Kenija)" description="Latvian"/>
+			<name id="39" local="Anglų (Kenija)" description="Lithuanian"/>
+			<name id="42" local="Anh (Kenya)" description="Vietnamese"/>
+			<name id="43" local="Անգլերեն (Քենիա)" description="Armenian"/>
+			<name id="44" local="İngilis (Keniya)" description="Azerbaijani"/>
+			<name id="47" local="Англиски (Кенија)" description="Macedonian"/>
+			<name id="54" local="Engels (Kenia)" description="Afrikaans"/>
+			<name id="57" local="अंग्रेज़ी (कीनिया)" description="Hindi"/>
+			<name id="63" local="Ағылшын (Кения)" description="Kazakh"/>
+			<name id="64" local="Англис (Кения)" description="Kyrgyz"/>
+			<name id="67" local="Ingliz (Keniya)" description="Uzbek"/>
+			<name id="80" local="Англи (Кени)" description="Mongolian"/>
+			<name id="86" local="Inglés (Kenia)" description="Galician"/>
+		</language>
+		<language id="648" default="English (Nigeria)" lcid="en-NG">
+			<name id="1" local="الإنجليزية (نيجيريا)" description="Arabic"/>
+			<name id="2" local="Английски (Нигерия)" description="Bulgarian"/>
+			<name id="3" local="Anglès (Nigèria)" description="Catalan"/>
+			<name id="4" subid="1" local="英語（奈及利亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="英语（奈及利亞）" description="Chinese (Simplified)"/>
+			<name id="5" local="Angličtina (Nigérie)" description="Czech"/>
+			<name id="6" local="Engelsk (Nigeria)" description="Danish"/>
+			<name id="7" local="Englische (Nigeria)" description="German"/>
+			<name id="8" local="Αγγλική (Νιγηρία)" description="Greek"/>
+			<name id="10" local="Inglés (Nigeria)" description="Spanish"/>
+			<name id="11" local="Englannin (Nigeria)" description="Finnish"/>
+			<name id="12" local="Anglais (Nigeria)" description="French"/>
+			<name id="13" local="אנגלית (ניגריה)" description="Hebrew"/>
+			<name id="14" local="Angol (Nigéria)" description="Hungarian"/>
+			<name id="15" local="Enska (Nígería)" description="Icelandic"/>
+			<name id="16" local="Inglese (Nigeria)" description="Italian"/>
+			<name id="17" local="英語（ナイジェリア）" description="Japanese"/>
+			<name id="18" local="영어 (나이지리아)" description="Korean"/>
+			<name id="19" local="Engels (Nigeria)" description="Dutch"/>
+			<name id="20" local="Engelsk (Nigeria)" description="Norwegian"/>
+			<name id="21" local="Angielski (Nigeria)" description="Polish"/>
+			<name id="22" local="Inglês (Nigéria)" description="Portuguese"/>
+			<name id="24" local="Engleză (Nigeria)" description="Romanian"/>
+			<name id="25" local="Английский (Нигерия)" description="Russian"/>
+			<name id="26" subid="1" local="Engleski (Nigerija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Engleski (Nigerija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Енглески (Нигерија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Engleski (Nigerija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Engleski (Nigerija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Engleski (Nigerija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Енглески (Нигерија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Енглески (Нигерија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Angličtina (Nigéria)" description="Slovak"/>
+			<name id="28" local="Angleze (Nigeria)" description="Albanian"/>
+			<name id="29" local="Engelska (Nigeria)" description="Swedish"/>
+			<name id="30" local="ภาษาอังกฤษ (ประเทศไนจีเรีย)" description="Thai"/>
+			<name id="31" local="İngilizce (Nijerya)" description="Turkish"/>
+			<name id="32" local="انگریزی (نائیجیریا)" description="Urdu"/>
+			<name id="33" local="Inggris (Nigeria)" description="Indonesian"/>
+			<name id="34" local="Англійська (Нігерія)" description="Ukrainian"/>
+			<name id="35" local="Англійская (Нігерыя)" description="Belarusian"/>
+			<name id="36" local="Angličtina (Nigerija)" description="Slovenian"/>
+			<name id="37" local="Inglise (Nigeeria)" description="Estonian"/>
+			<name id="38" local="Angļu (Nigērija)" description="Latvian"/>
+			<name id="39" local="Anglų (Nigerija)" description="Lithuanian"/>
+			<name id="42" local="Anh (Nigeria)" description="Vietnamese"/>
+			<name id="43" local="Անգլերեն (Նիգերիա)" description="Armenian"/>
+			<name id="44" local="İngilis (Nigeriya)" description="Azerbaijani"/>
+			<name id="47" local="Англиски (Нигерија)" description="Macedonian"/>
+			<name id="54" local="Engels (Nigerië)" description="Afrikaans"/>
+			<name id="57" local="अंग्रेज़ी (नाईजीरिया)" description="Hindi"/>
+			<name id="63" local="Ағылшын (Нигерия)" description="Kazakh"/>
+			<name id="64" local="Англис (Нигерия)" description="Kyrgyz"/>
+			<name id="67" local="Ingliz (Nigeriya)" description="Uzbek"/>
+			<name id="80" local="Англи (Нигери)" description="Mongolian"/>
+			<name id="86" local="Inglés (Nigeria)" description="Galician"/>
+		</language>
+		<language id="649" default="English (Tanzania)" lcid="en-TZ">
+			<name id="1" local="الإنجليزية (تنزانيا)" description="Arabic"/>
+			<name id="2" local="Английски (Танзания)" description="Bulgarian"/>
+			<name id="3" local="Anglès (Tanzània)" description="Catalan"/>
+			<name id="4" subid="1" local="英語（坦尚尼亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="英语（坦桑尼亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Angličtina (Tanzanie)" description="Czech"/>
+			<name id="6" local="Engelsk (Tanzania)" description="Danish"/>
+			<name id="7" local="Englische (Tansania)" description="German"/>
+			<name id="8" local="Αγγλική (Τανζανία)" description="Greek"/>
+			<name id="10" local="Inglés (Tanzania)" description="Spanish"/>
+			<name id="11" local="Englannin (Tansania)" description="Finnish"/>
+			<name id="12" local="Anglais (Tanzanie)" description="French"/>
+			<name id="13" local="אנגלית (טנזניה)" description="Hebrew"/>
+			<name id="14" local="Angol (Tanzánia)" description="Hungarian"/>
+			<name id="15" local="Enska (Tansanía)" description="Icelandic"/>
+			<name id="16" local="Inglese (Tanzania)" description="Italian"/>
+			<name id="17" local="英語（タンザニア）" description="Japanese"/>
+			<name id="18" local="영어 (탄자니아)" description="Korean"/>
+			<name id="19" local="Engels (Tanzania)" description="Dutch"/>
+			<name id="20" local="Engelsk (Tanzania)" description="Norwegian"/>
+			<name id="21" local="Angielski (Tanzania)" description="Polish"/>
+			<name id="22" local="Inglês (Tanzânia)" description="Portuguese"/>
+			<name id="24" local="Engleză (Tanzania)" description="Romanian"/>
+			<name id="25" local="Английский (Танзания)" description="Russian"/>
+			<name id="26" subid="1" local="Engleski (Tanzanija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Engleski (Tanzanija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Енглески (Танзанија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Engleski (Tanzanija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Engleski (Tanzanija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Engleski (Tanzanija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Енглески (Танзанија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Енглески (Танзанија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Angličtina (Tanzánia)" description="Slovak"/>
+			<name id="28" local="Angleze (Tanzania)" description="Albanian"/>
+			<name id="29" local="Engelska (Tanzania)" description="Swedish"/>
+			<name id="30" local="ภาษาอังกฤษ (ประเทศแทนซาเนีย)" description="Thai"/>
+			<name id="31" local="İngilizce (Tanzanya)" description="Turkish"/>
+			<name id="32" local="انگریزی (تنزانیہ)" description="Urdu"/>
+			<name id="33" local="Inggris (Tanzania)" description="Indonesian"/>
+			<name id="34" local="Англійська (Танзанія)" description="Ukrainian"/>
+			<name id="35" local="Англійская (Танзанія)" description="Belarusian"/>
+			<name id="36" local="Angličtina (Tanzanija)" description="Slovenian"/>
+			<name id="37" local="Inglise (Tansaania)" description="Estonian"/>
+			<name id="38" local="Angļu (Tanzānija)" description="Latvian"/>
+			<name id="39" local="Anglų (Tanzanija)" description="Lithuanian"/>
+			<name id="42" local="Anh (Tanzania)" description="Vietnamese"/>
+			<name id="43" local="Անգլերեն (Տանզանիա)" description="Armenian"/>
+			<name id="44" local="İngilis (Tanzaniya)" description="Azerbaijani"/>
+			<name id="47" local="Англиски (Танзанија)" description="Macedonian"/>
+			<name id="54" local="Engels (Tanzanië)" description="Afrikaans"/>
+			<name id="57" local="अंग्रेज़ी (तंज़ानिया)" description="Hindi"/>
+			<name id="63" local="Ағылшын (Танзания)" description="Kazakh"/>
+			<name id="64" local="Англис (Танзания)" description="Kyrgyz"/>
+			<name id="67" local="Ingliz (Tanzaniya)" description="Uzbek"/>
+			<name id="80" local="Англи (Танзани)" description="Mongolian"/>
+			<name id="86" local="Inglés (Tanzania)" description="Galician"/>
+		</language>
+		<language id="650" default="Spanish (Equatorial Guinea)" lcid="es-GQ">
+			<name id="1" local="الأسبانية (غينيا الاستوائية)" description="Arabic"/>
+			<name id="2" local="Испански (Екваториална Гвинея)" description="Bulgarian"/>
+			<name id="3" local="Castellà (Guinea Equatorial)" description="Catalan"/>
+			<name id="4" subid="1" local="西班牙語（赤道幾內亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="西班牙语（赤道几内亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Španělština (Rovníková Guinea)" description="Czech"/>
+			<name id="6" local="Spansk (Ækvatorialguinea)" description="Danish"/>
+			<name id="7" local="Spanische (Äquatorialguinea)" description="German"/>
+			<name id="8" local="Ισπανική (Ισημερινή Γουινέα)" description="Greek"/>
+			<name id="10" local="Español (Guinea Ecuatorial)" description="Spanish"/>
+			<name id="11" local="Espanjan (Päiväntasaajan Guinea)" description="Finnish"/>
+			<name id="12" local="Espagnol (Guinée équatoriale)" description="French"/>
+			<name id="13" local="ספרדית (גינאה המשוונית)" description="Hebrew"/>
+			<name id="14" local="Spanyol (Egyenlítői-Guinea)" description="Hungarian"/>
+			<name id="15" local="Spænska (Miðbaugs-Gínea)" description="Icelandic"/>
+			<name id="16" local="Spagnola (Guinea Equatoriale)" description="Italian"/>
+			<name id="17" local="スペイン語（赤道ギニア）" description="Japanese"/>
+			<name id="18" local="스페인어 (적도 기니)" description="Korean"/>
+			<name id="19" local="Spaans (Equatoriaal-Guinea)" description="Dutch"/>
+			<name id="20" local="Spansk (Ekvatorial-Guinea)" description="Norwegian"/>
+			<name id="21" local="Hiszpański (Gwinea Równikowa)" description="Polish"/>
+			<name id="22" local="Castelhana (Guiné Equatorial)" description="Portuguese"/>
+			<name id="24" local="Spaniolă (Guineea Ecuatorială)" description="Romanian"/>
+			<name id="25" local="Испанский (Экваториальная Гвинея)" description="Russian"/>
+			<name id="26" subid="1" local="Španjolski (Ekvatorska Gvineja)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Španjolski (Ekvatorska Gvineja)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Шпански (Екваторијална Гвинеја)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Španjolski (Ekvatorska Gvineja)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Španjolski (Ekvatorska Gvineja)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Španjolski (Ekvatorska Gvineja)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Шпански (Екваторијална Гвинеја)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Шпански (Екваторијална Гвинеја)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Španielčina (Rovníková Guinea)" description="Slovak"/>
+			<name id="28" local="Spanjolle (Guinea Ekuatoriale)" description="Albanian"/>
+			<name id="29" local="Spanska (Ekvatorialguinea)" description="Swedish"/>
+			<name id="30" local="ภาษาสเปน (ประเทศอิเควทอเรียลกินี)" description="Thai"/>
+			<name id="31" local="İspanyolca (Ekvator Ginesi)" description="Turkish"/>
+			<name id="32" local="ہسپانوی (استوائی گنی)" description="Urdu"/>
+			<name id="33" local="Spanyol (Guinea Khatulistiwa)" description="Indonesian"/>
+			<name id="34" local="Іспанська (Екваторіальна Гвінея)" description="Ukrainian"/>
+			<name id="35" local="Іспанская (Экватарыяльная Гвінея)" description="Belarusian"/>
+			<name id="36" local="Španščina (Ekvatorialna Gvineja)" description="Slovenian"/>
+			<name id="37" local="Hispaania (Ekvatoriaal-Guinea)" description="Estonian"/>
+			<name id="38" local="Spāņu (Ekvatoriālā Gvineja)" description="Latvian"/>
+			<name id="39" local="Ispanų (Pusiaujo Gvinėja)" description="Lithuanian"/>
+			<name id="42" local="Tây Ban Nha (Guinea Xích Đạo)" description="Vietnamese"/>
+			<name id="43" local="Իսպաներեն (Հասարակածային Գվինեա)" description="Armenian"/>
+			<name id="44" local="İspan (Ekvatorial Qvineya)" description="Azerbaijani"/>
+			<name id="47" local="Шпански (Екваторска Гвинеја)" description="Macedonian"/>
+			<name id="54" local="Spaans (Ekwatoriaal-Guinee)" description="Afrikaans"/>
+			<name id="57" local="स्पेनी (भूमध्यरेखीय गिनी)" description="Hindi"/>
+			<name id="63" local="Испан (Экваторлық Гвинея)" description="Kazakh"/>
+			<name id="64" local="Испан (Экваториалдык Гвинея)" description="Kyrgyz"/>
+			<name id="67" local="Ispan (Ekvator Gvineyasi)" description="Uzbek"/>
+			<name id="80" local="Испани (Экваторын Гвиней)" description="Mongolian"/>
+			<name id="86" local="Español (Guinea Ecuatorial)" description="Galician"/>
+		</language>
+		<language id="651" default="Sundanese (Indonesia)" lcid="su-ID">
+			<name id="1" local="السوندية (إندونيسيا)" description="Arabic"/>
+			<name id="2" local="Сундански (Индонезия)" description="Bulgarian"/>
+			<name id="3" local="Sondanès (Indonèsia)" description="Catalan"/>
+			<name id="4" subid="1" local="巽他語（印度尼西亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="巽他語（印度尼西亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Sundština (Indonésie)" description="Czech"/>
+			<name id="6" local="Sundanesisk (Indonesien)" description="Danish"/>
+			<name id="7" local="Sundanesische (Indonesien)" description="German"/>
+			<name id="8" local="Σουνδανή (Ινδονησία)" description="Greek"/>
+			<name id="10" local="Sondanés (Indonesia)" description="Spanish"/>
+			<name id="11" local="Sundan (Indonesia)" description="Finnish"/>
+			<name id="12" local="Soundanais (Indonésie)" description="French"/>
+			<name id="13" local="סונדני (אינדונזיה)" description="Hebrew"/>
+			<name id="14" local="Szundanéz (Indonézia)" description="Hungarian"/>
+			<name id="15" local="Súndíska (Indónesía)" description="Icelandic"/>
+			<name id="16" local="Sundanese (Indonesia)" description="Italian"/>
+			<name id="17" local="スンダ語（インドネシア）" description="Japanese"/>
+			<name id="18" local="순다어 (인도네시아)" description="Korean"/>
+			<name id="19" local="Soendanees (Indonesisch)" description="Dutch"/>
+			<name id="20" local="Sundanesisk (Indonesia)" description="Norwegian"/>
+			<name id="21" local="Sundajski (Indonezja)" description="Polish"/>
+			<name id="22" local="Sundanesa (Indonésia)" description="Portuguese"/>
+			<name id="24" local="Sundaneză (Indonezia)" description="Romanian"/>
+			<name id="25" local="Сунданский (Индонезия)" description="Russian"/>
+			<name id="26" subid="1" local="Sundski (Indonezija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Sundski (Indonezija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Сундски (Индонезија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Sundski (Indonezija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Sundski (Indonezija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Sundski (Indonezija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Сундски (Индонезија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Сундски (Индонезија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Sundčina (Indonézia)" description="Slovak"/>
+			<name id="28" local="Sundanez (Indonezia)" description="Albanian"/>
+			<name id="29" local="Sundanesiska (Indonesien)" description="Swedish"/>
+			<name id="30" local="ภาษาซุนดา (ประเทศอินโดนีเซีย)" description="Thai"/>
+			<name id="31" local="Sundaca (Endonezya)" description="Turkish"/>
+			<name id="32" local="سنڈانی (انڈونیشیا)" description="Urdu"/>
+			<name id="33" local="Sunda (Indonesia)" description="Indonesian"/>
+			<name id="34" local="Сунданська (Індонезія)" description="Ukrainian"/>
+			<name id="35" local="Сундская (Інданезія)" description="Belarusian"/>
+			<name id="36" local="Sundčina (Indonezija)" description="Slovenian"/>
+			<name id="37" local="Sunda (Indoneesia)" description="Estonian"/>
+			<name id="38" local="Sundu (Indonēzija)" description="Latvian"/>
+			<name id="39" local="Sundų (Indonezija)" description="Lithuanian"/>
+			<name id="42" local="Sunda (Indonesia)" description="Vietnamese"/>
+			<name id="43" local="սունդաներեն (Ինդոնեզիա)" description="Armenian"/>
+			<name id="44" local="Sunda (İndoneziya)" description="Azerbaijani"/>
+			<name id="47" local="Сундски (Индонезија)" description="Macedonian"/>
+			<name id="54" local="Soendanees (Indonesië)" description="Afrikaans"/>
+			<name id="57" local="सुन्दा (इंडोनेशिया)" description="Hindi"/>
+			<name id="63" local="Сундан (Индонезия)" description="Kazakh"/>
+			<name id="64" local="Сундан (Индонезия)" description="Kyrgyz"/>
+			<name id="67" local="Sundan (Indoneziya)" description="Uzbek"/>
+			<name id="80" local="Сундан (Индонез)" description="Mongolian"/>
+		</language>
+		<language id="652" default="Chinese (Cantonese, Simplified)" lcid="yue-CN">
+			<name id="1" local="الصينية (الكانتونية، المبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (кантонски, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (cantonés, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（廣東話，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（粤语，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (kantonština, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (kantonesisk, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Kantonesisch, vereinfacht)" description="German"/>
+			<name id="8" local="Κινέζικα (καντονέζικα, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (cantonés, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (kantoni, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (cantonais, simplifié)" description="French"/>
+			<name id="13" local="סינית (קנטונזית, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (kantoni, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (kantónska, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (cantonse, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（広東語、簡体字）" description="Japanese"/>
+			<name id="18" local="중국어 (광둥어, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Kantonees, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (kantonesisk, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (kantoński, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Cantonês, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (cantoneză, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (кантонский, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (kantonski, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (kantonski, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (кантонски, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (kantonski, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (kantonski, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (kantonski, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (кантонски, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (кантонски, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (kantončina, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (kantoneze, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (kantonesiska, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (กวางตุ้ง, ประยุกต์)" description="Thai"/>
+			<name id="31" local="Çince (Cantonese, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (کینٹونیز، آسان)" description="Urdu"/>
+			<name id="33" local="Tionghoa (Kanton, Disederhanakan)" description="Indonesian"/>
+			<name id="34" local="Китайська (кантонська, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (кантонская, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajščina (kantonščina, poenostavljena)" description="Slovenian"/>
+			<name id="37" local="Hiina (kantoni, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (kantoniešu, vienkāršotā)" description="Latvian"/>
+			<name id="39" local="Kinų (kantoniečių, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Quảng Đông, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (կանտոներեն, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Kanton, sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (cantonés, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (кантонски, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Kantonees, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (कैंटोनीज़, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (кантон, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (кантон, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (kanton, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (кантон, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (cantonés, simplificado)" description="Galician"/>
+		</language>
+		<language id="653" default="Kiswahili (Tanzania)" lcid="sw-TZ">
+			<name id="1" local="السواحيلية (تنزانيا)" description="Arabic"/>
+			<name id="2" local="Кисуахили (Танзания)" description="Bulgarian"/>
+			<name id="3" local="Swahili (Tanzània)" description="Catalan"/>
+			<name id="4" subid="1" local="斯瓦希里語（坦尚尼亞）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="斯瓦希里语（坦桑尼亚）" description="Chinese (Simplified)"/>
+			<name id="5" local="Svahilština (Tanzanie)" description="Czech"/>
+			<name id="6" local="Swahili (Tanzania)" description="Danish"/>
+			<name id="7" local="Suaheli (Tansania)" description="German"/>
+			<name id="8" local="Σουαχίλι (Τανζανία)" description="Greek"/>
+			<name id="10" local="Swahili (Tanzania)" description="Spanish"/>
+			<name id="11" local="Swahili (Tansania)" description="Finnish"/>
+			<name id="12" local="Swahili (Tanzanie)" description="French"/>
+			<name id="13" local="סוואהילי (טנזניה)" description="Hebrew"/>
+			<name id="14" local="Szuahéli (Tanzánia)" description="Hungarian"/>
+			<name id="15" local="Svahílí (Tansanía)" description="Icelandic"/>
+			<name id="16" local="Swahili (Tanzania)" description="Italian"/>
+			<name id="17" local="スワヒリ語（タンザニア）" description="Japanese"/>
+			<name id="18" local="스와힐리어 (탄자니아)" description="Korean"/>
+			<name id="19" local="Swahili (Tanzania)" description="Dutch"/>
+			<name id="20" local="Swahili (Tanzania)" description="Norwegian"/>
+			<name id="21" local="Suahili (Tanzania)" description="Polish"/>
+			<name id="22" local="Suaíli (Tanzânia)" description="Portuguese"/>
+			<name id="24" local="Swahili (Tanzania)" description="Romanian"/>
+			<name id="25" local="Кисуахили (Танзания)" description="Russian"/>
+			<name id="26" subid="1" local="Svahili (Tanzanija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Svahili (Tanzanija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Свахили (Танзанија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Svahili (Tanzanija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Svahili (Tanzanija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Svahili (Tanzanija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Свахили (Танзанија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Свахили (Танзанија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Swahilčina (Tanzánia)" description="Slovak"/>
+			<name id="28" local="Suahile (Tanzania)" description="Albanian"/>
+			<name id="29" local="Swahili (Tanzania)" description="Swedish"/>
+			<name id="30" local="ภาษาสวาฮีลี (ประเทศแทนซาเนีย)" description="Thai"/>
+			<name id="31" local="Svahili (Tanzanya)" description="Turkish"/>
+			<name id="32" local="کسواہیلی (تنزانیہ)" description="Urdu"/>
+			<name id="33" local="Swahili (Tanzania)" description="Indonesian"/>
+			<name id="34" local="Кісуахілі (Танзанія)" description="Ukrainian"/>
+			<name id="35" local="Суахілі (Танзанія)" description="Belarusian"/>
+			<name id="36" local="Svahili (Tanzanija)" description="Slovenian"/>
+			<name id="37" local="Suahiili (Tansaania)" description="Estonian"/>
+			<name id="38" local="Svahili (Tanzānija)" description="Latvian"/>
+			<name id="39" local="Suahilių (Tanzanija)" description="Lithuanian"/>
+			<name id="42" local="Swahili (Tanzania)" description="Vietnamese"/>
+			<name id="43" local="Սուահիլի (Տանզանիա)" description="Armenian"/>
+			<name id="44" local="Suahili (Tanzaniya)" description="Azerbaijani"/>
+			<name id="45" local="Swahili (Tanzania)" description="Basque"/>
+			<name id="47" local="Кисвахили (Танзанија)" description="Macedonian"/>
+			<name id="54" local="Swahili (Tanzanië)" description="Afrikaans"/>
+			<name id="57" local="स्वाहिली (तंज़ानिया)" description="Hindi"/>
+			<name id="63" local="Суахили (Танзания)" description="Kazakh"/>
+			<name id="64" local="Суахили (Танзания)" description="Kyrgyz"/>
+			<name id="67" local="Suaxili (Tanzaniya)" description="Uzbek"/>
+			<name id="80" local="Свахили (Танзани)" description="Mongolian"/>
+			<name id="86" local="Swahili (Tanzania)" description="Galician"/>
+		</language>
+		<language id="654" default="Chinese (Wu, Simplified)" lcid="wuu-CN">
+			<name id="1" local="الصينية (الوو، مبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (диалект ву, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (wu, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（吳語，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（吴语，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (Wu, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (Wu, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Wu, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Wu, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (wu, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (Wu, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (Wu, simplifié)" description="French"/>
+			<name id="13" local="סינית (וו, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (Wu, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (Wu, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Wu, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（呉語、簡体字）" description="Japanese"/>
+			<name id="18" local="중국어 (우, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Wu, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (Wu, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (Wu, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Wu, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (Wu, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (диалект у, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (Wu, pojednostavljeno)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (Wu, pojednostavljeno)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (Ву, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (Wu, pojednostavljeno)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (Wu, pojednostavljeno)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (Wu, pojednostavljeno)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (Ву, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (Ву, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (Wu, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Vu, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (Wu, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (อู๋, ประยุกต์)" description="Thai"/>
+			<name id="31" local="Çince (Wu, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (وو، آسان)" description="Urdu"/>
+			<name id="33" local="Tionghoa (Wu, Disederhanakan)" description="Indonesian"/>
+			<name id="34" local="Китайська (діалект ву, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (дыялект у, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajščina (Wu, poenostavljeno)" description="Slovenian"/>
+			<name id="37" local="Hiina (Wu, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (Wu, vienkāršoti)" description="Latvian"/>
+			<name id="39" local="Kinų (Wu, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Wu, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (վու, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Wu, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (wu, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (ву, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Wu, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (वू, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (Ву, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Ву, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (Vu, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Ву, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (wu, simplificado)" description="Galician"/>
+		</language>
+		<language id="655" default="Chinese (Zhongyuan Mandarin Henan, Simplified)" lcid="zh-CN-henan">
+			<name id="1" local="الصينية (تشونغيوان ماندارين هينان، مبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (Чжунюан мандарин Хънан, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (mandarín zhongyuan de Henan, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（中原官話河南，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（中原官话河南，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (Zhongyuan Mandarin Henan, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (Zhongyuan Mandarin Henan, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Zhongyuan Mandarin Henan, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Zhongyuan Μανδαρινικά Χενάν, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín zhongyuan de Henan, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (Zhongyuan Mandarin Henan, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (Zhongyuan mandarin Henan, simplifié)" description="French"/>
+			<name id="13" local="סינית (מנדרינית הנאן, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (Zhongyuan Mandarin Henan, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (Zhongyuan Mandarin Henan, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Zhongvertita Mandarin Henan, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（中原官話河南、簡体）" description="Japanese"/>
+			<name id="18" local="중국어 (중위안 만다린 허난성, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Mandarinyuan Mandarijn Henan, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (Zhongyuan mandarin Henan, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (Zhongyuan Mandaryński Henan, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Zhongyuan Mandarim Henan, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (Zhongyuan Mandarin Henan, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (Чжунъюань мандаринский Хэнань, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (Zhongyuan mandarinski Henan, pojednostavljeno)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (Zhongyuan mandarinski Henan, pojednostavljeno)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (Зхонгиуан мандарин Хенан, поједностављено)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (Zhongyuan mandarinski Henan, pojednostavljeno)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (Zhongyuan mandarinski Henan, pojednostavljeno)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (Zhongyuan mandarinski Henan, pojednostavljeno)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (Зхонгиуан мандарин Хенан, поједностављено)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (Зхонгиуан мандарин Хенан, поједностављено)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (Zhongyuan Mandarin Henan, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Zhongyuan Mandarin Henan, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (Zhongyuan mandarin Henan, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (จงหยวน แมนดาริน เหอหนาน ตัวย่อ)" description="Thai"/>
+			<name id="31" local="Çince (Zhongyuan Mandarin Henan, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (ژونگ یوآن مینڈرین ہینان، سادہ)" description="Urdu"/>
+			<name id="33" local="Tionghoa (Zhongyuan Mandarin Henan, Sederhana)" description="Indonesian"/>
+			<name id="34" local="Китайська (Чжун'юань мандаринська Хенань, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (Чжунюань мандарынская Хэнань, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajščina (Zhongyuan mandarin Henan, poenostavljeno)" description="Slovenian"/>
+			<name id="37" local="Hiina (Zhongyuan Mandarin Henan, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (Zhongyuan Mandarin Henan, vienkāršoti)" description="Latvian"/>
+			<name id="39" local="Kinų (Zhongyuan mandarinų Henan, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Tiếng Quan thoại Trung Nguyên, Hà Nam, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (Ժոնգյուան Մանդարին Հենան, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Zhongyuan Mandarin Henan, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (mandarín zhongyuan de Henan, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (Џонгјуан мандарински Хенан, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Zhongyuan Mandaryns Henan, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (झोंगयुआन मंदारिन हेनान, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (Чжунюань Мандарин Хэнань, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Чжунюань Мандарин Хэнань, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (Chjungyuan Mandarin Henan, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Жун Юань Мандарин Хэнань, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín zhongyuan de Henan, simplificado)" description="Galician"/>
+		</language>
+		<language id="656" default="Chinese (Northeastern Mandarin, Simplified)" lcid="zh-CN-liaoning">
+			<name id="1" local="الصينية (الماندارين الشمالية الشرقية، المبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (североизточен мандарин, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (mandarín del nordeste, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（東北官話，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（东北官话，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (severovýchodní mandarínština, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (nordøstlig mandarin, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Nordöstliches Mandarin, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Βορειοανατολικά Μανδαρινικά, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín del nordeste, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (koillismandariinikiina, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (mandarin du Nord-Est, simplifié)" description="French"/>
+			<name id="13" local="סינית (מנדרינית צפון מזרחית, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (northeastern mandarin, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (norðaustur-mandarín, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Mandarino nord-orientale, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（東北官話、簡体）" description="Japanese"/>
+			<name id="18" local="중국어 (동베이어, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Noordoostelijk Mandarijn, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (nordøstlig mandarin, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (północno-wschodni mandaryński, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Mandarim do Nordeste, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (mandarină nord-estică, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (северо-восточный мандаринский диалект, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (sjeveroistočni mandarinski, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (sjeveroistočni mandarinski, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (североисточни мандарински, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (sjeveroistočni mandarinski, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (sjeveroistočni mandarinski, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (sjeveroistočni mandarinski, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (североисточни мандарински, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (североисточни мандарински, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (severovýchodná mandarínska, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Mandarina verilindore, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (nordöstra mandarin, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (จีนกลางตะวันออกเฉียงเหนือ, ตัวย่อ)" description="Thai"/>
+			<name id="31" local="Çince (Kuzeydoğu Mandarin, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (شمال مشرقی مینڈارن، آسان)" description="Urdu"/>
+			<name id="33" local="Tionghoa (Mandarin Timur Laut, Sederhana)" description="Indonesian"/>
+			<name id="34" local="Китайська (північно-східний мандаринський діалект, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (паўночна-ўсходні мандарынскі дыялект, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajščina (severovzhodna mandarinščina, poenostavljena)" description="Slovenian"/>
+			<name id="37" local="Hiina (kirde-mandariin, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (ziemeļaustrumu mandarīnu, vienkāršotā)" description="Latvian"/>
+			<name id="39" local="Kinų (šiaurės rytų mandarinų, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Tiếng Quan thoại Đông Bắc, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (հյուսիսարեւելյան մանդարին, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Şimal-Şərqi Mandarin, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (mandarín del nordeste, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (североисточен мандарински, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Noordoos-Mandaryns, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (पूर्वोत्तर मंदारिन, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (солтүстік-шығыс мандарин, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Түндүк-чыгыш мандарин, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (shimoli-sharqiy mandarin, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Зүүн хойд мандарин, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín del nordeste, simplificado)" description="Galician"/>
+		</language>
+		<language id="657" default="Chinese (Zhongyuan Mandarin Shaanxi, Simplified)" lcid="zh-CN-shaanxi">
+			<name id="1" local="الصينية (تشونغيوان ماندارين شنشي، مبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (Чжунюан мандарин Шънси, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (mandarín zhongyuan de Shaanxi, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（中原官話陝西，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（中原官话陕西，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (Zhongyuan mandarínština Shaanxi, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (Zhongyuan Mandarin Shaanxi, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Zhongyuan Mandarin Shaanxi, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Ζονγκγιουάν Μανδαρινικά Σαανξί, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín zhongyuan de Shaanxi, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (Zhongyuan Mandarin Shaanxi, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (Zhongyuan mandarin Shaanxi, simplifié)" description="French"/>
+			<name id="13" local="סינית (מנדרינית שאאנשי, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (Zhongyuan Mandarin Shaanxi, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (Zhongyuan Mandarin Shaanxi, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Zhongvertita Mandarin Shaanxi, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（中原官話陝西、簡体）" description="Japanese"/>
+			<name id="18" local="중국어 (중위안 만다린 산시성, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Mandarinyuan Mandarijn Shaanxi, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (Zhongyuan mandarin Shaanxi, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (Zhongyuan Mandaryński Shaanxi, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Zhongyuan Mandarim Shaanxi, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (Zhongyuan Mandarin Shaanxi, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (Чжунъюань мандаринский Шэньси, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (Zhongyuan Mandarin Shaanxi, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (Zhongyuan Mandarin Shaanxi, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (Зхонгyуан Мандарин Шенси, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (Zhongyuan Mandarin Shaanxi, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (Zhongyuan Mandarin Shaanxi, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (Zhongyuan Mandarin Shaanxi, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (Зхонгyуан Мандарин Шенси, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (Зхонгyуан Мандарин Шенси, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (Zhongyuan Mandarin Shaanxi, zjednodušené)" description="Slovak"/>
+			<name id="28" local="Kineze (Zhongyuan Mandarin Shaanxi, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (Zhongyuan mandarin Shaanxi, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (จีนกลาง จงหยวน มณฑลฉ่านซี, ตัวย่อ)" description="Thai"/>
+			<name id="31" local="Çince (Zhongyuan Mandarin Shaanxi, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (ژونگ یوان مینڈارن شانسی، سادہ)" description="Urdu"/>
+			<name id="33" local="Mandarin (Zhongyuan Mandarin Shaanxi, Sederhana)" description="Indonesian"/>
+			<name id="34" local="Китайська (Чжун'юань мандаринська Шеньсі, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (Чжунюань мандарынская Шэньсі, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajski (Zhongyuan mandarin Shaanxi, poenostavljeno)" description="Slovenian"/>
+			<name id="37" local="Hiina (Zhongyuan Mandarin Shaanxi, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (Zhongyuan Mandarin Shaanxi, vienkāršoti)" description="Latvian"/>
+			<name id="39" local="Kinų (Zhongyuan mandarinų Shaanxi, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Trung Nguyên Quan thoại, Thiểm Tây, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (Ժոնգյուան Մանդարին, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Zhongyuan Mandarin Shaanxi, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (mandarín zhongyuan de Shaanxi, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (Џонгјуан мандарински Шенси, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Zhongyuan Mandaryns Shaanxi, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (झोंगयुआन मंदारिन शांक्सी, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (Чжунюань Мандарин Шанси, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Чжунюань Мандарин Шанси, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (Zhongyuan Mandarin Shaanxi, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Жун Юань Мандарин Шэньси, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín zhongyuan de Shaanxi, simplificado)" description="Galician"/>
+		</language>
+		<language id="658" default="Chinese (Jilu Mandarin, Simplified)" lcid="zh-CN-shandong">
+			<name id="1" local="الصينية (جيلو الماندرين ، المبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (джилу мандарин, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (mandarín jilu, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（冀魯官話，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（冀鲁官话，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (mandarínština jilu, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (Jilu Mandarin, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Jilu Mandarin, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Jilu Μανδαρινικά, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín jilu, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (Jilu Mandarin, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (mandarin jilu, simplifié)" description="French"/>
+			<name id="13" local="סינית (ג'ילו מנדרינית, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (Jilu Mandarin, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (Jilu Mandarin, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Mandarino Jilu, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（冀魯官話、簡体）" description="Japanese"/>
+			<name id="18" local="중국어 (질루 만다린, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Jilu Mandarijn, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (Jilu mandarin, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (Jilu Mandaryński, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Jilu Mandarim, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (Jilu Mandarin, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (хэбэйско-шаньдунский мандаринский диалект, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (Đi Lu mandarinski, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (Đi Lu mandarinski, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (Ђи Лу мандарински, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (Đi Lu mandarinski, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (Đi Lu mandarinski, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (Đi Lu mandarinski, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (Ђи Лу мандарински, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (Ђи Лу мандарински, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (mandarínska Jilu, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Jilu Mandarin, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (jilu mandarin, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (ภาษาจีนกลางจี้หลู่, ตัวย่อ)" description="Thai"/>
+			<name id="31" local="Çince (Jilu Mandarin, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (جیلو مینڈارن، سادہ)" description="Urdu"/>
+			<name id="33" local="Mandarin (Jilu Mandarin, Sederhana)" description="Indonesian"/>
+			<name id="34" local="Китайська (хейбейсько-шаньдунський мандаринський діалект, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (хэбэйска-шаньдунскі мандарынскі дыялект, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajski (Jilu mandarinščina, poenostavljeno)" description="Slovenian"/>
+			<name id="37" local="Hiina (Jilu mandariin, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (Jilu mandarīnu, vienkāršotā)" description="Latvian"/>
+			<name id="39" local="Kinų (jilu mandarinų, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Jilu Mandarin, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (Jilu Mandarin, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Jilu Mandarin, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (mandarín jilu, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (џилу мандарински, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Jilu Mandaryns, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (जिलू मंदारिन, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (джилу мандарин, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Джилу Мандарин, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (Jilu mandarin, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Жирү мандарин, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín jilu, simplificado)" description="Galician"/>
+		</language>
+		<language id="659" default="Chinese (Southwestern Mandarin, Simplified)" lcid="zh-CN-sichuan">
+			<name id="1" local="الصينية (الماندارين الجنوبية الغربية، المبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (югозападен мандарин, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (mandarín suroeste, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（西南官話，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（西南普通话，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (mandarínština na jihozápadě, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (sydvestlige mandarin, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Südwestliches Mandarin, vereinfacht)" description="German"/>
+			<name id="8" local="Κινέζικα (Νοτιοδυτικά Μανδαρινικά, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín suroeste, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (lounaismandariinikiina, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (mandarin du Sud-Ouest, simplifié)" description="French"/>
+			<name id="13" local="סינית (מנדרינית דרום-מערבית, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (délnyugati mandarin, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (suðvestur mandarín, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (Mandarino sud-occidentale, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（南西部標準中国語、簡体字）" description="Japanese"/>
+			<name id="18" local="중국어 (중국어 남경어, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Zuidwestelijk Mandarijn, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (sørvestlig mandarin, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (południowo-zachodni mandaryński, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (Mandarim do Sudoeste, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (mandarină sud-vestică, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (юго-западный мандаринский диалект, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (jugozapadni mandarinski, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (jugozapadni mandarinski, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (југозападни мандарински, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (jugozapadni mandarinski, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (jugozapadni mandarinski, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (jugozapadni mandarinski, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (југозападни мандарински, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (југозападни мандарински, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (juhozápadná mandarínska, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Mandarina jugperëndimore, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (sydvästra mandarin, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (จีนกลางตะวันตกเฉียงใต้, ประยุกต์)" description="Thai"/>
+			<name id="31" local="Çince (Güneybatı Mandarin, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (جنوب مغربی مینڈارن، سادہ)" description="Urdu"/>
+			<name id="33" local="Mandarin (Mandarin Barat Daya, Disederhanakan)" description="Indonesian"/>
+			<name id="34" local="Китайська (південно-західний мандаринський діалект, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (паўднёва-заходні мандарынскі дыялект, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajščina (jugozahodna mandarina, poenostavljena)" description="Slovenian"/>
+			<name id="37" local="Hiina (edela-mandariin, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (dienvidrietumu mandarīnu, vienkāršotā)" description="Latvian"/>
+			<name id="39" local="Kinų (pietvakarių mandarinų, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Tiếng Quan Thoại Tây Nam, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (հարավ-արեւմտյան մանդարին, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Cənub-Qərbi Mandarin, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (mandarín suroeste, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (југозападен мандарински, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Sjinees (Suidwestelike Mandaryns, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (दक्षिण-पश्चिमी मंदारिन, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (оңтүстік-батыс мандарин, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Түштүк-батыш мандарин, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (janubiy-g'arbiy mandarin, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Баруун өмнөд мандарин, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín suroeste, simplificado)" description="Galician"/>
+		</language>
+		<language id="660" default="Fijian (Fiji)" lcid="fj">
+			<name id="1" local="اللغة الفيجية" description="Arabic"/>
+			<name id="2" local="Фиджийски (Фиджи)" description="Bulgarian"/>
+			<name id="3" local="Fijià (Fiji)" description="Catalan"/>
+			<name id="4" subid="1" local="斐濟語（斐濟）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="斐濟语（斐濟）" description="Chinese (Simplified)"/>
+			<name id="5" local="Fidžijština (Fidži)" description="Czech"/>
+			<name id="6" local="Fijiansk (Fiji)" description="Danish"/>
+			<name id="7" local="Fidschi (Republik Fidschi)" description="German"/>
+			<name id="8" local="Φιτζιανή (Φίτζι)" description="Greek"/>
+			<name id="10" local="Fiyiano (Fiyi)" description="Spanish"/>
+			<name id="11" local="Fidžin (Fidži)" description="Finnish"/>
+			<name id="12" local="Fidjien (Fidji)" description="French"/>
+			<name id="13" local="פיג'י (פיג'י)" description="Hebrew"/>
+			<name id="14" local="Fidzsi (Fidzsi-szigetek)" description="Hungarian"/>
+			<name id="15" local="Fídjíska (Fídjí)" description="Icelandic"/>
+			<name id="16" local="Figiano (Figi)" description="Italian"/>
+			<name id="17" local="フィジー語（フィジー）" description="Japanese"/>
+			<name id="18" local="피지어 (피지)" description="Korean"/>
+			<name id="19" local="Fijisch (Fiji)" description="Dutch"/>
+			<name id="20" local="Fijiansk (Fiji)" description="Norwegian"/>
+			<name id="21" local="Fidżyjski (Fidżi)" description="Polish"/>
+			<name id="22" local="Fijiano (Fiji)" description="Portuguese"/>
+			<name id="24" local="Fiji (Fiji)" description="Romanian"/>
+			<name id="25" local="Фиджийский (Фиджи)" description="Russian"/>
+			<name id="26" subid="1" local="Fidžijski (Fidži)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Fidžijski (Fidži)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Фиџијски (Фиџи)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Fidžijski (Fidži)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Fidžijski (Fidži)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Fidžijski (Fidži)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Фиџијски (Фиџи)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Фиџијски (Фиџи)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Fidžijčina (Fidži)" description="Slovak"/>
+			<name id="28" local="Fixhianisht (Fixhi)" description="Albanian"/>
+			<name id="29" local="Fijianska (Fiji)" description="Swedish"/>
+			<name id="30" local="ภาษาฟีจี (ประเทศฟีจี)" description="Thai"/>
+			<name id="31" local="Fijice (Fiji)" description="Turkish"/>
+			<name id="32" local="فجی (فجی)" description="Urdu"/>
+			<name id="33" local="Fiji" description="Indonesian"/>
+			<name id="34" local="Фіджійська (Фіджі)" description="Ukrainian"/>
+			<name id="35" local="Фіджыйская (Фіджы)" description="Belarusian"/>
+			<name id="36" local="Fidžijčina (Fidži)" description="Slovenian"/>
+			<name id="37" local="Fidži (Fidži)" description="Estonian"/>
+			<name id="38" local="Fidžiešu (Fidži)" description="Latvian"/>
+			<name id="39" local="Fidžių (Fidžis)" description="Lithuanian"/>
+			<name id="42" local="Fiji (Fiji)" description="Vietnamese"/>
+			<name id="43" local="Ֆիջիերեն (Ֆիջի)" description="Armenian"/>
+			<name id="44" local="Fici (Fici)" description="Azerbaijani"/>
+			<name id="45" local="Fijiera (Fiji)" description="Basque"/>
+			<name id="47" local="Фиџиски (Фиџи)" description="Macedonian"/>
+			<name id="54" local="Fidjiaans (Fidji)" description="Afrikaans"/>
+			<name id="57" local="फ़िजीयाई (फ़िजी)" description="Hindi"/>
+			<name id="63" local="Фиджи (Фиджи)" description="Kazakh"/>
+			<name id="64" local="Фиджи (Фиджи)" description="Kyrgyz"/>
+			<name id="67" local="Fiji (Fiji)" description="Uzbek"/>
+			<name id="80" local="Фижи (Фижи)" description="Mongolian"/>
+			<name id="86" local="Fidxiano (Fidxi)" description="Galician"/>
+		</language>
+		<language id="661" default="Kurdish (Latin, Northern)" lcid="kmr">
+			<name id="1" local="الكردية (الشمالية)" description="Arabic"/>
+			<name id="2" local="Кюрдски (северен)" description="Bulgarian"/>
+			<name id="3" local="Kurdo (kurd del nord)" description="Catalan"/>
+			<name id="4" subid="1" local="庫德文（北部）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="库尔德语（北部）" description="Chinese (Simplified)"/>
+			<name id="5" local="Kurdština (severní)" description="Czech"/>
+			<name id="6" local="Kurdisk (Nordkurdisk)" description="Danish"/>
+			<name id="7" local="Kurdisch (Nordkurdisch)" description="German"/>
+			<name id="8" local="Κουρδική (Βόρεια Κουρδικά)" description="Greek"/>
+			<name id="10" local="Kurdo (norte)" description="Spanish"/>
+			<name id="11" local="Kurdi (pohjoiskurdi)" description="Finnish"/>
+			<name id="12" local="Kurde (septentrional)" description="French"/>
+			<name id="13" local="כורדית (לטינית, צפונית)" description="Hebrew"/>
+			<name id="14" local="Kurd (északi)" description="Hungarian"/>
+			<name id="15" local="Kúrdíska (kúrmanji)" description="Icelandic"/>
+			<name id="16" local="Curdo (settentrionale)" description="Italian"/>
+			<name id="17" local="クルド語（北）" description="Japanese"/>
+			<name id="18" local="쿠르드어 (북부)" description="Korean"/>
+			<name id="19" local="Koerdisch (Noord-Koerdisch)" description="Dutch"/>
+			<name id="20" local="Kurdisk (nordkurdisk)" description="Norwegian"/>
+			<name id="21" local="Kurdyjski (północny)" description="Polish"/>
+			<name id="22" local="Curdo (setentrional)" description="Portuguese"/>
+			<name id="24" local="Kurdă (Kurmangi de Nord)" description="Romanian"/>
+			<name id="25" local="Курдский (латиница, севернокурдский диалект)" description="Russian"/>
+			<name id="26" subid="1" local="Kurdski (sjevernokurdski)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kurdski (sjevernokurdski)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Курдски (сјевернокурдски)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kurdski (sjevernokurdski)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kurdski (sjevernokurdski)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kurdski (sjevernokurdski)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Курдски (сјевернокурдски)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Курдски (сјевернокурдски)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Kurdčina (severná)" description="Slovak"/>
+			<name id="28" local="Kurde (Noord-Koerdies)" description="Albanian"/>
+			<name id="29" local="Kurdiska (Nordkurdiska)" description="Swedish"/>
+			<name id="30" local="ภาษาเคิร์ด (ชุดตัวอักษรฮะวาร)" description="Thai"/>
+			<name id="31" local="Kürtçe (Kuzey)" description="Turkish"/>
+			<name id="32" local="کرد (شمالی)" description="Urdu"/>
+			<name id="33" local="Kurdi (Utara)" description="Indonesian"/>
+			<name id="34" local="Курдська (латиниця, південнокурдська)" description="Ukrainian"/>
+			<name id="35" local="Курдская (паўночнакурдская)" description="Belarusian"/>
+			<name id="36" local="Kurdščina (Kurmanji)" description="Slovenian"/>
+			<name id="37" local="Kurdi (Kurmandži)" description="Estonian"/>
+			<name id="38" local="Kurdu (Kurmandži)" description="Latvian"/>
+			<name id="39" local="Kurdų (Kurmandžių)" description="Lithuanian"/>
+			<name id="42" local="Kurd (Bắc)" description="Vietnamese"/>
+			<name id="43" local="Քրդերեն (հյուսիսային)" description="Armenian"/>
+			<name id="44" local="Kürd (Kurmanc)" description="Azerbaijani"/>
+			<name id="45" local="Kurdo (norte)" description="Basque"/>
+			<name id="47" local="Курдски (курманџиски дијалект)" description="Macedonian"/>
+			<name id="54" local="Koerdies (Noord-Koerdies)" description="Afrikaans"/>
+			<name id="57" local="कुर्दी (उत्तरी)" description="Hindi"/>
+			<name id="63" local="Күрд (солтүстік)" description="Kazakh"/>
+			<name id="64" local="Күрд (түндүк)" description="Kyrgyz"/>
+			<name id="67" local="Kurd (shimoliy)" description="Uzbek"/>
+			<name id="80" local="Курд (хойд)" description="Mongolian"/>
+			<name id="86" local="Kurdo (norte)" description="Galician"/>
+		</language>
+		<language id="662" default="Samoan (Latin, Samoa)" lcid="sm">
+			<name id="1" local="ساموا (اللاتينية)" description="Arabic"/>
+			<name id="2" local="Самоански (Самоа)" description="Bulgarian"/>
+			<name id="3" local="Samoà (latino, Samoa)" description="Catalan"/>
+			<name id="4" subid="1" local="薩摩亞文（拉丁）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="萨摩亚语（拉丁语）" description="Chinese (Simplified)"/>
+			<name id="5" local="Samojština (latinka, Samoa)" description="Czech"/>
+			<name id="6" local="Samoansk (Samoa)" description="Danish"/>
+			<name id="7" local="Samoanisch (Lateinisch, Samoa)" description="German"/>
+			<name id="8" local="Σαμόα (Σαμόα)" description="Greek"/>
+			<name id="10" local="Samoano (latino, Samoa)" description="Spanish"/>
+			<name id="11" local="Samoan (Samoa)" description="Finnish"/>
+			<name id="12" local="Samoan (latin, Samoa)" description="French"/>
+			<name id="13" local="סמואה (לטינית, סמואה)" description="Hebrew"/>
+			<name id="14" local="Szamoai (latin betűs, Samoa)" description="Hungarian"/>
+			<name id="15" local="Samóska (Samóa)" description="Icelandic"/>
+			<name id="16" local="Samoano (latino, Samoa)" description="Italian"/>
+			<name id="17" local="サモア語（ラテン）" description="Japanese"/>
+			<name id="18" local="사모아어 (라틴어)" description="Korean"/>
+			<name id="19" local="Samoaans (Latijns, Samoa)" description="Dutch"/>
+			<name id="20" local="Samoansk (Samoa)" description="Norwegian"/>
+			<name id="21" local="Samoański (łaciński, Samoa)" description="Polish"/>
+			<name id="22" local="Samoano (latino, Samoa)" description="Portuguese"/>
+			<name id="24" local="Samoană (Samoa)" description="Romanian"/>
+			<name id="25" local="Самоанский (латиница, Самоа)" description="Russian"/>
+			<name id="26" subid="1" local="Samoanski (latinica, Samoa)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Samoanski (latinica, Samoa)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Самоански (латиница, Самоа)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Samoanski (latinica, Samoa)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Samoanski (latinica, Samoa)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Samoanski (latinica, Samoa)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Самоански (латиница, Самоа)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Самоански (латиница, Самоа)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Samojčina (latinka, Samoa)" description="Slovak"/>
+			<name id="28" local="Samoane (Samoa)" description="Albanian"/>
+			<name id="29" local="Samoanska (latinsk, Samoa)" description="Swedish"/>
+			<name id="30" local="ซามัว (ซามัว)" description="Thai"/>
+			<name id="31" local="Samoaca (Latin, Samoa)" description="Turkish"/>
+			<name id="32" local="سمووائی زبان" description="Urdu"/>
+			<name id="33" local="Samoa (Samoa)" description="Indonesian"/>
+			<name id="34" local="Самоанська (латиниця, Самоа)" description="Ukrainian"/>
+			<name id="35" local="Самаанская (Самоа)" description="Belarusian"/>
+			<name id="36" local="Samojščina (latinka, Samoa)" description="Slovenian"/>
+			<name id="37" local="Samoa (Samoa)" description="Estonian"/>
+			<name id="38" local="Samoāņu (Samoa)" description="Latvian"/>
+			<name id="39" local="Samoa (Samoa)" description="Lithuanian"/>
+			<name id="42" local="Samoa (Samoa)" description="Vietnamese"/>
+			<name id="43" local="Սամոան (Սամո)" description="Armenian"/>
+			<name id="44" local="Samoa (Samoa)" description="Azerbaijani"/>
+			<name id="45" local="Samoera (Samoa)" description="Basque"/>
+			<name id="47" local="Самоански (Самоа)" description="Macedonian"/>
+			<name id="54" local="Samoaans (Samoa)" description="Afrikaans"/>
+			<name id="57" local="समोआई (समोआ)" description="Hindi"/>
+			<name id="63" local="Самоа (Самоа)" description="Kazakh"/>
+			<name id="64" local="Самоа (Самоа)" description="Kyrgyz"/>
+			<name id="67" local="Samoa (Samoa)" description="Uzbek"/>
+			<name id="80" local="Самоа (Самоа)" description="Mongolian"/>
+			<name id="86" local="Samoano (latino, Samoa)" description="Galician"/>
+		</language>
+		<language id="663" default="Malagasy (Madagascar)" lcid="mg">
+			<name id="1" local="مدغشقر (مدغشقر)" description="Arabic"/>
+			<name id="2" local="Малгашки (Мадагаскар)" description="Bulgarian"/>
+			<name id="3" local="Malgaix (Madagascar)" description="Catalan"/>
+			<name id="4" subid="1" local="馬達加斯加語（馬達加斯加）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="马达加斯加语（马达加斯加）" description="Chinese (Simplified)"/>
+			<name id="5" local="Malgaština (Madagaskar)" description="Czech"/>
+			<name id="6" local="Malagassisk (Madagaskar)" description="Danish"/>
+			<name id="7" local="Malagasy (Madagaskar)" description="German"/>
+			<name id="8" local="Μαλγασική (Μαδαγασκάρη)" description="Greek"/>
+			<name id="10" local="Malgache (Madagascar)" description="Spanish"/>
+			<name id="11" local="Malagassi (Madagaskar)" description="Finnish"/>
+			<name id="12" local="Malgache (Madagascar)" description="French"/>
+			<name id="13" local="מלגזית (מדגסקר)" description="Hebrew"/>
+			<name id="14" local="Malgas (Madagaszkár)" description="Hungarian"/>
+			<name id="15" local="Malagasíska (Madagaskar)" description="Icelandic"/>
+			<name id="16" local="Malgascio (Madagascar)" description="Italian"/>
+			<name id="17" local="マダガスカル語（マダガスカル）" description="Japanese"/>
+			<name id="18" local="말라가시어 (마다가스카르)" description="Korean"/>
+			<name id="19" local="Malagasitalen (Madagaskar)" description="Dutch"/>
+			<name id="20" local="Gassisk (Madagaskar)" description="Norwegian"/>
+			<name id="21" local="Malgaski (Madagaskar)" description="Polish"/>
+			<name id="22" local="Malgaxe (Madagascar)" description="Portuguese"/>
+			<name id="24" local="Malgașă (Madagascar)" description="Romanian"/>
+			<name id="25" local="Малагасийский (Мадагаскар)" description="Russian"/>
+			<name id="26" subid="1" local="Malgaški (Madagaskar)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Malgaški (Madagaskar)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Малгашки (Мадагаскар)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Malgaški (Madagaskar)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Malgaški (Madagaskar)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Malgaški (Madagaskar)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Малгашки (Мадагаскар)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Малгашки (Мадагаскар)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Malgaština (Madagaskar)" description="Slovak"/>
+			<name id="28" local="Madagaskare (Madagaskari)" description="Albanian"/>
+			<name id="29" local="Malagassiska (Madagaskar)" description="Swedish"/>
+			<name id="30" local="ภาษามาลากาซี (ประเทศมาดากัสการ์)" description="Thai"/>
+			<name id="31" local="Malgaşça (Madagaskar)" description="Turkish"/>
+			<name id="32" local="ملاگاسی (مڈغاسکر)" description="Urdu"/>
+			<name id="33" local="Malagasi (Madagaskar)" description="Indonesian"/>
+			<name id="34" local="Малагасійська (Мадагаскар)" description="Ukrainian"/>
+			<name id="35" local="Малагасійская (Мадагаскар)" description="Belarusian"/>
+			<name id="36" local="Malgaščina (Madagaskar)" description="Slovenian"/>
+			<name id="37" local="Malagassi (Madagaskar)" description="Estonian"/>
+			<name id="38" local="Malgašu (Madagaskara)" description="Latvian"/>
+			<name id="39" local="Malagasių (Madagaskaras)" description="Lithuanian"/>
+			<name id="42" local="Malagasy (Madagascar)" description="Vietnamese"/>
+			<name id="43" local="Մալագա (Մադագասկար)" description="Armenian"/>
+			<name id="44" local="Malaqasi (Madaqaskar)" description="Azerbaijani"/>
+			<name id="45" local="Malgaxe (Madagaskar)" description="Basque"/>
+			<name id="47" local="Малгашки (Мадагаскар)" description="Macedonian"/>
+			<name id="54" local="Malgassies (Madagaskar)" description="Afrikaans"/>
+			<name id="57" local="मालागासी (मेडागास्कर)" description="Hindi"/>
+			<name id="63" local="Малагасий (Мадагаскар)" description="Kazakh"/>
+			<name id="64" local="Малагаси (Мадагаскар)" description="Kyrgyz"/>
+			<name id="67" local="Malagasi (Madagaskar)" description="Uzbek"/>
+			<name id="80" local="Малагас (Мадагаскар)" description="Mongolian"/>
+			<name id="86" local="Malgaxe (Madagascar)" description="Galician"/>
+		</language>
+		<language id="664" default="Ingush (Russia)" lcid="inh">
+			<name id="1" local="إنغوش (روسيا)" description="Arabic"/>
+			<name id="2" local="Ингушки (Русия)" description="Bulgarian"/>
+			<name id="3" local="Ingúix (Rússia)" description="Catalan"/>
+			<name id="4" subid="1" local="印古什語（俄羅斯）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="印古什语（俄罗斯）" description="Chinese (Simplified)"/>
+			<name id="5" local="Inguš (Rusko)" description="Czech"/>
+			<name id="6" local="Ingusjisk (Rusland)" description="Danish"/>
+			<name id="7" local="Inguschische (Russland)" description="German"/>
+			<name id="8" local="Ινγκους (Ρωσία)" description="Greek"/>
+			<name id="10" local="Ingusetio (Rusia)" description="Spanish"/>
+			<name id="11" local="Inguušin (Venäjä)" description="Finnish"/>
+			<name id="12" local="Ingouche (Russie)" description="French"/>
+			<name id="13" local="אינגוש (רוסיה)" description="Hebrew"/>
+			<name id="14" local="Ingush (Oroszország)" description="Hungarian"/>
+			<name id="15" local="Ingush (Rússland)" description="Icelandic"/>
+			<name id="16" local="Inguscio (Russia)" description="Italian"/>
+			<name id="17" local="イングーシ語（ロシア）" description="Japanese"/>
+			<name id="18" local="인구시어 (러시아)" description="Korean"/>
+			<name id="19" local="Ingoesjetisch (Rusland)" description="Dutch"/>
+			<name id="20" local="Ingusjisk (Russland)" description="Norwegian"/>
+			<name id="21" local="Inguski (Rosja)" description="Polish"/>
+			<name id="22" local="Ingucho (Rússia)" description="Portuguese"/>
+			<name id="23" local="Inguç (Russie)" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Ingușă (Rusia)" description="Romanian"/>
+			<name id="25" local="Ингушский (Россия)" description="Russian"/>
+			<name id="26" subid="1" local="Inguški (Rusija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Inguški (Rusija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Ингушки (Русија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Inguški (Rusija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Inguški (Rusija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Inguški (Rusija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Ингушки (Русија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Ингушки (Русија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Inguš (Rusko)" description="Slovak"/>
+			<name id="28" local="Ingush (Rusia)" description="Albanian"/>
+			<name id="29" local="Ingusjiska (Ryssland)" description="Swedish"/>
+			<name id="30" local="ภาษาอิงกุช (รัสเซีย)" description="Thai"/>
+			<name id="31" local="İnguşça (Rusya)" description="Turkish"/>
+			<name id="32" local="انگوش (روس)" description="Urdu"/>
+			<name id="33" local="Ingush (Russia)" description="Indonesian"/>
+			<name id="34" local="Інгуська (Росія)" description="Ukrainian"/>
+			<name id="35" local="Інгушская (Расія)" description="Belarusian"/>
+			<name id="36" local="Ingush (Rusija)" description="Slovenian"/>
+			<name id="37" local="Inguši (Venemaa)" description="Estonian"/>
+			<name id="38" local="Ingušu (Krievijā)" description="Latvian"/>
+			<name id="39" local="Ingušų (Rusija)" description="Lithuanian"/>
+			<name id="40" local="Ingуш (Русия)" description="Tajik"/>
+			<name id="42" local="Ingush (Nga)" description="Vietnamese"/>
+			<name id="43" local="Ինգուշ (Ռուսաստան)" description="Armenian"/>
+			<name id="44" local="İnquş (Rusiya)" description="Azerbaijani"/>
+			<name id="45" local="Inguxera (Errusia)" description="Basque"/>
+			<name id="47" local="Ингушки (Русија)" description="Macedonian"/>
+			<name id="54" local="Ingoesjeties (Rusland)" description="Afrikaans"/>
+			<name id="57" local="इंगुश (रूस)" description="Hindi"/>
+			<name id="63" local="Ингуш (Ресей)" description="Kazakh"/>
+			<name id="64" local="Ингуш (Орусия)" description="Kyrgyz"/>
+			<name id="67" local="Ingush (Rossiya)" description="Uzbek"/>
+			<name id="70" local="ਇੰਗੁਸ਼ (ਰੂਸ)" description="Punjabi"/>
+			<name id="80" local="Ингуш (Орос Улс)" description="Mongolian"/>
+			<name id="86" local="Inguxo (Rusia)" description="Galician"/>
+		</language>
+		<language id="665" default="Ido" lcid="io">
+			<name id="1" local="لغة إيدو" description="Arabic"/>
+			<name id="2" local="Идо" description="Bulgarian"/>
+			<name id="3" local="Ido" description="Catalan"/>
+			<name id="4" subid="1" local="伊多語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="伊多语" description="Chinese (Simplified)"/>
+			<name id="5" local="Ido" description="Czech"/>
+			<name id="6" local="Ido" description="Danish"/>
+			<name id="7" local="Ido" description="German"/>
+			<name id="8" local="Ίντο" description="Greek"/>
+			<name id="10" local="Ido" description="Spanish"/>
+			<name id="11" local="Ido" description="Finnish"/>
+			<name id="12" local="Ido" description="French"/>
+			<name id="13" local="אידו" description="Hebrew"/>
+			<name id="14" local="Ido" description="Hungarian"/>
+			<name id="15" local="Ido" description="Icelandic"/>
+			<name id="16" local="Ido" description="Italian"/>
+			<name id="17" local="イド語" description="Japanese"/>
+			<name id="18" local="이도" description="Korean"/>
+			<name id="19" local="Ido" description="Dutch"/>
+			<name id="20" local="Ido" description="Norwegian"/>
+			<name id="21" local="Ido" description="Polish"/>
+			<name id="22" local="Ido" description="Portuguese"/>
+			<name id="24" local="Ido" description="Romanian"/>
+			<name id="25" local="Идо" description="Russian"/>
+			<name id="26" subid="1" local="Ido" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Ido" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Идо" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Ido" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Ido" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Ido" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Идо" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Идо" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Ido" description="Slovak"/>
+			<name id="28" local="Ido" description="Albanian"/>
+			<name id="29" local="Ido" description="Swedish"/>
+			<name id="30" local="ภาษาอีโด" description="Thai"/>
+			<name id="31" local="İdo" description="Turkish"/>
+			<name id="32" local="ایڈو" description="Urdu"/>
+			<name id="33" local="Ido" description="Indonesian"/>
+			<name id="34" local="Ідо" description="Ukrainian"/>
+			<name id="35" local="Іда" description="Belarusian"/>
+			<name id="36" local="Ido" description="Slovenian"/>
+			<name id="37" local="Ido" description="Estonian"/>
+			<name id="38" local="Ido" description="Latvian"/>
+			<name id="39" local="Ido" description="Lithuanian"/>
+			<name id="40" local="Идо" description="Tajik"/>
+			<name id="42" local="Ido" description="Vietnamese"/>
+			<name id="43" local="Իդո" description="Armenian"/>
+			<name id="44" local="İdo" description="Azerbaijani"/>
+			<name id="45" local="Ido" description="Basque"/>
+			<name id="47" local="Идо" description="Macedonian"/>
+			<name id="53" local="Ido" description="Zulu"/>
+			<name id="54" local="Ido" description="Afrikaans"/>
+			<name id="55" local="იდო" description="Georgian"/>
+			<name id="57" local="ईडो" description="Hindi"/>
+			<name id="60" local="Ido" description="Gaelic"/>
+			<name id="62" local="Ido" description="Malay"/>
+			<name id="63" local="Идо" description="Kazakh"/>
+			<name id="64" local="Идо" description="Kyrgyz"/>
+			<name id="65" local="Kiido" description="Swahili"/>
+			<name id="66" local="Ido" description="Turkmen"/>
+			<name id="67" local="Ido" description="Uzbek"/>
+			<name id="69" local="ইডো" description="Bengali"/>
+			<name id="70" local="ਈਡੋ" description="Punjabi"/>
+			<name id="71" local="ઇડો" description="Gujarati"/>
+			<name id="73" local="இத்தோ மொழி" description="Tamil"/>
+			<name id="74" local="ఇడో" description="Telugu"/>
+			<name id="76" local="ഇഡോ" description="Malayalam"/>
+			<name id="79" local="आइडो" description="Sanskrit"/>
+			<name id="80" local="Идо" description="Mongolian"/>
+			<name id="84" local="ອີໂດ" description="Lao"/>
+			<name id="85" local="အီ ဒို" description="Burmese"/>
+			<name id="86" local="Ido" description="Galician"/>
+			<name id="89" local="مان ڪيان ٿو" description="Sindhi"/>
+			<name id="94" local="ኢዶ" description="Amharic"/>
+			<name id="97" local="इडो" description="Nepali"/>
+			<name id="100" local="Ido" description="Filipino"/>
+			<name id="104" local="Ido" description="Hausa"/>
+			<name id="106" local="Ido" description="Yoruba"/>
+		</language>
+		<language id="666" default="Interlingua" lcid="ia">
+			<name id="1" local="إنترلنغوا" description="Arabic"/>
+			<name id="2" local="Интерлингва" description="Bulgarian"/>
+			<name id="3" local="Interlingua" description="Catalan"/>
+			<name id="4" subid="1" local="國際語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="国际语" description="Chinese (Simplified)"/>
+			<name id="5" local="Interlingua" description="Czech"/>
+			<name id="6" local="Interlingua" description="Danish"/>
+			<name id="7" local="Interlingua" description="German"/>
+			<name id="8" local="Ιντερλίνγκουα" description="Greek"/>
+			<name id="10" local="Interlingua" description="Spanish"/>
+			<name id="11" local="Interlingua" description="Finnish"/>
+			<name id="12" local="Interlingua" description="French"/>
+			<name id="13" local="אינטרלינגואה" description="Hebrew"/>
+			<name id="14" local="Interlingva" description="Hungarian"/>
+			<name id="15" local="Interlingua" description="Icelandic"/>
+			<name id="16" local="Interlingua" description="Italian"/>
+			<name id="17" local="インターリングア" description="Japanese"/>
+			<name id="18" local="인테르링구아" description="Korean"/>
+			<name id="19" local="Interlingua" description="Dutch"/>
+			<name id="20" local="Interlingua" description="Norwegian"/>
+			<name id="21" local="Interlingua" description="Polish"/>
+			<name id="22" local="Interlíngua" description="Portuguese"/>
+			<name id="24" local="Interlingua" description="Romanian"/>
+			<name id="25" local="Интерлингва" description="Russian"/>
+			<name id="26" subid="1" local="Interlingua" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Interlingua" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Интерлингва" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Interlingua" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Interlingua" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Interlingua" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Интерлингва" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Интерлингва" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Interlingua" description="Slovak"/>
+			<name id="28" local="Interlingua" description="Albanian"/>
+			<name id="29" local="Interlingua" description="Swedish"/>
+			<name id="30" local="อินเตร์ลิงกวา" description="Thai"/>
+			<name id="31" local="İnterlingua" description="Turkish"/>
+			<name id="32" local="انٹرلنگوا" description="Urdu"/>
+			<name id="33" local="Interlingua" description="Indonesian"/>
+			<name id="34" local="Інтерлінгва" description="Ukrainian"/>
+			<name id="35" local="Інтэрлінгва" description="Belarusian"/>
+			<name id="36" local="Interlingua" description="Slovenian"/>
+			<name id="37" local="Interlingua" description="Estonian"/>
+			<name id="38" local="Interlingua" description="Latvian"/>
+			<name id="39" local="Interlingua" description="Lithuanian"/>
+			<name id="40" local="Интерлингва" description="Tajik"/>
+			<name id="42" local="Interlingua" description="Vietnamese"/>
+			<name id="43" local="Ինտերլինգուա" description="Armenian"/>
+			<name id="44" local="İnterlingua" description="Azerbaijani"/>
+			<name id="45" local="Interlingua" description="Basque"/>
+			<name id="47" local="Интерлингва" description="Macedonian"/>
+			<name id="53" local="Interlingua" description="Zulu"/>
+			<name id="54" local="Interlingua" description="Afrikaans"/>
+			<name id="57" local="अंतरभाषा" description="Hindi"/>
+			<name id="60" local="Interlingua" description="Gaelic"/>
+			<name id="62" local="Interlingua" description="Malay"/>
+			<name id="63" local="Интерлингва" description="Kazakh"/>
+			<name id="64" local="Интерлингва" description="Kyrgyz"/>
+			<name id="65" local="Interlingua" description="Swahili"/>
+			<name id="66" local="Interlingua" description="Turkmen"/>
+			<name id="67" local="Interlingua" description="Uzbek"/>
+			<name id="69" local="ইন্টারলিঙ্গুয়া" description="Bengali"/>
+			<name id="70" local="ਇੰਟਰ ਲਿੰਗੂਆ" description="Punjabi"/>
+			<name id="71" local="ઇન્ટરલિંગુઆ" description="Gujarati"/>
+			<name id="73" local="இன்டர்லிங்வா" description="Tamil"/>
+			<name id="74" local="ఇంటర్లింగ్వా" description="Telugu"/>
+			<name id="76" local="ഇന്റർലിംഗുവ" description="Malayalam"/>
+			<name id="79" local="अन्तरभाषा" description="Sanskrit"/>
+			<name id="80" local="Интерлингва" description="Mongolian"/>
+			<name id="84" local="ອິນເຕີລິງກົວ" description="Lao"/>
+			<name id="85" local="အင်တာလင်ဂွာ" description="Burmese"/>
+			<name id="86" local="Interlingua" description="Galician"/>
+			<name id="89" local="انٽرلنگوا" description="Sindhi"/>
+			<name id="94" local="ኢንተርሊንጉዋ" description="Amharic"/>
+			<name id="97" local="ईन्टरलिंगुआ" description="Nepali"/>
+			<name id="100" local="Interlingua" description="Filipino"/>
+			<name id="104" local="Interlingua" description="Hausa"/>
+			<name id="106" local="Interlingua" description="Yoruba"/>
+		</language>
+		<language id="667" default="Chinese (Guangxi Accent Mandarin, Simplified)" lcid="zh-CN-guangxi">
+			<name id="1" local="الصينية (قوانغشي لهجة الماندرين ، المبسطة)" description="Arabic"/>
+			<name id="2" local="Китайски (Гуанси, мандарин, опростен)" description="Bulgarian"/>
+			<name id="3" local="Chino (Guangxi accent mandarí, simplificado)" description="Catalan"/>
+			<name id="4" subid="1" local="中文（廣西口音普通話，簡體）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="中文（广西口音普通话，简体）" description="Chinese (Simplified)"/>
+			<name id="5" local="Čínština (Guangxi, zjednodušená)" description="Czech"/>
+			<name id="6" local="Kinesisk (Guangxi accent mandarin, forenklet)" description="Danish"/>
+			<name id="7" local="Chinesisch (Guangxi-Akzent Mandarin, vereinfacht)" description="German"/>
+			<name id="8" local="Κινεζικά (Guangxi Μανδαρινικά, απλοποιημένα)" description="Greek"/>
+			<name id="10" local="Chino (mandarín con acento de Guangxi, simplificado)" description="Spanish"/>
+			<name id="11" local="Kiina (Guangxin aksenttimandariinikiina, yksinkertaistettu)" description="Finnish"/>
+			<name id="12" local="Chinois (Mandarin accent Guangxi, simplifié)" description="French"/>
+			<name id="13" local="סינית (מנדרינית מבטא גואנגשי, פשוטה)" description="Hebrew"/>
+			<name id="14" local="Kínai (Guangxi akcentusú mandarin, egyszerűsített)" description="Hungarian"/>
+			<name id="15" local="Kínverska (Guangxi hreimur mandarín, einfölduð)" description="Icelandic"/>
+			<name id="16" local="Cinese (mandarino con accento del Guangxi, semplificato)" description="Italian"/>
+			<name id="17" local="中国語（広西チワン族自治区アクセント北京語、簡体）" description="Japanese"/>
+			<name id="18" local="중국어 (광시 악센트 중국어, 간체)" description="Korean"/>
+			<name id="19" local="Chinees (Guangxi Accent Mandarijn, Vereenvoudigd)" description="Dutch"/>
+			<name id="20" local="Kinesisk (Guangxi mandarin, forenklet)" description="Norwegian"/>
+			<name id="21" local="Chiński (mandaryński z akcentem Guangxi, uproszczony)" description="Polish"/>
+			<name id="22" local="Chinês (mandarim de Guangxi, simplificado)" description="Portuguese"/>
+			<name id="24" local="Chineză (accent Guangxi mandarină, simplificată)" description="Romanian"/>
+			<name id="25" local="Китайский (мандаринский диалект с гуансийским акцентом, упрощенное письмо)" description="Russian"/>
+			<name id="26" subid="1" local="Kineski (Guangsi mandarinski, pojednostavljeni)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Kineski (Guangsi mandarinski, pojednostavljeni)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Кинески (Гуангси мандарински, поједностављени)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Kineski (Guangsi mandarinski, pojednostavljeni)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Kineski (Guangsi mandarinski, pojednostavljeni)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Kineski (Guangsi mandarinski, pojednostavljeni)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Кинески (Гуангси мандарински, поједностављени)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Кинески (Гуангси мандарински, поједностављени)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Čínština (mandarínska s prízvukom Guangxi, zjednodušená)" description="Slovak"/>
+			<name id="28" local="Kineze (Guangxi Mandarin, e thjeshtuar)" description="Albanian"/>
+			<name id="29" local="Kinesiska (Guangxi mandarin, förenklad)" description="Swedish"/>
+			<name id="30" local="จีน (กวางสี, สําเนียง, จีนกลาง, ตัวย่อ)" description="Thai"/>
+			<name id="31" local="Çince (Guangxi Mandarin, Basitleştirilmiş)" description="Turkish"/>
+			<name id="32" local="چینی (گوانگسی لہجہ مینڈارن، سادہ)" description="Urdu"/>
+			<name id="33" local="Mandarin ((Guangxi Mandarin, Sederhana)" description="Indonesian"/>
+			<name id="34" local="Китайська (мандаринський діалект з гуансійським акцентом, спрощена)" description="Ukrainian"/>
+			<name id="35" local="Кітайская (мандарынскі дыялект з гуансійскім акцэнтам, спрошчаная)" description="Belarusian"/>
+			<name id="36" local="Kitajski (Guangxi mandarinščina, poenostavljeno)" description="Slovenian"/>
+			<name id="37" local="Hiina (Guangxi mandariin, lihtsustatud)" description="Estonian"/>
+			<name id="38" local="Ķīniešu (Guangxi mandarīnu, vienkāršotā)" description="Latvian"/>
+			<name id="39" local="Kinų (Guangxi mandarinų, supaprastinta)" description="Lithuanian"/>
+			<name id="42" local="Trung (Guangxi Mandarin, Giản thể)" description="Vietnamese"/>
+			<name id="43" local="Չինարեն (Guangxi Mandarin, պարզեցված)" description="Armenian"/>
+			<name id="44" local="Çin (Guangxi Mandarin, Sadələşdirilmiş)" description="Azerbaijani"/>
+			<name id="45" local="Chino (Mandarin, Guangxiren azentuarekin, simplificado)" description="Basque"/>
+			<name id="47" local="Кинески (џилу мандарински, поедноставен)" description="Macedonian"/>
+			<name id="54" local="Chinees (Гуангси Mandaryns, vereenvoudig)" description="Afrikaans"/>
+			<name id="57" local="चीनी (गुआंग्शी उच्चारण मंदारिन, सरलीकृत)" description="Hindi"/>
+			<name id="63" local="Қытай (Гуанси екпіні мандарин, жеңілдетілген)" description="Kazakh"/>
+			<name id="64" local="Кытай (Гуанси акценти мандарин, жөнөкөйлөштүрүлгөн)" description="Kyrgyz"/>
+			<name id="67" local="Xitoycha (Guangxi mandarin, soddalashtirilgan)" description="Uzbek"/>
+			<name id="80" local="Хятад (Гуанси аялгатай мандарин, хялбаршуулсан)" description="Mongolian"/>
+			<name id="86" local="Chino (mandarín con acento Guangxi, simplificado)" description="Galician"/>
+		</language>
+		<language id="668" default="Hmong" lcid="hmn">
+			<name id="1" local="الهمونغ" description="Arabic"/>
+			<name id="2" local="Хмонг" description="Bulgarian"/>
+			<name id="3" local="Hmong" description="Catalan"/>
+			<name id="4" subid="1" local="苗語川黔滇次方言" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="苗语川黔滇次方言" description="Chinese (Simplified)"/>
+			<name id="5" local="Hmongština" description="Czech"/>
+			<name id="6" local="Hmong" description="Danish"/>
+			<name id="7" local="Hmong" description="German"/>
+			<name id="8" local="Χμονγκ" description="Greek"/>
+			<name id="10" local="Hmong" description="Spanish"/>
+			<name id="11" local="Hmong" description="Finnish"/>
+			<name id="12" local="Hmong" description="French"/>
+			<name id="13" local="והמונג" description="Hebrew"/>
+			<name id="14" local="Hmong" description="Hungarian"/>
+			<name id="15" local="Hmong" description="Icelandic"/>
+			<name id="16" local="Hmong" description="Italian"/>
+			<name id="17" local="ミャオ語" description="Japanese"/>
+			<name id="18" local="몽어" description="Korean"/>
+			<name id="19" local="Hmong" description="Dutch"/>
+			<name id="20" local="Hmong" description="Norwegian"/>
+			<name id="21" local="Hmong" description="Polish"/>
+			<name id="22" local="Hmong" description="Portuguese"/>
+			<name id="24" local="Hmong" description="Romanian"/>
+			<name id="25" local="Хмонг" description="Russian"/>
+			<name id="26" subid="1" local="Hmong" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Hmong" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Хмонг" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Hmong" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Hmong" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Hmong" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Хмонг" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Хмонг" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Hmong" description="Slovak"/>
+			<name id="28" local="Hmong" description="Albanian"/>
+			<name id="29" local="Hmong" description="Swedish"/>
+			<name id="30" local="ภาษาม้ง" description="Thai"/>
+			<name id="31" local="Hmong" description="Turkish"/>
+			<name id="32" local="ہمونگ" description="Urdu"/>
+			<name id="33" local="Hmong" description="Indonesian"/>
+			<name id="34" local="Хмонг" description="Ukrainian"/>
+			<name id="35" local="Хмонг" description="Belarusian"/>
+			<name id="36" local="Hmong" description="Slovenian"/>
+			<name id="37" local="Hmong" description="Estonian"/>
+			<name id="38" local="Hmong" description="Latvian"/>
+			<name id="39" local="Hmong" description="Lithuanian"/>
+			<name id="42" local="H'Mông" description="Vietnamese"/>
+			<name id="43" local="Հմոնգ" description="Armenian"/>
+			<name id="44" local="Hmong" description="Azerbaijani"/>
+			<name id="45" local="Hmong" description="Basque"/>
+			<name id="47" local="Хмонг" description="Macedonian"/>
+			<name id="54" local="Hmong" description="Afrikaans"/>
+			<name id="57" local="हमोंग" description="Hindi"/>
+			<name id="63" local="Хмонг" description="Kazakh"/>
+			<name id="64" local="Хмонг" description="Kyrgyz"/>
+			<name id="67" local="Hmong" description="Uzbek"/>
+			<name id="80" local="Хмонг" description="Mongolian"/>
+			<name id="86" local="Hmong" description="Galician"/>
+		</language>
+		<language id="669" default="Mari (Russia)" lcid="chm-RU">
+			<name id="1" local="ماريسكي (روسيا)" description="Arabic"/>
+			<name id="2" local="Марийски (Русия)" description="Bulgarian"/>
+			<name id="3" local="Mari (Rússia)" description="Catalan"/>
+			<name id="4" subid="1" local="馬里語 (俄羅斯)" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="马里语（俄罗斯）" description="Chinese (Simplified)"/>
+			<name id="5" local="Marijština (Rusko)" description="Czech"/>
+			<name id="6" local="Mari (Rusland)" description="Danish"/>
+			<name id="7" local="Mari (Russland)" description="German"/>
+			<name id="8" local="Μαρί (Ρωσία)" description="Greek"/>
+			<name id="10" local="Mari (Rusia)" description="Spanish"/>
+			<name id="11" local="Marin (Venäjä)" description="Finnish"/>
+			<name id="12" local="Mari (Russie)" description="French"/>
+			<name id="13" local="מארי (רוסיה)" description="Hebrew"/>
+			<name id="14" local="Mari (Oroszország)" description="Hungarian"/>
+			<name id="15" local="Mari (Rússland)" description="Icelandic"/>
+			<name id="16" local="Mari (Russia)" description="Italian"/>
+			<name id="17" local="マリ語（ロシア）" description="Japanese"/>
+			<name id="18" local="마리어 (러시아)" description="Korean"/>
+			<name id="19" local="Mari (Rusland)" description="Dutch"/>
+			<name id="20" local="Mariske (Russland)" description="Norwegian"/>
+			<name id="21" local="Maryjski (Rosja)" description="Polish"/>
+			<name id="22" local="Mari (Rússia)" description="Portuguese"/>
+			<name id="23" local="Mari (Russie)" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Mari (Rusia)" description="Romanian"/>
+			<name id="25" local="Марийский (Россия)" description="Russian"/>
+			<name id="26" subid="1" local="Marijski (Rusija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Marijski (Rusija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Маријски (Русија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Marijski (Rusija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Marijski (Rusija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Marijski (Rusija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Маријски (Русија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Маријски (Русија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Marijština (Rusko)" description="Slovak"/>
+			<name id="28" local="Mari (Rusia)" description="Albanian"/>
+			<name id="29" local="Mariska (Ryssland)" description="Swedish"/>
+			<name id="30" local="ภาษามารี (รัสเซีย)" description="Thai"/>
+			<name id="31" local="Mari (Rusya)" description="Turkish"/>
+			<name id="32" local="ماری (روس)" description="Urdu"/>
+			<name id="33" local="Mari (Russia)" description="Indonesian"/>
+			<name id="34" local="Марійська (Росія)" description="Ukrainian"/>
+			<name id="35" local="Марыйская (Расія)" description="Belarusian"/>
+			<name id="36" local="Marijščina (Rusija)" description="Slovenian"/>
+			<name id="37" local="Mari (Venemaa)" description="Estonian"/>
+			<name id="38" local="Mariešu (Krievijā)" description="Latvian"/>
+			<name id="39" local="Marių (Rusija)" description="Lithuanian"/>
+			<name id="40" local="Мари (Русия)" description="Tajik"/>
+			<name id="42" local="Mari (Nga)" description="Vietnamese"/>
+			<name id="43" local="Մարիերեն (Ռուսաստան)" description="Armenian"/>
+			<name id="44" local="Mariy (Rusiya)" description="Azerbaijani"/>
+			<name id="45" local="Mariera (Errusia)" description="Basque"/>
+			<name id="47" local="Мариски (Русија)" description="Macedonian"/>
+			<name id="53" local="uMari (eRussia)" description="Zulu"/>
+			<name id="54" local="Mari (Rusland)" description="Afrikaans"/>
+			<name id="55" local="მარიული (რუსეთი)" description="Georgian"/>
+			<name id="57" local="मरी (रूस)" description="Hindi"/>
+			<name id="60" local="Mari (An Rúis)" description="Gaelic"/>
+			<name id="62" local="Mari (Rusia)" description="Malay"/>
+			<name id="63" local="Мари (Ресей)" description="Kazakh"/>
+			<name id="64" local="Марий (Орусия)" description="Kyrgyz"/>
+			<name id="65" local="Mari (Urusi)" description="Swahili"/>
+			<name id="66" local="Mari (Russiýa)" description="Turkmen"/>
+			<name id="67" local="Mariy (Rossiya)" description="Uzbek"/>
+			<name id="69" local="মারি (রাশিয়া)" description="Bengali"/>
+			<name id="70" local="ਮਾਰੀ (ਰੂਸ)" description="Punjabi"/>
+			<name id="71" local="મારી (રશિયા)" description="Gujarati"/>
+			<name id="73" local="மாரி (ரஷ்யா)" description="Tamil"/>
+			<name id="74" local="మారి (రష్యా)" description="Telugu"/>
+			<name id="76" local="മാരി (റഷ്യ)" description="Malayalam"/>
+			<name id="79" local="मारी (रूस)" description="Sanskrit"/>
+			<name id="80" local="Мари (Орос Улс)" description="Mongolian"/>
+			<name id="84" local="ມາຣີ (ຣັດເຊຍ)" description="Lao"/>
+			<name id="85" local="မာရီ (ရုရှား)" description="Burmese"/>
+			<name id="86" local="Mari (Rusia)" description="Galician"/>
+			<name id="89" local="ماري (روس)" description="Sindhi"/>
+			<name id="94" local="ማሪ (ሩሲያ)" description="Amharic"/>
+			<name id="97" local="मारी (रूस)" description="Nepali"/>
+			<name id="100" local="Mari (Russia)" description="Filipino"/>
+			<name id="104" local="Mari (Rasha)" description="Hausa"/>
+			<name id="106" local="Mari (Russia)" description="Yoruba"/>
+		</language>
+		<language id="670" default="Haitian Creole" lcid="ht">
+			<name id="1" local="الكريولية الهايتية" description="Arabic"/>
+			<name id="2" local="Хаитянски креолски" description="Bulgarian"/>
+			<name id="3" local="Crioll haitià" description="Catalan"/>
+			<name id="4" subid="1" local="海地克里奧爾語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="海地克里奥尔语" description="Chinese (Simplified)"/>
+			<name id="5" local="Haitská kreolština" description="Czech"/>
+			<name id="6" local="Haitisk" description="Danish"/>
+			<name id="7" local="Haitianisch-Kreolisch" description="German"/>
+			<name id="8" local="Αϊτινή κρεολή" description="Greek"/>
+			<name id="10" local="Criollo haitiano" description="Spanish"/>
+			<name id="11" local="Haitinkreoli" description="Finnish"/>
+			<name id="12" local="Créole haïtien" description="French"/>
+			<name id="13" local="קריאולית האיטית" description="Hebrew"/>
+			<name id="14" local="Haiti kreol" description="Hungarian"/>
+			<name id="15" local="Haítískt kreóla" description="Icelandic"/>
+			<name id="16" local="Creolo haitiano" description="Italian"/>
+			<name id="17" local="ハイチ語" description="Japanese"/>
+			<name id="18" local="아이티어" description="Korean"/>
+			<name id="19" local="Haïtiaans-Creools" description="Dutch"/>
+			<name id="20" local="Haitisk kreol" description="Norwegian"/>
+			<name id="21" local="Kreolski haitański" description="Polish"/>
+			<name id="22" local="Crioulo haitiano" description="Portuguese"/>
+			<name id="23" local="Creol haitian" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Creolă haitiană" description="Romanian"/>
+			<name id="25" local="Гаитянский креольский" description="Russian"/>
+			<name id="26" subid="1" local="Haićanski kreolski" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Haićanski kreolski" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Хаићански креолски" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Haićanski kreolski" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Haićanski kreolski" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Haićanski kreolski" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Хаићански креолски" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Хаићански креолски" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Haitská kreolčina" description="Slovak"/>
+			<name id="28" local="Gjuha Kreyòl" description="Albanian"/>
+			<name id="29" local="Haitisk kreol" description="Swedish"/>
+			<name id="30" local="ภาษาครีโอลเฮติ" description="Thai"/>
+			<name id="31" local="Haiti Kreyolu" description="Turkish"/>
+			<name id="32" local="ہیٹی کریول" description="Urdu"/>
+			<name id="33" local="Kreol Haiti" description="Indonesian"/>
+			<name id="34" local="Гаїтянська креольська" description="Ukrainian"/>
+			<name id="35" local="Гаіцянская крэольская" description="Belarusian"/>
+			<name id="36" local="Haitijska kreolščina" description="Slovenian"/>
+			<name id="37" local="Haiti kreool" description="Estonian"/>
+			<name id="38" local="Haitiešu kreolu" description="Latvian"/>
+			<name id="39" local="Haičio kreolų" description="Lithuanian"/>
+			<name id="40" local="Креоли Гаити" description="Tajik"/>
+			<name id="42" local="Creole Haiti" description="Vietnamese"/>
+			<name id="43" local="Հայիթիի կրեոլյան" description="Armenian"/>
+			<name id="44" local="Haiti kreol" description="Azerbaijani"/>
+			<name id="45" local="Haitiko kreolera" description="Basque"/>
+			<name id="47" local="Хаитски креолски" description="Macedonian"/>
+			<name id="53" local="IsiCreole saseHaiti" description="Zulu"/>
+			<name id="54" local="Haïtiaanse Kreools" description="Afrikaans"/>
+			<name id="55" local="ჰაიტიური კრეოლი" description="Georgian"/>
+			<name id="57" local="हैतियाई क्रियोल" description="Hindi"/>
+			<name id="60" local="Criól Háítí" description="Gaelic"/>
+			<name id="62" local="Kreol Haiti" description="Malay"/>
+			<name id="63" local="Гаити креол" description="Kazakh"/>
+			<name id="64" local="Гаити креол" description="Kyrgyz"/>
+			<name id="65" local="Kreyol Ayisien" description="Swahili"/>
+			<name id="66" local="Gaiti kreoly" description="Turkmen"/>
+			<name id="67" local="Gaiti kreoli" description="Uzbek"/>
+			<name id="69" local="হাইতিয়ান ক্রেওল" description="Bengali"/>
+			<name id="70" local="ਹੈਤੀਅਨ ਕ੍ਰੀਓਲ" description="Punjabi"/>
+			<name id="71" local="હૈતીયન ક્રેઓલ" description="Gujarati"/>
+			<name id="73" local="ஐத்தி கிரியோல் மொழி" description="Tamil"/>
+			<name id="74" local="హైటియన్ క్రియోల్" description="Telugu"/>
+			<name id="76" local="ഹെയ്തിയൻ ക്രിയോൾ" description="Malayalam"/>
+			<name id="79" local="हैतीयन क्रियोल" description="Sanskrit"/>
+			<name id="80" local="Гайтийн Креол" description="Mongolian"/>
+			<name id="84" local="ເຮຕີ ຄຣີໂອ" description="Lao"/>
+			<name id="85" local="ဟေတီဘာသာစကား" description="Burmese"/>
+			<name id="86" local="Crioulo haitiano" description="Galician"/>
+			<name id="89" local="هيٽي ڪرولي" description="Sindhi"/>
+			<name id="94" local="የሃይቲ ክሬዮል" description="Amharic"/>
+			<name id="97" local="हाइटियन क्रियोल" description="Nepali"/>
+			<name id="100" local="Haitian Creole" description="Filipino"/>
+			<name id="104" local="Haiti" description="Hausa"/>
+			<name id="106" local="Creole ti Haiti" description="Yoruba"/>
+		</language>
+		<language id="671" default="Cebuano (Philippines)" lcid="ceb-PH">
+			<name id="1" local="السيبوانية" description="Arabic"/>
+			<name id="2" local="Себуански (Филипини)" description="Bulgarian"/>
+			<name id="3" local="Cebuà (Filipines)" description="Catalan"/>
+			<name id="4" subid="1" local="宿霧語" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="宿务语" description="Chinese (Simplified)"/>
+			<name id="5" local="Cebuánština (Filipíny)" description="Czech"/>
+			<name id="6" local="Sebuansk (Filippinerne)" description="Danish"/>
+			<name id="7" local="Cebuano (Philippinen)" description="German"/>
+			<name id="8" local="Σεμπούανο (Φιλιππίνες)" description="Greek"/>
+			<name id="10" local="Cebuano (Filipinas)" description="Spanish"/>
+			<name id="11" local="Cebuano (Filippiinit)" description="Finnish"/>
+			<name id="12" local="Cébouano (Philippines)" description="French"/>
+			<name id="13" local="סבואנו" description="Hebrew"/>
+			<name id="14" local="Szebuano (Fülöp-szigetek)" description="Hungarian"/>
+			<name id="15" local="Sebúanó (Filippseyjar)" description="Icelandic"/>
+			<name id="16" local="Cebuano (Filippine)" description="Italian"/>
+			<name id="17" local="セブ語" description="Japanese"/>
+			<name id="18" local="세부아노어" description="Korean"/>
+			<name id="19" local="Cebuano (Filipijnen)" description="Dutch"/>
+			<name id="20" local="Cebuano (Filippinene)" description="Norwegian"/>
+			<name id="21" local="Cebuański (Filipiny)" description="Polish"/>
+			<name id="22" local="Cebuano (Filipinas)" description="Portuguese"/>
+			<name id="23" local="Cebuano (Filipinen)" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Cebuană (Filipine)" description="Romanian"/>
+			<name id="25" local="Себуанский (Филиппины)" description="Russian"/>
+			<name id="26" subid="1" local="Sebuano (Filipini)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Sebuano (Filipini)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Себуано (Филипини)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Sebuano (Filipini)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Sebuano (Filipini)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Sebuano (Filipini)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Себуано (Филипини)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Себуано (Филипини)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Cebuánčina (Filipíny)" description="Slovak"/>
+			<name id="28" local="Cebuano (Filipinet)" description="Albanian"/>
+			<name id="29" local="Cebuanska (Filippinerna)" description="Swedish"/>
+			<name id="30" local="ภาษาเซบัวโน" description="Thai"/>
+			<name id="31" local="Sabuanca (Filipinler)" description="Turkish"/>
+			<name id="32" local="سيبونى" description="Urdu"/>
+			<name id="33" local="Sugbu (Filipina)" description="Indonesian"/>
+			<name id="34" local="Себуанська (Філіппіни)" description="Ukrainian"/>
+			<name id="35" local="Себуанская (Філіпіны)" description="Belarusian"/>
+			<name id="36" local="Sebuanščina (Filipini)" description="Slovenian"/>
+			<name id="37" local="Sebuano (Filipiinid)" description="Estonian"/>
+			<name id="38" local="Sebuāņu (Filipīnas)" description="Latvian"/>
+			<name id="39" local="Sebuanų (Filipinai)" description="Lithuanian"/>
+			<name id="40" local="Себуано (Филиппин)" description="Tajik"/>
+			<name id="42" local="Cebuano (Philippines)" description="Vietnamese"/>
+			<name id="43" local="Սեբուանո" description="Armenian"/>
+			<name id="44" local="Sebuan (Filippin)" description="Azerbaijani"/>
+			<name id="45" local="Cebuera (Filipinak)" description="Basque"/>
+			<name id="47" local="Себуански (Филипини)" description="Macedonian"/>
+			<name id="53" local="Cebuano" description="Zulu"/>
+			<name id="54" local="Cebuano (Filippyne)" description="Afrikaans"/>
+			<name id="55" local="სებუანური" description="Georgian"/>
+			<name id="57" local="सेबुआनो" description="Hindi"/>
+			<name id="60" local="Cebuano" description="Gaelic"/>
+			<name id="62" local="Sugbu (Filipina)" description="Malay"/>
+			<name id="63" local="Себуано (Филиппин)" description="Kazakh"/>
+			<name id="64" local="Себуано (Филиппин)" description="Kyrgyz"/>
+			<name id="65" local="Kicebuano (Ufilipino)" description="Swahili"/>
+			<name id="66" local="Cebuano (Filippinler)" description="Turkmen"/>
+			<name id="67" local="Cebuano (Filippin)" description="Uzbek"/>
+			<name id="69" local="সেবুয়ানো" description="Bengali"/>
+			<name id="70" local="ਸੇਬੁਅਨੀ" description="Punjabi"/>
+			<name id="71" local="સિબુઆનો" description="Gujarati"/>
+			<name id="73" local="செபுவான" description="Tamil"/>
+			<name id="74" local="సెబువానో" description="Telugu"/>
+			<name id="76" local="സെബുവാനോ" description="Malayalam"/>
+			<name id="79" local="सेबुआनो" description="Sanskrit"/>
+			<name id="80" local="Себуано (Филиппин)" description="Mongolian"/>
+			<name id="84" local="ເຊບູອາໂນ" description="Lao"/>
+			<name id="85" local="စီပူအာနိုဘာသာစကား" description="Burmese"/>
+			<name id="86" local="Cebuana (Filipinas)" description="Galician"/>
+			<name id="89" local="سيبوانو" description="Sindhi"/>
+			<name id="94" local="ሴቡአኖ" description="Amharic"/>
+			<name id="97" local="सेबुआनो" description="Nepali"/>
+			<name id="100" local="Cebuano (Pilipinas)" description="Filipino"/>
+			<name id="104" local="Cebuano (Filipin)" description="Hausa"/>
+			<name id="106" local="Cebuano (Filipínì)" description="Yoruba"/>
+		</language>
+		<language id="672" default="Buryat (Russia)" lcid="bua-RU">
+			<name id="1" local="بوريات (روسيا)" description="Arabic"/>
+			<name id="2" local="Бурятски (Русия)" description="Bulgarian"/>
+			<name id="3" local="Buriat (Rússia)" description="Catalan"/>
+			<name id="4" subid="1" local="布里亞特（俄羅斯）" description="Chinese (Traditional)"/>
+			<name id="4" subid="2" local="布里亚特（俄罗斯）" description="Chinese (Simplified)"/>
+			<name id="5" local="Burjatština (Rusko)" description="Czech"/>
+			<name id="6" local="Burjatisk (Rusland)" description="Danish"/>
+			<name id="7" local="Burjatisch (Russland)" description="German"/>
+			<name id="8" local="Μπουριατική (Ρωσία)" description="Greek"/>
+			<name id="10" local="Buriato (Rusia)" description="Spanish"/>
+			<name id="11" local="Burjaatti (Venäjä)" description="Finnish"/>
+			<name id="12" local="Bouriate (Russie)" description="French"/>
+			<name id="13" local="בוריאט (רוסיה)" description="Hebrew"/>
+			<name id="14" local="Burját (Oroszország)" description="Hungarian"/>
+			<name id="15" local="Búrjatíska (Rússland)" description="Icelandic"/>
+			<name id="16" local="Buriato (Russia)" description="Italian"/>
+			<name id="17" local="ブリヤート（ロシア）" description="Japanese"/>
+			<name id="18" local="부랴트 (러시아)" description="Korean"/>
+			<name id="19" local="Boerjatisch (Rusland)" description="Dutch"/>
+			<name id="20" local="Burjatisk (Russland)" description="Norwegian"/>
+			<name id="21" local="Buriacki (Rosja)" description="Polish"/>
+			<name id="22" local="Buriata (Rússia)" description="Portuguese"/>
+			<name id="23" local="Buryat (Russie)" description="Rhaeto Romanic (Friulian)"/>
+			<name id="24" local="Buryat (Rusia)" description="Romanian"/>
+			<name id="25" local="Бурятский (Россия)" description="Russian"/>
+			<name id="26" subid="1" local="Burjatski (Rusija)" description="Croatian - Croatia"/>
+			<name id="26" subid="2" local="Burjatski (Rusija)" description="Serbian (Latin)"/>
+			<name id="26" subid="3" local="Бурјатски (Русија)" description="Serbian (Cyrillic)"/>
+			<name id="26" subid="4" local="Burjatski (Rusija)" description="Croatian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="5" local="Burjatski (Rusija)" description="Bosnian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="6" local="Burjatski (Rusija)" description="Serbian - Bosnia and Herzegovina (Latin)"/>
+			<name id="26" subid="7" local="Бурјатски (Русија)" description="Serbian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="26" subid="8" local="Бурјатски (Русија)" description="Bosnian - Bosnia and Herzegovina (Cyrillic)"/>
+			<name id="27" local="Buriatčina (Rusko)" description="Slovak"/>
+			<name id="28" local="Buryat (Rusi)" description="Albanian"/>
+			<name id="29" local="Burjatiska (Ryssland)" description="Swedish"/>
+			<name id="30" local="บูร์ยาต (รัสเซีย)" description="Thai"/>
+			<name id="31" local="Buryatça (Rusya)" description="Turkish"/>
+			<name id="32" local="بریات (روس)" description="Urdu"/>
+			<name id="33" local="Buryat (Russia)" description="Indonesian"/>
+			<name id="34" local="Бурятська (Росія)" description="Ukrainian"/>
+			<name id="35" local="Бурацкая (Расія)" description="Belarusian"/>
+			<name id="36" local="Burjatščina (Rusija)" description="Slovenian"/>
+			<name id="37" local="Burjaadi (Venemaa)" description="Estonian"/>
+			<name id="38" local="Burjatu (Krievijā)" description="Latvian"/>
+			<name id="39" local="Buriatų (Rusija)" description="Lithuanian"/>
+			<name id="40" local="Бурят (Русия)" description="Tajik"/>
+			<name id="42" local="Buryat (Nga)" description="Vietnamese"/>
+			<name id="43" local="Բուրյաթերեն (Ռուսաստան)" description="Armenian"/>
+			<name id="44" local="Buryat (Rusiya)" description="Azerbaijani"/>
+			<name id="45" local="Buriatera (Errusia)" description="Basque"/>
+			<name id="47" local="Бурјатски (Русија)" description="Macedonian"/>
+			<name id="53" local="IBuryat (eRussia)" description="Zulu"/>
+			<name id="54" local="Boerjaties (Rusland)" description="Afrikaans"/>
+			<name id="55" local="ბურიატული (რუსეთი)" description="Georgian"/>
+			<name id="57" local="बुर्यात (रूस)" description="Hindi"/>
+			<name id="60" local="Buryat (An Rúis)" description="Gaelic"/>
+			<name id="62" local="Buryat (Rusia)" description="Malay"/>
+			<name id="63" local="Бурят (Ресей)" description="Kazakh"/>
+			<name id="64" local="Бурят (Орусия)" description="Kyrgyz"/>
+			<name id="65" local="Buryat (Urusi)" description="Swahili"/>
+			<name id="66" local="Burýat (Russiýa)" description="Turkmen"/>
+			<name id="67" local="Buryat (Rossiya)" description="Uzbek"/>
+			<name id="69" local="বুরিয়াত (রাশিয়া)" description="Bengali"/>
+			<name id="70" local="ਬੁਰੀਆਤ (ਰੂਸ)" description="Punjabi"/>
+			<name id="71" local="બુર્યાત (રશિયા)" description="Gujarati"/>
+			<name id="73" local="புர்யாத் (ரஷ்யா)" description="Tamil"/>
+			<name id="74" local="బుర్యాట్ (రష్యా)" description="Telugu"/>
+			<name id="76" local="ബുര്യത്ത് (റഷ്യ)" description="Malayalam"/>
+			<name id="79" local="बुर्यात (रूस)" description="Sanskrit"/>
+			<name id="80" local="Буриад аялгуу (Орос Улс)" description="Mongolian"/>
+			<name id="85" local="ဘူရတ် (ရုရှား)" description="Burmese"/>
+			<name id="86" local="Buriata (Rusia)" description="Galician"/>
+			<name id="89" local="بوريات (روس)" description="Sindhi"/>
+			<name id="94" local="ቡሪያት (ሩሲያ)" description="Amharic"/>
+			<name id="97" local="बुर्यात (रूस)" description="Nepali"/>
+			<name id="100" local="Buryat (Russia)" description="Filipino"/>
+			<name id="104" local="Buryat (Rasha)" description="Hausa"/>
+			<name id="106" local="Buryat (Russia)" description="Yoruba"/>
+		</language>
+	</languages>
+</data>

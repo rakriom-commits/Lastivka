@@ -1,0 +1,21 @@
+﻿{
+    "id":  "00000000-0000-4000-8000-00000000M0P7",
+    "ts":  "2025-09-06T22:40:49+03:00",
+    "sender":  "sofia",
+    "kind":  "self_program",
+    "focus":  "memory.optimization",
+    "limits":  {
+                   "max_runtime_s":  45,
+                   "mode":  "safe",
+                   "writes":  "none"
+               },
+    "guard":  {
+                  "allow_apply_flag":  "C:\\Lastivka\\ALLOW_APPLY.flag"
+              },
+    "params":  {
+                   "top":  20,
+                   "root":  "C:\\Lastivka\\memory"
+               },
+    "notes":  "plan only",
+    "sha256":  "fd797232f475563d8e32bc057e8646754d245ac354cc12c030090a7e37d1de50"
+}

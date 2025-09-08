@@ -29,3 +29,22 @@ lastivka_core/lastivka_core/logs/
 Thumbs.db
 .vscode/
 .idea/
+# === structure-sync ===
+**/*.log
+**/__pycache__/
+**/.pytest_cache/
+lastivka_core/tools/outbox/
+gateway/**/outbox/
+gateway/**/inbox/
+**/*.status.json
+**/*.ack.json
+lastivka_core/logs/
+temp/
+speech/audio/output/
+tools/tmp_audio/
+models/*.pth
+vendors/**/doc/
+vendors/RHVoice-*/build/
+vendors/RHVoice-*/bin/
+.vscode/
+# === /structure-sync ===

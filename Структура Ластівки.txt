@@ -1,0 +1,520 @@
+C:\Lastivka\
+│  .gitattributes
+│  .gitignore
+│  .wslconfig
+│  .wslconfig.txt
+│   Audit-NewSoftware.ps1
+│   Launch-Lastivka.ps1
+│   manifest_p1.csv
+│   pytest.ini
+│   pytest.ini
+│   README.md
+│   requirements.txt
+│   say.txt
+│   Start-Lastivka.ps1
+│   Stор-Lastivka.ps1
+│   tts_test.py                ← позначити як тестовий скрипт (speech/voice)
+│ 
+├── .pytest_cache\
+│    ├── v\
+│    │   └── cache/
+│    │        ├── lastfailed
+│    │        └── nodeids
+│    └── .gitignore
+│         CACHEDIR.TAG
+│         README.md
+│
+├── .vscode/
+│    └── settings.json
+│
+├── gateway\
+│    ├── cloud_mailbox\
+│    │    ├── archive\ 
+│    │    │   └── 20250906/
+│    │    │        ├── memory_opt.task.json
+│    │    │        ├── report_daily.task.json
+│    │    │        └── verify_from_sofia.task.json
+│    │    ├── inbox/ 
+│    │    │   └── verify_from_sofia.task.json
+│    │    ├── logs/
+│    │    │   └── watcher.log
+│    │    ├── outbox/
+│    │    │   ├── .status.json
+│    │    │   ├── 00000000-0000-4000-8000-00000000A1B2.ack.json        # (~5 ack.json-файлів)
+│    │    │   ├── 00000000-0000-4000-8000-00000000A1B2.status.json     # (~5 status.json-файлів)
+│    │    │   ├── report_daily_20250906_230024.txt                     # (~13 txt-файлів)
+│    │    │   └── verify_integrity_20250906_223220.txt                 # (~2 txt-файлів)
+│    │    ├── quarantine/
+│    │    │   ├── verify_from_sofia.task.json
+│    │    │   └── zzz_bad.task.json
+│    │    └── watcher.pid
+│    ├── cloud_mailbox_local_20250906_222640\
+│    │    ├── archive\
+│    │    │   └── 20250906/
+│    │    │        ├── logs_rotate_r1.task.json
+│    │    │        ├── verify1.task.json
+│    │    │        ├── verify2.task.json
+│    │    │        ├── verify3.task.json
+│    │    │        ├── verify4.task.json
+│    │    │        └── verify5.task.json
+│    │    ├── inbox/                                            # (порожньо)
+│    │    ├── logs/
+│    │    │   ├── gateway.log 
+│    │    │   ├── gateway_20250906_215839.log
+│    │    │   └── watcher.log
+│    │    ├── outbox/
+│    │    │   ├── 00000000-0000-4000-8000-000000000001.ack.json       # (~5 ack.json-файлів)
+│    │    │   ├── 00000000-0000-4000-8000-000000000001.status.json    # (~5 status.json-файлів)
+│    │    │   ├── verify_integrity_20250906_191357.txt                # (~4 txt-файлів)
+│    │    ├── quarantine/
+│    │    │   ├── logs_rotate_r1.task.json
+│    │    │   └── verify5.task.json
+│    │    └── tokens/                                          # (порожньо)
+│    ├── gateway_watcher.ps1
+│    ├── gateway_watcher.ps1.bak_fix_sha
+│    ├── gateway_watcher.ps1.bak_manual
+│    ├── gateway_watcher.ps1.bak_notepad
+│    ├── gateway_watcher.ps1.bak_r1b
+│    ├── gateway_watcher.ps1.bak_r1c
+│    ├── gateway_watcher.ps1.bak_r1d
+│    ├── gateway_watcher.ps1.bak_r1e
+│    ├── gateway_watcher.ps1.bak_r1g
+│    ├── gateway_watcher.ps1.bak_r1i
+│    └── Test-Ack.ps1
+│     
+├── indices/                                                   # (порожньо)   
+│
+├── logs/                                                      # (порожньо)  
+│   
+├── memory\
+│    └── snapshots/                                            # (порожньо)
+│ 
+├── speech\
+│    └── audio\    
+│         ├── cache/                                           # (порожньо)
+│         └── output/
+│              └── smoke_1756728332.wav
+│
+├── temp/
+│    ├── _inventory.csv
+│    ├── _pip_freeze.txt
+│    ├── _tree_all.txt
+│    ├── lastivka.pid
+│    └── say.tx
+│
+├── tests\
+│    └── speech/                                               # (порожньо)
+│
+├── vendors\               ← сторонні залежності
+│    │    ├── ffmpeg\          ← інструментарій для мультимедіа
+│    │    │    ├── bin/
+│    │    │    │    ├── ffmpeg.exe
+│    │    │    │    ├── ffplay.exe
+│    │    │    │    └── ffprobe.exe
+│    │    │    ├── doc/
+│    │    │    │    ├── bootstrap.min.css
+│    │    │    │    ├── community.html                                # (~31 html-файлів)
+│    │    │    │    ├── default.css
+│    │    │    │    └── style.min.css
+│    │    │    └── presets/
+│    │    │         ├── libvpx-360p.ffpreset
+│    │    │         ├── libvpx-720p.ffpreset
+│    │    │         ├── libvpx-720p50_60.ffpreset
+│    │    │         ├── libvpx-1080p.ffpreset
+│    │    │         └── libvpx-1080p50_60.ffpreset
+│    │    ├── LICENSE
+│    │    └── README.txt
+│    │
+│    ├── mpg123\                       ← бібліотека відтворення MP3
+│    │    ├── COPYING.txt
+│    │    ├── mpg123.exe
+│    │    ├── mpg123-id3dump.exe
+│    │    ├── mpg123-strip.exe
+│    │    ├── out123.exe
+│    │    ├── NEWS.txt
+│    │    ├── README.txt
+│    │    └── windows-notes.html
+│    │
+│    ├── RHVoice-RHVoice-b63adea\      ← рушій RHVoice (TTS)
+│    │    ├── .github\
+│    │    ├── bin\
+│    │    ├── build\
+│    │    ├── cmake\
+│    │    ├── config\
+│    │    ├── data\
+│    │    ├── doc\
+│    │    ├── external\
+│    │    ├── fastlane\
+│    │    ├── licenses\
+│    │    ├── site_scons\
+│    │    ├── src\
+│    │    ├── .gitignore
+│    │    ├── .gitmodules
+│    │    ├── CMakeLists.txt
+│    │    ├── LICENSE.md
+│    │    ├── README.md
+│    │    └── SConstruct
+│    │
+│    └── voice\                        ← додаткові голосові пакети
+│         └── Balabolka\
+│              ├── dictionaries\
+│              ├── help\
+│              ├── languages\
+│              ├── resources\
+│              ├── scripts\
+│              ├── skins\
+│              ├── sounds\
+│              ├── utils\
+│              ├── balabolka.exe
+│              ├── balabolka.echo
+│              ├── history.eng.txt
+│              ├── history.rus.txt
+│              ├── lame_enc.dll
+│              ├── libeay32.dll
+│              ├── libgcc_s_sjlj_1.dll
+│              ├── libogg-0.dll
+│              ├── libopus-0.dll
+│              ├── libportaudio-2.dll
+│              ├── libportmidi-0.dll
+│              ├── libsamplerate.dll
+│              ├── libsndfile-1.dll
+│              ├── libwinpthread-1.dll
+│              ├── license.ces.txt
+│              ├── license.chs.txt
+│              ├── license.eng.txt
+│              ├── license.hun.txt
+│              └── (інші .dll та ресурси)
+│
+├── WSL\             ← інтеграція з Windows Subsystem for Linux
+│
+└── lastivka_core\             ← ядро та всі модулі Ластівки
+     ├── __pycache__/
+     │   ├─ __init__.cpython-312.pyc
+     │   └─ kernel.cpython-312.pyc
+     │
+     ├── backups\
+     │   ├── manual_20250820_162422/                                      # (порожньо)
+     │   ├── lastivka_before_patch_20250830_131200.py
+     │   ├── mediator_before_patch_20250830_125417.py
+     │   └── mediator_before_patch_20250830_125602.py
+     │ 
+     ├── config\
+     │   ├── _archive_backups/
+     │   │   ├── core_identity/
+     │   │   │    └── core_identity.json.bak                      # (~42 bak-файлів)
+     │   │   ├── moral_compass/
+     │   │   │    └── moral_compass.json.bak                      # (~42 bak-файлів)
+     │   │   └── self_awareness/ 
+     │   │        └── self_awareness_config.json.bak              # (~42 bak-файлів)
+     │   ├── behavior/
+     │   │   ├── behavioral_styles.json
+     │   │   ├── behavioral_styles.py
+     │   │   └── feedback.json
+     │   ├── core/
+     │   │   ├── core_hash_reference.json
+     │   │   ├── core_identity.json
+     │   │   ├── core_identity.json.bak_20250826_123323           # (~100 bak-файлів)
+     │   │   ├── emotion_config.json
+     │   │   ├── moral_compass.json
+     │   │   ├── moral_compass.json.bak_20250826_114253           # (~104 bak-файлів)
+     │   │   ├── self_awareness_config.json
+     │   │   ├── self_awareness_config.json.bak_20250826_123323   # (~100 bak-файлів)
+     │   │   └── sofia_core_code_of_honor.json
+     │   ├── extra/
+     │   │   └── osnova_protocol.json
+     │   ├── reactions/
+     │   │   ├── reaction_config.json
+     │   │   ├── reaction_templates.json
+     │   │   └── reaction_triggers.json
+     │   ├── system\
+     │   │   ├── __pycache__/
+     │   │   │   ├── __init__.cpython-312.pyc
+     │   │   │   └── loader.cpython-312.pyc
+     │   │   ├── __init__.py
+     │   │   ├── config.yaml
+     │   │   ├── lastivka_settings.json
+     │   │   ├── loader.py
+     │   │   ├── locomotion.yaml
+     │   │   ├── robot_specs.json
+     │   │   ├── sensors.yaml
+     │   │   ├── session_keeper.py
+     │   │   ├── session_status.json
+     │   │   ├── trusts.py
+     │   │   ├── trusts.yaml
+     │   │   └── whitelist.json
+     │   ├── voice/
+     │   │   ├── accents.json
+     │   │   ├── emotion_config.json
+     │   │   ├── stress_dict.json
+     │   │   ├── stress_dict.todo.json
+     │   │   ├── unknown_stress_words.log
+     │   │   └── voice_config.json
+     │   └── config.yaml
+     │        emotion_config.json
+     │        memory_store.json
+     │        osnova_protocol.json
+     │
+     ├── core\
+     │   ├── __pycache__/
+     │   │   ├── __init__.cpython-312.pyc
+     │   │   ├── contracts.cpython-312.pyc
+     │   │   └── event_bus.cpython-312.pyc
+     │   ├── analytics/
+     │   │   └── analytics_predictor.py
+     │   ├── __init__.py
+     │   ├── backup_orchestrator.py
+     │   ├── contracts.py
+     │   ├── event_bus.py
+     │   ├── kernel.py
+     │   └── rl_trainer.py
+     │       └── self_awareness_config.json
+     │
+     ├── gateway\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  └─ mediator.cpython-312.pyc
+     │   ├── __init__.py
+     │   └── mediator.py
+     │
+     ├── kernel\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  └─ kernel.cpython-312.pyc
+     │   ├── __init__.py
+     │   ├── kernel.py
+     │   ├── monitor.py
+     │   └── resources.py
+     │
+     ├── logs\
+     │   ├── archive/
+     │   │   ├─ pronunciation_log.json
+     │   │   └─ rating_log.json
+     │   ├── backups/                                     # (порожньо) 
+     │   ├── runs\  
+     │   │   └─ 20250902/                                 # (порожньо) 
+     │   ├── software_audit_20250906_165253
+     │   │   ├─ focus_autopilot_authenticator.txt
+     │   │   ├─ software_findings.csv
+     │   │   └─ SUMMARY.txt
+     │   ├── support/                                     # (порожньо)
+     │   ├── audio_log.txt
+     │   ├── detected_emotion.json
+     │   ├── emotion.log
+     │   ├── guard.log
+     │   ├── lastivka.log
+     │   ├── memory_store.json
+     │   ├── memory_store.log
+     │   ├── security.log
+     │   ├── session_status.json
+     │   ├── style_changes.log
+     │   └── user_input.log
+     │
+     ├── main\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  ├─ handlers.cpython-312.pyc
+     │   │  ├─ lastivka.cpython-312.pyc
+     │   │  ├─ osnova.cpython-312.pyc
+     │   │  ├─ style_manager.cpython-312.pyc
+     │   │  └─ utils_lasti.cpython-312.pyc
+     │   ├─ __init__.py          
+     │   ├─ cli.py
+     │   ├─ handlers.py
+     │   ├─ intuition_engine.py
+     │   ├─ lastivka.py
+     │   ├─ lastivka_identity.py
+     │   ├─ lastivka_pron_feedback.py
+     │   ├─ lastivka_rescue_module.py
+     │   ├─ lastivka_rescue_plan.json
+     │   ├─ lastivka_skill.py
+     │   ├─ osnova.py
+     │   ├─ playback.py
+     │   ├─ security_pipeline.log
+     │   ├─ shield_utils.py
+     │   ├─ skills_engine.py
+     │   ├─ stress_handler.py
+     │   ├─ style_manager.py
+     │   └─ utils_lasti.py
+     │
+     ├── memory\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  ├─ index.cpython-312.pyc
+     │   │  ├─ manager.cpython-312.pyc
+     │   │  ├─ normalize.cpython-312.pyc
+     │   │  └─ smart_memory.cpython-312.pyc
+     │   ├─ long_term/
+     │   │  ├─ __pycache__/
+     │   │  │  ├─ __init__.cpython-312.pyc
+     │   │  │  └─ long_memory.cpython-312.pyc
+     │   │  ├─ emotional/            # (порожньо)
+     │   │  ├─ logical/
+     │   │  │  └─ test_entry.json
+     │   │  ├─ reflection/
+     │   │  │  ├─ __init__.py
+     │   │  │  ├─ core.py
+     │   │  │  ├─ lastivka_reflections.json
+     │   │  │  ├─ reflection_manager.py
+     │   │  │  ├─ reflection_parser.py
+     │   │  │  └─ reflection_timer.py
+     │   │  ├─ reflexive/  
+     │   │  │  └─ core.py  
+     │   │  ├─ sensory/             # (порожньо)
+     │   │  ├─ tactile/             # (порожньо)
+     │   │  ├─ visual/              # (порожньо)
+     │   │  ├─ __init__.py
+     │   │  ├─ long_memory.py
+     │   │  └─ memory_store.json
+     │   ├─ short_term\
+     │   │   ├─ context/             # (порожньо)
+     │   │   ├─ emotional_state/     # (порожньо)
+     │   │   ├─ sensory_buffer/      # (порожньо)
+     │   │   ├─ __init__.py
+     │   │   ├─ experience_log.json
+     │   │   ├─ experience_manager.py
+     │   │   ├─ short_memory.py
+     │   │   └─ short_term.py 
+     │   ├─ __init__.py
+     │   ├─ index.py
+     │   ├─ launcher.py
+     │   ├─ logic.py
+     │   ├─ manager.py
+     │   ├─ memory_cli.py
+     │   ├─ memory_manager.py
+     │   ├─ normalize.py
+     │   └─ smart_memory.py
+     │
+     ├── models\
+     │   ├── __pycache__/
+     │   │   └── __init__.cpython-312.pyc
+     │   ├── __init__.py
+     │   └── silero_ua_mykyta_v2.pth
+     │
+     ├── scripts/
+     │   ├── __pycache__
+     │   │   └── __init__.cpython-312.pyc
+     │   ├── __init__.py
+     │   ├── lastivka-reset.ps1
+     │   ├── reset_bridge.bat
+     │   ├── start_bridge.bat
+     │   ├── start_lastivka.bat
+     │   ├── stdin_bridge.ps1
+     │   ├── stop_bridge.ps1
+     │   └── stop_lastivka.ps1
+     │
+     ├── security\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  ├─ config_guard.cpython-312.pyc
+     │   │  ├─ config_patcher.cpython-312.pyc
+     │   │  └─ guard.cpython-312.pyc
+     │   ├─ __init__.py
+     │   ├─ backup_runner.py
+     │   ├─ config_guard.py
+     │   ├─ config_patcher.py
+     │   ├─ cyber_guard.py
+     │   ├─ energy_monitor.py
+     │   ├─ guard.py
+     │   ├─ guardian_mode.py
+     │   ├─ legacy_shieldcore.py
+     │   ├─ log_manager.py
+     │   ├─ security_pipeline.py
+     │   └─ sensor_firewall.py
+     │
+     ├── speech\
+     │   ├─ __pycache__/
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  ├─ emotion_reactor.cpython-312.pyc
+     │   │  ├─ stress_tools.cpython-312.pyc
+     │   │  ├─ voice_core.cpython-312.pyc
+     │   │  ├─ voice_dispatcher.cpython-312.pyc
+     │   │  ├─ voice_module.cpython-312.pyc
+     │   │  ├─ voice_module_fast.cpython-312.pyc
+     │   │  └─ voice_module_offline.cpython-312.pyc
+     │   ├─ audio\
+     │   │  └─ output/
+     │   │     ├─ reflection_*.wav                             # (~17 wav-файлів)
+     │   │     └─ replica_*.wav                                # (~21 wav-файлів)
+     │   ├─ __init__.py
+     │   ├─ emotion_reactor.py
+     │   ├─ offline_tts.py
+     │   ├─ speech_tools.py
+     │   ├─ stress_tools.py
+     │   ├─ voice_auto.py
+     │   ├─ voice_core.py
+     │   ├─ voice_dispatcher.py
+     │   ├─ voice_module.py
+     │   ├─ voice_module_fast.py
+     │   ├─ voice_module_offline.py
+     │   └─ voice_module_rhvoice.py
+     │
+     ├── temp\
+     │   ├─ __pycache__/
+     │   │  └─ __init__.cpython-312.pyc
+     │   ├─ audio_log/ 
+     │   │  └─ tmp8xf48lhk.mp3    (~12 mp3-файлів)
+     │   └─ __init__.py 
+     │
+     ├── tests\
+     │   ├─ __pycache__
+     │   │  └─ __init__.cpython-312.pyc
+     │   ├─ fixtures/
+     │   │  ├─ __init__.py
+     │   │  ├─ say.script.btx
+     │   │  └─ say.txt
+     │   ├─ integration/
+     │   │  └─ __init__.py
+     │   ├─ logs/
+     │   │  └─ __init__.py
+     │   ├─ memory_tests/
+     │   │  ├─ __init__.py
+     │   │  ├─ test_memory_manager.py
+     │   │  ├─ test_memory_manager_basic.py
+     │   │  └─ test_short_term.py
+     │   └─ unit/
+     │   │  └─ __init__.py
+     │   ├─ __init__.py
+     │   ├─ manager_test.py
+     │   ├─ security_pipeline.log
+     │   └─ test_smoke.py
+     │
+     ├── tools\
+     │   ├─ __pycache__/ 
+     │   │  ├─ __init__.cpython-312.pyc
+     │   │  ├─ emotion_config_loader.cpython-312.pyc
+     │   │  ├─ emotion_engine.cpython-312.pyc
+     │   │  └─ memory_store.cpython-312.pyc
+     │   ├─ logs/                                   # (порожньо)
+     │   ├─ tmp_audio/                              # 170+ tmp *.wav/*.mp3 (проміжні файли)
+     │   └─ voice/
+     │   │  ├─ accent_corrector.py
+     │   │  ├─ accent_synchronizer.py
+     │   │  ├─ balcon_speech_module.py
+     │   │  ├─ pronunciation_cleaner.py
+     │   │  ├─ pronunciation_errors.json
+     │   │  ├─ pronunciation_logger.py
+     │   │  ├─ pronunciation_report.py
+     │   │  └─ voice_module.py 
+     │   ├─ __init__.py
+     │   ├─ auto_stress_updater.py
+     │   ├─ config_loader.py
+     │   ├─ emotion_config_loader.py
+     │   ├─ emotion_engine.py
+     │   ├─ file_watcher.py
+     │   ├─ generate_core_hashes.py
+     │   ├─ list_voices.py
+     │   ├─ memory_debug_cli.py
+     │   ├─ memory_store.py
+     │   ├─ shadow_shell.py
+     │   ├─ speech_utils.py
+     │   ├─ watchdog.py
+     │   └─ watcher_boot.py
+     │
+     ├── __init__.py
+     ├── run_lastivka_log.bat
+     ├── self_programmer.py
+     ├── Start-Bridge.ps1
+     ├── Start-Bridge_v2_tmp.ps1
+     └── Start-Lastivka.ps1
+
+

@@ -1,130 +1,148 @@
-from __future__ import annotations
-from pathlib import Path
-from datetime import datetime
-from typing import Callable, Dict, Any
-import re
+# -*- coding: utf-8 -*-
+"""
+Handlers: маршрути простих команд пам'яті (сумісно з новою структурою).
+"""
 
-# === Утиліти ===
-
-def _show_log_tail(log_file: Path, say: Callable[[str], None], n: int = 20) -> None:
+try:
+    from memory.manager import MEMORY as memory
+except Exception:
     try:
-        with open(log_file, "r", encoding="utf-8", errors="ignore") as f:
-            lines = f.readlines()[-n:]
-        print("\n".join(line.rstrip("\n") for line in lines))
-    except Exception as e:
-        say(f"Не вдалося прочитати лог: {e}")
-
-def _status_text(CFG, tts_backend_module: str, LOG_FILE: Path, CONFIG_DIR: Path) -> str:
-    return "\n".join([
-        f"👤 Ім'я: {CFG.name}",
-        f"🔈 Звук: {'вимкнено' if getattr(CFG, 'mute', False) else 'увімкнено'}",
-        f"🧠 Емоційний конфіг: {'є' if (CONFIG_DIR/'emotion_config.json').exists() else 'нема'}",
-        f"🗣️ TTS backend: {tts_backend_module}",
-        f"🗂️ Лог: {LOG_FILE}"
-    ])
-
-# === Команди ===
-
-def _cmd_mute_on(CFG, say, *_):
-    CFG.mute = True
-    say("🔕 Звук вимкнено.")
-
-def _cmd_mute_off(CFG, say, *_):
-    CFG.mute = False
-    say("🔔 Звук увімкнено.")
-
-def _cmd_log(CFG, say, LOG_FILE: Path, *_):
-    say(f"Показую останні 20 рядків логу: {LOG_FILE.name}")
-    _show_log_tail(LOG_FILE, say)
-
-def _cmd_status(CFG, say, LOG_FILE: Path, CONFIG_DIR: Path):
-    try:
-        tts_backend = say.__module__
+        from memory.manager import MemoryManager
+        memory = MemoryManager()
     except Exception:
-        tts_backend = "unknown"
-    say("Статус системи.")
-    print(_status_text(CFG, tts_backend, LOG_FILE, CONFIG_DIR))
+        memory = None
 
-def _cmd_exit(*_):
-    raise SystemExit(0)
+import re
+import logging
+logger = logging.getLogger(__name__)
 
-def _cmd_cover_on(CFG, say, *_):
-    if hasattr(CFG, "alt_name") and CFG.alt_name:
-        CFG.name = CFG.alt_name
-        say(f"🛡️ Змінено ідентичність. Тепер я — {CFG.alt_name}.")
-    else:
-        say("🛡️ Прикриття увімкнено.")
+def _clean(s: str) -> str:
+    return (s or "").strip().strip(' "\'“”«»').lower()
 
-def _cmd_time(CFG, say, *_):
-    say(f"Зараз {datetime.now().strftime('%H:%M:%S')}.")
+def _split_key_val(body: str):
+    body = (body or "").strip()
+    m2 = re.search(r"^(?P<key>[^=:–—\-]+?)\s*[:=\-–—]\s*(?P<val>.+)$", body)
+    if m2:
+        return (m2.group("key") or "").strip(), (m2.group("val") or "").strip()
+    m3 = re.search(r"^(?P<key>[^=:–—\-]+?)\s+це\s+(?P<val>.+)$", body, flags=re.I)
+    if m3:
+        return (m3.group("key") or "").strip(), (m3.group("val") or "").strip()
+    return None, None
 
-def _cmd_date(CFG, say, *_):
-    say(f"Сьогодні {datetime.now().strftime('%d.%m.%Y')}.")
+def handle_save_command(user_text: str):
+    if memory is None:
+        return "Пам'ять недоступна."
+    txt = (user_text or "").strip()
+    m = re.search(r"запам[’']?ятай\s*:\s*(.+)", txt, flags=re.I)
+    if not m: return None
+    body = m.group(1).strip()
+    key, val = _split_key_val(body)
+    if key and val:
+        try:
+            memory.delete_thoughts_by_key(key)
+        except Exception:
+            logger.exception("delete_thoughts_by_key failed")
+        memory.add_thought(key, val, tone="впевнений", tags=["manual"])
+        return {
+            "text_to_say": f"Я запамʼятала: {key} — {val}",
+            "log_text":    f"[MEMORY]: запамʼятала: {key} = {val}",
+            "tone": "впевнений", "speed": 180, "intensity": 0.35
+        }
+    memory.add_thought("думка", body, tone="впевнений", tags=["manual"])
+    return {
+        "text_to_say": f"Я запамʼятала: {body}",
+        "log_text":    f"[MEMORY]: запамʼятала: {body}",
+        "tone": "впевнений", "speed": 180, "intensity": 0.35
+    }
 
-def _cmd_help(CFG, say, *_):
-    say("Можу: сказати час, дату, статус, керувати звуком, пам'ятати і пригадати.")
+def handle_recall_command(user_text: str):
+    if memory is None:
+        return "Пам'ять недоступна."
+    txt = _clean(user_text)
+    patterns = [
+        r"що\s+ти\s+пам[’']?ятаєш\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?казав\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?говорив\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+казав\s+тобі\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+говорив\s+тобі\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?розповідав\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?розказував\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?казала\s+про\s+(?P<key>.+)$",
+        r"що\s+я\s+(?:тобі\s+)?говорила\s+про\s+(?P<key>.+)$",
+    ]
+    for pat in patterns:
+        m = re.search(pat, txt, flags=re.I)
+        if not m: continue
+        raw_key = m.group("key")
+        key = _clean(re.sub(r"[?\.!]+$", "", raw_key))
+        if not key: break
+        thoughts = memory.get_thoughts_by_key(key)
+        if not thoughts:
+            return {
+                "text_to_say": f"Я поки нічого не зберігала про «{key}».",
+                "log_text":    f"[MEMORY]: спогадів нема по ключу «{key}»",
+                "tone": "спокійний", "speed": 170, "intensity": 0.25
+            }
+        seen_vals, items = set(), []
+        for t in reversed(thoughts):
+            v = (t.get("text") or "").strip()
+            key_norm = f"{key}:{v}".lower()
+            if v and key_norm not in seen_vals:
+                seen_vals.add(key_norm); items.append(v)
+            if len(items) >= 10: break
+        spoken = "; ".join(items)
+        return {
+            "text_to_say": f"Я памʼятаю таке про {key}: {spoken}",
+            "log_text":    f"[MEMORY]: спогади про {key}: {len(items)}",
+            "tone": "впевнений", "speed": 180, "intensity": 0.3
+        }
+    return None
 
-def _cmd_weather_stub(CFG, say, *_):
-    say("Погода недоступна офлайн. Можу сказати час і дату.")
+def handle_all_memory_command(user_text: str):
+    if memory is None:
+        return "Пам'ять недоступна."
+    txt = _clean(user_text)
+    if txt not in {"думки", "памʼять", "пам'ять", "память", "спогади", "memory"}:
+        return None
+    data = memory.get_all_memory()
+    seen, items = set(), []
+    for k, arr in (data or {}).items():
+        if k == "triggers": continue
+        if isinstance(arr, list):
+            for rec in arr:
+                t = (rec or {}).get("text")
+                if not t: continue
+                line = f"{k}: {t}"
+                key_norm = line.strip().lower()
+                if key_norm not in seen:
+                    seen.add(key_norm); items.append(line)
+    text = "; ".join(items[:20]) if items else "Памʼять порожня."
+    return {
+        "text_to_say": text,
+        "log_text":    f"[MEMORY]: думки (унікальні): {text}",
+        "tone": "впевнений", "speed": 180, "intensity": 0.3
+    }
 
-COMMANDS: Dict[str, Callable[[Any, Callable[[str], None], Path, Path], None]] = {
-    # українські ключі
-    "без звуку": _cmd_mute_on,
-    "поверни звук": _cmd_mute_off,
-    "звук": _cmd_mute_off,
-    "лог": _cmd_log,
-    "журнал": _cmd_log,
-    "стан": _cmd_status,
-    "вийти": _cmd_exit,
-    "ввімкни прикриття": _cmd_cover_on,
-    "час": _cmd_time,
-    "дата": _cmd_date,
-    "допомога": _cmd_help,
-    "погода": _cmd_weather_stub,
-
-    # англомовні синоніми
-    "mute": _cmd_mute_on,
-    "unmute": _cmd_mute_off,
-    "log": _cmd_log,
-    "status": _cmd_status,
-    "cover_on": _cmd_cover_on,
-    "time": _cmd_time,
-    "date": _cmd_date,
-    "help": _cmd_help,
+# === Експорт для тестів та ядра ===
+COMMANDS = {
+    "save": handle_save_command,
+    "recall": handle_recall_command,
+    "all_memory": handle_all_memory_command,
 }
 
-# === Інтенти високого рівня ===
+def handle_intents(user_text: str):
+    for name, func in COMMANDS.items():
+        try:
+            result = func(user_text)
+            if result:
+                return result
+        except Exception as e:
+            logger.exception(f"Handler {name} failed: {e}")
+    return None
 
-REMEMBER_PAT = re.compile(r"^\s*запам(?:'|’)?ятай\s*:\s*(.+)$", re.IGNORECASE)
-
-def handle_intents(user_input: str,
-                   CFG,
-                   say: Callable[[str], None],
-                   CORE_IDENTITY: dict,
-                   recall_memory: Callable[[], str | None],
-                   remember_memory: Callable[[str], None]) -> bool:
-    t = (user_input or "").strip()
-    low = t.lower()
-
-    # активація ядра
-    if getattr(CFG, "activation", None) and t.upper() == str(CFG.activation).upper():
-        # точна фраза, яку очікує тест:
-        say("Ядро Софії Ω активовано.")
-        return True
-
-    # пам'ять: "запам'ятай: ..."
-    m = REMEMBER_PAT.match(t)
-    if m:
-        payload = m.group(1).strip()
-        if payload:
-            remember_memory(payload)
-            say("Я запам'ятала це.")
-            return True
-
-    # пригадати: "що я тобі казав"
-    if "що я тобі казав" in low:
-        memory = recall_memory()
-        say(memory if memory else "У пам'яті поки нічого нема.")
-        return True
-
-    return False
+def handle_memory_commands(user_text: str):
+    return (
+        handle_save_command(user_text)
+        or handle_recall_command(user_text)
+        or handle_all_memory_command(user_text)
+    )

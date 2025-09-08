@@ -1,0 +1,29 @@
+{
+  "engine": "gTTS",
+  "lang": "uk",
+  "fallback_engine": "pyttsx3",
+  "pyttsx3_voice": "Ukrainian",
+
+  "apply_stress_marks": true,
+  "apply_accents_map": true,
+  "slow_mode": false,
+
+  "rate": {
+    "радість": 210,
+    "злість": 190,
+    "гордість": 180,
+    "любов": 170,
+    "спокій": 160,
+    "натхнення": 200,
+    "смуток": 130,
+    "страх": 130,
+    "подив": 160,
+    "сором": 120,
+    "вдячність": 160,
+    "default": 170
+  },
+
+  "mpg123_path": "C:/Lastivka/mpg123/mpg123.exe",
+  "use_mpg123": true,
+  "log_output": true
+}

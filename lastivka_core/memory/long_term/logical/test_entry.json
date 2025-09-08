@@ -1,0 +1,13 @@
+{
+  "id": "test-001",
+  "ts": "2025-08-20T15:30:00",
+  "kind": "fact",
+  "channel": "system",
+  "tags": ["test", "memory"],
+  "importance": 2,
+  "ttl": null,
+  "source": "manual",
+  "content": "Це тестовий запис для перевірки індексації пам'яті.",
+  "checksum": "chk-test-001",
+  "version": 1
+}

@@ -1,0 +1,9 @@
+lidar:
+  rate_hz: 10
+  quick_threshold_std: 2.5
+imu:
+  rate_hz: 100
+  accel_max_g: 4.0
+  gyro_max_dps: 1000
+camera:
+  rate_hz: 15
