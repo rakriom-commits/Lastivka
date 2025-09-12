@@ -1,0 +1,5 @@
+﻿{
+  "allowed": ["sync", "propagate", "report"],
+  "restricted": ["memory", "kernel", "security"],
+  "notes": "Оркестрація (L6). Дозволені лише дії синхронізації та звіту. Критичні модулі під ручним контролем."
+}
