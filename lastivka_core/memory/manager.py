@@ -219,8 +219,13 @@ class MemoryManager:
         ranked = self._index.search(aug_query, weights=weights, limit=limit, debug=debug)
         out: List[Dict[str, Any]] = []
         for key_norm, rec, score in ranked:
-            item = {"key": key_norm, "score": round(float(score), 4)}
-            item.update(rec)
+            # ВАЖЛИВО: назовні повертаємо ОРИГІНАЛЬНИЙ ключ (key_raw),
+            # аби тести не бачили стем "кав" замість "кава".
+            item = {
+                "key": rec.get("key_raw", key_norm),
+                "score": round(float(score), 4),
+            }
+            item.update(rec)  # додаємо key_raw, key_norm, text, tone, ...
             out.append(item)
         return out
 
@@ -232,7 +237,7 @@ class MemoryManager:
         qn = normalize(query)
         if re.search(r"\b(куп\w*|придб\w*|візьми|додай до списку)\b", qn):
             tag_priority = {"покупка": 3, "покупки": 3, "товар": 3, "магазин": 3, "напій": 2, "їжа": 1}
-            best, best_score, best_key = None, (-1, ""), None
+            best, best_score, best_key_norm = None, (-1, ""), None
             for k, arr in self.memory.items():
                 for rec in arr:
                     tags = [str(t).lower() for t in (rec.get("tags") or [])]
@@ -240,14 +245,15 @@ class MemoryManager:
                     ts = rec.get("timestamp") or ""
                     score = (pr, ts)
                     if score > best_score:
-                        best_score, best, best_key = score, rec, k
+                        best_score, best, best_key_norm = score, rec, k
             if best:
                 return {
-                    "key": best_key,
+                    # теж повертаємо оригінал:
+                    "key": best.get("key_raw", best_key_norm),
                     "score": 50.0,
-                    "key_raw": best.get("key_raw", best_key),
-                    "key_norm": best_key,
-                    "text": best.get("key_raw", best_key),
+                    "key_raw": best.get("key_raw", best_key_norm),
+                    "key_norm": best_key_norm,
+                    "text": best.get("key_raw", best_key_norm),
                     "tone": best.get("tone"),
                     "timestamp": best.get("timestamp"),
                     "tags": best.get("tags"),

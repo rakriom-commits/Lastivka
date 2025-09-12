@@ -1,0 +1,20 @@
+﻿src_path,rel_path,size,last_write,action
+C:\Lastivka\.gitattributes,.gitattributes,700,2025-09-08 19:19:59,keep
+C:\Lastivka\.gitignore,.gitignore,676,2025-09-08 18:46:05,keep
+C:\Lastivka\pytest.ini,pytest.ini,192,2025-08-17 14:32:43,archive
+C:\Lastivka\README.md,README.md,318,2025-08-02 23:11:19,keep
+C:\Lastivka\requirements.txt,requirements.txt,238,2025-08-02 23:11:19,keep
+C:\Lastivka\say.txt,say.txt,0,2025-09-01 15:21:30,keep
+C:\Lastivka\Структура Ластівки.txt,Структура Ластівки.txt,21918,2025-09-07 16:25:13,archive
+C:\Users\user\.gitconfig,.gitconfig,331,2025-08-02 11:33:36,archive
+C:\Users\user\.lesshst,.lesshst,20,2025-08-02 11:32:32,archive
+C:\Users\user\.lmstudio-home-pointer,.lmstudio-home-pointer,23,2025-07-24 12:49:10,archive
+C:\Users\user\.wslconfig,.wslconfig,0,2025-08-17 20:29:52,archive
+C:\Users\user\NTUSER.DAT,NTUSER.DAT,4980736,2025-09-08 23:00:45,archive
+C:\Users\user\ntuser.dat.LOG1,ntuser.dat.LOG1,921600,2025-07-26 12:37:55,archive
+C:\Users\user\ntuser.dat.LOG2,ntuser.dat.LOG2,1146880,2025-07-26 12:37:55,archive
+C:\Users\user\NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TM.blf,NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TM.blf,65536,2025-07-26 12:37:55,archive
+C:\Users\user\NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TMContainer00000000000000000001.regtrans-ms,NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TMContainer00000000000000000001.regtrans-ms,524288,2025-07-26 12:37:55,archive
+C:\Users\user\NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TMContainer00000000000000000002.regtrans-ms,NTUSER.DAT{6208cf80-6a0c-11f0-ad1c-c2302192acb7}.TMContainer00000000000000000002.regtrans-ms,524288,2025-07-26 12:37:55,archive
+C:\Users\user\ntuser.ini,ntuser.ini,20,2025-07-26 12:40:03,archive
+C:\Users\user\RHVoice_Ready.zip,RHVoice_Ready.zip,997,2025-07-24 19:17:34,archive

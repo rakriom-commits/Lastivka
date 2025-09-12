@@ -118,16 +118,6 @@ MESSAGES = {
         "no_active_versions": "No active versions found for {name}",
         "exported": "Exported stage '{stage}' to {out}",
         "imported": "Imported modules into stage '{stage}' from {archive}",
-        "plugins_rejected": "Plugin {fname} rejected by policy: {reason}",
-        "plugins_literal_fail": "Could not parse constant-only PLUGIN in {fname}",
-        "plugins_no_dict": "No valid PLUGIN dict in {fname}",
-        "plugins_read_fail": "Failed to read plugin {fname}: {err}",
-        "plugins_loaded": "Loaded plugin (static): {fname}",
-        "plugins_job_warn": "Windows Job Object not applied: {err}. Install pywin32 or run in a container.",
-        "no_posix_limits": "Resource limits not applied (no POSIX resource module). Consider Docker/WSL/container.",
-        "win_job_attached": "Attached Windows Job Object with memory limit",
-        "size_exceeded": "{origin}: exceeds max_file_size_bytes ({size} > {limit})",
-        "lines_exceeded": "{origin}: exceeds max_lines ({lines} > {limit})",
         "plugin_cache_refreshed": "Plugin cache refreshed (hash changed)",
         "config_cache_refreshed": "Config cache refreshed (hash changed)",
         "op_time": "{op}('{name}') finished in {seconds:.3f}s",
@@ -162,16 +152,6 @@ MESSAGES = {
         "no_active_versions": "Активних версій для {name} не знайдено",
         "exported": "Експортовано стадію '{stage}' до {out}",
         "imported": "Імпортовано модулі у стадію '{stage}' з {archive}",
-        "plugins_rejected": "Плагін {fname} відхилено політикою: {reason}",
-        "plugins_literal_fail": "Не вдалося розпарсити PLUGIN (лише константи) у {fname}",
-        "plugins_no_dict": "Не знайдено валідного словника PLUGIN у {fname}",
-        "plugins_read_fail": "Не вдалося прочитати плагін {fname}: {err}",
-        "plugins_loaded": "Завантажено плагін (статично): {fname}",
-        "plugins_job_warn": "Windows Job Object не застосовано: {err}. Встанови pywin32 або запускай у контейнері.",
-        "no_posix_limits": "Ліміти ресурсів не застосовано (немає POSIX resource). Розглянь Docker/WSL/контейнер.",
-        "win_job_attached": "Прикріплено Windows Job Object з лімітом пам’яті",
-        "size_exceeded": "{origin}: перевищено max_file_size_bytes ({size} > {limit})",
-        "lines_exceeded": "{origin}: перевищено max_lines ({lines} > {limit})",
         "plugin_cache_refreshed": "Кеш плагінів оновлено (змінився хеш)",
         "config_cache_refreshed": "Кеш конфіга оновлено (змінився хеш)",
         "op_time": "{op}('{name}') завершено за {seconds:.3f}с",
@@ -764,7 +744,13 @@ def run_unittests(mod_basename: str, timeout: int = DEFAULT_TIMEOUT) -> tuple[bo
     cpu_seconds = max(1, int(timeout))
     mem_bytes = 256 * 1024 * 1024  # 256 MB
 
-    test_code = f'''import importlib, sys
+    # >>> PATCHED: make project root visible under -I <<<
+    test_code = f'''import importlib, sys, os
+# Ensure Lastivka project root is visible in sys.path (Python -I safe)
+root = r"{ROOT}"
+if root and root not in sys.path:
+    sys.path.insert(0, root)
+
 # Light resource limits (POSIX only)
 try:
     import resource

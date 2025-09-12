@@ -1,0 +1,41 @@
+{
+  "safe_imports": [
+    "math",
+    "statistics",
+    "functools",
+    "itertools",
+    "operator",
+    "re",
+    "json",
+    "typing",
+    "collections",
+    "dataclasses",
+    "datetime",
+    "fractions",
+    "decimal",
+    "random",
+    "hashlib"
+  ],
+  "forbidden_patterns": [
+    "\\b(import\\s+os)\\b",
+    "\\b(import\\s+subprocess)\\b",
+    "\\b(import\\s+socket)\\b",
+    "\\b(import\\s+ctypes)\\b",
+    "\\b(import\\s+threading)\\b",
+    "\\b(import\\s+gc)\\b",
+    "\\b(import\\s+inspect)\\b",
+    "\\b(open\\s*\\()",
+    "\\b(exec\\s*\\()",
+    "\\b(eval\\s*\\()",
+    "\\b(__import__\\s*\\()",
+    "\\b(sys\\.|os\\.)\\w+"
+  ],
+  "extra_forbidden_patterns": [],
+  "default_timeout": 10,
+  "max_file_size_bytes": 131072,
+  "max_lines": 1500,
+  "lang": "uk",
+  "log_level": "INFO",
+  "monitor_interval_sec": 0.1,
+  "perf_history_limit": 100
+}

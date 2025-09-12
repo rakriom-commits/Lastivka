@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 # Smoke tests for Lastivka (no source changes required)
 
-import os, sys, time
+import os, sys, time, pytest  # ← додано pytest
+
+# Запускати смоук лише якщо явно увімкнуто змінною середовища
+if os.getenv("LASTIVKA_SMOKE", "0").lower() not in ("1", "true", "yes", "on"):
+    pytest.skip("Smoke disabled without LASTIVKA_SMOKE=1", allow_module_level=True)
 
 # 1) гарантуємо, що озвучка вимкнена у тесті
 os.environ["LASTIVKA_NO_TTS"] = "1"

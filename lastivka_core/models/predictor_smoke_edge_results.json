@@ -1,0 +1,91 @@
+{
+  "smoke": {
+    "explain_continuous": "Останній рівень (настрій/довіра): 0.0500 Середнє/σ: -0.0167/0.7522 Z-оцінка: 0.09 Висновок: стабільна динаміка. Очікуваний рівень: 0.2562 Psyops-нота: настрій спадає. Psyops-нота: виявлено ознаки дезінформаційної кампанії.",
+    "explain_binary": "Ймовірність підтримки: 0.7656 CI95 (після калібрувань, лінеар.): [0.5630, 0.9681] (ширина=0.405) Спостережень: 3 (вага=13.81, n_eff=13.81) Висновок: висока ймовірність. Psyops-нота: Виявлено гарячу точку: 8 подій за останні 1.0 год. Psyops-нота: групова ідентичність: 0.40. Psyops-нота: виявлено маніпулятивний наратив. Psyops-нота: виявлено ознаки дезінформаційної кампанії. Psyops-нота: оцінка враховує маніпулятивні наративи та інформаційні атаки.",
+    "state_ready": {
+      "cont_ready": true,
+      "econ_ready": false
+    },
+    "decision": {
+      "do_action": true,
+      "p": 0.7655503869507095,
+      "ci95": [
+        0.563042444532571,
+        0.9680583293688481
+      ],
+      "reason": "Порог 0.60 досягнуто з запасом."
+    }
+  },
+  "edges": {
+    "invalid_cont_nan": {
+      "n": 0,
+      "skipped": true
+    },
+    "invalid_cont_inf": {
+      "n": 0,
+      "skipped": true
+    },
+    "bern_initial_ci": [
+      0.0,
+      1.0
+    ],
+    "bern_after_one_success": {
+      "p": 0.7674418604651163,
+      "ci95": [
+        0.37449524553862185,
+        1.0
+      ],
+      "successes": 1,
+      "failures": 0,
+      "w_success": 2.3,
+      "w_failure": 0.0,
+      "n_eff": 2.3
+    },
+    "manip_detected": true,
+    "econ_forecast": {
+      "ready": true,
+      "sma": 102.6,
+      "volatility": 9.871170143402454,
+      "momentum": 3.5,
+      "trend": "зростає",
+      "signal": "buy",
+      "last_price": 120.0,
+      "band": 4.935585071701227,
+      "adjusted_forecast": 102.6
+    },
+    "dissonance": null,
+    "conflict": null
+  },
+  "compare_groups": {
+    "A": {
+      "p": 0.9367,
+      "ci95": [
+        0.7822,
+        1.0
+      ],
+      "n_eff": 13.8,
+      "mood_point": 0.8712,
+      "resilience": 0.966,
+      "risk": null,
+      "events": 7,
+      "recent_hotspot": true
+    },
+    "B": {
+      "p": 0.0633,
+      "ci95": [
+        0.0,
+        0.2178
+      ],
+      "n_eff": 13.8,
+      "mood_point": -0.5882,
+      "resilience": 0.929,
+      "risk": null,
+      "events": 7,
+      "recent_hotspot": true
+    },
+    "polarization": 0.8734,
+    "most_confident": "A",
+    "pressure": 0.9367
+  },
+  "errors": []
+}

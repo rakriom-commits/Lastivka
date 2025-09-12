@@ -1,0 +1,20 @@
+﻿src_path,rel_path,size,last_write,action
+C:\Lastivka\.gitattributes,.gitattributes,700,2025-09-08 19:19:59,keep
+C:\Lastivka\.gitignore,.gitignore,676,2025-09-08 18:46:05,keep
+C:\Lastivka\pytest.ini,pytest.ini,192,2025-08-17 14:32:43,keep
+C:\Lastivka\README.md,README.md,318,2025-08-02 23:11:19,keep
+C:\Lastivka\requirements.txt,requirements.txt,238,2025-08-02 23:11:19,keep
+C:\Lastivka\say.txt,say.txt,0,2025-09-01 15:21:30,keep
+C:\Lastivka\Структура Ластівки.txt,Структура Ластівки.txt,21918,2025-09-07 16:25:13,archive
+C:\Lastivka\lastivka_core\Start-Bridge.ps1,Start-Bridge.ps1,84,2025-09-08 19:57:50,keep
+C:\Lastivka\lastivka_core\Start-Lastivka.ps1,Start-Lastivka.ps1,98,2025-09-08 19:57:50,archive
+C:\Lastivka\.gitattributes,.gitattributes,700,2025-09-08 19:19:59,keep
+C:\Lastivka\.gitignore,.gitignore,676,2025-09-08 18:46:05,keep
+C:\Lastivka\ALLOW_APPLY.flag,ALLOW_APPLY.flag,0,2025-09-09 10:50:06,archive
+C:\Lastivka\pytest.ini,pytest.ini,192,2025-08-17 14:32:43,keep
+C:\Lastivka\README.md,README.md,318,2025-08-02 23:11:19,keep
+C:\Lastivka\requirements.txt,requirements.txt,238,2025-08-02 23:11:19,keep
+C:\Lastivka\say.txt,say.txt,0,2025-09-01 15:21:30,keep
+C:\Lastivka\Структура Ластівки.txt,Структура Ластівки.txt,21918,2025-09-07 16:25:13,archive
+C:\Lastivka\lastivka_core\Start-Bridge.ps1,Start-Bridge.ps1,84,2025-09-08 19:57:50,keep
+C:\Lastivka\lastivka_core\Start-Lastivka.ps1,Start-Lastivka.ps1,98,2025-09-08 19:57:50,archive

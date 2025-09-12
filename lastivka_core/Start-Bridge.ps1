@@ -1,88 +1,76 @@
-# --- Start-Bridge.ps1 ---
-# Місток: Notepad -> say.txt -> stdin Lastivka (без TTS)
+<# Start-Bridge.ps1 — тихий старт Lastivka ядра через pyw.exe
+   Функції:
+   • single-instance через C:\Lastivka\temp\lastivka.pid
+   • запуск без миготіння (pyw.exe)
+   • лог stdout/stderr у C:\Lastivka\logs\
+   • акуратна перевірка живості процесу
+#>
 
-# 1) Старт чисто
-Get-EventSubscriber | Unregister-Event -ErrorAction SilentlyContinue
-Remove-Variable fsw,timer,lastSent,lastWrite,proc,inFile -Scope Script -ErrorAction SilentlyContinue
+param(
+  [string]$Root   = "C:\Lastivka",
+  [string]$Module = "lastivka_core.main.lastivka"
+)
 
-# 2) Параметри і кодування
-[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
-$OutputEncoding           = New-Object System.Text.UTF8Encoding($false)
-$projectRoot = "C:\Lastivka"
-$coreDir     = Join-Path $projectRoot "lastivka_core"
-$null = New-Item -Path "$projectRoot\temp" -ItemType Directory -Force
-$script:inFile = "$projectRoot\temp\say.txt"
+$ErrorActionPreference = "Stop"
 
-# 3) Запуск Lastivka з відкритим stdin (без TTS)
-$psi = New-Object System.Diagnostics.ProcessStartInfo
-$psi.FileName  = "python"
-$psi.Arguments = "-u -m lastivka_core.main.lastivka"
-$psi.WorkingDirectory = $projectRoot        # щоб пакет lastivka_core був у sys.path
-$psi.UseShellExecute = $false
-$psi.RedirectStandardInput  = $true
-$psi.RedirectStandardOutput = $true
-$psi.RedirectStandardError  = $true
-$psi.CreateNoWindow = $true
-$psi.WindowStyle    = 'Hidden'
-$psi.EnvironmentVariables["PYTHONPATH"]       = $projectRoot
-$psi.EnvironmentVariables["PYTHONIOENCODING"] = "utf-8"
+# -- Paths
+$Temp   = Join-Path $Root "temp"
+$Logs   = Join-Path $Root "logs"
+$Pid    = Join-Path $Temp "lastivka.pid"
 
-$script:proc = [System.Diagnostics.Process]::Start($psi)
-if (-not $script:proc) { Write-Host "[ERR] Не вдалося стартувати python"; exit 1 }
-$script:proc.StandardInput.AutoFlush = $true
-$script:proc.BeginOutputReadLine()
-Register-ObjectEvent -InputObject $script:proc -EventName OutputDataReceived -Action { if ($EventArgs.Data) { Write-Host "[APP] $($EventArgs.Data)" } } | Out-Null
-$script:proc.BeginErrorReadLine()
-Register-ObjectEvent -InputObject $script:proc -EventName ErrorDataReceived  -Action { if ($EventArgs.Data) { Write-Host "[ERR] $($EventArgs.Data)" } } | Out-Null
+New-Item -ItemType Directory -Force -Path $Temp,$Logs | Out-Null
 
-# 4) Підготувати say.txt і відкрити Блокнот
-if (-not (Test-Path $script:inFile)) { New-Item -Path $script:inFile -ItemType File | Out-Null }
-Start-Process notepad.exe $script:inFile
-Write-Host ""
-Write-Host "Готово. Пиши у say.txt (C:\Lastivka\temp\), натискай Ctrl+S. Зупинка — Ctrl+C."
-Write-Host ""
-
-# 5) Одна відправка на одне збереження
-$script:lastSent  = $null
-$script:lastWrite = [datetime]::MinValue
-
-try {
-  while ($true) {
-    try {
-      $fi = Get-Item -LiteralPath $script:inFile -ErrorAction Stop
-      $curWrite = $fi.LastWriteTimeUtc
-      if ($curWrite -eq $script:lastWrite) { Start-Sleep -Milliseconds 250; continue }
-      $script:lastWrite = $curWrite
-
-      $fs = [System.IO.File]::Open($script:inFile,[System.IO.FileMode]::Open,[System.IO.FileAccess]::Read,[System.IO.FileShare]::ReadWrite)
-      try {
-        $sr = New-Object System.IO.StreamReader($fs, [System.Text.Encoding]::UTF8, $true)
-        $content = $sr.ReadToEnd()
-      } finally {
-        if ($sr) { $sr.Close() }
-        $fs.Close()
-      }
-
-      $lastLine = ($content -split '\r?\n') | Where-Object { $_.Trim() -ne '' } | Select-Object -Last 1
-      if ($lastLine -and $lastLine -ne $script:lastSent) {
-        $script:lastSent = $lastLine
-        if ($script:proc -and -not $script:proc.HasExited) {
-          $script:proc.StandardInput.WriteLine($lastLine)
-          Write-Host ">> Надіслано: $lastLine"
-        } else {
-          Write-Host "[WARN] Процес не активний; рядок НЕ відправлено."
-        }
-      }
-    } catch { }
-    Start-Sleep -Milliseconds 250
+function Get-PywPath {
+  # Пріоритет: %WINDIR%\pyw.exe → pythonw.exe з PATH → pythonw.exe з WindowsApps
+  $candidates = @(
+    (Join-Path $env:WinDir "pyw.exe"),
+    "pythonw.exe",
+    (Join-Path $env:LocalAppData "Microsoft\WindowsApps\pythonw.exe")
+  )
+  foreach ($c in $candidates) {
+    try { $cmd = Get-Command $c -ErrorAction Stop; return $cmd.Source } catch {}
   }
+  throw "Не знайдено pyw.exe/pythonw.exe у системі."
 }
-finally {
-  Get-EventSubscriber | Unregister-Event -ErrorAction SilentlyContinue
-  if ($script:proc -and -not $script:proc.HasExited) { $script:proc.Kill() }
-  Remove-Variable fsw,timer,lastSent,lastWrite,proc,inFile -Scope Script -ErrorAction SilentlyContinue
-  Write-Host ""
-  Write-Host "[bridge] Зупинено і прибрано."
-}
-# --- EOF ---
 
+function Is-Alive([int]$pid) {
+  try { $p = Get-Process -Id $pid -ErrorAction Stop; return -not $p.HasExited } catch { return $false }
+}
+
+# -- Single instance
+if (Test-Path $Pid) {
+  $old = (Get-Content $Pid -ErrorAction SilentlyContinue | Select-Object -First 1).Trim()
+  if ($old -match '^\d+$' -and (Is-Alive([int]$old))) {
+    Write-Host "Lastivka вже запущена (PID $old). Вихід."
+    exit 0
+  }
+  # застарілий PID — прибираємо
+  Remove-Item $Pid -ErrorAction SilentlyContinue
+}
+
+# -- Build start
+$pyw = Get-PywPath
+$ts  = Get-Date -Format 'yyyyMMdd_HHmmss'
+$stdout = Join-Path $Logs ("bridge_stdout_{0}.txt" -f $ts)
+$stderr = Join-Path $Logs ("bridge_stderr_{0}.txt" -f $ts)
+$args   = @("-3","-u","-m",$Module)
+
+# -- Start hidden
+$proc = Start-Process -FilePath $pyw -ArgumentList $args `
+  -WindowStyle Hidden -PassThru `
+  -RedirectStandardOutput $stdout -RedirectStandardError $stderr
+
+# -- Persist PID
+$proc.Id | Out-File -FilePath $Pid -Encoding ascii -Force
+
+# -- Quick health check
+Start-Sleep -Milliseconds 400
+if (-not (Is-Alive($proc.Id))) {
+  $msg = "Процес впав одразу після старту. Дивись лог: $stderr"
+  # чистимо pid
+  Remove-Item $Pid -ErrorAction SilentlyContinue
+  throw $msg
+}
+
+Write-Host "Lastivka стартувала (PID $($proc.Id)). Логи: $stdout ; $stderr"
+exit 0
