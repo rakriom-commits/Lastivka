@@ -1,4 +1,13 @@
-﻿# lastivka_core/speech/voice_module_fast.py
+﻿import logging
+logger = logging.getLogger(__name__)
+
+# Anti-storm для логів (L1/L2)
+try:
+    from lastivka_core.tools.logging_filters import attach_rate_limit
+    attach_rate_limit(logger, lines_per_minute=500, bytes_per_hour=5*1024*1024)
+except Exception:
+    pass
+# lastivka_core/speech/voice_module_fast.py
 # SAPI (RHVoice/eSpeak/MS) з прогрівом і виміром затримки.
 import os, time, threading, logging
 _lock = threading.RLock()
@@ -130,3 +139,4 @@ def speak(text, lang="uk", slow=False, **kwargs):
             _engine.say(s); _engine.runAndWait()
         dt=(time.perf_counter()-t0)*1000
         log.info("[voice_fast] SPEAK ms=%.0f text=%.60s", dt, s)
+
