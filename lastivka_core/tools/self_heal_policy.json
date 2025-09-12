@@ -1,0 +1,5 @@
+﻿{
+  "allowed": ["rollback", "restore", "quarantine", "archive"],
+  "restricted": ["memory", "kernel", "security"],
+  "notes": "Самовідновлення (L5). Дозволені лише дії відкату та відновлення. Критичні модулі під ручним контролем."
+}
