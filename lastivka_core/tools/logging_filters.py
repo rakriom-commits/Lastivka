@@ -31,6 +31,10 @@ class RateLimitFilter(logging.Filter):
             self._suppressed_hour = 0
 
     def filter(self, record: logging.LogRecord) -> bool:
+        # Дозволити службові повідомлення про тротлінг навіть під лімітом
+        if getattr(record, "_bypass_rate_limit", False):
+            return True
+
         try:
             msg_len = len(record.getMessage())
         except Exception:
@@ -48,12 +52,14 @@ class RateLimitFilter(logging.Filter):
                 self._suppressed_min += 1
             if not allow_bytes:
                 self._suppressed_hour += 1
+            # раз при першому придушенні в хвилині/годині — тихий сигнал
             if self._suppressed_min == 1 or self._suppressed_hour == 1:
                 try:
                     logging.getLogger(record.name).log(
                         max(logging.WARNING, record.levelno),
                         "Log throttled: minute=%s (limit=%s), hour_bytes=%s/%s",
-                        self._lines_in_min, self.lpm, self._bytes_in_hour, self.bph
+                        self._lines_in_min, self.lpm, self._bytes_in_hour, self.bph,
+                        extra={"_bypass_rate_limit": True},  # <— байпас для цього повідомлення
                     )
                 except Exception:
                     pass
