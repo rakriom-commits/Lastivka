@@ -1,0 +1,5 @@
+﻿{
+  "allowed": ["review", "score", "optimize", "report"],
+  "restricted": ["memory", "kernel", "security"],
+  "notes": "L7 Meta-learning. Дозволений самоаналіз рішень, оцінка якості, оптимізація та звітування. Критичні модулі  вручну."
+}
