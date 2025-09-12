@@ -1,0 +1,5 @@
+﻿{
+  "allowed": ["speech", "tools", "logging", "tests"],
+  "restricted": ["memory", "kernel", "security"],
+  "notes": "Самопрограмування Ластівки L3. Дозволені тільки безпечні області. Критичні модулі змінюються вручну."
+}
