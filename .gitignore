@@ -48,3 +48,16 @@ vendors/RHVoice-*/build/
 vendors/RHVoice-*/bin/
 .vscode/
 # === /structure-sync ===
+# Python
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Temp / logs
+temp/
+*.pid
+*.log
+*.tmp
+
+# Генерований аудіо-вивід
+lastivka_core/speech/audio/output/
