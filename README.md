@@ -13,3 +13,5 @@ lastivka_core/
  tools/
   unit_tests/
 
+
+Hook test 2025-09-13T16:14:48.9210685+03:00
