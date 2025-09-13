@@ -4,7 +4,10 @@ C:\Lastivka\
 │   pytest.ini  
 │   README.md
 │   requirements.txt
-│   say.txt           
+│   say.txt   
+│   test_sync.md
+│   threat_plot.png
+│   ync memory_store + cleanup_logs changes       
 │ 
 ├── .github\
 │    └── workflows/
@@ -32,8 +35,9 @@ C:\Lastivka\
 │    └── core_clean_20250909_104829\
 │         ├── C_Lastivka/
 │         │    └── ALLOW_APPLY.flag
-│         └── C_Lastivka_lastivka_core/
-│              └── Start-Lastivka.ps1
+│         ├── C_Lastivka_lastivka_core/
+│         │     └── Start-Lastivka.ps1
+│         └── manifest.csv
 │
 ├── bin	/
 │    ├── Launch-Lastivka.ps1
@@ -116,7 +120,7 @@ C:\Lastivka\
 │   
 ├── memory\
 │    └── snapshots/    
-│    └── .gitkeep                                       
+│         └── .gitkeep                                       
 │ 
 ├── speech\
 │    └── audio\    
@@ -138,23 +142,23 @@ C:\Lastivka\
 ├── tools/
 │    └── status_utils.ps1
 │
-├── vendors\                                                    ← сторонні залежності
-│    │    ├── ffmpeg\                                          ← інструментарій для мультимедіа
-│    │    │    ├── bin/
-│    │    │    │    ├── ffmpeg.exe
-│    │    │    │    ├── ffplay.exe
-│    │    │    │    └── ffprobe.exe
-│    │    │    ├── doc/
-│    │    │    │    ├── bootstrap.min.css
-│    │    │    │    ├── community.html                         # (~31 html-файлів)
-│    │    │    │    ├── default.css
-│    │    │    │    └── style.min.css
-│    │    │    └── presets/
-│    │    │         ├── libvpx-360p.ffpreset
-│    │    │         ├── libvpx-720p.ffpreset
-│    │    │         ├── libvpx-720p50_60.ffpreset
-│    │    │         ├── libvpx-1080p.ffpreset
-│    │    │         └── libvpx-1080p50_60.ffpreset
+├── vendors\                                              ← сторонні залежності
+│    ├── ffmpeg\                                          ← інструментарій для мультимедіа
+│    │    ├── bin/
+│    │    │    ├── ffmpeg.exe
+│    │    │    ├── ffplay.exe
+│    │    │    └── ffprobe.exe
+│    │    ├── doc/
+│    │    │    ├── bootstrap.min.css
+│    │    │    ├── community.html                          # (~31 html-файлів)
+│    │    │    ├── default.css
+│    │    │    └── style.min.css
+│    │    ├── presets/
+│    │    │    ├── libvpx-360p.ffpreset
+│    │    │    ├── libvpx-720p.ffpreset
+│    │    │    ├── libvpx-720p50_60.ffpreset
+│    │    │    ├── libvpx-1080p.ffpreset
+│    │    │    └── libvpx-1080p50_60.ffpreset
 │    │    ├── LICENSE
 │    │    └── README.txt
 │    │
@@ -333,9 +337,9 @@ C:\Lastivka\
      │    └── rl_trainer.py
      │
      ├── gateway\
-     │    ├─ _pycache_/
-     │    │  ├─ _init_.cpython-312.pyc
-     │    │  └─ mediator.cpython-312.pyc
+     │    ├── _pycache_/
+     │    │   ├─ _init_.cpython-312.pyc
+     │    │   └─ mediator.cpython-312.pyc
      │    ├── _init_.py
      │    └── mediator.py
      │ 
@@ -343,10 +347,10 @@ C:\Lastivka\
      │    └── auto_directives.py
      │
      ├── kernel\
-     │    ├─ _pycache_/
-     │    │  ├─ __init__.cpython-312.pyc
-     │    │  └─ kernel.cpython-312.pyc
-     │    ├── __init__.py
+     │    ├── _pycache_/
+     │    │   ├─ __init__.cpython-312.pyc
+     │    │   └─ kernel.cpython-312.pyc
+     │    ├── _init_.py
      │    ├── kernel.py
      │    ├── monitor.py
      │    └── resources.py
@@ -354,10 +358,39 @@ C:\Lastivka\
      ├── logs\
      │    ├── _pycache_
      │    │   └─ _init_.cpython-312.pyc
-
-     │    ├── archive/
-     │    │   ├─ pronunciation_log.json
-     │    │   └─ rating_log.json
+     │    │
+     │    ├── archive\
+     │    │   ├─ batch_20250901_143303/
+     │    │   │   ├─ bridge_20250829.log
+     │    │   │   ├─ guard.log
+     │    │   │   ├─ last_alert.txt                
+     │    │   │   ├─ python_20250829_204027.log                 # (~20 log-файлів)
+     │    │   │   ├─ run_20250829_173130.txt                    # (~23 txt-файлів)
+     │    │   │   ├─ security.log
+     │    │   │   ├─ style_changes.log
+     │    │   │   ├─ user_input.log
+     │    │   │   └─ voice_debug.log
+     │    │   │
+     │    │   ├─ logs_20250902_203622.zip/
+     │    │   │   └─ emotion.log
+     │    │   │  
+     │    │   ├─ logs_20250902_204042.zip
+     │    │   │   ├─ _init_.py
+     │    │   │   ├─ GPT5_Test_Case_Log.xlsx
+     │    │   │   ├─ lastivka.log
+     │    │   │   ├─ memory_store.json
+     │    │   │   ├─ memory_store_backup.json
+     │    │   │   ├─ memory_store_backup_20250807_231634.json
+     │    │   │   ├─ memory_store_backup_20250807_231639.json
+     │    │   │   ├─ pronunciation_log.json
+     │    │   │   ├─ rating_log.json
+     │    │   │   ├─ security_events.json
+     │    │   │   └─ security_test.log
+     │    │   │
+     │    │   ├─ manifest_p1_20250908_191755.csv
+     │    │   ├─ memory_store_snapshot_20250908_191756.json
+     │    │   └─ self_awareness_config_dup_20250908_191756.json
+     │    │
      │    ├── backups/                                     # (порожньо) 
      │    │
      │    ├── runs\  
@@ -371,46 +404,52 @@ C:\Lastivka\
      │    ├── support/                                     # (порожньо)
      │    │
      │    ├── audio_log.txt
-     │    ├── detected_emotion.json
+     │    ├── bridge_20250908.log
+     │    ├── bridge_stderr_20250908_221727.txt            # (~380 txt-файлів)
      │    ├── emotion.log
      │    ├── guard.log
      │    ├── lastivka.log
-     │    ├── memory_store.json
+     │    ├── lastivka_stderr.txt
+     │    ├── manifest_20250908_190455.csv                 # (~28 csv-файлів)
+     │    ├── manual_run_20250909_125245.log
      │    ├── memory_store.log
+     │    ├── predictor_log.txt
      │    ├── security.log
      │    ├── session_status.json
      │    ├── style_changes.log
-     │    └── user_input.log
+     │    ├── user_input.log
+     │    ├── watchdog_20250908.log                       # (~6 log-файлів)
+     │    └── watchdog_state.json 
      │
      ├── main\
-     │    ├─ _pycache_/
-     │    │  ├─ __init__.cpython-312.pyc
-     │    │  ├─ handlers.cpython-312.pyc
-     │    │  ├─ lastivka.cpython-312.pyc
-     │    │  ├─ osnova.cpython-312.pyc
-     │    │  ├─ style_manager.cpython-312.pyc
-     │    │  └─ utils_lasti.cpython-312.pyc
+     │    ├── _pycache_/
+     │    │   ├─ __init__.cpython-312.pyc
+     │    │   ├─ handlers.cpython-312.pyc
+     │    │   ├─ lastivka.cpython-312.pyc
+     │    │   ├─ osnova.cpython-312.pyc
+     │    │   ├─ style_manager.cpython-312.pyc
+     │    │   └─ utils_lasti.cpython-312.pyc
      │    │
-     │    ├─ _init_.py          
-     │    ├─ cli.py
-     │    ├─ handlers.py
-     │    ├─ intuition_engine.py
-     │    ├─ lastivka.py
-     │    ├─ lastivka_identity.py
-     │    ├─ lastivka_pron_feedback.py
-     │    ├─ lastivka_rescue_module.py
-     │    ├─ lastivka_rescue_plan.json
-     │    ├─ lastivka_skill.py
-     │    ├─ osnova.py
-     │    ├─ playback.py
-     │    ├─ shield_utils.py
-     │    ├─ skills_engine.py
-     │    ├─ stress_handler.py
-     │    ├─ style_manager.py
-     │    └─ utils_lasti.py
+     │    ├── _init_.py          
+     │    ├── cli.py
+     │    ├── handlers.py
+     │    ├── intuition_engine.py
+     │    ├── lastivka.py
+     │    ├── lastivka_identity.py
+     │    ├── lastivka_pron_feedback.py
+     │    ├── lastivka_rescue_module.py
+     │    ├── lastivka_rescue_plan.json
+     │    ├── lastivka_skill.py
+     │    ├── osnova.py
+     │    ├── playback.py
+     │    ├── shield_utils.py
+     │    ├── skills_engine.py
+     │    ├── stress_handler.py
+     │    ├── style_manager.py
+     │    └── utils_lasti.py
      │
      ├── memory\
-     │    ├─ _pycache_/
+     │    ├── _pycache_/
      │    │   ├─ __init__.cpython-312.pyc
      │    │   ├─ index.cpython-312.pyc
      │    │   ├─ index_gate.cpython-312.pyc
@@ -419,7 +458,7 @@ C:\Lastivka\
      │    │   ├─ normalize.cpython-312.pyc
      │    │   └─ smart_memory.cpython-312.pyc
      │    │
-     │    ├─ long_term/
+     │    ├── long_term/
      │    │   ├─ _pycache_/
      │    │   │   ├─ _init_.cpython-312.pyc
      │    │   │   └─ long_memory.cpython-312.pyc
@@ -454,32 +493,31 @@ C:\Lastivka\
      │    │   ├─ long_memory.py
      │    │   └─ memory_store.json
      │    │
-     │    ├─ short_term\
+     │    ├── short_term\
      │    │   ├─ _pycache_/
-     │    │   │   ├─ _init_.cpython-312.pyc
-     │    │   │   ├─ experience_manager.cpython-312.pyc
-     │    │   │   └─ short_term.cpython-312.pyc
+     │    │   │  ├─ _init_.cpython-312.pyc
+     │    │   │  ├─ experience_manager.cpython-312.pyc
+     │    │   │  └─ short_term.cpython-312.pyc
      │    │   │
      │    │   ├─ context/                                              # (порожньо)
      │    │   ├─ emotional_state/                                      # (порожньо)
      │    │   ├─ sensory_buffer/                                       # (порожньо)
-     │    │   │
      │    │   ├─ _init_.py
      │    │   ├─ experience_log.json
      │    │   ├─ experience_manager.py
      │    │   ├─ short_memory.py
      │    │   └─ short_term.py 
      │    │
-     │    ├─ _init_.py
-     │    ├─ index.py
-     │    ├─ index_gate.py
-     │    ├─ launcher.py
-     │    ├─ logic.py
-     │    ├─ manager.py
-     │    ├─ memory_cli.py
-     │    ├─ memory_manager.py
-     │    ├─ normalize.py
-     │    └─ smart_memory.py
+     │    ├──  _init_.py
+     │    ├──  index.py
+     │    ├──  index_gate.py
+     │    ├──  launcher.py
+     │    ├──  logic.py
+     │    ├──  manager.py
+     │    ├──  memory_cli.py
+     │    ├──  memory_manager.py
+     │    ├──  normalize.py
+     │    └─v smart_memory.py
      │
      ├── models\
      │    ├── _pycache_/
@@ -506,38 +544,44 @@ C:\Lastivka\
      │    └── stop_lastivka.ps1
      │
      ├── security\
-     │    ├─ _pycache_/
+     │    ├── _pycache_/
      │    │   ├─ _init_.cpython-312.pyc
      │    │   ├─ backup_runner_gate.cpython-312.pyc
      │    │   ├─ config_guard.cpython-312.pyc
      │    │   ├─ config_patcher.cpython-312.pyc
      │    │   └─ guard.cpython-312.pyc
+     │    │ 
+     │    ├── agents\
+     │    │   └─ go2\
+     │    │       ├─ _pycache_/
+     │    │       │  └─ social_security_assistant.cpython-312.pyc
+     │    │       └─ social_security_assistant.py
      │    │
-     │    ├─ _init_.py
-     │    ├─ Audit-NewSoftware.ps1
-     │    ├─ backup_runner.py
-     │    ├─ backup_runner_gate.py
-     │    ├─ cleanup_logs.ps1
-     │    ├─ cleanup_runner.vbs
-     │    ├─ config_guard.py
-     │    ├─ config_patcher.py
-     │    ├─ cyber_guard.py
-     │    ├─ energy_monitor.py
-     │    ├─ guard.py
-     │    ├─ guardian_mode.py
-     │    ├─ kill_werfault.ps1
-     │    ├─ kill_werfault.vbs
-     │    ├─ legacy_shieldcore.py
-     │    ├─ log_manager.py
-     │    ├─ security_pipeline.py
-     │    ├─ security_pipeline.log
-     │    ├─ sensor_firewall.py
-     │    ├─ watchdog.ps1
-     │    ├─ watchdog_runner.vbs
-     │    └─ watchdog_wrapper.ps1 
+     │    ├── _init_.py
+     │    ├── Audit-NewSoftware.ps1
+     │    ├── backup_runner.py
+     │    ├── backup_runner_gate.py
+     │    ├── cleanup_logs.ps1
+     │    ├── cleanup_runner.vbs
+     │    ├── config_guard.py
+     │    ├── config_patcher.py
+     │    ├── cyber_guard.py
+     │    ├── energy_monitor.py
+     │    ├── guard.py
+     │    ├── guardian_mode.py
+     │    ├── kill_werfault.ps1
+     │    ├── kill_werfault.vbs
+     │    ├── legacy_shieldcore.py
+     │    ├── log_manager.py
+     │    ├── security_pipeline.py
+     │    ├── security_pipeline.log
+     │    ├── sensor_firewall.py
+     │    ├── watchdog.ps1
+     │    ├── watchdog_runner.vbs
+     │    └── watchdog_wrapper.ps1 
      │
      ├── speech\
-     │    ├─ _pycache_/
+     │    ├── _pycache_/
      │    │   ├─ __init__.cpython-312.pyc
      │    │   ├─ emotion_reactor.cpython-312.pyc
      │    │   ├─ stress_tools.cpython-312.pyc
@@ -547,139 +591,164 @@ C:\Lastivka\
      │    │   ├─ voice_module_fast.cpython-312.pyc
      │    │   └─ voice_module_offline.cpython-312.pyc
      │    │
-     │    ├─ audio\
-     │    │   └─ output/
+     │    ├──  audio\
+     │    │    └─ output/
      │    │       ├─ reflection_*.wav                             # (~17 wav-файлів)
      │    │       └─ replica_*.wav                                # (~21 wav-файлів)
      │    │
-     │    ├─ _init_.py
-     │    ├─ emotion_reactor.py
-     │    ├─ offline_tts.py
-     │    ├─ speech_tools.py
-     │    ├─ stress_tools.py
-     │    ├─ voice_auto.py
-     │    ├─ voice_core.py
-     │    ├─ voice_dispatcher.py
-     │    ├─ voice_module.py
-     │    ├─ voice_module_fast.py
-     │    ├─ voice_module_offline.py
-     │    └─ voice_module_rhvoice.py
+     │    ├── _init_.py
+     │    ├── emotion_reactor.py
+     │    ├── offline_tts.py
+     │    ├── speech_tools.py
+     │    ├── stress_tools.py
+     │    ├── voice_auto.py
+     │    ├── voice_core.py
+     │    ├── voice_dispatcher.py
+     │    ├── voice_module.py
+     │    ├── voice_module_fast.py
+     │    ├── voice_module_offline.py
+     │    └── voice_module_rhvoice.py
      │
      ├── temp\
-     │   ├─ _pycache_/
-     │   │  └─ _init_.cpython-312.pyc
+     │   ├── _pycache_/
+     │   │   └─ _init_.cpython-312.pyc
      │   │
-     │   ├─ audio_log/ 
-     │   │  └─ tmp8xf48lhk.mp3                                      (~12 mp3-файлів)
+     │   ├── audio_log/ 
+     │   │   └─ tmp8xf48lhk.mp3                                      (~12 mp3-файлів)
      │   │
-     │   └─ _init_.py 
+     │   └── _init_.py 
      │
      ├── tests\
-     │   ├─ _pycache_/
+     │   ├── _pycache_/
      │   │   ├─ _init_.cpython-312.pyc
      │   │   ├─ manager_test.cpython-312-pytest-8.4.1.pyc
      │   │   ├─ test_predictor_v2e.cpython-312-pytest-8.4.1.pyc
      │   │   └─ test_smoke.cpython-312-pytest-8.4.1.pyc
      │   │
-     │   ├─ fixtures/
+     │   ├── fixtures/
      │   │   ├─ _init_.py
      │   │   ├─ say.script.btx
      │   │   └─ say.txt
      │   │
-     │   ├─ integration/
+     │   ├── integration/
      │   │   └─ _init_.py
      │   │
-     │   ├─ logs/
+     │   ├── logs/
      │   │   └─ _init_.py
      │   │
-     │   ├─ memory_tests/
+     │   ├── memory_tests\
+     │   │   ├─ _pycache_/
+     │   │   │   ├─ _init_.cpython-312.pyc
+     │   │   │   ├─ test_memory_manager.cpython-312-pytest-8.4.1.pyc
+     │   │   │   ├─ test_memory_manager_basic.cpython-312-pytest-8.4.1.pyc
+     │   │   │   └─ test_short_term.cpython-312-pytest-8.4.1.pyc
      │   │   ├─ _init_.py
      │   │   ├─ test_memory_manager.py
      │   │   ├─ test_memory_manager_basic.py
      │   │   └─ test_short_term.py
      │   │
-     │   ├─ smoke\
+     │   ├── smoke\
      │   │   ├─ _pycache_/
      │   │   │   └─ test_gates.cpython-312-pytest-8.4.1.pyc
      │   │   └─ test_gates.py
      │   │
-     │   ├─ unit/
+     │   ├── unit/
      │   │   └─ _init_.py
      │   │
-     │   ├─ _init_.py
-     │   ├─ manager_test.py
-     │   ├─ test_predictor_v2e.py
-     │   └─ test_smoke.py
+     │   ├── _init_.py
+     │   ├── manager_test.py
+     │   ├── test_predictor_v2e.py
+     │   └── test_smoke.py
      │
      ├── tools\
-     │   ├─ _pycache_/ 
+     │   ├── _pycache_/ 
      │   │   ├─ _init_.cpython-312.pyc
      │   │   ├─ emotion_config_loader.cpython-312.pyc
      │   │   ├─ emotion_engine.cpython-312.pyc
      │   │   └─ memory_store.cpython-312.pyc
      │   │
-     │   ├─ active\
+     │   ├── active\
      │   │   ├─ _pycache_/
-     │   │   │   ├─ _init_.cpython-312.pyc
-     │   │   │   └─ headless_guard_v2.cpython-312.pyc
+     │   │   │  ├─ _init_.cpython-312.pyc
+     │   │   │  └─ headless_guard_v2.cpython-312.pyc
      │   │   ├─ _init_.py
      │   │   └─ headless_guard_v2.py
      │   │
-     │   ├─ cache\
+     │   ├── cache/
      │   │   ├─ headless_guard.json
      │   │   └─ headless_guard_perf.json
      │   │
-     │   ├─ dev
+     │   ├── dev/
      │   │   └─ self_programmer.py
      │   │
      │   ├─ logs/ 
      │   │   └─ .gitkeep  
      │   │
-     │   ├─ outbox/
+     │   ├── outbox/
      │   │   ├─ daily_report_generated.txt
      │   │   ├─ daily_report_20250910_222938.txt                    (~11 txt-файлів)
      │   │   ├─ backup_runner_20250908_190455.txt                   (~7 txt-файлів)
      │   │   └─ memory_index_20250908_190455.txt                    (~10 txt-файлів)
      │   │
-     │   ├─ plugins/                                                # (порожньо)
+     │   ├── plugins/                                                # (порожньо)
      │   │
-     │   ├─ proposal/
+     │   ├── proposal/
      │   │   ├─ _init_.py 
      │   │   └─ headless_guard.py
      │   │
-     │   ├─ sandbox/
+     │   ├── sandbox/
      │   │   └─ headless_guard.py                          
      │   │
-     │   ├─ tmp_audio/                                              # (порожньо)
+     │   ├── tmp_audio/                                              # (порожньо)
      │   │
-     │   ├─ voice/
-     │   │  ├─ _init_.py
-     │   │  ├─ accent_corrector.py
-     │   │  ├─ accent_synchronizer.py
-     │   │  ├─ balcon_speech_module.py
-     │   │  ├─ pronunciation_cleaner.py
-     │   │  ├─ pronunciation_errors.json
-     │   │  ├─ pronunciation_logger.py
-     │   │  ├─ pronunciation_report.py
-     │   │  └─ voice_module.py 
+     │   ├── voice/
+     │   │   ├─ _init_.py
+     │   │   ├─ accent_corrector.py
+     │   │   ├─ accent_synchronizer.py
+     │   │   ├─ balcon_speech_module.py
+     │   │   ├─ pronunciation_cleaner.py
+     │   │   ├─ pronunciation_errors.json
+     │   │   ├─ pronunciation_logger.py
+     │   │   ├─ pronunciation_report.py
+     │   │   └─ voice_module.py 
      │   │
-     │   ├─ _init_.py
-     │   ├─ AUDIO_CHECKLIST.md
-     │   ├─ auto_stress_updater.py
-     │   ├─ config_loader.py
-     │   ├─ emotion_config_loader.py
-     │   ├─ emotion_engine.py
-     │   ├─ file_watcher.py
-     │   ├─ generate_core_hashes.py
-     │   ├─ list_voices.py
-     │   ├─ memory_debug_cli.py
-     │   ├─ memory_store.py
-     │   ├─ shadow_shell.py
-     │   ├─ speech_utils.py
-     │   ├─ watchdog.py
-     │   └─ watcher_boot.py
+     │   ├── _init_.py
+     │   ├── apply_gate.py
+     │   ├── AUDIO_CHECKLIST.md
+     │   ├── auto_stress_updater.py
+     │   ├── AUTONOMY_STATUS.md
+     │   ├── config.json
+     │   ├── config_loader.py
+     │   ├── emotion_config_loader.py
+     │   ├── emotion_engine.py
+     │   ├── file_watcher.py
+     │   ├── generate_core_hashes.py
+     │   ├── list_voices.py
+     │   ├── logging_filters.py
+     │   ├── memory_debug_cli.py
+     │   ├── memory_store.py
+     │   ├── PATCH_PIPELINE_SMOKE.md
+     │   ├── SELF_HEAL.md
+     │   ├── SELF_HEAL_DONE.md
+     │   ├── self_heal_policy.json
+     │   ├── SELF_META.md
+     │   ├── SELF_META_DONE.md
+     │   ├── self_meta_policy.json
+     │   ├── SELF_MONITOR.md
+     │   ├── SELF_MONITOR_DONE.md
+     │   ├── self_monitor_policy.json 
+     │   ├── SELF_ORCHESTRATION.md
+     │   ├── SELF_ORCHESTRATION_DONE.md
+     │   ├── self_orchestration_policy.json
+     │   ├── SELF_PROGRAMMER.md
+     │   ├── SELF_PROGRAMMER_DONE.md
+     │   ├── self_programmer_policy.json
+     │   ├── shadow_shell.py
+     │   ├── speech_utils.py
+     │   ├── watchdog.py
+     │   └── watcher_boot.py
      │
-     ├── __init__.py
+     ├── _init_.py
      ├── self_programmer.py
      └── Start-Bridge.ps1
 
