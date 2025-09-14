@@ -27,3 +27,7 @@
 .gitignore     text eol=lf
 *.psm1    text eol=crlf
 *.psd1    text eol=crlf
+
+# Keep third-party & archives as-is (Minimal Shield)
+vendors/** -text
+archive/** -text

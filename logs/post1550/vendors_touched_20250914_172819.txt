@@ -1,0 +1,91 @@
+﻿vendors/RHVoice-RHVoice-b63adea/config/RHVoice.conf
+vendors/RHVoice-RHVoice-b63adea/src/android/gradlew.bat
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Georgian/downcase.foma
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Georgian/key.foma
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Georgian/msg.foma
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Georgian/prompts/text1.txt
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Polish/chardesc.tsv
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Polish/lseq.foma
+vendors/RHVoice-RHVoice-b63adea/src/scripts/Polish/stress.foma
+vendors/RHVoice-RHVoice-b63adea/src/third-party/mage/fft-sptk.cpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/mage/fft-sptk.h
+vendors/RHVoice-RHVoice-b63adea/src/third-party/mage/getmem-sptk.cpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/mage/getmem-sptk.h
+vendors/RHVoice-RHVoice-b63adea/src/third-party/mage/mlsacheck-sptk.h
+vendors/RHVoice-RHVoice-b63adea/src/third-party/rapidxml/license.txt
+vendors/RHVoice-RHVoice-b63adea/src/third-party/rapidxml/rapidxml/rapidxml.hpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/rapidxml/rapidxml/rapidxml_iterators.hpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/rapidxml/rapidxml/rapidxml_print.hpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/rapidxml/rapidxml/rapidxml_utils.hpp
+vendors/RHVoice-RHVoice-b63adea/src/third-party/utf8/utf8.h
+vendors/RHVoice-RHVoice-b63adea/src/wininst/en.txt
+vendors/RHVoice-RHVoice-b63adea/src/wininst/ru.txt
+vendors/mpg123/COPYING.txt
+vendors/mpg123/NEWS.txt
+vendors/mpg123/README.txt
+vendors/mpg123/windows-notes.html
+vendors/voice/Balabolka/balabolka.pcfg
+vendors/voice/Balabolka/dictionaries/English.hmg
+vendors/voice/Balabolka/dictionaries/French.hmg
+vendors/voice/Balabolka/dictionaries/German.hmg
+vendors/voice/Balabolka/dictionaries/Russian Nicolai (SAPI4).hmg
+vendors/voice/Balabolka/dictionaries/Russian Olga.hmg
+vendors/voice/Balabolka/history.eng.txt
+vendors/voice/Balabolka/history.rus.txt
+vendors/voice/Balabolka/languages/Arabic.lng
+vendors/voice/Balabolka/languages/Armenian.lng
+vendors/voice/Balabolka/languages/Bulgarian.lng
+vendors/voice/Balabolka/languages/Catalan.lng
+vendors/voice/Balabolka/languages/Chinese (Simplified).lng
+vendors/voice/Balabolka/languages/Chinese (Traditional).lng
+vendors/voice/Balabolka/languages/Croatian.lng
+vendors/voice/Balabolka/languages/Czech.lng
+vendors/voice/Balabolka/languages/Dutch.lng
+vendors/voice/Balabolka/languages/Filipino.lng
+vendors/voice/Balabolka/languages/Finnish.lng
+vendors/voice/Balabolka/languages/French.lng
+vendors/voice/Balabolka/languages/German.lng
+vendors/voice/Balabolka/languages/Greek.lng
+vendors/voice/Balabolka/languages/Hungarian.lng
+vendors/voice/Balabolka/languages/Italian.lng
+vendors/voice/Balabolka/languages/Japanese.lng
+vendors/voice/Balabolka/languages/Korean.lng
+vendors/voice/Balabolka/languages/Polish.lng
+vendors/voice/Balabolka/languages/Portuguese (Brazil).lng
+vendors/voice/Balabolka/languages/Portuguese (Portugal).lng
+vendors/voice/Balabolka/languages/Romanian.lng
+vendors/voice/Balabolka/languages/Russian.lng
+vendors/voice/Balabolka/languages/Serbian (Cyrillic).lng
+vendors/voice/Balabolka/languages/Serbian (Latin).lng
+vendors/voice/Balabolka/languages/Slovak.lng
+vendors/voice/Balabolka/languages/Slovenian.lng
+vendors/voice/Balabolka/languages/Spanish.lng
+vendors/voice/Balabolka/languages/Turkish.lng
+vendors/voice/Balabolka/languages/Turkmen.lng
+vendors/voice/Balabolka/languages/Ukrainian.lng
+vendors/voice/Balabolka/languages/Uzbek.lng
+vendors/voice/Balabolka/languages/Vietnamese.lng
+vendors/voice/Balabolka/languages/sample.txt
+vendors/voice/Balabolka/license.ces.txt
+vendors/voice/Balabolka/license.chs.txt
+vendors/voice/Balabolka/license.eng.txt
+vendors/voice/Balabolka/license.hun.txt
+vendors/voice/Balabolka/license.ita.txt
+vendors/voice/Balabolka/license.kor.txt
+vendors/voice/Balabolka/license.rus.txt
+vendors/voice/Balabolka/license.slk.txt
+vendors/voice/Balabolka/readme.ces.txt
+vendors/voice/Balabolka/readme.chs.txt
+vendors/voice/Balabolka/readme.eng.txt
+vendors/voice/Balabolka/readme.hun.txt
+vendors/voice/Balabolka/readme.ita.txt
+vendors/voice/Balabolka/readme.kor.txt
+vendors/voice/Balabolka/readme.rus.txt
+vendors/voice/Balabolka/readme.slk.txt
+vendors/voice/Balabolka/readme.vie.txt
+vendors/voice/Balabolka/resources/ElevenLabs.xml
+vendors/voice/Balabolka/resources/ErrorCodes.xml
+vendors/voice/Balabolka/resources/Languages.xml
+vendors/voice/Balabolka/resources/Servers.xml
+vendors/voice/Balabolka/resources/Translate.xml
+vendors/voice/Balabolka/scripts/say_script.btx
