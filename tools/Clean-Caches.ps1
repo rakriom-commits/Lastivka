@@ -1,31 +1,24 @@
-﻿param([switch]$WhatIf)
+﻿[CmdletBinding()]
+param(
+  [string]$Root = (Get-Location).Path,
+  [switch]$Apply,                          # якщо НЕ задано — DRY-RUN
+  [string]$LogRoot = "$Root\temp\trash"
+)
+$ErrorActionPreference="Stop"; $DRY = -not $Apply
+$stamp = Get-Date -Format "yyyyMMdd_HHmmss"
+$sessionDir = Join-Path $LogRoot $stamp; New-Item -ItemType Directory -Force $sessionDir | Out-Null
+$log = Join-Path $sessionDir "log.txt"; function Log($m){ Add-Content $log ("[{0}] {1}" -f (Get-Date -Format "HH:mm:ss"), $m) }
 
-Push-Location (Resolve-Path "$PSScriptRoot\..")
-try {
-  $excludeVendors = "*\vendors\*"
-  $excludeArchive = "*\archive\*"
+$cacheDirs  = @("__pycache__", ".pytest_cache")
+$cacheFiles = @("*.pyc","*.pyd","*.pyo")
+$skip = "\\vendors\\|\\archive\\|\\\.git\\|\\temp\\trash\\"
 
-  $pycDirs = Get-ChildItem -Recurse -Directory -Filter "__pycache__" |
-    Where-Object { $_.FullName -notlike $excludeVendors -and $_.FullName -notlike $excludeArchive }
+Get-ChildItem $Root -Recurse -Directory -Force -EA SilentlyContinue |
+  Where-Object { $cacheDirs -contains $_.Name -and $_.FullName -notmatch $skip } |
+  ForEach-Object { if($DRY){ Log "[WhatIf] DIR  $($_.FullName)" } else { Remove-Item $_.FullName -Recurse -Force -EA SilentlyContinue; Log "Removed DIR  $($_.FullName)" } }
 
-  $pycFiles = Get-ChildItem -Recurse -File -Include *.pyc,*.pyo,*.pyd -ErrorAction SilentlyContinue |
-    Where-Object { $_.FullName -notlike $excludeVendors -and $_.FullName -notlike $excludeArchive }
+Get-ChildItem $Root -Recurse -File -Force -EA SilentlyContinue -Include $cacheFiles |
+  Where-Object { $_.FullName -notmatch $skip } |
+  ForEach-Object { if($DRY){ Log "[WhatIf] FILE $($_.FullName)" } else { Remove-Item $_.FullName -Force -EA SilentlyContinue; Log "Removed FILE $($_.FullName)" } }
 
-  $pytest = Get-ChildItem -Recurse -Directory -Filter ".pytest_cache" |
-    Where-Object { $_.FullName -notlike $excludeVendors -and $_.FullName -notlike $excludeArchive }
-
-  "__pycache__: $($pycDirs.Count)"
-  "bytecode   : $($pycFiles.Count)"
-  ".pytest_cache: $($pytest.Count)"
-
-  if ($WhatIf) { "Режим WhatIf: видалення лише симулюється."; return }
-
-  $pycFiles | ForEach-Object { if (Test-Path $_.FullName) { Remove-Item $_.FullName -Force -ErrorAction SilentlyContinue } }
-  $pytest   | ForEach-Object { if (Test-Path $_.FullName) { Remove-Item $_.FullName -Recurse -Force -ErrorAction SilentlyContinue } }
-  $pycDirs  | ForEach-Object { if (Test-Path $_.FullName) { Remove-Item $_.FullName -Recurse -Force -ErrorAction SilentlyContinue } }
-
-  "Готово."
-}
-finally {
-  Pop-Location
-}
+Write-Output "Clean-Caches log: $log"
