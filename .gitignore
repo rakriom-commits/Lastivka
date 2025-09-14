@@ -61,3 +61,8 @@ temp/
 
 # Генерований аудіо-вивід
 lastivka_core/speech/audio/output/
+# Minimal Shield hygiene
+logs/
+temp/trash/
+*.log
+OK_TO_MODIFY.flag
